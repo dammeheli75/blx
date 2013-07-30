@@ -1,0 +1,34 @@
+<?php
+$this->headLink()
+    ->prependStylesheet($this->basePath() . '/common/css/fixture-and-results.min.css')
+    ->prependStylesheet($this->basePath() . '/common/css/kendo.min.css')
+    ->prependStylesheet($this->basePath() . '/common/css/kendo.common.min.css');
+
+$this->headScript()
+    ->prependFile($this->basePath() . '/common/js/fixture.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.web.min.js');
+?>
+
+<div class="span12 header">
+	<div class="pull-left title">
+		<h1><?php echo $this->translate('Lich thi cap bang lai xe hang A1')?></h1>
+	</div>
+
+	<form id="fixture-search" class="form-search pull-right">
+		<div class="control-group">
+			<div class="controls input-append">
+				<label> <input type="text" class="span4 search-query"
+					placeholder="<?php echo $this->translate('Tim theo ten thi sinh')?>"
+					name="q">
+				</label>
+
+				<button type="submit" class="btn"><?php echo $this->translate('Tim kiem')?></button>
+			</div>
+		</div>
+	</form>
+</div>
+
+<!-- Table -->
+<div id="fixture-student-list" class="span12 list-student">
+	<div id="grid"></div>
+</div>

@@ -1,0 +1,136 @@
+<?php
+$this->headLink()->prependStylesheet($this->basePath() . '/common/css/guiding.min.css');
+$this->headScript()->prependFile($this->basePath() . '/common/js/guiding.min.js');
+?>
+
+<div class="span12 page-title">
+	<h1><?php echo $this->translate('Huong dan thi bang lai xe hang A1')?></h1>
+</div>
+
+<div class="span3 docs-sidebar">
+	<ul class="nav nav-list docs-sidenav">
+		<li>
+		<a href="#test-time"> <i class="test-time-icon base64"></i> 
+		<i
+				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Thoi gian thi')?>
+		</a>
+		</li>
+		<li><a href="#venue"> <i class="venue-icon base64"></i> <i
+				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Dia diem thi')?>
+		</a></li>
+		<li><a href="#rule"> <i class="rule-icon base64"></i> <i
+				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Quy che thi')?>
+		</a></li>
+		<li><a href="#note"> <i class="note-icon base64"></i> <i
+				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Chu y can ghi nho')?>
+		</a></li>
+	</ul>
+</div>
+
+<div class="span9">
+	<section id="test-time">
+		<div class="block">
+			<div class="block-header">
+				<h2>
+					<i class="base64 test-time-icon"></i><?php echo $this->translate('Thoi gian thi')?>
+				</h2>
+			</div>
+			<div class="block-body">
+				<ul>
+					<li><label class="time"> 7h00 </label>
+
+						<div class="time-description">
+							<p><?php echo $this->translate('Co mat tai san thi de lam quen voi san thi thuc hanh.')?></p>
+						</div></li>
+					<li><label class="time"> 8h00 </label>
+
+						<div class="time-description">
+							<p><?php echo $this->translate('Khai mac thi, truong ban giam khao doc toan van quyet dinh khai mac buoi thi.')?></p>
+						</div></li>
+					<li><label class="time"> 8h15 </label>
+
+						<div class="time-description">
+							<p><?php echo $this->translate('Goi ten hoc vien len ky ho so, hoc vien ky ho so xong xuong phia duoi cho xep vao lop thi.')?></p>
+						</div></li>
+					<li><label class="time"> 11h30 </label>
+
+						<div class="time-description">
+							<p><?php echo $this->translate('Thi xong.')?></p>
+						</div></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<section id="venue">
+		<div class="block">
+			<div class="block-header">
+				<h2>
+					<i class="base64 venue-icon"></i><?php echo $this->translate('Dia diem thi')?>
+				</h2>
+			</div>
+			<div class="block-body">
+				<ul class="nav nav-tabs" id="venueTab">
+					<li class="active"><a href="#so-1-quoc-tu-giam">&nbsp;<?php echo $this->translate('So 1 Quoc Tu Giam')?>
+							<span><?php echo $this->translate('Cach van mieu Quoc Tu Giam 500m')?></span>
+					</a></li>
+					<li><a href="#so-101-to-vinh-dien"><?php echo $this->translate('101 To Vinh Dien')?>
+					<span><?php echo $this->translate('Nga Tu So di vao 1km')?></span>
+					</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="so-1-quoc-tu-giam"></div>
+					<div class="tab-pane" id="so-101-to-vinh-dien"></div>
+				</div>
+				<div class="map-container">
+					<div id="map-canvas" class="map-canvas"></div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="rule">
+		<div class="block">
+			<div class="block-header">
+				<h2>
+					<i class="rule-icon base64"></i><?php echo $this->translate('Quy che thi cap giay phep lai xe hang A1')?>
+				</h2>
+			</div>
+			<div class="block-body">
+				<h3><?php echo $this->translate('Phong thi va lop thi')?></h3>
+
+				<p><?php echo $this->translate('quy_che_phong_thi_va_lop_thi')?></p>
+
+				<h3><?php echo $this->translate('Bai thi gom co 2 phan: Ly thuyet va thuc hanh')?></h3>
+
+				<p>
+					<span class="theoretical"> <span><?php echo $this->translate('Thi ly thuyet')?></span>&nbsp;<?php echo $this->translate('quy_che_thi_ly_thuyet')?>
+				
+					</span> <span class="practice"> <span><?php echo $this->translate('Thi thuc hanh')?></span>&nbsp;<?php echo $this->translate('quy_che_thi_thuc_hanh')?>
+					</span>
+				</p>
+
+				<p><?php echo $this->translate('neu_dat_ca_2_phan_thi')?></p>
+			</div>
+		</div>
+	</section>
+
+	<section id="note">
+		<div class="block">
+			<div class="block-header">
+				<h2>
+					<i class="base64 note-icon"></i><?php echo $this->translate('Nhung dieu luu y can ghi nho khi di thi cap giay phep lai xe hang A1')?>
+				</h2>
+			</div>
+			<div class="block-body">
+				<ul class="notes">
+					<li><?php echo $this->translate('Neu cac ban truot ly thuyet hoac thuc hanh, vi khong thi lai duoc ngay nen cac ban khong can mat cong xin xo, tranh bi cac doi tuong &quot;co&quot; mat tien oan.')?></li>
+					<li><?php echo $this->translate('Khi thi truot ly thuyet hoac thuc hanh, banj lien lac voi chung toi de to chuc xep lich thi lai cho ban. (Chung toi se lien he cho ban neu khong thay ban lien lac truoc).')?></li>
+					<li><?php echo $this->translate('Moi hoi dong thi se co ~250 thi sinh. Co hoc vien duoc thi truoc, co ban phai thi sau tuy theo su sap xep cua ban to chuc, khong theo thu tu hay quy tac nao ca. Hoc vien xac dinh phai mat ca mot buoi sang de thi.')?></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+</div>

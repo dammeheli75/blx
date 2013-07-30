@@ -1,3 +1,8 @@
+<?php 
+    $this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.min.css');
+    $this->headScript()->appendFile($this->basePath() . '/common/js/home.min.js');
+?>
+
 <div id="overview" class="span12">
     <div id="about">
         <p>
@@ -162,40 +167,40 @@
 <div id="nop-ho-so" class="span12">
     <div class="block block-square">
         <div class="block-header block-header-inverse">
-            <h2><?php $this->translate('Nop ho so truc tiep')?></h2>
+            <h2><?php echo $this->translate('Nop ho so truc tiep')?></h2>
         </div>
         <div class="block-body">
             <div class="profile-requirement">
                 <div class="requirement">
-                    <h3><?php $this->translate('Ho so bao gom')?></h3>
+                    <h3><?php echo $this->translate('Ho so bao gom')?></h3>
                     <ul>
                         <li>
-                            <?php $this->translate('6 anh chan dung 3x4')?>
+                            <?php echo $this->translate('6 anh chan dung 3x4')?>
                         </li>
                         <li>
-                            <?php $this->translate('1 ban photocopy chung minh thu 2 mat khong can cong chung')?>
+                            <?php echo $this->translate('1 ban photocopy chung minh thu 2 mat khong can cong chung')?>
                         </li>
                     </ul>
                 </div>
 
                 <div class="note">
-                    <h3><?php $this->translate('Chu y le phi thi gom 2 khoan')?></h3>
+                    <h3><?php echo $this->translate('Chu y le phi thi gom 2 khoan')?></h3>
                     <ol>
-                        <li><?php $this->translate('Le phi dao tao')?></li>
-                        <li><?php $this->translate('Le phi thi')?></li>
+                        <li><?php echo $this->translate('Le phi dao tao')?></li>
+                        <li><?php echo $this->translate('Le phi thi')?></li>
                     </ol>
                 </div>
             </div>
             <div class="filling-places">
                 <div>
-                    <h3><?php $this->translate('Dia diem nop ho so')?></h3>
+                    <h3><?php echo $this->translate('Dia diem nop ho so')?></h3>
 
                     <ul class="nav nav-tabs" id="fillingPlaceTab">
                         <li class="active">
                             <a href="#collaborator-viet-dung">
-                                <?php $this->translate('Do Viet Dung')?>
-                                <span class="phone"><?php $this->translate('DoVietDung_PhoneNumbers')?></span>
-                                <span class="address"><?php $this->translate('DoVietDung_Address')?></span>
+                                <?php echo $this->translate('Do Viet Dung')?>
+                                <span class="phone"><?php echo $this->translate('DoVietDung_PhoneNumbers')?></span>
+                                <span class="address"><?php echo $this->translate('DoVietDung_Address')?></span>
                             </a>
                         </li>
                     </ul>
@@ -217,7 +222,7 @@
     <div class="block">
         <div class="block-body">
             <div class="blx-on-social-network">
-                <h2><?php $this->translate('BLX.VN tren mang xa hoi')?></h2>
+                <h2><?php echo $this->translate('BLX.VN tren mang xa hoi')?></h2>
             </div>
             <ul class="social-network-list">
                 <li>

@@ -142,7 +142,11 @@ return array(
     ),
     'controllers' => array(
         'invokables' => array(
-            'Application\Controller\Index' => 'Application\Controller\IndexController'
+            'Application\Controller\Index' => 'Application\Controller\IndexController',
+            'Application\Controller\Fixture' => 'Application\Controller\FixtureController',
+            'Application\Controller\Result' => 'Application\Controller\ResultController',
+            'Application\Controller\Document' => 'Application\Controller\DocumentController',
+            'Application\Controller\Guiding' => 'Application\Controller\GuidingController',
         )
     ),
     'view_manager' => array(

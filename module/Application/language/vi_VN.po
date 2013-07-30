@@ -1,141 +1,656 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-07-31 02:28+0700\n"
-"PO-Revision-Date: 2013-07-31 02:28+0700\n"
+"POT-Creation-Date: 2013-07-31 05:35+0700\n"
+"PO-Revision-Date: 2013-07-31 05:35+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
-"Language-Team: Hoàng Nam <dammeheli@gmail.com>\n"
+"Language-Team: \n"
 "Language: Tiếng Việt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
-"X-Poedit-KeywordsList: _;translate\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;translate\n"
 "X-Poedit-Basepath: /Applications/XAMPP/xamppfiles/htdocs/blx\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: module\n"
 
-#: module/Application/view/application/index/index.phtml:4
+#: module/Application/view/application/document/index.phtml:7
+msgid "Tai lieu on tap thi bang lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:13
+msgid "Bien bao giao thong"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:16
+msgid "Cau hoi ly thuyet"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:24
+msgid "Bien bao giao thong su dung trong de thi bang lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:29
+msgid "A. Nhom bien hieu lenh"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:32
+#: module/Application/view/application/document/index.phtml:38
+#: module/Application/view/application/document/index.phtml:44
+#: module/Application/view/application/document/index.phtml:50
+#: module/Application/view/application/document/index.phtml:56
+#: module/Application/view/application/document/index.phtml:62
+#: module/Application/view/application/document/index.phtml:68
+#: module/Application/view/application/document/index.phtml:74
+#: module/Application/view/application/document/index.phtml:80
+#: module/Application/view/application/document/index.phtml:86
+#: module/Application/view/application/document/index.phtml:92
+#: module/Application/view/application/document/index.phtml:98
+#: module/Application/view/application/document/index.phtml:104
+#: module/Application/view/application/document/index.phtml:110
+#: module/Application/view/application/document/index.phtml:116
+#: module/Application/view/application/document/index.phtml:122
+#: module/Application/view/application/document/index.phtml:128
+#: module/Application/view/application/document/index.phtml:134
+#: module/Application/view/application/document/index.phtml:140
+#: module/Application/view/application/document/index.phtml:146
+#: module/Application/view/application/document/index.phtml:152
+#: module/Application/view/application/document/index.phtml:186
+#: module/Application/view/application/document/index.phtml:192
+#: module/Application/view/application/document/index.phtml:198
+#: module/Application/view/application/document/index.phtml:204
+#: module/Application/view/application/document/index.phtml:210
+#: module/Application/view/application/document/index.phtml:216
+#: module/Application/view/application/document/index.phtml:222
+#: module/Application/view/application/document/index.phtml:228
+#: module/Application/view/application/document/index.phtml:234
+#: module/Application/view/application/document/index.phtml:240
+#: module/Application/view/application/document/index.phtml:246
+#: module/Application/view/application/document/index.phtml:252
+#: module/Application/view/application/document/index.phtml:258
+#: module/Application/view/application/document/index.phtml:264
+#: module/Application/view/application/document/index.phtml:270
+#: module/Application/view/application/document/index.phtml:276
+#: module/Application/view/application/document/index.phtml:282
+#: module/Application/view/application/document/index.phtml:288
+#: module/Application/view/application/document/index.phtml:300
+#: module/Application/view/application/document/index.phtml:306
+#: module/Application/view/application/document/index.phtml:312
+#: module/Application/view/application/document/index.phtml:318
+#: module/Application/view/application/document/index.phtml:324
+#: module/Application/view/application/document/index.phtml:330
+#: module/Application/view/application/document/index.phtml:336
+#: module/Application/view/application/document/index.phtml:342
+#: module/Application/view/application/document/index.phtml:348
+#: module/Application/view/application/document/index.phtml:354
+#: module/Application/view/application/document/index.phtml:360
+#: module/Application/view/application/document/index.phtml:366
+#: module/Application/view/application/document/index.phtml:372
+#: module/Application/view/application/document/index.phtml:378
+#: module/Application/view/application/document/index.phtml:384
+#: module/Application/view/application/document/index.phtml:390
+#: module/Application/view/application/document/index.phtml:396
+#: module/Application/view/application/document/index.phtml:402
+#: module/Application/view/application/document/index.phtml:408
+#: module/Application/view/application/document/index.phtml:414
+#: module/Application/view/application/document/index.phtml:420
+msgid "Doan duong sap toi duoc phep di thang"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:33
+#: module/Application/view/application/document/index.phtml:39
+#: module/Application/view/application/document/index.phtml:45
+#: module/Application/view/application/document/index.phtml:51
+#: module/Application/view/application/document/index.phtml:57
+#: module/Application/view/application/document/index.phtml:63
+#: module/Application/view/application/document/index.phtml:69
+#: module/Application/view/application/document/index.phtml:75
+#: module/Application/view/application/document/index.phtml:81
+#: module/Application/view/application/document/index.phtml:87
+#: module/Application/view/application/document/index.phtml:93
+#: module/Application/view/application/document/index.phtml:99
+#: module/Application/view/application/document/index.phtml:105
+#: module/Application/view/application/document/index.phtml:111
+#: module/Application/view/application/document/index.phtml:117
+#: module/Application/view/application/document/index.phtml:123
+#: module/Application/view/application/document/index.phtml:129
+#: module/Application/view/application/document/index.phtml:135
+#: module/Application/view/application/document/index.phtml:141
+#: module/Application/view/application/document/index.phtml:147
+#: module/Application/view/application/document/index.phtml:153
+#: module/Application/view/application/document/index.phtml:187
+#: module/Application/view/application/document/index.phtml:193
+#: module/Application/view/application/document/index.phtml:199
+#: module/Application/view/application/document/index.phtml:205
+#: module/Application/view/application/document/index.phtml:211
+#: module/Application/view/application/document/index.phtml:217
+#: module/Application/view/application/document/index.phtml:223
+#: module/Application/view/application/document/index.phtml:229
+#: module/Application/view/application/document/index.phtml:235
+#: module/Application/view/application/document/index.phtml:241
+#: module/Application/view/application/document/index.phtml:247
+#: module/Application/view/application/document/index.phtml:253
+#: module/Application/view/application/document/index.phtml:259
+#: module/Application/view/application/document/index.phtml:265
+#: module/Application/view/application/document/index.phtml:271
+#: module/Application/view/application/document/index.phtml:277
+#: module/Application/view/application/document/index.phtml:283
+#: module/Application/view/application/document/index.phtml:289
+#: module/Application/view/application/document/index.phtml:301
+#: module/Application/view/application/document/index.phtml:307
+#: module/Application/view/application/document/index.phtml:313
+#: module/Application/view/application/document/index.phtml:319
+#: module/Application/view/application/document/index.phtml:325
+#: module/Application/view/application/document/index.phtml:331
+#: module/Application/view/application/document/index.phtml:337
+#: module/Application/view/application/document/index.phtml:343
+#: module/Application/view/application/document/index.phtml:349
+#: module/Application/view/application/document/index.phtml:355
+#: module/Application/view/application/document/index.phtml:361
+#: module/Application/view/application/document/index.phtml:367
+#: module/Application/view/application/document/index.phtml:373
+#: module/Application/view/application/document/index.phtml:379
+#: module/Application/view/application/document/index.phtml:385
+#: module/Application/view/application/document/index.phtml:391
+#: module/Application/view/application/document/index.phtml:397
+#: module/Application/view/application/document/index.phtml:403
+#: module/Application/view/application/document/index.phtml:409
+#: module/Application/view/application/document/index.phtml:415
+#: module/Application/view/application/document/index.phtml:421
+msgid "Di thang"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:162
+msgid "B. Nhom bien bao cam"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:165
+#: module/Application/view/application/document/index.phtml:167
+msgid "Duong cam"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:166
+#: module/Application/view/application/document/index.phtml:173
+#: module/Application/view/application/document/index.phtml:180
+msgid ""
+"Duong cam tat ca cac loai xe (co gioi va tho so) di vao theo chieu dat bien, "
+"tru cac xe duoc uu tien theo luat le nha nuoc quy dinh."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:174
+msgid "Cam di nguoc chieu"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:181
+msgid "Cam o to"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:297
+msgid "C. Nhom bien canh bao"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:434
+msgid "Bai on tap ly thuyet sat hach, cap giay phep lai xe hang A1, A2"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:439
+msgid "Chu y:"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:441
+msgid "De thi <strong>chac chan</strong> se la mot trong 10 de duoi day."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:443
+msgid ""
+"10 de duoi day la <strong>tai lieu chinh thuc</strong> cua bo giao thong van "
+"tai."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:448
+#: module/Application/view/application/document/index.phtml:449
+#: module/Application/view/application/document/index.phtml:450
+#: module/Application/view/application/document/index.phtml:451
+#: module/Application/view/application/document/index.phtml:452
+#: module/Application/view/application/document/index.phtml:453
+#: module/Application/view/application/document/index.phtml:454
+#: module/Application/view/application/document/index.phtml:455
+#: module/Application/view/application/document/index.phtml:456
+#: module/Application/view/application/document/index.phtml:457
+msgid "De"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:464
+#: module/Application/view/application/document/index.phtml:598
+#: module/Application/view/application/document/index.phtml:615
+#: module/Application/view/application/document/index.phtml:632
+#: module/Application/view/application/document/index.phtml:649
+#: module/Application/view/application/document/index.phtml:666
+#: module/Application/view/application/document/index.phtml:683
+#: module/Application/view/application/document/index.phtml:700
+#: module/Application/view/application/document/index.phtml:717
+#: module/Application/view/application/document/index.phtml:734
+msgid "Bai on tap ly thuyet"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:465
+#: module/Application/view/application/document/index.phtml:599
+#: module/Application/view/application/document/index.phtml:616
+#: module/Application/view/application/document/index.phtml:633
+#: module/Application/view/application/document/index.phtml:650
+#: module/Application/view/application/document/index.phtml:667
+#: module/Application/view/application/document/index.phtml:684
+#: module/Application/view/application/document/index.phtml:701
+#: module/Application/view/application/document/index.phtml:718
+#: module/Application/view/application/document/index.phtml:735
+msgid "sat hach, cap giay phep lai xe"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:466
+#: module/Application/view/application/document/index.phtml:600
+#: module/Application/view/application/document/index.phtml:617
+#: module/Application/view/application/document/index.phtml:634
+#: module/Application/view/application/document/index.phtml:651
+#: module/Application/view/application/document/index.phtml:668
+#: module/Application/view/application/document/index.phtml:685
+#: module/Application/view/application/document/index.phtml:702
+#: module/Application/view/application/document/index.phtml:719
+#: module/Application/view/application/document/index.phtml:736
+msgid "Hang <strong>A1, A2</strong>"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:470
+msgid "Bai so"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:476
+msgid "Cau 1"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:478
+msgid "Khai niem &quot;duong bo&quot; duoc hieu nhu the nao la dung&#63;"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:482
+msgid "Duong bo gom:"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:484
+msgid "Duong, cau duong bo, ham duong bo"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:485
+msgid "Duong, cau duong bo, ham duong bo, ben pha duong bo"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:486
+msgid ""
+"Duong, cau duong bo, ham duong bo, ben pha duong bo va cac cong trinh phu "
+"tro khac"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:489
+msgid "Cau 2"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:491
+msgid ""
+"Co quan nao quy dinh cac doan duong cam di, duong di mot chieu, noi cam "
+"dung, cam do, cam quay dau xe, lap dat bao hieu duong bo thuoc dia phuong "
+"quan ly&#63;"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:496
+msgid "Co quan quan ly giao thong van tai."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:497
+msgid "Uy ban nhan dan cap tinh."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:498
+msgid "Co quan canh sat giao thong duong bo."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:499
+msgid "Thanh tra giao thong duong bo."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:502
+msgid "Cau 3"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:504
+msgid ""
+"Nguoi dieu khien phuong tien giao thong duong bo ma trong co the co chat ma "
+"tuy co bi nghiem cam hay khong&#63;"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:509
+msgid "Nghiem cam."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:510
+msgid "Khong bi nghiem cam."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:511
+msgid "Nghiem cam trong truong hop su dung trai phep."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:514
+msgid "Cau 4"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:516
+msgid "Dam bao trat tu, an toan giao thong duong bo la trach nhiem cua ai&#63;"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:521
+msgid "La trach nhiem cua nganh Giao thong van tai va nganh Cong an."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:522
+msgid "La trach nhiem cua co quan, to chuc, ca nhan."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:523
+msgid "La trach nhiem cua canh sat giao thong."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:526
+msgid "Cau 8"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:528
+msgid "Thu tu cac xe di nhu the nao la dung quy tac giao thong&#63;"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:538
+msgid "Xe tai, xe lam, xe con, mo to."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:539
+msgid "Xe tai, mo to, xe lam, xe con."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:540
+msgid "Xe lam, xe tai, xe con, mo to."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:541
+msgid "Mo to, xe lam, xe tai, xe con."
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:551
+#: module/Application/view/application/document/index.phtml:574
+msgid "Dap an"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:556
+msgid "Cau"
+msgstr ""
+
+#: module/Application/view/application/document/index.phtml:604
+#: module/Application/view/application/document/index.phtml:621
+#: module/Application/view/application/document/index.phtml:638
+#: module/Application/view/application/document/index.phtml:655
+#: module/Application/view/application/document/index.phtml:672
+#: module/Application/view/application/document/index.phtml:689
+#: module/Application/view/application/document/index.phtml:706
+#: module/Application/view/application/document/index.phtml:723
+#: module/Application/view/application/document/index.phtml:740
+msgid "Bai so&nbsp;"
+msgstr ""
+
+#: module/Application/view/application/fixture/index.phtml:14
+msgid "Lich thi cap bang lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/fixture/index.phtml:21
+#: module/Application/view/application/result/index.phtml:20
+msgid "Tim theo ten thi sinh"
+msgstr ""
+
+#: module/Application/view/application/fixture/index.phtml:25
+#: module/Application/view/application/result/index.phtml:24
+msgid "Tim kiem"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:7
+msgid "Huong dan thi bang lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:15
+#: module/Application/view/application/guiding/index.phtml:35
+msgid "Thoi gian thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:19
+#: module/Application/view/application/guiding/index.phtml:69
+msgid "Dia diem thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:22
+msgid "Quy che thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:25
+msgid "Chu y can ghi nho"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:43
+msgid "Co mat tai san thi de lam quen voi san thi thuc hanh."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:48
+msgid ""
+"Khai mac thi, truong ban giam khao doc toan van quyet dinh khai mac buoi thi."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:53
+msgid ""
+"Goi ten hoc vien len ky ho so, hoc vien ky ho so xong xuong phia duoi cho "
+"xep vao lop thi."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:58
+msgid "Thi xong."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:74
+msgid "So 1 Quoc Tu Giam"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:75
+msgid "Cach van mieu Quoc Tu Giam 500m"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:77
+msgid "101 To Vinh Dien"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:78
+msgid "Nga Tu So di vao 1km"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:98
+msgid "Quy che thi cap giay phep lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:102
+msgid "Phong thi va lop thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:104
+msgid "quy_che_phong_thi_va_lop_thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:106
+msgid "Bai thi gom co 2 phan: Ly thuyet va thuc hanh"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:109
+msgid "Thi ly thuyet"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:109
+msgid "quy_che_thi_ly_thuyet"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:111
+msgid "Thi thuc hanh"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:111
+msgid "quy_che_thi_thuc_hanh"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:115
+msgid "neu_dat_ca_2_phan_thi"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:124
+msgid "Nhung dieu luu y can ghi nho khi di thi cap giay phep lai xe hang A1"
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:129
+msgid ""
+"Neu cac ban truot ly thuyet hoac thuc hanh, vi khong thi lai duoc ngay nen "
+"cac ban khong can mat cong xin xo, tranh bi cac doi tuong &quot;co&quot; mat "
+"tien oan."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:130
+msgid ""
+"Khi thi truot ly thuyet hoac thuc hanh, banj lien lac voi chung toi de to "
+"chuc xep lich thi lai cho ban. (Chung toi se lien he cho ban neu khong thay "
+"ban lien lac truoc)."
+msgstr ""
+
+#: module/Application/view/application/guiding/index.phtml:131
+msgid ""
+"Moi hoi dong thi se co ~250 thi sinh. Co hoc vien duoc thi truoc, co ban "
+"phai thi sau tuy theo su sap xep cua ban to chuc, khong theo thu tu hay quy "
+"tac nao ca. Hoc vien xac dinh phai mat ca mot buoi sang de thi."
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:9
 msgid "blx_introdution"
 msgstr ""
-"<strong>BLX.VN</strong> cung cấp dịch vụ thi bằng lái xe máy giá rẻ, cho mọi "
-"đối tượng công dân Việt Nam. Bạn là sinh viên, người đang đi làm, công chức "
-"hay công nhân, chúng tôi không quan tâm điều đó. Điều duy nhất chúng tôi "
-"quan tâm là giúp bạn thi bằng lái xe máy hạng A1 một cách dễ dàng nhất. Chắc "
-"chắn bạn sẽ hài lòng với dịch vụ của chúng tôi."
 
-#: module/Application/view/application/index/index.phtml:10
+#: module/Application/view/application/index/index.phtml:15
 msgid "Moi nguoi noi gi ve BLX.VN"
-msgstr "Mọi người nói gì về BLX.VN"
-
-#: module/Application/view/application/index/index.phtml:28
-msgid "people_talk_1"
 msgstr ""
-"Dịch vụ làm bằng lái xe ở BLX.VN rất tốt, mình đã thi và cầm trong tay tấm "
-"bằng lái xe chỉ sau 1 tuần. Cảm ơn các bạn bên BLX.VN đã giúp đỡ mình rất "
-"nhiệt tình trong quá trình thi lấy bằng lái xe!"
 
 #: module/Application/view/application/index/index.phtml:33
+msgid "people_talk_1"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:38
+#: module/Application/view/application/index/index.phtml:51
+#: module/Application/view/application/index/index.phtml:64
+#: module/Application/view/application/index/index.phtml:77
+#: module/Application/view/application/index/index.phtml:90
+#: module/Application/view/application/index/index.phtml:103
+msgid "Luu Hoang Nam"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:39
+#: module/Application/view/application/index/index.phtml:52
+#: module/Application/view/application/index/index.phtml:65
+#: module/Application/view/application/index/index.phtml:78
+#: module/Application/view/application/index/index.phtml:91
+#: module/Application/view/application/index/index.phtml:104
+msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
+msgstr ""
+
 #: module/Application/view/application/index/index.phtml:46
 #: module/Application/view/application/index/index.phtml:59
 #: module/Application/view/application/index/index.phtml:72
 #: module/Application/view/application/index/index.phtml:85
 #: module/Application/view/application/index/index.phtml:98
-msgid "Luu Hoang Nam"
-msgstr "Lưu Hoàng Nam"
-
-#: module/Application/view/application/index/index.phtml:34
-#: module/Application/view/application/index/index.phtml:47
-#: module/Application/view/application/index/index.phtml:60
-#: module/Application/view/application/index/index.phtml:73
-#: module/Application/view/application/index/index.phtml:86
-#: module/Application/view/application/index/index.phtml:99
-msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
-msgstr "sinh viên K56 Đại học Bách Khoa Hà Nội"
-
-#: module/Application/view/application/index/index.phtml:41
-#: module/Application/view/application/index/index.phtml:54
-#: module/Application/view/application/index/index.phtml:67
-#: module/Application/view/application/index/index.phtml:80
-#: module/Application/view/application/index/index.phtml:93
 msgid "people_talk_2"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:111
+#: module/Application/view/application/index/index.phtml:116
 msgid "Quy trinh thi cap bang lai xe hang A1"
-msgstr "Quy trình thi cấp bằnh lái xe hạng A1"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:117
-#: module/Application/view/layout/layout.phtml:86
-#: module/Application/view/layout/layout.phtml:89
+#: module/Application/view/application/index/index.phtml:122
+#: module/Application/view/layout/layout.phtml:75
+#: module/Application/view/layout/layout.phtml:77
 msgid "Nop ho so"
-msgstr "Nộp hồ sơ"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:126
+#: module/Application/view/application/index/index.phtml:131
 msgid "Xem lich thi"
-msgstr "Xem lịch thi"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:135
+#: module/Application/view/application/index/index.phtml:140
 msgid "Di thi"
-msgstr "Đi thi"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:144
+#: module/Application/view/application/index/index.phtml:149
 msgid "Xem ket qua"
-msgstr "Xem kết quả"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:153
+#: module/Application/view/application/index/index.phtml:158
 msgid "Nhan bang"
-msgstr "Nhận bằng"
-
-#: module/Application/view/application/index/index.phtml:165
-msgid "Nop ho so truc tiep"
-msgstr "Nộp hồ sơ trực tiếp"
+msgstr ""
 
 #: module/Application/view/application/index/index.phtml:170
+msgid "Nop ho so truc tiep"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:175
 msgid "Ho so bao gom"
-msgstr "Hồ sơ bao gồm"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:173
+#: module/Application/view/application/index/index.phtml:178
 msgid "6 anh chan dung 3x4"
-msgstr "6 ảnh chân dung 3x4"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:176
+#: module/Application/view/application/index/index.phtml:181
 msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
-msgstr "1 bản chứng minh thư 2 mặt không cần công chứng"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:182
+#: module/Application/view/application/index/index.phtml:187
 msgid "Chu y le phi thi gom 2 khoan"
-msgstr "Chú ý lệ phí thi gồm 2 khoản"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:184
+#: module/Application/view/application/index/index.phtml:189
 msgid "Le phi dao tao"
 msgstr ""
-"Lệ phí thi 225.000<sup>đ</sup> (40.000<sup>đ</sup> thi lý thuyết, "
-"50.000<sup>đ</sup> thi thực hành, 135.00<sup>đ</sup> in và cấp bằng)"
 
-#: module/Application/view/application/index/index.phtml:185
+#: module/Application/view/application/index/index.phtml:190
 msgid "Le phi thi"
-msgstr "Lệ phí thi"
-
-#: module/Application/view/application/index/index.phtml:191
-msgid "Dia diem nop ho so"
-msgstr "Địa điểm nộp hồ sơ"
+msgstr ""
 
 #: module/Application/view/application/index/index.phtml:196
+msgid "Dia diem nop ho so"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:201
 msgid "Do Viet Dung"
-msgstr "Đỗ Việt Dũng"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:197
+#: module/Application/view/application/index/index.phtml:202
 msgid "DoVietDung_PhoneNumbers"
-msgstr "0163.212.4476 &dash; 0917.904.210 &dash; 0917.939.581"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:198
+#: module/Application/view/application/index/index.phtml:203
 msgid "DoVietDung_Address"
-msgstr "P.110 KTX B6 Bách Khoa HN"
+msgstr ""
 
-#: module/Application/view/application/index/index.phtml:220
+#: module/Application/view/application/index/index.phtml:225
 msgid "BLX.VN tren mang xa hoi"
-msgstr "BLX.VN trên mạng xã hội"
+msgstr ""
+
+#: module/Application/view/application/result/index.phtml:13
+msgid "Ket qua thi cap bang lai xe hang A1"
+msgstr ""
 
 #: module/Application/view/error/404.phtml:1
 msgid "A 404 error occurred"
@@ -212,120 +727,117 @@ msgid "An error occurred"
 msgstr ""
 
 #: module/Application/view/layout/CopyOflayout.phtml:6
-#: module/Application/view/layout/CopyOflayout.phtml:31
+#: module/Application/view/layout/CopyOflayout.phtml:40
 msgid "Skeleton Application"
 msgstr ""
 
-#: module/Application/view/layout/CopyOflayout.phtml:34
+#: module/Application/view/layout/CopyOflayout.phtml:43
 msgid "Home"
 msgstr ""
 
-#: module/Application/view/layout/CopyOflayout.phtml:44
+#: module/Application/view/layout/CopyOflayout.phtml:54
 msgid "All rights reserved."
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:4
 msgid "Thi bang lai xe may tai Ha Noi"
-msgstr "Thi bằng lái xe máy tại Hà Nội"
+msgstr ""
 
 #: module/Application/view/layout/layout.phtml:33
 msgid "Lich thi"
-msgstr "Lịch thi"
+msgstr ""
 
 #: module/Application/view/layout/layout.phtml:34
-#: module/Application/view/layout/layout.phtml:95
+#: module/Application/view/layout/layout.phtml:81
 msgid "Ket qua thi"
-msgstr "Kết quả thi"
+msgstr ""
 
 #: module/Application/view/layout/layout.phtml:35
 msgid "Tai lieu on thi"
-msgstr "Tài liệu ôn thi"
+msgstr ""
 
 #: module/Application/view/layout/layout.phtml:36
-#: module/Application/view/layout/layout.phtml:92
+#: module/Application/view/layout/layout.phtml:79
 msgid "Huong dan thi"
-msgstr "Hướng dẫn thi"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:56
+#: module/Application/view/layout/layout.phtml:53
 msgid "Thong bao"
-msgstr "Thông báo"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:60
+#: module/Application/view/layout/layout.phtml:55
 msgid "Tin tuc"
-msgstr "Tin tức"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:70
+#: module/Application/view/layout/layout.phtml:63
 msgid "BLX.VN"
-msgstr "BLX.VN"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:65
+msgid "Trang chu"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:67
+msgid "Dieu khoan"
+msgstr ""
 
 #: module/Application/view/layout/layout.phtml:73
-msgid "Trang chu"
-msgstr "Trang chủ"
-
-#: module/Application/view/layout/layout.phtml:76
-msgid "Dieu khoan"
-msgstr "Điều khoản"
-
-#: module/Application/view/layout/layout.phtml:83
-#: module/Application/view/layout/layout.phtml:163
+#: module/Application/view/layout/layout.phtml:141
 msgid "Thi bang lai xe"
-msgstr "Thi bằng lái xe"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:102
+#: module/Application/view/layout/layout.phtml:87
 msgid "Cong tac vien"
-msgstr "Cộng tác viên"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:105
+#: module/Application/view/layout/layout.phtml:89
 msgid "Dang ky"
-msgstr "Đăng ký"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:108
+#: module/Application/view/layout/layout.phtml:91
 msgid "Dieu le"
-msgstr "Điều lệ"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:115
+#: module/Application/view/layout/layout.phtml:97
 msgid "Tro giup"
-msgstr "Trợ giúp"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:118
+#: module/Application/view/layout/layout.phtml:99
 msgid "Cau hoi thuong gap"
-msgstr "Câu hỏi thường gặp"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:125
+#: module/Application/view/layout/layout.phtml:106
 msgid "Thu vi"
-msgstr "Thú vị"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:133
+#: module/Application/view/layout/layout.phtml:114
 msgid "Noi dung thu vi"
-msgstr "Mỗi ngày BLX.VN tiếp nhận và xử lý hơn <em>600 hồ sơ</em>"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:147
+#: module/Application/view/layout/layout.phtml:128
 msgid "copyright"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:152
+#: module/Application/view/layout/layout.phtml:133
 msgid "Thiet ke va xay dung boi Luu Hoang Nam"
-msgstr "Thiết kế và xây dựng bởi Lưu Hoàng Nam"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:160
+#: module/Application/view/layout/layout.phtml:140
 msgid "Bang lai xe"
-msgstr "Bằng lái xe"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:166
+#: module/Application/view/layout/layout.phtml:142
 msgid "Bang lai xe o Ha Noi"
-msgstr "Bằng lái xe ở Hà Nội"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:169
+#: module/Application/view/layout/layout.phtml:144
 msgid "Bang lai xe A1"
-msgstr "Bằng lái xe A1"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:172
+#: module/Application/view/layout/layout.phtml:145
 msgid "Thi bang lai xe may"
-msgstr "Thi bằng lái xe máy"
+msgstr ""
 
-#: module/Application/view/layout/layout.phtml:175
+#: module/Application/view/layout/layout.phtml:147
 msgid "Thi bang lai xe moto"
-msgstr "Thi bằng lái xe moto"
-
-#~ msgid "requirement_2"
-#~ msgstr "1 bản photocopy chứng minh thư 2 mặt không cần công chứng"
+msgstr ""
