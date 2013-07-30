@@ -1,0 +1,331 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: BLX.VN\n"
+"POT-Creation-Date: 2013-07-31 02:28+0700\n"
+"PO-Revision-Date: 2013-07-31 02:28+0700\n"
+"Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
+"Language-Team: Hoàng Nam <dammeheli@gmail.com>\n"
+"Language: Tiếng Việt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;translate\n"
+"X-Poedit-Basepath: /Applications/XAMPP/xamppfiles/htdocs/blx\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: module\n"
+
+#: module/Application/view/application/index/index.phtml:4
+msgid "blx_introdution"
+msgstr ""
+"<strong>BLX.VN</strong> cung cấp dịch vụ thi bằng lái xe máy giá rẻ, cho mọi "
+"đối tượng công dân Việt Nam. Bạn là sinh viên, người đang đi làm, công chức "
+"hay công nhân, chúng tôi không quan tâm điều đó. Điều duy nhất chúng tôi "
+"quan tâm là giúp bạn thi bằng lái xe máy hạng A1 một cách dễ dàng nhất. Chắc "
+"chắn bạn sẽ hài lòng với dịch vụ của chúng tôi."
+
+#: module/Application/view/application/index/index.phtml:10
+msgid "Moi nguoi noi gi ve BLX.VN"
+msgstr "Mọi người nói gì về BLX.VN"
+
+#: module/Application/view/application/index/index.phtml:28
+msgid "people_talk_1"
+msgstr ""
+"Dịch vụ làm bằng lái xe ở BLX.VN rất tốt, mình đã thi và cầm trong tay tấm "
+"bằng lái xe chỉ sau 1 tuần. Cảm ơn các bạn bên BLX.VN đã giúp đỡ mình rất "
+"nhiệt tình trong quá trình thi lấy bằng lái xe!"
+
+#: module/Application/view/application/index/index.phtml:33
+#: module/Application/view/application/index/index.phtml:46
+#: module/Application/view/application/index/index.phtml:59
+#: module/Application/view/application/index/index.phtml:72
+#: module/Application/view/application/index/index.phtml:85
+#: module/Application/view/application/index/index.phtml:98
+msgid "Luu Hoang Nam"
+msgstr "Lưu Hoàng Nam"
+
+#: module/Application/view/application/index/index.phtml:34
+#: module/Application/view/application/index/index.phtml:47
+#: module/Application/view/application/index/index.phtml:60
+#: module/Application/view/application/index/index.phtml:73
+#: module/Application/view/application/index/index.phtml:86
+#: module/Application/view/application/index/index.phtml:99
+msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
+msgstr "sinh viên K56 Đại học Bách Khoa Hà Nội"
+
+#: module/Application/view/application/index/index.phtml:41
+#: module/Application/view/application/index/index.phtml:54
+#: module/Application/view/application/index/index.phtml:67
+#: module/Application/view/application/index/index.phtml:80
+#: module/Application/view/application/index/index.phtml:93
+msgid "people_talk_2"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:111
+msgid "Quy trinh thi cap bang lai xe hang A1"
+msgstr "Quy trình thi cấp bằnh lái xe hạng A1"
+
+#: module/Application/view/application/index/index.phtml:117
+#: module/Application/view/layout/layout.phtml:86
+#: module/Application/view/layout/layout.phtml:89
+msgid "Nop ho so"
+msgstr "Nộp hồ sơ"
+
+#: module/Application/view/application/index/index.phtml:126
+msgid "Xem lich thi"
+msgstr "Xem lịch thi"
+
+#: module/Application/view/application/index/index.phtml:135
+msgid "Di thi"
+msgstr "Đi thi"
+
+#: module/Application/view/application/index/index.phtml:144
+msgid "Xem ket qua"
+msgstr "Xem kết quả"
+
+#: module/Application/view/application/index/index.phtml:153
+msgid "Nhan bang"
+msgstr "Nhận bằng"
+
+#: module/Application/view/application/index/index.phtml:165
+msgid "Nop ho so truc tiep"
+msgstr "Nộp hồ sơ trực tiếp"
+
+#: module/Application/view/application/index/index.phtml:170
+msgid "Ho so bao gom"
+msgstr "Hồ sơ bao gồm"
+
+#: module/Application/view/application/index/index.phtml:173
+msgid "6 anh chan dung 3x4"
+msgstr "6 ảnh chân dung 3x4"
+
+#: module/Application/view/application/index/index.phtml:176
+msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
+msgstr "1 bản chứng minh thư 2 mặt không cần công chứng"
+
+#: module/Application/view/application/index/index.phtml:182
+msgid "Chu y le phi thi gom 2 khoan"
+msgstr "Chú ý lệ phí thi gồm 2 khoản"
+
+#: module/Application/view/application/index/index.phtml:184
+msgid "Le phi dao tao"
+msgstr ""
+"Lệ phí thi 225.000<sup>đ</sup> (40.000<sup>đ</sup> thi lý thuyết, "
+"50.000<sup>đ</sup> thi thực hành, 135.00<sup>đ</sup> in và cấp bằng)"
+
+#: module/Application/view/application/index/index.phtml:185
+msgid "Le phi thi"
+msgstr "Lệ phí thi"
+
+#: module/Application/view/application/index/index.phtml:191
+msgid "Dia diem nop ho so"
+msgstr "Địa điểm nộp hồ sơ"
+
+#: module/Application/view/application/index/index.phtml:196
+msgid "Do Viet Dung"
+msgstr "Đỗ Việt Dũng"
+
+#: module/Application/view/application/index/index.phtml:197
+msgid "DoVietDung_PhoneNumbers"
+msgstr "0163.212.4476 &dash; 0917.904.210 &dash; 0917.939.581"
+
+#: module/Application/view/application/index/index.phtml:198
+msgid "DoVietDung_Address"
+msgstr "P.110 KTX B6 Bách Khoa HN"
+
+#: module/Application/view/application/index/index.phtml:220
+msgid "BLX.VN tren mang xa hoi"
+msgstr "BLX.VN trên mạng xã hội"
+
+#: module/Application/view/error/404.phtml:1
+msgid "A 404 error occurred"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:10
+msgid "The requested controller was unable to dispatch the request."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:13
+msgid ""
+"The requested controller could not be mapped to an existing controller class."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:16
+msgid "The requested controller was not dispatchable."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:19
+msgid "The requested URL could not be matched by routing."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:22
+msgid "We cannot determine at this time why a 404 was generated."
+msgstr ""
+
+#: module/Application/view/error/404.phtml:34
+msgid "Controller"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:41
+#, php-format
+msgid "resolves to %s"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:53
+#: module/Application/view/error/index.phtml:8
+msgid "Additional information"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:56
+#: module/Application/view/error/404.phtml:80
+#: module/Application/view/error/index.phtml:11
+#: module/Application/view/error/index.phtml:35
+msgid "File"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:60
+#: module/Application/view/error/404.phtml:84
+#: module/Application/view/error/index.phtml:15
+#: module/Application/view/error/index.phtml:39
+msgid "Message"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:64
+#: module/Application/view/error/404.phtml:88
+#: module/Application/view/error/index.phtml:19
+#: module/Application/view/error/index.phtml:43
+msgid "Stack trace"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:74
+#: module/Application/view/error/index.phtml:29
+msgid "Previous exceptions"
+msgstr ""
+
+#: module/Application/view/error/404.phtml:103
+#: module/Application/view/error/index.phtml:58
+msgid "No Exception available"
+msgstr ""
+
+#: module/Application/view/error/index.phtml:1
+msgid "An error occurred"
+msgstr ""
+
+#: module/Application/view/layout/CopyOflayout.phtml:6
+#: module/Application/view/layout/CopyOflayout.phtml:31
+msgid "Skeleton Application"
+msgstr ""
+
+#: module/Application/view/layout/CopyOflayout.phtml:34
+msgid "Home"
+msgstr ""
+
+#: module/Application/view/layout/CopyOflayout.phtml:44
+msgid "All rights reserved."
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:4
+msgid "Thi bang lai xe may tai Ha Noi"
+msgstr "Thi bằng lái xe máy tại Hà Nội"
+
+#: module/Application/view/layout/layout.phtml:33
+msgid "Lich thi"
+msgstr "Lịch thi"
+
+#: module/Application/view/layout/layout.phtml:34
+#: module/Application/view/layout/layout.phtml:95
+msgid "Ket qua thi"
+msgstr "Kết quả thi"
+
+#: module/Application/view/layout/layout.phtml:35
+msgid "Tai lieu on thi"
+msgstr "Tài liệu ôn thi"
+
+#: module/Application/view/layout/layout.phtml:36
+#: module/Application/view/layout/layout.phtml:92
+msgid "Huong dan thi"
+msgstr "Hướng dẫn thi"
+
+#: module/Application/view/layout/layout.phtml:56
+msgid "Thong bao"
+msgstr "Thông báo"
+
+#: module/Application/view/layout/layout.phtml:60
+msgid "Tin tuc"
+msgstr "Tin tức"
+
+#: module/Application/view/layout/layout.phtml:70
+msgid "BLX.VN"
+msgstr "BLX.VN"
+
+#: module/Application/view/layout/layout.phtml:73
+msgid "Trang chu"
+msgstr "Trang chủ"
+
+#: module/Application/view/layout/layout.phtml:76
+msgid "Dieu khoan"
+msgstr "Điều khoản"
+
+#: module/Application/view/layout/layout.phtml:83
+#: module/Application/view/layout/layout.phtml:163
+msgid "Thi bang lai xe"
+msgstr "Thi bằng lái xe"
+
+#: module/Application/view/layout/layout.phtml:102
+msgid "Cong tac vien"
+msgstr "Cộng tác viên"
+
+#: module/Application/view/layout/layout.phtml:105
+msgid "Dang ky"
+msgstr "Đăng ký"
+
+#: module/Application/view/layout/layout.phtml:108
+msgid "Dieu le"
+msgstr "Điều lệ"
+
+#: module/Application/view/layout/layout.phtml:115
+msgid "Tro giup"
+msgstr "Trợ giúp"
+
+#: module/Application/view/layout/layout.phtml:118
+msgid "Cau hoi thuong gap"
+msgstr "Câu hỏi thường gặp"
+
+#: module/Application/view/layout/layout.phtml:125
+msgid "Thu vi"
+msgstr "Thú vị"
+
+#: module/Application/view/layout/layout.phtml:133
+msgid "Noi dung thu vi"
+msgstr "Mỗi ngày BLX.VN tiếp nhận và xử lý hơn <em>600 hồ sơ</em>"
+
+#: module/Application/view/layout/layout.phtml:147
+msgid "copyright"
+msgstr ""
+
+#: module/Application/view/layout/layout.phtml:152
+msgid "Thiet ke va xay dung boi Luu Hoang Nam"
+msgstr "Thiết kế và xây dựng bởi Lưu Hoàng Nam"
+
+#: module/Application/view/layout/layout.phtml:160
+msgid "Bang lai xe"
+msgstr "Bằng lái xe"
+
+#: module/Application/view/layout/layout.phtml:166
+msgid "Bang lai xe o Ha Noi"
+msgstr "Bằng lái xe ở Hà Nội"
+
+#: module/Application/view/layout/layout.phtml:169
+msgid "Bang lai xe A1"
+msgstr "Bằng lái xe A1"
+
+#: module/Application/view/layout/layout.phtml:172
+msgid "Thi bang lai xe may"
+msgstr "Thi bằng lái xe máy"
+
+#: module/Application/view/layout/layout.phtml:175
+msgid "Thi bang lai xe moto"
+msgstr "Thi bằng lái xe moto"
+
+#~ msgid "requirement_2"
+#~ msgstr "1 bản photocopy chứng minh thư 2 mặt không cần công chứng"

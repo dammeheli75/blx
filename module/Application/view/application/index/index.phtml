@@ -1,26 +1,246 @@
-<div class="hero-unit">
-    <h1><?php echo sprintf($this->translate('Welcome to %sZend Framework 2%s'), '<span class="zf-green">', '</span>') ?></h1>
-    <p><?php echo sprintf($this->translate('Congratulations! You have successfully installed the %sZF2 Skeleton Application%s. You are currently running Zend Framework version %s. This skeleton can serve as a simple starting point for you to begin building your application on ZF2.'), '<a href="https://github.com/zendframework/ZendSkeletonApplication" target="_blank">', '</a>', \Zend\Version\Version::VERSION) ?></p>
-    <p><a class="btn btn-success btn-large" href="https://github.com/zendframework/zf2" target="_blank"><?php echo $this->translate('Fork Zend Framework 2 on GitHub') ?> &raquo;</a></p>
-</div>
-
-<div class="row">
-
-    <div class="span4">
-        <h2><?php echo $this->translate('Follow Development') ?></h2>
-        <p><?php echo sprintf($this->translate('Zend Framework 2 is under active development. If you are interested in following the development of ZF2, there is a special ZF2 portal on the official Zend Framework website which provides links to the ZF2 %swiki%s, %sdev blog%s, %sissue tracker%s, and much more. This is a great resource for staying up to date with the latest developments!'), '<a href="http://framework.zend.com/wiki/display/ZFDEV2/Home">', '</a>', '<a href="http://framework.zend.com/zf2/blog">', '</a>', '<a href="https://github.com/zendframework/zf2/issues">', '</a>') ?></p>
-        <p><a class="btn btn-success" href="http://framework.zend.com/zf2" target="_blank"><?php echo $this->translate('ZF2 Development Portal') ?> &raquo;</a></p>
+<div id="overview" class="span12">
+    <div id="about">
+        <p>
+            <?php echo $this->translate('blx_introdution')?>
+        </p>
     </div>
 
-    <div class="span4">
-        <h2><?php echo $this->translate('Discover Modules') ?></h2>
-        <p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
-        <p><a class="btn btn-success" href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a></p>
-   </div>
+    <div class="people-talk">
+        <div class="block-header">
+            <h2><?php echo $this->translate('Moi nguoi noi gi ve BLX.VN')?></h2>
+        </div>
+        <div class="block-body">
+            <div id="people-talk-carousel" class="carousel slide" data-interval="1000">
+                <ol class="carousel-indicators">
+                    <li data-target="#people-talk-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#people-talk-carousel" data-slide-to="1"></li>
+                    <li data-target="#people-talk-carousel" data-slide-to="2"></li>
+                    <li data-target="#people-talk-carousel" data-slide-to="3"></li>
+                    <li data-target="#people-talk-carousel" data-slide-to="4"></li>
+                    <li data-target="#people-talk-carousel" data-slide-to="5"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    <div class="active item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-   <div class="span4">
-       <h2><?php echo $this->translate('Help &amp; Support') ?></h2>
-       <p><?php echo sprintf($this->translate('If you need any help or support while developing with ZF2, you may reach us via IRC: %s#zftalk on Freenode%s. We\'d love to hear any questions or feedback you may have regarding the beta releases. Alternatively, you may subscribe and post questions to the %smailing lists%s.'), '<a href="irc://irc.freenode.net/zftalk">', '</a>', '<a href="http://framework.zend.com/wiki/display/ZFDEV/Mailing+Lists">', '</a>') ?></p>
-       <p><a class="btn btn-success" href="http://webchat.freenode.net?channels=zftalk" target="_blank"><?php echo $this->translate('Ping us on IRC') ?> &raquo;</a></p>
-   </div>
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_1')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_2')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_2')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_2')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_2')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                    <div class="item">
+                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+
+                        <p class="quote">
+                            <?php echo $this->translate('people_talk_2')?>
+                        </p>
+
+                        <div class="clearfix"></div>
+                        <h6 class="people-info">
+                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="register-step" class="span12">
+    <div class="block">
+        <div class="block-header">
+            <h2><?php echo $this->translate('Quy trinh thi cap bang lai xe hang A1')?></h2>
+        </div>
+        <div class="block-body">
+            <ul>
+                <li id="filing" class="step">
+                    <a href="#nop-ho-so">
+                        <h3><?php echo $this->translate('Nop ho so')?></h3>
+                        <span class="illustration base64"></span>
+                    </a>
+                </li>
+                <li class="tri-angle-right">
+                    <i></i>
+                </li>
+                <li id="view-fixture" class="step">
+                    <a href="<?php echo $this->url('fixture')?>">
+                        <h3><?php echo $this->translate('Xem lich thi')?></h3>
+                        <span class="illustration base64"></span>
+                    </a>
+                </li>
+                <li class="tri-angle-right">
+                    <i></i>
+                </li>
+                <li id="take-exam" class="step">
+                    <a href="<?php echo $this->url('guiding')?>">
+                        <h3><?php echo $this->translate('Di thi')?></h3>
+                        <span class="illustration base64"></span>
+                    </a>
+                </li>
+                <li class="tri-angle-right">
+                    <i></i>
+                </li>
+                <li id="view-result" class="step">
+                    <a href="<?php echo $this->url('result')?>">
+                        <h3><?php echo $this->translate('Xem ket qua')?></h3>
+                        <span class="illustration base64"></span>
+                    </a>
+                </li>
+                <li class="tri-angle-right">
+                    <i></i>
+                </li>
+                <li id="take-license" class="step">
+                    <a href="<?php echo $this->url('result')?>">
+                        <h3><?php echo $this->translate('Nhan bang')?></h3>
+                        <span class="illustration base64"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div id="nop-ho-so" class="span12">
+    <div class="block block-square">
+        <div class="block-header block-header-inverse">
+            <h2><?php $this->translate('Nop ho so truc tiep')?></h2>
+        </div>
+        <div class="block-body">
+            <div class="profile-requirement">
+                <div class="requirement">
+                    <h3><?php $this->translate('Ho so bao gom')?></h3>
+                    <ul>
+                        <li>
+                            <?php $this->translate('6 anh chan dung 3x4')?>
+                        </li>
+                        <li>
+                            <?php $this->translate('1 ban photocopy chung minh thu 2 mat khong can cong chung')?>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="note">
+                    <h3><?php $this->translate('Chu y le phi thi gom 2 khoan')?></h3>
+                    <ol>
+                        <li><?php $this->translate('Le phi dao tao')?></li>
+                        <li><?php $this->translate('Le phi thi')?></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="filling-places">
+                <div>
+                    <h3><?php $this->translate('Dia diem nop ho so')?></h3>
+
+                    <ul class="nav nav-tabs" id="fillingPlaceTab">
+                        <li class="active">
+                            <a href="#collaborator-viet-dung">
+                                <?php $this->translate('Do Viet Dung')?>
+                                <span class="phone"><?php $this->translate('DoVietDung_PhoneNumbers')?></span>
+                                <span class="address"><?php $this->translate('DoVietDung_Address')?></span>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content hide">
+                        <div class="tab-pane active" id="collaborator-viet-dung"></div>
+                    </div>
+                </div>
+
+                <div class="map-container">
+                    <div id="map-canvas"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="blx-social-network" class="span12">
+    <div class="block">
+        <div class="block-body">
+            <div class="blx-on-social-network">
+                <h2><?php $this->translate('BLX.VN tren mang xa hoi')?></h2>
+            </div>
+            <ul class="social-network-list">
+                <li>
+                    <a href="#">
+                        <img src="common/images/facebook-logo-38x38.png" alt="" title="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="common/images/youtube-logo-38x38.png" alt="" title="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="common/images/twitter-logo-38x38.png" alt="" title="">
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="common/images/google-plus-logo-38x38.png" alt="" title="">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </div>
