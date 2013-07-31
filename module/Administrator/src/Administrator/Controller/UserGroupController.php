@@ -10,13 +10,10 @@ namespace Administrator\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
-use Administrator\Model\User;
 use Zend\Json\Encoder;
 use Administrator\Model\UserGroup;
-use Administrator\Form\EditUser;
-use Administrator\Form\CreateUser;
 
-class UserController extends AbstractActionController
+class UserGroupController extends AbstractActionController
 {
 
     public function indexAction()
@@ -35,35 +32,21 @@ class UserController extends AbstractActionController
             ->getServiceManager();
         $response = array();
         
-        $userModel = new User($serviceManager);
         $userGroupModel = new UserGroup($serviceManager);
         
-        $users = $userModel->getUsers();
+        $groups = $userGroupModel->getGroups();
         
         $response = array(
             'succes' => true,
-            'total' => count($users)
+            'total' => count($groups)
         );
         
-        foreach ($users as $user) {
-            $userGroup = $userGroupModel->getGroup(array(
-                'group_id' => $user->group_id
-            ));
-            
-            $response['users'][] = array(
-                'ID' => $user->user_id,
-                'group' => array(
-                    'ID' => $user->group_id,
-                    'title' => $userGroup->title
-                ),
-                'fullName' => $user->full_name,
-                'email' => $user->email,
-                'password' => $user->password,
-                'birthday' => $user->birthday,
-                'address' => $user->address,
-                'phoneNumber' => $user->phone_number,
-                'timeCreated' => $user->time_created,
-                'lastUpdate' => $user->last_updated
+        foreach ($groups as $group) {
+            $response['groups'][] = array(
+                'ID' => $group->group_id,
+                'title' => $group->title,
+                'timeCreated' => $group->time_created,
+                'lastUpdate' => $group->last_updated
             );
         }
         
@@ -74,27 +57,21 @@ class UserController extends AbstractActionController
         return $viewModel;
     }
 
+    public function destroyAction()
+    {
+        $viewModel = new ViewModel();
+        $viewModel->setTerminal(true);
+        
+        $this->getResponse()
+            ->getHeaders()
+            ->addHeaderLine('Content-Type', 'application/json');
+        return $viewModel;
+    }
+
     public function createAction()
     {
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);
-        $serviceManager = $this->getEvent()
-            ->getApplication()
-            ->getServiceManager();
-        $response = array();
-        
-        if ($this->getRequest()->isPost()) {
-            $postData = $this->getRequest()->getPost();
-            
-            $form = new CreateUser($serviceManager);
-            $form->setData($postData);
-            
-            if ($form->isValid()) {
-                echo "Valid";
-            } else {
-                echo $form->getMessages();
-            }
-        }
         
         $this->getResponse()
             ->getHeaders()
@@ -103,17 +80,6 @@ class UserController extends AbstractActionController
     }
 
     public function updateAction()
-    {
-        $viewModel = new ViewModel();
-        $viewModel->setTerminal(true);
-        
-        $this->getResponse()
-            ->getHeaders()
-            ->addHeaderLine('Content-Type', 'application/json');
-        return $viewModel;
-    }
-
-    public function destroyAction()
     {
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);

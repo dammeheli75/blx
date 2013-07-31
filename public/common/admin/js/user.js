@@ -22,14 +22,15 @@ $(document).ready(function () {
                     return dataItem.group.title;
                 },
                 editor: function (container, options) {
-                    $('<input data-text-field="title" data-value-field="ID" data-bind="value:' + options.field + '"/>')
+                    $('<input data-bind="value:' + options.field + '"/>')
                         .appendTo(container)
                         .kendoDropDownList({
-                            autoBind: false,
+                            dataTextField: "title",
+                            dataValueField: "ID",
                             dataSource: {
                                 transport: {
                                     read: {
-                                        url: "http://localhost/BLX.VN/data/user-group.json",
+                                        url: "http://localhost/blx/public/administrator/user-groups/read",
                                         dataType: "json"
                                     }
                                 },
@@ -56,7 +57,11 @@ $(document).ready(function () {
             {
                 field: "password",
                 title: "Mật khẩu",
-                hidden: true
+                hidden: true,
+                editor: function (container, options) {
+                    $('<input name="password" type="password" class="k-input k-textbox" data-bind="value:' + options.field + '"/>')
+                        .appendTo(container);
+                }
             },
             {
                 field: "birthday",
@@ -122,17 +127,17 @@ $(document).ready(function () {
                     type: "GET"
                 },
                 create: {
-                    url: "http://localhost/BLX.VN/data/user.json",
+                    url: "http://localhost/blx/public/administrator/users/create",
                     dataType: "json",
                     type: "POST"
                 },
                 update: {
-                    url: "http://localhost/BLX.VN/data/user.json",
+                    url: "http://localhost/blx/public/administrator/users/update",
                     dataType: "json",
                     type: "POST"
                 },
                 destroy: {
-                    url: "http://localhost/BLX.VN/data/user.json",
+                    url: "http://localhost/blx/public/administrator/users/destroy",
                     dataType: "json",
                     type: "POST"
                 }
@@ -146,8 +151,7 @@ $(document).ready(function () {
                     id: "ID",
                     fields: {
                         ID: {
-                            editable: false,
-                            type: "number"
+                            editable: false
                         },
                         group: {
                             ID: {
@@ -180,6 +184,12 @@ $(document).ready(function () {
                             }
                         },
                         password: {
+                            type: "string"
+                        },
+                        address: {
+                            type: "string"
+                        },
+                        phoneNumber: {
                             type: "string"
                         }
                     }
