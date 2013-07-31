@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BLX.VN Admin Control Panel</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" href="common/admin/css/kendo.common.css">
+    <link rel="stylesheet" href="common/admin/css/kendo.min.css">
+    <link rel="stylesheet" href="kendoui/styles/kendo.dataviz.bootstrap.min.css">
+    <link rel="stylesheet" href="common/admin/css/common.min.css">
+    <link rel="stylesheet" href="common/admin/css/home.css">
+</head>
+<body id="home-page">
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand"><?php echo $this->translate('BLX.VN')?></a>
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav">
+                    <li>
+                        <a href="admin-home.html"><?php echo $this->translate('Trang chu')?></a>
+                    </li>
+                    <li>
+                        <a href="admin-profile-new.html"><?php echo $this->translate('Ho so')?></a>
+                    </li>
+                    <li>
+                        <a href="admin-user.html"><?php echo $this->translate('Thanh vien')?></a>
+                    </li>
+                    <li>
+                        <a href="admin-option-new.html"><?php echo $this->translate('He thong')?></a>
+                    </li>
+                </ul>
+
+                <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate('Luu Hoang Nam')?>&nbsp;<b
+                                class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><?php echo $this->translate('Thong tin ca nhan')?></a></li>
+                            <li class="divider"></li>
+                            <li><a href="#"><?php echo $this->translate('Dang xuat')?></a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form class="navbar-search pull-right" action="">
+                    <label>
+                        <input type="text" class="search-query span3" placeholder="<?php echo $this->translate('Tim kiem nhanh')?>" name="q">
+                    </label>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick search results -->
+<div id="quick-search-result" class="container hide">
+    <div class="row">
+
+    </div>
+</div>
+
+<div class="reports">
+    <div class="header">
+        <h2 class="pull-left"><?php echo $this->translate('Bao cao BLX.VN')?></h2>
+
+        <div class="pull-right">
+            <label>
+                <input type="datetime" id="start-date-input" value="10/10/2011">
+            </label>
+            <span>&nbsp;&dash;&nbsp;</span>
+            <label>
+                <input type="datetime" id="end-date-input" value="10/10/2013">
+            </label>
+        </div>
+    </div>
+
+    <div class="body">
+        <div class="sidenav">
+            <ul class="nav nav-tabs pull-left" id="reportTabs">
+                <li class="active"><a href="#home"><?php echo $this->translate('Ho so')?></a></li>
+                <li><a href="#profile"><?php echo $this->translate('Loi nhuan')?></a></li>
+                <li><a href="#messages"><?php echo $this->translate('Tin nhan')?></a></li>
+            </ul>
+
+            <div class="tab-content pull-left">
+                <div class="tab-pane active" id="home">Tab 1</div>
+                <div class="tab-pane" id="profile">tab 2</div>
+                <div class="tab-pane" id="messages">tab 3</div>
+                <div class="tab-pane" id="settings">tab 4</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="footer" class="container">
+    <div class="row">
+        <div class="span6">
+            <p id="copyright"><?php echo $this->translate('copyright')?></p>
+        </div>
+
+        <div class="span4 offset2">
+            <p id="designer">
+                <?php echo $this->translate('Thiet ke va xay dung boi Luu Hoang Nam')?>
+            </p>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="kendoui/js/kendo.web.min.js"></script>
+<script type="text/javascript" src="common/admin/js/common.min.js"></script>
+<script type="text/javascript" src="common/admin/js/home.min.js"></script>
+<script type="text/javascript" src="common/admin/js/chart.min.js"></script>
+
+</body>
+</html>
