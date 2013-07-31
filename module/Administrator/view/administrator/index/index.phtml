@@ -1,3 +1,35 @@
-<strong>Module:</strong>        Administrator &raquo;
-<strong>Controller:</strong>    Index &raquo;
-<strong>Action:</strong>        index
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/home.min.css');
+$this->headScript()->appendFile($this->basePath() . '/common/admin/js/home.min.js');
+?>
+
+<div class="reports">
+	<div class="header">
+		<h2 class="pull-left"><?php echo $this->translate('Bao cao BLX.VN')?></h2>
+
+		<div class="pull-right">
+			<label> <input type="datetime" id="start-date-input"
+				value="10/10/2011">
+			</label> <span>&nbsp;&dash;&nbsp;</span> <label> <input
+				type="datetime" id="end-date-input" value="10/10/2013">
+			</label>
+		</div>
+	</div>
+
+	<div class="body">
+		<div class="sidenav">
+			<ul class="nav nav-tabs pull-left" id="reportTabs">
+				<li class="active"><a href="#home"><?php echo $this->translate('Ho so')?></a></li>
+				<li><a href="#profile"><?php echo $this->translate('Loi nhuan')?></a></li>
+				<li><a href="#messages"><?php echo $this->translate('Tin nhan')?></a></li>
+			</ul>
+
+			<div class="tab-content pull-left">
+				<div class="tab-pane active" id="home">Tab 1</div>
+				<div class="tab-pane" id="profile">tab 2</div>
+				<div class="tab-pane" id="messages">tab 3</div>
+				<div class="tab-pane" id="settings">tab 4</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -2,23 +2,23 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Administrator\Controller\Index' => 'Administrator\Controller\IndexController',
-        ),
+            'Administrator\Controller\Index' => 'Administrator\Controller\IndexController'
+        )
     ),
     'router' => array(
         'routes' => array(
             'administrator' => array(
-                'type'    => 'Literal',
+                'type' => 'Literal',
                 'options' => array(
                     // Change this to something specific to your module
-                    'route'    => '/administrator',
+                    'route' => '/administrator',
                     'defaults' => array(
                         // Change this value to reflect the namespace in which
                         // the controllers for your module are found
                         '__NAMESPACE__' => 'Administrator\Controller',
-                        'controller'    => 'Index',
-                        'action'        => 'index',
-                    ),
+                        'controller' => 'Index',
+                        'action' => 'index'
+                    )
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
@@ -27,24 +27,23 @@ return array(
                     // you may want to remove it and replace it with more
                     // specific routes.
                     'default' => array(
-                        'type'    => 'Segment',
+                        'type' => 'Segment',
                         'options' => array(
-                            'route'    => '/[:controller[/:action]]',
+                            'route' => '/[:controller[/:action]]',
                             'constraints' => array(
                                 'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                'action'     => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                             ),
-                            'defaults' => array(
-                            ),
-                        ),
-                    ),
-                ),
-            ),
-        ),
+                            'defaults' => array()
+                        )
+                    )
+                )
+            )
+        )
     ),
     'view_manager' => array(
         'template_path_stack' => array(
-            'Administrator' => __DIR__ . '/../view',
-        ),
-    ),
+            'Administrator' => __DIR__ . '/../view'
+        )
+    )
 );
