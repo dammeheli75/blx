@@ -158,6 +158,7 @@ return array(
         'template_map' => array(
             'layout/layout' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'layout.phtml',
             'layout/administrator' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'administrator.phtml',
+            'layout/administrator/login' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'login.phtml',
             'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
             'error/404' => __DIR__ . '/../view/error/404.phtml',
             'error/index' => __DIR__ . '/../view/error/index.phtml'
@@ -166,8 +167,11 @@ return array(
             __DIR__ . '/../view'
         )
     ),
-    'module_layouts' => array(
-        'Administrator' => 'layout/administrator',
-        'Application' => 'layout/layout'
+    'layout_settings' => array(
+        'modules' => array(
+            'Administrator' => 'layout/administrator',
+            'Application' => 'layout/layout'
+        ),
+        'controllers' => array()
     )
 );

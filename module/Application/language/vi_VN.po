@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-07-31 05:35+0700\n"
-"PO-Revision-Date: 2013-07-31 05:35+0700\n"
+"POT-Creation-Date: 2013-07-31 15:13+0700\n"
+"PO-Revision-Date: 2013-07-31 15:13+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -14,6 +14,45 @@ msgstr ""
 "X-Poedit-Basepath: /Applications/XAMPP/xamppfiles/htdocs/blx\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: module\n"
+
+#: module/Administrator/view/administrator/authentication/login.phtml:9
+#: module/Administrator/view/administrator/authentication/login.phtml:42
+msgid "Dang nhap"
+msgstr "Đăng nhập"
+
+#: module/Administrator/view/administrator/authentication/login.phtml:17
+msgid "Loi!"
+msgstr "Lỗi!"
+
+#: module/Administrator/view/administrator/authentication/login.phtml:21
+#, fuzzy
+msgid "Dang nhap thanh cong. Dang chuyen huong..."
+msgstr "Đăng nhập thành công. Đang chuyển hướng…"
+
+#: module/Administrator/view/administrator/authentication/login.phtml:25
+msgid "Email"
+msgstr "Email"
+
+#: module/Administrator/view/administrator/authentication/login.phtml:33
+msgid "Mat khau"
+msgstr "Mật khẩu"
+
+#: module/Administrator/view/administrator/index/index.phtml:11
+msgid "Bao cao BLX.VN"
+msgstr ""
+
+#: module/Administrator/view/administrator/index/index.phtml:25
+#: module/Application/view/layout/administrator.phtml:37
+msgid "Ho so"
+msgstr ""
+
+#: module/Administrator/view/administrator/index/index.phtml:26
+msgid "Loi nhuan"
+msgstr ""
+
+#: module/Administrator/view/administrator/index/index.phtml:27
+msgid "Tin nhan"
+msgstr ""
 
 #: module/Application/view/application/document/index.phtml:7
 msgid "Tai lieu on tap thi bang lai xe hang A1"
@@ -554,6 +593,7 @@ msgstr ""
 #: module/Application/view/application/index/index.phtml:77
 #: module/Application/view/application/index/index.phtml:90
 #: module/Application/view/application/index/index.phtml:103
+#: module/Application/view/layout/administrator.phtml:48
 msgid "Luu Hoang Nam"
 msgstr ""
 
@@ -579,8 +619,8 @@ msgid "Quy trinh thi cap bang lai xe hang A1"
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:122
-#: module/Application/view/layout/layout.phtml:75
-#: module/Application/view/layout/layout.phtml:77
+#: module/Application/view/layout/layout.phtml:76
+#: module/Application/view/layout/layout.phtml:78
 msgid "Nop ho so"
 msgstr ""
 
@@ -726,118 +766,135 @@ msgstr ""
 msgid "An error occurred"
 msgstr ""
 
-#: module/Application/view/layout/CopyOflayout.phtml:6
-#: module/Application/view/layout/CopyOflayout.phtml:40
-msgid "Skeleton Application"
+#: module/Application/view/layout/administrator.phtml:4
+msgid "BLX Admin control panel"
 msgstr ""
 
-#: module/Application/view/layout/CopyOflayout.phtml:43
-msgid "Home"
+#: module/Application/view/layout/administrator.phtml:31
+#: module/Application/view/layout/layout.phtml:64
+msgid "BLX.VN"
 msgstr ""
 
-#: module/Application/view/layout/CopyOflayout.phtml:54
-msgid "All rights reserved."
+#: module/Application/view/layout/administrator.phtml:35
+#: module/Application/view/layout/layout.phtml:66
+msgid "Trang chu"
+msgstr ""
+
+#: module/Application/view/layout/administrator.phtml:39
+msgid "Thanh vien"
+msgstr ""
+
+#: module/Application/view/layout/administrator.phtml:41
+msgid "He thong"
+msgstr ""
+
+#: module/Application/view/layout/administrator.phtml:51
+msgid "Thong tin ca nhan"
+msgstr ""
+
+#: module/Application/view/layout/administrator.phtml:53
+msgid "Dang xuat"
+msgstr ""
+
+#: module/Application/view/layout/administrator.phtml:59
+msgid "Tim kiem nhanh"
 msgstr ""
 
 #: module/Application/view/layout/layout.phtml:4
 msgid "Thi bang lai xe may tai Ha Noi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:33
+#: module/Application/view/layout/layout.phtml:34
 msgid "Lich thi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:34
-#: module/Application/view/layout/layout.phtml:81
+#: module/Application/view/layout/layout.phtml:35
+#: module/Application/view/layout/layout.phtml:82
 msgid "Ket qua thi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:35
+#: module/Application/view/layout/layout.phtml:36
 msgid "Tai lieu on thi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:36
-#: module/Application/view/layout/layout.phtml:79
+#: module/Application/view/layout/layout.phtml:37
+#: module/Application/view/layout/layout.phtml:80
 msgid "Huong dan thi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:53
+#: module/Application/view/layout/layout.phtml:54
 msgid "Thong bao"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:55
+#: module/Application/view/layout/layout.phtml:56
 msgid "Tin tuc"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:63
-msgid "BLX.VN"
-msgstr ""
-
-#: module/Application/view/layout/layout.phtml:65
-msgid "Trang chu"
-msgstr ""
-
-#: module/Application/view/layout/layout.phtml:67
+#: module/Application/view/layout/layout.phtml:68
 msgid "Dieu khoan"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:73
-#: module/Application/view/layout/layout.phtml:141
+#: module/Application/view/layout/layout.phtml:74
+#: module/Application/view/layout/layout.phtml:142
 msgid "Thi bang lai xe"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:87
+#: module/Application/view/layout/layout.phtml:88
 msgid "Cong tac vien"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:89
+#: module/Application/view/layout/layout.phtml:90
 msgid "Dang ky"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:91
+#: module/Application/view/layout/layout.phtml:92
 msgid "Dieu le"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:97
+#: module/Application/view/layout/layout.phtml:98
 msgid "Tro giup"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:99
+#: module/Application/view/layout/layout.phtml:100
 msgid "Cau hoi thuong gap"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:106
+#: module/Application/view/layout/layout.phtml:107
 msgid "Thu vi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:114
+#: module/Application/view/layout/layout.phtml:115
 msgid "Noi dung thu vi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:128
+#: module/Application/view/layout/layout.phtml:129
 msgid "copyright"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:133
+#: module/Application/view/layout/layout.phtml:134
 msgid "Thiet ke va xay dung boi Luu Hoang Nam"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:140
+#: module/Application/view/layout/layout.phtml:141
 msgid "Bang lai xe"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:142
+#: module/Application/view/layout/layout.phtml:143
 msgid "Bang lai xe o Ha Noi"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:144
+#: module/Application/view/layout/layout.phtml:145
 msgid "Bang lai xe A1"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:145
+#: module/Application/view/layout/layout.phtml:146
 msgid "Thi bang lai xe may"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:147
+#: module/Application/view/layout/layout.phtml:148
 msgid "Thi bang lai xe moto"
 msgstr ""
+
+#: module/Application/view/layout/login.phtml:4
+msgid "Dang nhap vao he thong quan ly BLX.VN"
+msgstr "Đăng nhập vào hệ thống quản lý BLX.VN"

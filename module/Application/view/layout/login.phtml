@@ -1,0 +1,46 @@
+<?php echo $this->doctype(); ?>
+<html lang="vi">
+<head>
+    <?php echo $this->headTitle($this->translate('Dang nhap vao he thong quan ly BLX.VN'))->setSeparator(' - ')->setAutoEscape(false)?>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+    <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')?>
+
+    <!-- Styles -->
+    <?php
+    
+    $this->headLink(array(
+        'rel' => 'shortcut icon',
+        'type' => 'image/vnd.microsoft.icon',
+        'href' => $this->basePath() . '/common/images/favicon.ico'
+    ))
+        ->prependStylesheet($this->basePath() . '/common/admin/css/common.min.css')
+        ->prependStylesheet($this->basePath() . '/bootstrap/css/bootstrap-responsive.min.css')
+        ->prependStylesheet($this->basePath() . '/bootstrap/css/bootstrap.min.css');
+    
+    echo $this->headlink();
+    
+    ?>
+    
+</head>
+<body>
+
+	<div class="container">
+		<div class="row">
+			<?php echo $this->content?>
+		</div>
+	</div>
+
+	<?php
+$this->headScript()
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.binder.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.data.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.core.min.js')
+    ->prependFile($this->basePath() . '/bootstrap/js/bootstrap.min.js')
+    ->prependFile($this->basePath() . '/jquery/js/jquery-1.10.2.min.js');
+
+echo $this->headScript();
+?>
+
+</body>
+</html>

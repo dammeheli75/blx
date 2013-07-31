@@ -1,0 +1,47 @@
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/login.min.css');
+$this->headScript()->appendFile($this->basePath() . '/common/admin/js/login.min.js');
+?>
+
+<div class="span4 offset4">
+	<div id="login-panel" class="block">
+		<div class="block-header block-header-inverse">
+			<h2><?php echo $this->translate('Dang nhap')?></h2>
+		</div>
+		<div class="block-body">
+			<form id="login-form" class="form-horizontal" method="post"
+				action="admin-login.php">
+				<div class="errors">
+					<div class="alert alert-danger" data-bind="visible: error">
+						<button type="button" class="close" data-dismiss="alert">&times;</button>
+						<strong><?php echo $this->translate('Loi!')?></strong> <span
+							data-bind="text: error_message"></span>
+					</div>
+					<div class="alert alert-success" data-bind="visible: success">
+                                <?php echo $this->translate('Dang nhap thanh cong. Dang chuyen huong...')?>
+                            </div>
+				</div>
+				<div class="control-group">
+					<label for="email-input" class="control-label"><?php echo $this->translate('Email')?></label>
+
+					<div class="controls">
+						<input id="email-input" type="email" name="email"
+							data-bind="value: email" required>
+					</div>
+				</div>
+				<div class="control-group">
+					<label for="password-input" class="control-label"><?php echo $this->translate('Mat khau')?></label>
+
+					<div class="controls">
+						<input id="password-input" type="password" name="password"
+							data-bind="value: password" required>
+					</div>
+				</div>
+				<div class="form-actions">
+					<button type="submit" class="btn btn-primary"
+						data-bind="click: login, text: login_text"><?php echo $this->translate('Dang nhap')?></button>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
