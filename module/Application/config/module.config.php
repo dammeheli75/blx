@@ -127,7 +127,8 @@ return array(
     ),
     'service_manager' => array(
         'factories' => array(
-            'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory'
+            'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
+            'db' => 'Blx\Db\DbServiceFactory',
         )
     ),
     'translator' => array(
