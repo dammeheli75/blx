@@ -4,11 +4,13 @@
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/public/common/admin/js/common.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/admin/js/user.min.js" />
+        <item url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/public/common/admin/js/common.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/user.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

@@ -21,7 +21,16 @@ $this->headLink(array(
     ->prependStylesheet($this->basePath() . '/bootstrap/css/bootstrap.min.css');
 
 echo $this->headlink();
+
+$this->headScript()
+    ->prependFile($this->basePath() . '/common/admin/js/common.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.web.min.js')
+    ->prependFile($this->basePath() . '/bootstrap/js/bootstrap.min.js')
+    ->prependFile($this->basePath() . '/jquery/js/jquery-1.10.2.min.js');
+
+echo $this->headScript();
 ?>
+
 </head>
 <body id="home-page">
 
@@ -71,16 +80,6 @@ echo $this->headlink();
 	</div>
 	
 	<?php echo $this->content?>
-
-	<?php
-$this->headScript()
-    ->prependFile($this->basePath() . '/common/admin/js/common.min.js')
-    ->prependFile($this->basePath() . '/kendoui/js/kendo.web.min.js')
-    ->prependFile($this->basePath() . '/bootstrap/js/bootstrap.min.js')
-    ->prependFile($this->basePath() . '/jquery/js/jquery-1.10.2.min.js');
-
-echo $this->headScript();
-?>
 
 </body>
 </html>

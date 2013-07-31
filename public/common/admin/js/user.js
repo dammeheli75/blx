@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var grid = $("#grid").kendoGrid({
+    var grid = $("#gridOld").kendoGrid({
         columns: [
             {
                 field: "ID",
@@ -25,6 +25,7 @@ $(document).ready(function () {
                     $('<input data-bind="value:' + options.field + '"/>')
                         .appendTo(container)
                         .kendoDropDownList({
+                            autoBind: true,
                             dataTextField: "title",
                             dataValueField: "ID",
                             dataSource: {

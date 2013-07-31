@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#grid").kendoGrid({
+    $("#gridOld").kendoGrid({
         columns: [
             {
                 field: "profileID",

@@ -13,8 +13,7 @@ use Zend\View\Model\ViewModel;
 use Administrator\Model\User;
 use Zend\Json\Encoder;
 use Administrator\Model\UserGroup;
-use Administrator\Form\EditUser;
-use Administrator\Form\CreateUser;
+use Kendo\UI\Grid;
 
 class UserController extends AbstractActionController
 {
@@ -23,6 +22,9 @@ class UserController extends AbstractActionController
     {
         $viewModel = new ViewModel();
         
+        $grid = new Grid('grid');
+        
+        $viewModel->setVariable('grid', $grid);
         return $viewModel;
     }
 
@@ -74,6 +76,11 @@ class UserController extends AbstractActionController
         return $viewModel;
     }
 
+    /**
+     *
+     * @todo Kiem duyet thong tin
+     * @return \Zend\View\Model\ViewModel
+     */
     public function createAction()
     {
         $viewModel = new ViewModel();
@@ -86,16 +93,29 @@ class UserController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $postData = $this->getRequest()->getPost();
             
-            $form = new CreateUser($serviceManager);
-            $form->setData($postData);
+            $userModel = new User($serviceManager);
+            $birthday = new \DateTime($postData['birthday']);
             
-            if ($form->isValid()) {
-                echo "Valid";
-            } else {
-                echo $form->getMessages();
+            $user = array(
+                'group_id' => $postData['group'],
+                'full_name' => $postData['fullName'],
+                'birthday' => $birthday->format('Y-m-d'),
+                'email' => $postData['email'],
+                'phone_number' => $postData['phone_number'],
+                'address' => $postData['address'],
+                'phone_number' => $postData['phoneNumber']
+            );
+            
+            if ($userModel->createUser($user)) {
+                $response['success'] = true;
+                $response['insert_id'] = $userModel->getLastInsertValue();
             }
+        } else {
+            $response['success'] = false;
+            $response['errors'] = $serviceManager->get('translator')->translate('Truy cap bi han che');
         }
         
+        $viewModel->setVariable('response', Encoder::encode($response));
         $this->getResponse()
             ->getHeaders()
             ->addHeaderLine('Content-Type', 'application/json');
@@ -106,7 +126,39 @@ class UserController extends AbstractActionController
     {
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $response = array();
         
+        if ($this->getRequest()->isPost()) {
+            $postData = $this->getRequest()->getPost();
+            
+            $userModel = new User($serviceManager);
+            
+            $birthday = new \DateTime($postData['birthday']);
+            
+            $user = array(
+                'group_id' => $postData['group']['ID'],
+                'full_name' => $postData['fullName'],
+                'birthday' => $birthday->format('Y-m-d'),
+                'email' => $postData['email'],
+                'phone_number' => $postData['phone_number'],
+                'address' => $postData['address'],
+                'phone_number' => $postData['phoneNumber']
+            );
+            
+            if ($userModel->updateUser(array(
+                'user_id' => $postData['ID']
+            ), $user)) {
+                $response['success'] = true;
+            }
+        } else {
+            $response['success'] = false;
+            $response['errors'] = $serviceManager->get('translator')->translate('Truy cap bi han che');
+        }
+        
+        $viewModel->setVariable('response', Encoder::encode($response));
         $this->getResponse()
             ->getHeaders()
             ->addHeaderLine('Content-Type', 'application/json');
@@ -117,7 +169,27 @@ class UserController extends AbstractActionController
     {
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $response = array();
         
+        if ($this->getRequest()->isPost()) {
+            $postData = $this->getRequest()->getPost();
+            
+            $userModel = new User($serviceManager);
+            
+            if ($userModel->removeUser(array(
+                'user_id' => $postData['ID']
+            ))) {
+                $response['success'] = true;
+            }
+        } else {
+            $response['success'] = false;
+            $response['errors'] = $serviceManager->get('translator')->translate('Truy cap bi han che');
+        }
+        
+        $viewModel->setVariable('response', Encoder::encode($response));
         $this->getResponse()
             ->getHeaders()
             ->addHeaderLine('Content-Type', 'application/json');

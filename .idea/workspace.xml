@@ -21,8 +21,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375258580033" ignored="false" />
     <file path="/common.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375258947214" ignored="false" />
-    <file path="$PROJECT_DIR$/public/common/admin/js/user.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375273988861" ignored="false" />
-    <file path="/user.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375273612731" ignored="false" />
+    <file path="$PROJECT_DIR$/public/common/admin/js/user.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375293755525" ignored="false" />
+    <file path="/user.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375293714175" ignored="false" />
+    <file path="/profile.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375296394829" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,10 +54,32 @@
       <file leaf-file-name="user.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="29" selection-start="555" selection-end="555" vertical-scroll-proportion="0.34532374">
+            <state line="2" column="26" selection-start="59" selection-end="59" vertical-scroll-proportion="0.043165468">
               <folding>
-                <marker date="1375273980000" expanded="false" signature="2913:2929" placeholder="..." />
-                <marker date="1375273980000" expanded="false" signature="7338:7428" placeholder="..." />
+                <marker date="1375296553000" expanded="false" signature="2960:2976" placeholder="..." />
+                <marker date="1375296553000" expanded="false" signature="7385:7475" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile-approval.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile-approval.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="31" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+              <folding>
+                <marker date="1375296400000" expanded="false" signature="999:1015" placeholder="..." />
+                <marker date="1375296400000" expanded="false" signature="2804:2820" placeholder="..." />
+                <marker date="1375296400000" expanded="false" signature="13354:13444" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -81,6 +104,7 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/public/common/admin/js/common.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/profile.js" />
         <option value="$PROJECT_DIR$/public/common/admin/js/user.js" />
       </list>
     </option>
@@ -361,23 +385,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile-approval.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.4892086">
+        <state line="7" column="31" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1375255854000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1375255854000" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1375255854000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1375296400000" expanded="false" signature="999:1015" placeholder="..." />
+            <marker date="1375296400000" expanded="false" signature="2804:2820" placeholder="..." />
+            <marker date="1375296400000" expanded="false" signature="13354:13444" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="29" selection-start="555" selection-end="555" vertical-scroll-proportion="0.34532374">
+        <state line="2" column="26" selection-start="59" selection-end="59" vertical-scroll-proportion="0.043165468">
           <folding>
-            <marker date="1375273980000" expanded="false" signature="2913:2929" placeholder="..." />
-            <marker date="1375273980000" expanded="false" signature="7338:7428" placeholder="..." />
+            <marker date="1375296553000" expanded="false" signature="2960:2976" placeholder="..." />
+            <marker date="1375296553000" expanded="false" signature="7385:7475" placeholder="..." />
           </folding>
         </state>
       </provider>
