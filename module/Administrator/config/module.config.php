@@ -2,7 +2,10 @@
 return array(
     'controllers' => array(
         'invokables' => array(
-            'Administrator\Controller\Index' => 'Administrator\Controller\IndexController'
+            'Administrator\Controller\Index' => 'Administrator\Controller\IndexController',
+            'Administrator\Controller\Profile' => 'Administrator\Controller\ProfileController',
+            'Administrator\Controller\User' => 'Administrator\Controller\UserController',
+            'Administrator\Controller\System' => 'Administrator\Controller\SystemController'
         )
     ),
     'router' => array(
@@ -22,10 +25,6 @@ return array(
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
-                    // This route is a sane default when developing a module;
-                    // as you solidify the routes for your module, however,
-                    // you may want to remove it and replace it with more
-                    // specific routes.
                     'default' => array(
                         'type' => 'Segment',
                         'options' => array(
@@ -35,6 +34,102 @@ return array(
                                 'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                             ),
                             'defaults' => array()
+                        )
+                    ),
+                    'profiles' => array(
+                        'type' => 'Literal',
+                        'options' => array(
+                            // Change this to something specific to your module
+                            'route' => '/profiles',
+                            'defaults' => array(
+                                // Change this value to reflect the namespace in which
+                                // the controllers for your module are found
+                                '__NAMESPACE__' => 'Administrator\Controller',
+                                'controller' => 'Profile',
+                                'action' => 'index'
+                            )
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            // This route is a sane default when developing a module;
+                            // as you solidify the routes for your module, however,
+                            // you may want to remove it and replace it with more
+                            // specific routes.
+                            'default' => array(
+                                'type' => 'Segment',
+                                'options' => array(
+                                    'route' => '/[:controller[/:action]]',
+                                    'constraints' => array(
+                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                                    ),
+                                    'defaults' => array()
+                                )
+                            )
+                        )
+                    ),
+                    'users' => array(
+                        'type' => 'Literal',
+                        'options' => array(
+                            // Change this to something specific to your module
+                            'route' => '/users',
+                            'defaults' => array(
+                                // Change this value to reflect the namespace in which
+                                // the controllers for your module are found
+                                '__NAMESPACE__' => 'Administrator\Controller',
+                                'controller' => 'User',
+                                'action' => 'index'
+                            )
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            // This route is a sane default when developing a module;
+                            // as you solidify the routes for your module, however,
+                            // you may want to remove it and replace it with more
+                            // specific routes.
+                            'default' => array(
+                                'type' => 'Segment',
+                                'options' => array(
+                                    'route' => '/[:controller[/:action]]',
+                                    'constraints' => array(
+                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                                    ),
+                                    'defaults' => array()
+                                )
+                            )
+                        )
+                    ),
+                    'system' => array(
+                        'type' => 'Literal',
+                        'options' => array(
+                            // Change this to something specific to your module
+                            'route' => '/system',
+                            'defaults' => array(
+                                // Change this value to reflect the namespace in which
+                                // the controllers for your module are found
+                                '__NAMESPACE__' => 'Administrator\Controller',
+                                'controller' => 'System',
+                                'action' => 'index'
+                            )
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            // This route is a sane default when developing a module;
+                            // as you solidify the routes for your module, however,
+                            // you may want to remove it and replace it with more
+                            // specific routes.
+                            'default' => array(
+                                'type' => 'Segment',
+                                'options' => array(
+                                    'route' => '/[:controller[/:action]]',
+                                    'constraints' => array(
+                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                                    ),
+                                    'defaults' => array()
+                                )
+                            )
                         )
                     )
                 )

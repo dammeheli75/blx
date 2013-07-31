@@ -1,6 +1,9 @@
 <?php
 $this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/home.min.css');
-$this->headScript()->appendFile($this->basePath() . '/common/admin/js/home.min.js');
+$this->headScript()
+    ->prependFile($this->basePath() . '/common/admin/js/chart.min.js')
+    ->prependFile($this->basePath() . '/common/admin/js/home.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.dataviz.min.js');
 ?>
 
 <div class="reports">

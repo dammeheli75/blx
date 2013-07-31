@@ -32,13 +32,13 @@ echo $this->headlink();
 
 				<div class="nav-collapse collapse navbar-responsive-collapse">
 					<ul class="nav">
-						<li><a href="admin-home.html"><?php echo $this->translate('Trang chu')?></a>
+						<li><a href="<?php echo $this->url('administrator') ?>"><?php echo $this->translate('Trang chu')?></a>
 						</li>
-						<li><a href="admin-profile-new.html"><?php echo $this->translate('Ho so')?></a>
+						<li><a href="<?php echo $this->url('administrator/profiles') ?>"><?php echo $this->translate('Ho so')?></a>
 						</li>
-						<li><a href="admin-user.html"><?php echo $this->translate('Thanh vien')?></a>
+						<li><a href="<?php echo $this->url('administrator/users') ?>"><?php echo $this->translate('Thanh vien')?></a>
 						</li>
-						<li><a href="admin-option-new.html"><?php echo $this->translate('He thong')?></a>
+						<li><a href="<?php echo $this->url('administrator/system') ?>"><?php echo $this->translate('He thong')?></a>
 						</li>
 					</ul>
 
@@ -74,10 +74,7 @@ echo $this->headlink();
 
 	<?php
 $this->headScript()
-    ->prependFile($this->basePath() . '/common/admin/js/chart.min.js')
-    ->prependFile($this->basePath() . '/common/admin/js/home.min.js')
     ->prependFile($this->basePath() . '/common/admin/js/common.min.js')
-    ->prependFile($this->basePath() . '/kendoui/js/kendo.dataviz.min.js')
     ->prependFile($this->basePath() . '/kendoui/js/kendo.web.min.js')
     ->prependFile($this->basePath() . '/bootstrap/js/bootstrap.min.js')
     ->prependFile($this->basePath() . '/jquery/js/jquery-1.10.2.min.js');
