@@ -1,0 +1,44 @@
+#login-panel {
+    margin-top: 80px;
+}
+
+#login-form {
+    margin: 0;
+}
+
+.errors {
+    padding-bottom: 20px;
+}
+
+.form-actions {
+    margin-bottom: 0;
+}
+
+.form-horizontal .control-label {
+    width: 80px;
+}
+
+.form-horizontal .controls {
+    margin-left: 100px;
+}
+
+.btn-primary {
+    background: #6d84b4 none;
+    border: none;
+    border-radius: 0;
+    width: 140px;
+    height: 36px;
+}
+
+.btn-primary:hover {
+    background: #3b5998;
+}
+
+.form-horizontal .form-actions {
+    padding: 12px 0 12px 120px;
+}
+
+.alert {
+    margin-bottom: 0;
+    border-radius: 0;
+}

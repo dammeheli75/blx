@@ -1,0 +1,98 @@
+.flag {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: block;
+}
+
+.flag-success {
+    background-color: green;
+}
+
+.flag-error {
+    background-color: #ff0000;
+}
+
+.flag-notice {
+    background-color: orange;
+}
+
+.edit-icon {
+    width: 14px;
+    height: 14px;
+    float: left;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABWElEQVR4AXXLoWvmdQAH4OfzfX9jaWKzDNmSGAWDRduE3cGFu0sH165t3e5foU2bwSQIyhZsJkHEIFZBBmIayoS934+/MjbmfPqT04+/+jpjHEuiCBBst9dnY2ye4bLtm/gp8WfrZFnTIzLb/p6aRcjs/HlNL60Jh9jDJ8n4SOeni4TZi8Q7GfkLqGT8DZ19K3GeZKftUeec5XRRMJNc4iogYM65Jt9kbPbBnN+1fR+fLQJSNu66TQdFQGeY+HV4yJrcS53bi9ZR+UWy89/Y+a7k7IF0jB+T7LXzy9tY1KbtoWTfA2mMsWnn58l4Mm6ba/pF5PXO+UHbuaY/bhK0FhnvSSxuREfG222f63y1phfkt5sEgvoHFkVJTHwvudI8TfLYPWHbKiyCGm1fw0mpJNi9l7TdxRAWLckb9IfOzkYRxF2lkdW+1tI5v80YH0oOIPG/ErTWc/4vvi3D8RUTg/4AAAAASUVORK5CYII=);
+}
+
+.trash-icon {
+    width: 14px;
+    height: 14px;
+    float: left;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAABnUlEQVR4AXXNP2hVdxjG8c/7u/e6iggOCiImWQJRFP8tgojOksldcRHddHBwEwdDhnZPCbTJ0lI6tGMpudCWOugN/gcpREQEI5FElNzknNdDcta88Dw8fPnCGwBw897vZzAbEasJgJC7Rw/uvYY+QPf7H/+19O7T/vVhdVzEdbxKMQcQSC6/+H/5bmZ+1+2UAd7G++XP+x7M9H8bDuul0inDpEIHAFAHpa7rXq8Th29fPTvZDUZC6Ym8kfTscAlig/IHMVaSl+QKBpgLfsA8ZtvMt+wn4TH5lXzWbd6vENPBFZm3kmNYwAQKBsk5DIL7xM9TM39/LE0ReskXnCKP4DxO4oRmt+z0lhO6wnYBioj1EE+TXcEbyGa3rJLZAejC5mYlAEkPmbSSbFkVrQulGQ4d2CMzSTtfUtepcTVRmjJ5cbyBADZQUGETpWWqKl26MK6JblMNqIuwIbOHCSxiBIHXOCo9j8bZclGaQVqT9Sj5ROYj9Mn/ZD7EwjbLRZljMldlKjIl/2TmB/waUe7gT8q0KFP4q2W/ZNZr6MM3e8vFX9RJzBwAAAAASUVORK5CYII=);
+}
+
+.new-icon {
+    width: 14px;
+    height: 14px;
+    float: left;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAA+klEQVQoz2NgAII7j945ZjVu/pTbsvVabisGfpDXuvVf28wDWQzo4O7jdz5ZjVvW5bZs48ptRcV5bdsCc1u27M9s3Lg7pWZ9AqbGpi2rGLCA3LZtPnmt284DNbdnNGz8f/P+G2N0jatxaFQA4k6g5p6Mxs3Xbj5460+URmQA1LgAqDGEHI3LgBqDh6hGX6DGZeRo9Mxu2nINGORtwKBvAmJF4jQ+eqef2bjpPzCSe4Ep5RxQYxAOjUtRNIIAMEkl5DRv2gVMr7uBNocAkxsbCm7ZxpbRsHkFhkYQyGnenAG09S8wUd8FJu6LKLhl68WMhk3vbzx46wFSCwCN2OJdIDVqSgAAAABJRU5ErkJggg==);
+}
+
+.selected-actions .action-add {
+    margin-left: 80px;
+}
+
+.k-grid-pager {
+    float: left;
+    max-width: 500px;
+}
+
+.footer-toolbar {
+    padding: 0;
+    margin: 0;
+    color: #787878;
+    background: #FFF none 50% 50%;
+    border-width: 1px 0 0;
+    border-color: #dadada;
+}
+
+.footer-toolbar-content {
+    padding: 6px 20px 2px 20px;
+    overflow: hidden;
+}
+
+.flag-legend .legend-group {
+    display: inline-block;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.legend-group .flag-color {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+}
+
+.legend-group .flag-description {
+    display: inline-block;
+}
+
+.legend-group .flag-description a {
+    color: #666;
+}
+
+.legend-group .flag-description:hover {
+    text-decoration: none;
+}
+
+#autoHideOption {
+   padding: 5px 10px;
+}
+
+.after-approval {
+    padding: 6px 10px;
+}
+
+.approved-row {
+    background: #eeeeee;
+}
