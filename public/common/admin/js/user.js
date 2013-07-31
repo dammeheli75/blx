@@ -117,7 +117,7 @@ $(document).ready(function () {
         dataSource: {
             transport: {
                 read: {
-                    url: "http://localhost/BLX.VN/data/user.json",
+                    url: "http://localhost/blx/public/administrator/users/read",
                     dataType: "json",
                     type: "GET"
                 },

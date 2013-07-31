@@ -21,6 +21,7 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375258580033" ignored="false" />
     <file path="/common.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375258947214" ignored="false" />
+    <file path="$PROJECT_DIR$/public/common/admin/js/user.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375265809850" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +52,10 @@
       <file leaf-file-name="user.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="-2.0215828">
+            <state line="119" column="78" selection-start="4147" selection-end="4147" vertical-scroll-proportion="0.28057554">
               <folding>
-                <marker date="1375258964000" expanded="false" signature="2635:2651" placeholder="..." />
-                <marker date="1375258964000" expanded="false" signature="6827:6917" placeholder="..." />
+                <marker date="1375265777000" expanded="false" signature="2635:2651" placeholder="..." />
+                <marker date="1375265777000" expanded="false" signature="6841:6931" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -162,32 +163,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -347,10 +322,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="-2.0215828">
+        <state line="119" column="78" selection-start="4147" selection-end="4147" vertical-scroll-proportion="0.28057554">
           <folding>
-            <marker date="1375258964000" expanded="false" signature="2635:2651" placeholder="..." />
-            <marker date="1375258964000" expanded="false" signature="6827:6917" placeholder="..." />
+            <marker date="1375265777000" expanded="false" signature="2635:2651" placeholder="..." />
+            <marker date="1375265777000" expanded="false" signature="6841:6931" placeholder="..." />
           </folding>
         </state>
       </provider>
