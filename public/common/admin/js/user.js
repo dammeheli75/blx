@@ -188,10 +188,16 @@ $(document).ready(function () {
                             type: "string"
                         },
                         address: {
-                            type: "string"
+                            type: "string",
+                            validation: {
+                                required: true
+                            }
                         },
                         phoneNumber: {
-                            type: "string"
+                            type: "string",
+                            validation: {
+                                required: true
+                            }
                         }
                     }
                 }
@@ -207,8 +213,4 @@ $(document).ready(function () {
 
         }
     });
-
-    // Manipulate toolbar
-    $(".k-grid-toolbar").css("overflow", "hidden").prepend('<h1 class="pull-left" style="font-size: 18px;color: #3b5998;margin: 0;padding: 0;line-height: 28px; font-weight: normal">Danh sách thành viên</h1>');
-    $(".k-grid-toolbar .k-grid-add").addClass("pull-right");
 });

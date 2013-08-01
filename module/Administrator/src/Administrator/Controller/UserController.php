@@ -14,6 +14,21 @@ use Administrator\Model\User;
 use Zend\Json\Encoder;
 use Administrator\Model\UserGroup;
 use Kendo\UI\Grid;
+use Kendo\UI\GridEditable;
+use Kendo\UI\GridToolbarItem;
+use Kendo\UI\GridColumn;
+use Kendo\JavaScriptFunction;
+use Kendo\UI\GridColumnCommandItem;
+use Kendo\Data\DataSource;
+use Kendo\Data\DataSourceTransport;
+use Kendo\Data\DataSourceTransportRead;
+use Kendo\Data\DataSourceTransportCreate;
+use Kendo\Data\DataSourceTransportUpdate;
+use Kendo\Data\DataSourceTransportDestroy;
+use Kendo\Data\DataSourceSchema;
+use Kendo\Data\DataSourceSchemaModel;
+use Kendo\Data\DataSourceSchemaModelField;
+use Kendo\Data\DataSourceSchemaModelFieldValidation;
 
 class UserController extends AbstractActionController
 {
@@ -21,8 +36,213 @@ class UserController extends AbstractActionController
     public function indexAction()
     {
         $viewModel = new ViewModel();
-        
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $translator = $serviceManager->get('translator');
+        //
+        // Grid
+        //
         $grid = new Grid('grid');
+        //
+        // Editable
+        //
+        $editable = new GridEditable();
+        $editable->mode('popup');
+        $grid->editable($editable);
+        //
+        // Sortable
+        //
+        $grid->sortable(true);
+        //
+        // Toolbar
+        //
+        $createButtonToolbar = new GridToolbarItem();
+        $createButtonToolbar->name('create');
+        $createButtonToolbar->text($translator->translate('Them thanh vien'));
+        $grid->addToolbarItem($createButtonToolbar);
+        //
+        // Resizable
+        //
+        $grid->resizable(true);
+        //
+        // Columns
+        //
+        // Id
+        $idColumn = new GridColumn();
+        $idColumn->field('ID')
+            ->title('ID')
+            ->width(60)
+            ->attributes(" style= \"text-align: center;\"")
+            ->template(new JavaScriptFunction("function (dataItem) {
+                    return '<a class=\"tooltip-cell\" data-toggle=\"tooltip\" title=\"{$translator->translate('Tham gia:')}&nbsp;' + dataItem.joinDate + '\">' + dataItem.ID + '</a>';
+                }"));
+        $grid->addColumn($idColumn);
+        // Group
+        $groupColumn = new GridColumn();
+        $groupColumn->field('group')
+            ->title($translator->translate('Nhom'))
+            ->width(160)
+            ->template("#= group.title #")
+            ->editor(new JavaScriptFunction("function (container, options) {
+                    $('<input data-bind=\"value:' + options.field + '\"/>')
+                        .appendTo(container)
+                        .kendoDropDownList({
+                            autoBind: true,
+                            dataTextField: 'title',
+                            dataValueField: 'ID',
+                            dataSource: {
+                                transport: {
+                                    read: {
+                                        url: 'http://localhost/blx/public/administrator/user-groups/read',
+                                        dataType: 'json'
+                                    }
+                                },
+                                schema: {
+                                    data: function (response) {
+                                        return response.groups || [];
+                                    }
+                                }
+                            }
+                        });
+                }"));
+        $grid->addColumn($groupColumn);
+        // Full Name
+        $fullNameColumn = new GridColumn();
+        $fullNameColumn->field('fullName')
+            ->title($translator->translate('Ho va ten'))
+            ->width(200);
+        $grid->addColumn($fullNameColumn);
+        // Email
+        $emailColumn = new GridColumn();
+        $emailColumn->field('email')
+            ->title($translator->translate('Email'))
+            ->width(200);
+        $grid->addColumn($emailColumn);
+        // Password
+        $passwordColumn = new GridColumn();
+        $passwordColumn->field('password')
+            ->title($translator->translate('Mat khau'))
+            ->hidden(true)
+            ->editor(new JavaScriptFunction("function (container, options) {
+                    $('<input name=\"password\" type=\"password\" class=\"k-input k-textbox\" data-bind=\"value:' + options.field + '\"/>')
+                        .appendTo(container);
+                }"));
+        $grid->addColumn($passwordColumn);
+        // Birthday
+        $birthdayColumn = new GridColumn();
+        $birthdayColumn->field('birthday')
+            ->title($translator->translate('Nam sinh'))
+            ->width(100)
+            ->attributes(" style= \"text-align: center;\"")
+            ->template("#= kendo.toString(birthday,\"dd/MM/yyyy\") #")
+            ->editor(new JavaScriptFunction("function (container, options) {
+                    $('<input name=\"birthday\" style=\"border-radius: 0\" data-bind=\"value:' + options.field + '\"/>')
+                        .appendTo(container)
+                        .kendoDatePicker({
+                            // defines when the calendar should return date
+                            depth: \"year\",
+
+                            // display month and year in the input
+                            format: \"dd/MM/yyyy\"
+                        });
+                }"));
+        $grid->addColumn($birthdayColumn);
+        // Address
+        $addressColumn = new GridColumn();
+        $addressColumn->field('address')
+            ->title($translator->translate('Dia chi'))
+            ->width(260);
+        $grid->addColumn($addressColumn);
+        // Phone Number
+        $phoneNumberColumn = new GridColumn();
+        $phoneNumberColumn->field('phoneNumber')
+            ->title($translator->translate('Dien thoai'))
+            ->width(120)
+            ->attributes(" style= \"text-align: center;\"");
+        $grid->addColumn($phoneNumberColumn);
+        // Command
+        $commandColumn = new GridColumn();
+        $commandColumn->title('&nbsp;');
+        $editCommand = new GridColumnCommandItem();
+        $editCommand->name('edit')->text($translator->translate('Sua'));
+        $commandColumn->addCommandItem($editCommand);
+        $destroyCommand = new GridColumnCommandItem();
+        $destroyCommand->name('destroy')->text($translator->translate('Xoa'));
+        $commandColumn->addCommandItem($destroyCommand);
+        $grid->addColumn($commandColumn);
+        //
+        // DataSource
+        //
+        $dataSource = new DataSource();
+        // Transport Read
+        $transportRead = new DataSourceTransportRead();
+        $transportRead->url('http://localhost/blx/public/administrator/users/read');
+        // Transport Create
+        $transportCreate = new DataSourceTransportCreate();
+        $transportCreate->url('http://localhost/blx/public/administrator/users/create')->type('POST');
+        // Transport Update
+        $transportUpdate = new DataSourceTransportUpdate();
+        $transportUpdate->url('http://localhost/blx/public/administrator/users/update')->type('POST');
+        // Transport Destroy
+        $transportDestroy = new DataSourceTransportDestroy();
+        $transportDestroy->url('http://localhost/blx/public/administrator/users/destroy')->type('POST');
+        $transport = new DataSourceTransport();
+        $transport->read($transportRead)
+            ->create($transportCreate)
+            ->update($transportUpdate)
+            ->destroy($transportDestroy);
+        $dataSource->transport($transport);
+        // Schema
+        $schema = new DataSourceSchema();
+        $model = new DataSourceSchemaModel();
+        $model->id('ID');
+        // Schema Model Fields
+        $idModelField = new DataSourceSchemaModelField('ID');
+        $idModelField->editable(false);
+        $model->addField($idModelField);
+        $groupModelField = new DataSourceSchemaModelField('group');
+        $groupModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $groupModelFieldValidation->required(true);
+        $groupModelField->validation($groupModelFieldValidation);
+        $model->addField($groupModelField);
+        $fullNameModelField = new DataSourceSchemaModelField('fullName');
+        $fullNameModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $fullNameModelFieldValidation->required(true);
+        $fullNameModelField->type('string')->validation($fullNameModelFieldValidation);
+        $model->addField($fullNameModelField);
+        $birthdayModelField = new DataSourceSchemaModelField('birthday');
+        $birthdayModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $birthdayModelFieldValidation->required(true);
+        $birthdayModelField->type('date')->validation($birthdayModelFieldValidation);
+        $model->addField($birthdayModelField);
+        $emailModelField = new DataSourceSchemaModelField('email');
+        $emailModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $emailModelFieldValidation->required(true);
+        $emailModelField->type('string')->validation($emailModelFieldValidation);
+        $model->addField($emailModelField);
+        $passwordModelField = new DataSourceSchemaModelField('password');
+        $passwordModelField->type('string');
+        $model->addField($passwordModelField);
+        $addressModelField = new DataSourceSchemaModelField('address');
+        $addressModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $addressModelFieldValidation->required(true);
+        $addressModelField->type('string')->validation($addressModelFieldValidation);
+        $model->addField($addressModelField);
+        $phoneNumberModelField = new DataSourceSchemaModelField('phoneNumber');
+        $phoneNumberModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $phoneNumberModelFieldValidation->required(true);
+        $phoneNumberModelField->type('string')->validation($phoneNumberModelFieldValidation);
+        $model->addField($phoneNumberModelField);
+        
+        $schema->total('total')
+            ->data('users')
+            ->model($model);
+        $dataSource->schema($schema);
+        $grid->dataSource($dataSource);
+        
+        // Events
+        $grid->dataBound(new JavaScriptFunction("function () { \$('[data-toggle=\"tooltip\"]').tooltip({placement: \"right\"});}"));
         
         $viewModel->setVariable('grid', $grid);
         return $viewModel;
@@ -64,7 +284,7 @@ class UserController extends AbstractActionController
                 'birthday' => $user->birthday,
                 'address' => $user->address,
                 'phoneNumber' => $user->phone_number,
-                'timeCreated' => $user->time_created,
+                'joinDate' => $user->time_created,
                 'lastUpdate' => $user->last_updated
             );
         }
@@ -95,6 +315,7 @@ class UserController extends AbstractActionController
             
             $userModel = new User($serviceManager);
             $birthday = new \DateTime($postData['birthday']);
+            $timeCreated = new \DateTime();
             
             $user = array(
                 'group_id' => $postData['group'],
@@ -103,7 +324,8 @@ class UserController extends AbstractActionController
                 'email' => $postData['email'],
                 'phone_number' => $postData['phone_number'],
                 'address' => $postData['address'],
-                'phone_number' => $postData['phoneNumber']
+                'phone_number' => $postData['phoneNumber'],
+                'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
             
             if ($userModel->createUser($user)) {
