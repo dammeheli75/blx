@@ -1,14 +1,13 @@
 <?php
 $this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/profile.min.css');
-$this->headScript()
-    ->appendFile($this->basePath() . '/common/admin/js/profile.min.js');
-?>
+$this->headScript()->appendFile($this->basePath() . '/common/admin/js/profile.min.js');
 
-<div id="grid"></div>
+echo $this->grid->render();
+?>
 
 <script type="text/javascript">
     $('.k-grid-toolbar').ready(function () {
-    	$(".k-grid-toolbar").css("overflow", "hidden").prepend('<h1 class="pull-left" style="font-size: 18px;color: #3b5998;margin: 0;padding: 0;line-height: 28px; font-weight: normal"><?php echo $this->translate('Danh sach thanh vien')?></h1>');
+    	$(".k-grid-toolbar").css("overflow", "hidden").prepend('<h1 class="pull-left" style="font-size: 18px;color: #3b5998;margin: 0;padding: 0;line-height: 28px; font-weight: normal"><?php echo $this->translate('Danh sach ho so')?></h1>');
         $(".k-grid-toolbar .k-grid-add").addClass("pull-right");
     });
 </script>

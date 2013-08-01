@@ -22,11 +22,31 @@ class Module
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
         
+        // Check authentication
+        $e->getApplication()
+            ->getEventManager()
+            ->getSharedManager()
+            ->attach('Zend\Mvc\Controller\AbstractActionController', MvcEvent::EVENT_DISPATCH, function ($e)
+        {
+            $serviceManager = $e->getApplication()
+                ->getServiceManager();
+            $auth = $serviceManager->get('auth');
+            $controller = $e->getTarget();
+            $controllerClass = get_class($controller);
+            
+            if ($controllerClass !== 'Administrator\Controller\AuthenticationController') {
+                if (! $auth->hasIdentity()) {
+                    $controller->redirect()
+                        ->toRoute('administrator/authentication/login');
+                }
+            }
+        }, 200);
+        
         // Set layouts
         $e->getApplication()
             ->getEventManager()
             ->getSharedManager()
-            ->attach('Zend\Mvc\Controller\AbstractActionController', 'dispatch', function ($e)
+            ->attach('Zend\Mvc\Controller\AbstractActionController', MvcEvent::EVENT_DISPATCH, function ($e)
         {
             $serviceManager = $e->getApplication()
                 ->getServiceManager();
@@ -44,9 +64,8 @@ class Module
             }
             // Set layout for controllers
             if (isset($config['controllers'][$moduleNamespace . '\\' . $controllerClass[1]])) {
-            	$controller->layout($config['controllers'][$moduleNamespace . '\\' . $controllerClass[1]]);
+                $controller->layout($config['controllers'][$moduleNamespace . '\\' . $controllerClass[1]]);
             }
-            
         }, 100);
     }
 

@@ -45,3 +45,45 @@ $this->headScript()->appendFile($this->basePath() . '/common/admin/js/login.min.
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+var loginViewModel = new kendo.observable({
+    email: "",
+    password: "",
+    success: false,
+    error: false,
+    error_message: "",
+    login_text: "<?php echo $this->translate('Dang nhap')?>",
+    login: function () {
+        var self = this;
+        self.set("login_text", "<?php echo $this->translate('Dang dang nhap')?>");
+        // Send
+        jQuery.post("<?php echo $this->url('administrator/authentication/authenticate')?>", {
+            email: this.email,
+            password: this.password
+            <?php if ($this->redirectUrl) : ?>
+            ,redirect_url: <?php echo urlencode($this->redirectUrl)?>
+            <?php endif; ?>
+        }, function (response) {
+            if (!response.success) {
+                // if error
+                self.set("success", false);
+                self.set("error", true);
+                self.set("error_message", response.errorMessage);
+                self.set("login_text", "<?php echo $this->translate('Dang nhap')?>");
+            } else {
+                self.set("error", false);
+                self.set("success", true);
+                // Redirect to control panel
+                window.location.href = response.redirectUrl;
+            }
+
+            self.set("email", "");
+            self.set("password", "");
+        });
+        return false;
+    }
+});
+
+kendo.bind($('#login-form'), loginViewModel);
+</script>

@@ -129,6 +129,7 @@ return array(
         'factories' => array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
             'db' => 'Blx\Db\DbServiceFactory',
+            'auth' => 'Blx\Authentication\AuthenticationServiceFactory',
         )
     ),
     'translator' => array(

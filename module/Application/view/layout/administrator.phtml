@@ -53,13 +53,13 @@ echo $this->headScript();
 
 					<ul class="nav pull-right">
 						<li class="divider-vertical"></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
+						<li class="dropdown"><a href="<?php echo $this->url('administrator/users') ?>" class="dropdown-toggle"
 							data-toggle="dropdown"><?php echo $this->translate('Luu Hoang Nam')?>&nbsp;<b
 								class="caret"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><?php echo $this->translate('Thong tin ca nhan')?></a></li>
-								<li class="divider"></li>
-								<li><a href="#"><?php echo $this->translate('Dang xuat')?></a></li>
+								<!-- <li><a href="<?php echo $this->url('administrator/users') ?>"><?php echo $this->translate('Thong tin ca nhan')?></a></li>
+								<li class="divider"></li> -->
+								<li><a href="<?php echo $this->url('administrator/authentication/logout') ?>"><?php echo $this->translate('Dang xuat')?></a></li>
 							</ul></li>
 					</ul>
 

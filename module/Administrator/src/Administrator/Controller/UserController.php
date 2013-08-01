@@ -88,20 +88,17 @@ class UserController extends AbstractActionController
                     $('<input data-bind=\"value:' + options.field + '\"/>')
                         .appendTo(container)
                         .kendoDropDownList({
-                            autoBind: true,
+                            optionLabel: '" . $translator->translate('Chon nhom thanh vien') . "',
                             dataTextField: 'title',
                             dataValueField: 'ID',
                             dataSource: {
                                 transport: {
                                     read: {
-                                        url: 'http://localhost/blx/public/administrator/user-groups/read',
-                                        dataType: 'json'
+                                        url: 'http://localhost/blx/public/administrator/user-groups/read'
                                     }
                                 },
                                 schema: {
-                                    data: function (response) {
-                                        return response.groups || [];
-                                    }
+                                    data: 'groups'
                                 }
                             }
                         });
@@ -125,7 +122,7 @@ class UserController extends AbstractActionController
             ->title($translator->translate('Mat khau'))
             ->hidden(true)
             ->editor(new JavaScriptFunction("function (container, options) {
-                    $('<input name=\"password\" type=\"password\" class=\"k-input k-textbox\" data-bind=\"value:' + options.field + '\"/>')
+                    $('<input name=\"password\" type=\"password\" class=\"k-input k-textbox\" placeholder=\"". $translator->translate('De trong neu khong muon thay doi') ."\"/>')
                         .appendTo(container);
                 }"));
         $grid->addColumn($passwordColumn);
@@ -222,7 +219,9 @@ class UserController extends AbstractActionController
         $emailModelField->type('string')->validation($emailModelFieldValidation);
         $model->addField($emailModelField);
         $passwordModelField = new DataSourceSchemaModelField('password');
-        $passwordModelField->type('string');
+        $passwordModelFieldValidation = new DataSourceSchemaModelFieldValidation();
+        $passwordModelFieldValidation->required(true);
+        $passwordModelField->type('string')->validation($passwordModelFieldValidation);
         $model->addField($passwordModelField);
         $addressModelField = new DataSourceSchemaModelField('address');
         $addressModelFieldValidation = new DataSourceSchemaModelFieldValidation();
@@ -243,6 +242,9 @@ class UserController extends AbstractActionController
         
         // Events
         $grid->dataBound(new JavaScriptFunction("function () { \$('[data-toggle=\"tooltip\"]').tooltip({placement: \"right\"});}"));
+        $grid->edit(new JavaScriptFunction("function () {
+            \$('input[type=\"password\"]').val('');
+        }"));
         
         $viewModel->setVariable('grid', $grid);
         return $viewModel;
@@ -317,6 +319,8 @@ class UserController extends AbstractActionController
             $birthday = new \DateTime($postData['birthday']);
             $timeCreated = new \DateTime();
             
+            $password = $postData['password'];
+            
             $user = array(
                 'group_id' => $postData['group'],
                 'full_name' => $postData['fullName'],
@@ -327,6 +331,10 @@ class UserController extends AbstractActionController
                 'phone_number' => $postData['phoneNumber'],
                 'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
+            
+            if ($password && strlen($password) > 0) {
+                $user['password'] = $password;
+            }
             
             if ($userModel->createUser($user)) {
                 $response['success'] = true;
@@ -359,6 +367,7 @@ class UserController extends AbstractActionController
             $userModel = new User($serviceManager);
             
             $birthday = new \DateTime($postData['birthday']);
+            $password = $postData['password'];
             
             $user = array(
                 'group_id' => $postData['group']['ID'],
@@ -369,6 +378,10 @@ class UserController extends AbstractActionController
                 'address' => $postData['address'],
                 'phone_number' => $postData['phoneNumber']
             );
+            
+            if ($password && strlen($password) > 0) {
+                $user['password'] = md5($password);
+            }
             
             if ($userModel->updateUser(array(
                 'user_id' => $postData['ID']

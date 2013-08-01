@@ -7,7 +7,9 @@ return array(
             'Administrator\Controller\User' => 'Administrator\Controller\UserController',
             'Administrator\Controller\UserGroup' => 'Administrator\Controller\UserGroupController',
             'Administrator\Controller\System' => 'Administrator\Controller\SystemController',
-            'Administrator\Controller\Authentication' => 'Administrator\Controller\AuthenticationController'
+            'Administrator\Controller\Authentication' => 'Administrator\Controller\AuthenticationController',
+            'Administrator\Controller\Collaborator' => 'Administrator\Controller\CollaboratorController',
+            'Administrator\Controller\Venue' => 'Administrator\Controller\VenueController'
         )
     ),
     'router' => array(
@@ -62,7 +64,6 @@ return array(
                                 'options' => array(
                                     'route' => '[/:action]',
                                     'constraints' => array(
-                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
                                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                                     ),
                                     'defaults' => array()
@@ -94,7 +95,6 @@ return array(
                                 'options' => array(
                                     'route' => '[/:action]',
                                     'constraints' => array(
-                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
                                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                                     ),
                                     'defaults' => array()
@@ -126,7 +126,6 @@ return array(
                                 'options' => array(
                                     'route' => '[/:action]',
                                     'constraints' => array(
-                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
                                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                                     ),
                                     'defaults' => array()
@@ -181,19 +180,46 @@ return array(
                         ),
                         'may_terminate' => true,
                         'child_routes' => array(
-                            // This route is a sane default when developing a module;
-                            // as you solidify the routes for your module, however,
-                            // you may want to remove it and replace it with more
-                            // specific routes.
-                            'default' => array(
-                                'type' => 'Segment',
+                            'login' => array(
+                                'type' => 'Literal',
                                 'options' => array(
-                                    'route' => '[/:action]',
-                                    'constraints' => array(
-                                        'controller' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
-                                    ),
-                                    'defaults' => array()
+                                    // Change this to something specific to your module
+                                    'route' => '/login',
+                                    'defaults' => array(
+                                        // Change this value to reflect the namespace in which
+                                        // the controllers for your module are found
+                                        '__NAMESPACE__' => 'Administrator\Controller',
+                                        'controller' => 'Authentication',
+                                        'action' => 'login'
+                                    )
+                                )
+                            ),
+                            'logout' => array(
+                                'type' => 'Literal',
+                                'options' => array(
+                                    // Change this to something specific to your module
+                                    'route' => '/logout',
+                                    'defaults' => array(
+                                        // Change this value to reflect the namespace in which
+                                        // the controllers for your module are found
+                                        '__NAMESPACE__' => 'Administrator\Controller',
+                                        'controller' => 'Authentication',
+                                        'action' => 'logout'
+                                    )
+                                )
+                            ),
+                            'authenticate' => array(
+                                'type' => 'Literal',
+                                'options' => array(
+                                    // Change this to something specific to your module
+                                    'route' => '/authenticate',
+                                    'defaults' => array(
+                                        // Change this value to reflect the namespace in which
+                                        // the controllers for your module are found
+                                        '__NAMESPACE__' => 'Administrator\Controller',
+                                        'controller' => 'Authentication',
+                                        'action' => 'authenticate'
+                                    )
                                 )
                             )
                         )

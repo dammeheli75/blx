@@ -2,7 +2,7 @@ $(document).ready(function () {
     $("#gridOld").kendoGrid({
         columns: [
             {
-                field: "profileID",
+                field: "ID",
                 title: "ID",
                 width: 60,
                 attributes: {
@@ -11,7 +11,7 @@ $(document).ready(function () {
                 filterable: false
             },
             {
-                field: "name",
+                field: "fullName",
                 title: "Họ và tên",
                 width: 180,
                 template: function (dataItem) {
@@ -44,20 +44,39 @@ $(document).ready(function () {
                 filterable: false
             },
             {
-                field: "phone.number",
+                field: "phoneNumber",
                 title: "Điện thoại",
                 width: 110,
-                template: "#= phone.number #",
                 filterable: false
             },
             {
                 field: "collaborator",
                 title: "CTV",
                 width: 110,
-                filterable: false
+                filterable: false,
+                template: "#= collaborator.title #",
+                editor: function (container, options) {
+                    $('<input data-bind="value:' + options.field + '"/>')
+                        .appendTo(container)
+                        .kendoDropDownList({
+                            dataTextField: "title",
+                            dataValueField: "value",
+                            dataSource: {
+                                transport: {
+                                    read: "http://localhost/blx/public/administrator/collaborator/read",
+                                    dataType: 'json'
+                                },
+                                schema: {
+                                    data: "collaborators",
+                                    total: "total"
+                                }
+                            }
+                        });
+
+                }
             },
             {
-                field: "test.date",
+                field: "testDate",
                 title: "Ngày thi",
                 width: 100,
                 filterable: false,
@@ -66,8 +85,8 @@ $(document).ready(function () {
                 },
                 format: "{0:dd/MM/yyyy}",
                 template: function (dataItem) {
-                    if (dataItem.test.date) {
-                        return '<a class="tooltip-cell" data-toggle="tooltip" title="' + dataItem.test.venue + '">' + kendo.toString(dataItem.test.date, "dd/MM/yyyy") + '</a>';
+                    if (dataItem.testDate) {
+                        return '<a class="tooltip-cell" data-toggle="tooltip" title="' + dataItem.testVenue + '">' + kendo.toString(dataItem.testDate, "dd/MM/yyyy") + '</a>';
                     } else {
                         return '--';
                     }
@@ -86,7 +105,7 @@ $(document).ready(function () {
                 }
             },
             {
-                field: "test.venue",
+                field: "testVenue",
                 title: "Địa điểm thi",
                 hidden: true,
                 editor: function (container, options) {
@@ -94,36 +113,27 @@ $(document).ready(function () {
                         .appendTo(container)
                         .kendoDropDownList({
                             dataTextField: "title",
-                            dataValueField: "value",
-                            dataSource: [
-                                {
-                                    title: "Chọn địa điểm",
-                                    value: null
-                                },
-                                {
-                                    title: "Số 1 Quốc Tử Giám",
-                                    value: 1
-                                },
-                                {
-                                    title: "101 Tô Vĩnh Diện",
-                                    value: 2
+                            dataValueField: "ID",
+                            dataSource: {
+                                transport: {
+                                    read: {
+                                        url: 'http://localhost/blx/public/administrator/venue/read',
+                                        dataType: 'json'
+                                    }
                                 }
-                            ]
+                            }
                         });
 
                 },
                 filterable: false
             },
             {
-                field: "test.status",
+                field: "testStatus",
                 title: "Thi",
                 filterable: false,
                 width: 80,
                 template: function (dataItem) {
-                    switch (dataItem.test.status) {
-                        case 0:
-                            return "--";
-                            break;
+                    switch (dataItem.testStatus) {
                         case 1:
                             return "Trượt LT";
                             break;
@@ -175,7 +185,7 @@ $(document).ready(function () {
                 }
             },
             {
-                field: "license.front",
+                field: "licenseFront",
                 title: "BLX&nbsp;<sup>trước</sup>",
                 width: 76,
                 filterable: false,
@@ -183,8 +193,8 @@ $(document).ready(function () {
                     style: "text-align: center;"
                 },
                 template: function (dataItem) {
-                    if (dataItem.license.front) {
-                        return '<img width="50" height="32" src="' + dataItem.license.front + '" alt="Bằng lái xe của ' + dataItem.name + '">';
+                    if (dataItem.licenseFront) {
+                        return '<img width="50" height="32" src="' + dataItem.licenseFront + '" alt="Bằng lái xe của ' + dataItem.name + '">';
                     } else {
                         return "--";
                     }
@@ -192,7 +202,7 @@ $(document).ready(function () {
                 sortable: false
             },
             {
-                field: "license.back",
+                field: "licenseBack",
                 title: "BLX&nbsp;<sup>sau</sup>",
                 width: 76,
                 filterable: false,
@@ -200,8 +210,8 @@ $(document).ready(function () {
                     style: "text-align: center;"
                 },
                 template: function (dataItem) {
-                    if (dataItem.license.back) {
-                        return '<img width="50" height="32" src="' + dataItem.license.back + '" alt="Bằng lái xe của ' + dataItem.name + '">';
+                    if (dataItem.licenseBack) {
+                        return '<img width="50" height="32" src="' + dataItem.licenseBack + '" alt="Bằng lái xe của ' + dataItem.name + '">';
                     } else {
                         return "--";
                     }
@@ -233,7 +243,7 @@ $(document).ready(function () {
             }
         ],
         height: function () {
-            return ($(window).height() - 66) + "px";
+            return $(window).height() - 66;
         },
         pageable: {
             pageSize: 50,
@@ -276,24 +286,20 @@ $(document).ready(function () {
         dataSource: {
             transport: {
                 read: {
-                    url: "http://localhost/BLX.VN/data/profile.json",
-                    type: "GET",
-                    dataType: "json"
+                    url: "http://localhost/blx/public/administrator/profiles/read",
+                    type: "GET"
                 },
                 create: {
-                    url: "http://localhost/BLX.VN/profile-create.php",
-                    type: "POST",
-                    dataType: "json"
+                    url: "http://localhost/blx/public/administrator/profiles/create",
+                    type: "POST"
                 },
                 update: {
-                    url: "http://localhost/BLX.VN/profile-update.php",
-                    type: "POST",
-                    dataType: "json"
+                    url: "http://localhost/blx/public/administrator/profiles/update",
+                    type: "POST"
                 },
                 destroy: {
-                    url: "http://localhost/BLX.VN/profile-destroy.php",
-                    type: "POST",
-                    dataType: "json"
+                    url: "http://localhost/blx/public/administrator/profiles/destroy",
+                    type: "POST"
                 }
             },
             schema: {
@@ -303,13 +309,13 @@ $(document).ready(function () {
                 },
                 total: "total",
                 model: {
-                    id: "profileID",
+                    id: "ID",
                     fields: {
-                        profileID: {
+                        ID: {
                             editable: false,
                             nullable: false
                         },
-                        name: {
+                        fullName: {
                             nullable: false,
                             validation: {
                                 required: true
@@ -328,12 +334,10 @@ $(document).ready(function () {
                                 required: true
                             }
                         },
-                        phone: {
-                            number: {
-                                nullable: false,
-                                validation: {
-                                    required: true
-                                }
+                        phoneNumber: {
+                            nullable: false,
+                            validation: {
+                                required: true
                             }
                         },
                         test: {

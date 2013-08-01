@@ -3,22 +3,13 @@ namespace Administrator\Model;
 
 use Blx\Db\TableGateway\AbstractTableGateway;
 use Zend\Db\Sql\Where;
-use Zend\Db\TableGateway\Feature\FeatureSet;
-use Zend\Db\TableGateway\Feature\RowGatewayFeature;
 
 class User extends AbstractTableGateway
 {
 
     protected $table = 'users';
 
-    public function __construct($serviceManager)
-    {
-        parent::__construct($serviceManager);
-        
-        $this->featureSet = new FeatureSet(array(
-            new RowGatewayFeature('user_id')
-        ));
-    }
+    protected $primaryKey = 'user_id';
 
     public function getUsers()
     {
@@ -57,18 +48,19 @@ class User extends AbstractTableGateway
         
         return $row->save();
     }
-    
-    public function removeUser(array $conditions) {
+
+    public function removeUser(array $conditions)
+    {
         $where = new Where();
         
         if (isset($conditions['user_id'])) {
-        	$where->equalTo('user_id', $conditions['user_id']);
+            $where->equalTo('user_id', $conditions['user_id']);
         }
         if (isset($conditions['email'])) {
-        	$where->equalTo('email', $conditions['email']);
+            $where->equalTo('email', $conditions['email']);
         }
         if (isset($conditions['phone_number'])) {
-        	$where->equalTo('phone_number', $conditions['phone_number']);
+            $where->equalTo('phone_number', $conditions['phone_number']);
         }
         
         return $this->delete($where);

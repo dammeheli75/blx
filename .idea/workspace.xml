@@ -23,7 +23,8 @@
     <file path="/common.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375258947214" ignored="false" />
     <file path="$PROJECT_DIR$/public/common/admin/js/user.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375302691963" ignored="false" />
     <file path="/user.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375301782209" ignored="false" />
-    <file path="/profile.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375296394829" ignored="false" />
+    <file path="/profile.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375384091779" ignored="false" />
+    <file path="$PROJECT_DIR$/public/common/admin/js/login.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375388728103" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,44 +43,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/common/admin/js/common.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="user.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="214" column="7" selection-start="7508" selection-end="7508" vertical-scroll-proportion="0.8489209">
-              <folding>
-                <marker date="1375302663000" expanded="false" signature="2960:2976" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile-approval.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile-approval.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="profile.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="profile.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="31" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+            <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="2.7194245">
               <folding>
-                <marker date="1375296400000" expanded="false" signature="999:1015" placeholder="..." />
-                <marker date="1375296400000" expanded="false" signature="2804:2820" placeholder="..." />
-                <marker date="1375296400000" expanded="false" signature="13354:13444" placeholder="..." />
+                <marker date="1375384092000" expanded="false" signature="996:1012" placeholder="..." />
+                <marker date="1375384092000" expanded="true" signature="3671:3687" placeholder="..." />
+                <marker date="1375384092000" expanded="true" signature="13699:13789" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/js/login.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="36" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/css/profile.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="20" column="0" selection-start="275" selection-end="315" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/css/user.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="1" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -103,14 +102,16 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/public/common/admin/js/common.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/profile.js" />
         <option value="$PROJECT_DIR$/public/common/admin/js/user.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/profile.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/login.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/user.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="703" />
+    <option name="width" value="1440" />
     <option name="height" value="804" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -211,10 +212,6 @@
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -235,6 +232,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -287,7 +288,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="703" height="804" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="804" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -295,12 +296,12 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6711956" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24246772" sideWeight="0.6711956" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32880434" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33016303" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -399,22 +400,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="31" selection-start="216" selection-end="216" vertical-scroll-proportion="0.0">
+        <state line="2" column="26" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0">
           <folding>
-            <marker date="1375296400000" expanded="false" signature="999:1015" placeholder="..." />
-            <marker date="1375296400000" expanded="false" signature="2804:2820" placeholder="..." />
-            <marker date="1375296400000" expanded="false" signature="13354:13444" placeholder="..." />
+            <marker date="1375302663000" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/js/user.js">
+    <entry file="file://$PROJECT_DIR$/public/common/js/guiding.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="214" column="7" selection-start="7508" selection-end="7508" vertical-scroll-proportion="0.8489209">
+        <state line="0" column="38" selection-start="38" selection-end="38" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="36" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/profile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="275" selection-end="315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/user.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="1" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="2.7194245">
           <folding>
-            <marker date="1375302663000" expanded="false" signature="2960:2976" placeholder="..." />
+            <marker date="1375384092000" expanded="false" signature="996:1012" placeholder="..." />
+            <marker date="1375384092000" expanded="true" signature="3671:3687" placeholder="..." />
+            <marker date="1375384092000" expanded="true" signature="13699:13789" placeholder="..." />
           </folding>
         </state>
       </provider>
