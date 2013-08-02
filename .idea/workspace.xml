@@ -25,6 +25,7 @@
     <file path="/user.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375301782209" ignored="false" />
     <file path="/profile.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375384091779" ignored="false" />
     <file path="$PROJECT_DIR$/public/common/admin/js/login.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375388728103" ignored="false" />
+    <file path="/kendo.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375396310878" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,15 +44,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="profile.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="profile.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="2.7194245">
+            <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="0.0">
               <folding>
                 <marker date="1375384092000" expanded="false" signature="996:1012" placeholder="..." />
                 <marker date="1375384092000" expanded="true" signature="3671:3687" placeholder="..." />
                 <marker date="1375384092000" expanded="true" signature="13699:13789" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="kendo.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/css/kendo.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1130" column="23" selection-start="21231" selection-end="21231" vertical-scroll-proportion="0.8940678">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -106,6 +116,7 @@
         <option value="$PROJECT_DIR$/public/common/admin/js/profile.js" />
         <option value="$PROJECT_DIR$/public/common/admin/js/login.js" />
         <option value="$PROJECT_DIR$/public/common/admin/css/user.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/kendo.css" />
       </list>
     </option>
   </component>
@@ -247,6 +258,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings" />
+    <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -439,12 +451,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="2.7194245">
+        <state line="126" column="17" selection-start="4261" selection-end="4996" vertical-scroll-proportion="0.0">
           <folding>
             <marker date="1375384092000" expanded="false" signature="996:1012" placeholder="..." />
             <marker date="1375384092000" expanded="true" signature="3671:3687" placeholder="..." />
             <marker date="1375384092000" expanded="true" signature="13699:13789" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/kendo.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1130" column="23" selection-start="21231" selection-end="21231" vertical-scroll-proportion="0.8940678">
+          <folding />
         </state>
       </provider>
     </entry>

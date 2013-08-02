@@ -68,7 +68,6 @@ class ProfileController extends AbstractActionController
         $fullNameColumn->field('fullName')
             ->title($translator->translate('Ho va ten'))
             ->width(160)
-            ->filterable(false)
             ->template(new JavaScriptFunction("function (dataItem) {
                     return '<a class=\"tooltip-cell\" data-toggle=\"tooltip\" title=\'" . $translator->translate('Nam sinh:') . "&nbsp;' + kendo.toString(dataItem.birthday, \"dd/MM/yyyy\") + '\'>' + dataItem.fullName + '</a>';
                 }"));
@@ -79,15 +78,19 @@ class ProfileController extends AbstractActionController
             ->title($translator->translate('Nam sinh'))
             ->hidden(true)
             ->filterable(false)
+            ->template(new JavaScriptFunction("function (dataItem) {
+                    if (dataItem.birthday) {
+                        return kendo.toString(dataItem.birthday, 'yyyy/MM/dd');
+                    } else {
+                        return '--';
+                    }
+                }"))
             ->editor(new JavaScriptFunction("function (container, options) {
-                    $('<input name=\"birthday\" style=\"border-radius: 0\" data-bind=\"value:' + options.field + '\"/>')
+                    $('<input style=\"border-radius: 0\" data-bind=\"value:' + options.field + '\"/>')
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: \"year\",
-
-                            // display month and year in the input
-                            format: \"dd/MM/yyyy\"
+                            depth: 'year'
                         });
                 }"));
         $grid->addColumn($birthdayColumn);
@@ -140,10 +143,9 @@ class ProfileController extends AbstractActionController
             ->width(90)
             ->filterable(false)
             ->attributes(' style="text-align: center"')
-            ->format('{0:dd/MM/yyyy}')
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.testDate) {
-                        return kendo.toString(dataItem.testDate, \"dd/MM/yyyy\");
+                        return kendo.toString(dataItem.testDate, \"yyyy/MM/dd\");
                     } else {
                         return '--';
                     }
@@ -154,10 +156,7 @@ class ProfileController extends AbstractActionController
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: \"year\",
-
-                            // display month and year in the input
-                            format: \"dd/MM/yyyy\"
+                            depth: \"year\"
                         });
                 }"));
         $grid->addColumn($testDateColumn);
@@ -510,18 +509,18 @@ class ProfileController extends AbstractActionController
             $collaboratorModel = new Collaborator($serviceManager);
             $venueModel = new Venue($serviceManager);
             
-            $birthday = new \DateTime($postData['birthday']);
-            $testDate = new \DateTime($postData['testDate']);
+            $birthday = strlen($postData['birthday']) > 0 ? new \DateTime($postData['birthday']) : NULL;
+            $testDate = strlen($postData['testDate']) > 0 ? new \DateTime($postData['testDate']) : NULL;
             $timeCreated = new \DateTime();
             
             $profile = array(
                 'full_name' => $postData['fullName'],
-                'birthday' => $birthday->format('Y-m-d'),
+                'birthday' => $birthday ? $birthday->format('Y-m-d') : NULL,
                 'address' => $postData['address'],
                 'phone_number' => $postData['phoneNumber'],
                 'phone_onlysms' => false,
                 'test_status' => $postData['testStatus'],
-                'test_date' => $testDate->format('Y-m-d'),
+                'test_date' => $testDate ? $testDate->format('Y-m-d') : NULL,
                 'license_front' => $postData['licenseFront'],
                 'license_back' => $postData['licenseBack'],
                 'note' => $postData['note']

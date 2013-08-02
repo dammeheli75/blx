@@ -1127,3 +1127,7 @@ div.k-imagebrowser-dropzone em {
     color: #FFF;
 }
 
+.k-grid-filter.k-state-active {
+    background: #6d84b4;
+}
+

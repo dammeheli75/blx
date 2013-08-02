@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-02 04:04+0700\n"
-"PO-Revision-Date: 2013-08-02 04:05+0700\n"
+"POT-Creation-Date: 2013-08-02 05:23+0700\n"
+"PO-Revision-Date: 2013-08-02 05:23+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -15,11 +15,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: module\n"
 
-#: module/Administrator/src/Administrator/Controller/AuthenticationController.php:55
+#: module/Administrator/src/Administrator/Controller/AuthenticationController.php:81
 msgid "Sai email hoac mat khau"
 msgstr "Sai email hoặc mật khẩu"
 
-#: module/Administrator/src/Administrator/Controller/AuthenticationController.php:63
+#: module/Administrator/src/Administrator/Controller/AuthenticationController.php:93
 msgid "Giao thuc khong duoc cho phep"
 msgstr "Giao thức không được phép"
 
@@ -213,7 +213,7 @@ msgstr "Để trống nếu không muốn thay đổi"
 #: module/Administrator/view/administrator/authentication/login.phtml:9
 #: module/Administrator/view/administrator/authentication/login.phtml:42
 #: module/Administrator/view/administrator/authentication/login.phtml:56
-#: module/Administrator/view/administrator/authentication/login.phtml:70
+#: module/Administrator/view/administrator/authentication/login.phtml:73
 msgid "Dang nhap"
 msgstr "Đăng nhập"
 

@@ -33,6 +33,10 @@ use Kendo\Data\DataSourceSchemaModelFieldValidation;
 class UserController extends AbstractActionController
 {
 
+    /**
+     * @todo Fix date time error. Display in vietnam format
+     * @see \Zend\Mvc\Controller\AbstractActionController::indexAction()
+     */
     public function indexAction()
     {
         $viewModel = new ViewModel();
@@ -122,7 +126,7 @@ class UserController extends AbstractActionController
             ->title($translator->translate('Mat khau'))
             ->hidden(true)
             ->editor(new JavaScriptFunction("function (container, options) {
-                    $('<input name=\"password\" type=\"password\" class=\"k-input k-textbox\" placeholder=\"". $translator->translate('De trong neu khong muon thay doi') ."\"/>')
+                    $('<input type=\"password\" class=\"k-input k-textbox\" placeholder=\"" . $translator->translate('De trong neu khong muon thay doi') . "\"/>')
                         .appendTo(container);
                 }"));
         $grid->addColumn($passwordColumn);
@@ -132,16 +136,19 @@ class UserController extends AbstractActionController
             ->title($translator->translate('Nam sinh'))
             ->width(100)
             ->attributes(" style= \"text-align: center;\"")
-            ->template("#= kendo.toString(birthday,\"dd/MM/yyyy\") #")
+            ->template(new JavaScriptFunction("function (dataItem) {
+                    if (dataItem.birthday) {
+                        return kendo.toString(dataItem.birthday, 'yyyy/MM/dd');
+                    } else {
+                        return '--';
+                    }
+                }"))
             ->editor(new JavaScriptFunction("function (container, options) {
-                    $('<input name=\"birthday\" style=\"border-radius: 0\" data-bind=\"value:' + options.field + '\"/>')
+                    $('<input style=\"border-radius: 0\" data-bind=\"value:' + options.field + '\"/>')
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: \"year\",
-
-                            // display month and year in the input
-                            format: \"dd/MM/yyyy\"
+                            depth: 'year'
                         });
                 }"));
         $grid->addColumn($birthdayColumn);
@@ -209,9 +216,7 @@ class UserController extends AbstractActionController
         $fullNameModelField->type('string')->validation($fullNameModelFieldValidation);
         $model->addField($fullNameModelField);
         $birthdayModelField = new DataSourceSchemaModelField('birthday');
-        $birthdayModelFieldValidation = new DataSourceSchemaModelFieldValidation();
-        $birthdayModelFieldValidation->required(true);
-        $birthdayModelField->type('date')->validation($birthdayModelFieldValidation);
+        $birthdayModelField->type('date');
         $model->addField($birthdayModelField);
         $emailModelField = new DataSourceSchemaModelField('email');
         $emailModelFieldValidation = new DataSourceSchemaModelFieldValidation();
