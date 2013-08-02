@@ -10,6 +10,7 @@ namespace Application;
 
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
+use Zend\Db\TableGateway\Feature\GlobalAdapterFeature;
 
 class Module
 {
@@ -21,6 +22,9 @@ class Module
         $eventManager = $e->getApplication()->getEventManager();
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
+        
+        // Set Global Adapter for TableGateway
+        GlobalAdapterFeature::setStaticAdapter($serviceManager->get('db'));
         
         // Check authentication
         $e->getApplication()

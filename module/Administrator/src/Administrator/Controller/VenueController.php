@@ -31,7 +31,7 @@ class VenueController extends AbstractActionController
         
         $venueModel = new Venue($serviceManager);
         
-        $venues = $venueModel->getVenues();
+        $venues = $venueModel->cache->getVenues();
         
         $response = array(
             'success' => true,

@@ -2,8 +2,6 @@
 namespace Administrator\Model;
 
 use Blx\Db\TableGateway\AbstractTableGateway;
-use Zend\Db\TableGateway\Feature\FeatureSet;
-use Zend\Db\TableGateway\Feature\RowGatewayFeature;
 use Zend\Db\Sql\Where;
 use Zend\Db\Sql\Select;
 use Zend\Db\Sql\Expression;
@@ -14,16 +12,7 @@ class Profile extends AbstractTableGateway
     protected $table = 'profiles';
 
     protected $primaryKey = 'profile_id';
-
-    public function __construct($serviceManager)
-    {
-        parent::__construct($serviceManager);
-        
-        $this->featureSet = new FeatureSet(array(
-            new RowGatewayFeature('profile_id')
-        ));
-    }
-
+    
     public function getProfiles()
     {
         return $this->select();

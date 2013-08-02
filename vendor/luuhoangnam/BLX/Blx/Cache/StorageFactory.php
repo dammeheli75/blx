@@ -1,27 +1,32 @@
 <?php
 namespace Blx\Cache;
 
+use Zend\Cache\Storage\Adapter\Filesystem;
+use Zend\Cache\Storage\Adapter\FilesystemOptions;
+use Zend\Cache\Storage\Plugin\ExceptionHandler;
+use Zend\Cache\Storage\Plugin\PluginOptions;
+use Zend\Cache\Storage\Plugin\Serializer;
+
 class StorageFactory
 {
 
-    public static function factory($config)
+    public static function factory($config = array('ttl' => 3600))
     {
-        $cache = \Zend\Cache\StorageFactory::factory(array(
-            'adapter' => array(
-                'name' => 'filesystem',
-                'options' => array(
-                    'ttl' => 3600,
-                    'cache_dir' => DATA_PATH . DS . 'cache'
-                )
-            ),
-            'plugins' => array(
-                'exception_handler' => array(
-                    'throw_exceptions' => false
-                ),
-                'serializer'
-            )
-        ));
+        $filesystemAdapter = new Filesystem();
         
-        return $cache;
+        // Options
+        $filesystemOptions = new FilesystemOptions();
+        $filesystemOptions->setCacheDir(DATA_PATH . DS . 'cache')->setTtl($config['ttl']);
+        
+        // Plugins
+        $exceptionHandler = new ExceptionHandler();
+        $exceptionHandlerOptions = new PluginOptions();
+        $exceptionHandlerOptions->setThrowExceptions(false);
+        $exceptionHandler->setOptions($exceptionHandlerOptions);
+        
+        $filesystemAdapter->setOptions($filesystemOptions);
+        $filesystemAdapter->addPlugin($exceptionHandler)->addPlugin(new Serializer());
+        
+        return $filesystemAdapter;
     }
 }

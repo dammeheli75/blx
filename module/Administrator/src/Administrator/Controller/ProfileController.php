@@ -356,16 +356,23 @@ class ProfileController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url($this->url()->fromRoute('administrator/profiles') . '/read');
+        $transportRead->url($this->url()
+            ->fromRoute('administrator/profiles') . '/read');
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url($this->url()->fromRoute('administrator/profiles') . '/create')->type('POST');
+        $transportCreate->url($this->url()
+            ->fromRoute('administrator/profiles') . '/create')
+            ->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url($this->url()->fromRoute('administrator/profiles') . '/update')->type('POST');
+        $transportUpdate->url($this->url()
+            ->fromRoute('administrator/profiles') . '/update')
+            ->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url($this->url()->fromRoute('administrator/profiles') . '/destroy')->type('POST');
+        $transportDestroy->url($this->url()
+            ->fromRoute('administrator/profiles') . '/destroy')
+            ->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)
             ->create($transportCreate)
@@ -444,7 +451,7 @@ class ProfileController extends AbstractActionController
         $collaboratorModel = new Collaborator($serviceManager);
         $venueModel = new Venue($serviceManager);
         
-        $profiles = $profileModel->getProfiles();
+        $profiles = $profileModel->cache->getProfiles();
         
         $response = array(
             'succes' => true,
@@ -537,7 +544,7 @@ class ProfileController extends AbstractActionController
                 }
             }
             
-            if ($profileModel->createProfile($profile)) {
+            if ($profileModel->cache->createProfile($profile)) {
                 $response['success'] = true;
                 $response['insert_id'] = $profileModel->getLastInsertValue();
             }
@@ -604,7 +611,7 @@ class ProfileController extends AbstractActionController
                 $profile['test_date'] = NULL;
             }
             
-            if ($profileModel->isExists($postData['ID'])) {
+            if ($profileModel->cache->isExists($postData['ID'])) {
                 if ($profileModel->updateProfile(array(
                     'profile_id' => $postData['ID']
                 ), $profile)) {
@@ -637,7 +644,7 @@ class ProfileController extends AbstractActionController
             
             $profileModel = new Profile($serviceManager);
             
-            if ($profileModel->isExists($postData['ID'])) {
+            if ($profileModel->cache->isExists($postData['ID'])) {
                 if ($profileModel->removeProfile(array(
                     'profile_id' => $postData['ID']
                 ))) {
