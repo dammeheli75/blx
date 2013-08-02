@@ -32,9 +32,14 @@ class Module
                 ->getServiceManager();
             $auth = $serviceManager->get('auth');
             $controller = $e->getTarget();
-            $controllerClass = get_class($controller);
+            $controllerClassPart = explode('\\', get_class($controller));
+            $module = $controllerClassPart[0];
+            $controllerClass = $controllerClassPart[2];
             
-            if ($controllerClass !== 'Administrator\Controller\AuthenticationController') {
+            // set auth for controller
+            $controller->auth = $controller->layout()->auth = $auth;
+            
+            if ($module == 'Administrator' && $controllerClass !== 'AuthenticationController') {
                 if (! $auth->hasIdentity()) {
                     $controller->redirect()
                         ->toRoute('administrator/authentication/login');

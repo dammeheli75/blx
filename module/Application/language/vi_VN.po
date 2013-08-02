@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-02 05:23+0700\n"
-"PO-Revision-Date: 2013-08-02 05:23+0700\n"
+"POT-Creation-Date: 2013-08-02 11:33+0700\n"
+"PO-Revision-Date: 2013-08-02 11:34+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -24,189 +24,193 @@ msgid "Giao thuc khong duoc cho phep"
 msgstr "Giao thức không được phép"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:69
-#: module/Administrator/src/Administrator/Controller/UserController.php:110
+#: module/Administrator/src/Administrator/Controller/UserController.php:114
 msgid "Ho va ten"
 msgstr "Họ và tên"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:73
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:72
 msgid "Nam sinh:"
 msgstr "Năm sinh:"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:79
-#: module/Administrator/src/Administrator/Controller/UserController.php:132
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:78
+#: module/Administrator/src/Administrator/Controller/UserController.php:136
 msgid "Nam sinh"
 msgstr "Năm sinh"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:97
-#: module/Administrator/src/Administrator/Controller/UserController.php:151
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:100
+#: module/Administrator/src/Administrator/Controller/UserController.php:158
 msgid "Dia chi"
 msgstr "Địa chỉ"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:104
-#: module/Administrator/src/Administrator/Controller/UserController.php:157
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:107
+#: module/Administrator/src/Administrator/Controller/UserController.php:164
 msgid "Dien thoai"
 msgstr "Điện thoại"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:111
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:114
 msgid "CTV"
 msgstr "CTV"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:121
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:124
 msgid "Chon cong tac vien"
 msgstr "Chọn cộng tác viên"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:139
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:142
 msgid "Ngay thi"
 msgstr "Ngày thi"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:167
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:166
 #: module/Application/view/application/guiding/index.phtml:19
 #: module/Application/view/application/guiding/index.phtml:69
 msgid "Dia diem thi"
 msgstr "Địa điểm thi"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:178
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:177
 msgid "Chon dia diem thi"
 msgstr "Chọn địa điểm thi"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:196
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:195
 msgid "Thi"
 msgstr "Thi"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:203
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:202
 msgid "Truot LT"
 msgstr "Trượt LT"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:206
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:232
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:205
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:231
+#: module/Application/src/Application/Controller/ResultController.php:39
 msgid "Dat"
 msgstr "Đạt"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:209
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:236
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:208
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:235
+#: module/Application/src/Application/Controller/ResultController.php:40
 msgid "Vang mat"
 msgstr "Vắng mặt"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:212
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:211
 msgid "Truot TH"
 msgstr "Trượt TH"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:223
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:222
 msgid "Chon ket qua thi"
 msgstr "Chọn kết quả thi"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:228
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:227
+#: module/Application/src/Application/Controller/ResultController.php:38
 msgid "Truot ly thuyet"
 msgstr "Trượt lý thuyết"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:240
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:239
+#: module/Application/src/Application/Controller/ResultController.php:41
 msgid "Truot thuc hanh"
 msgstr "Trượt thực hành"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:252
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:251
 msgid "BLX&nbsp;<sup>truoc</sup>"
 msgstr "BLX&nbsp;<sup>trước</sup>"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:259
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:275
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:258
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:274
 msgid "Bang lai xe cua"
 msgstr "Bằng lái xe của"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:268
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:267
 msgid "BLX&nbsp;<sup>sau</sup>"
 msgstr "BLX&nbsp;<sup>sau</sup>"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:284
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:283
 msgid "Ghi chu"
 msgstr "Ghi chú"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:291
-#: module/Administrator/src/Administrator/Controller/UserController.php:165
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:290
+#: module/Administrator/src/Administrator/Controller/UserController.php:172
 msgid "Sua"
 msgstr "Sửa"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:293
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:325
-#: module/Administrator/src/Administrator/Controller/UserController.php:168
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:292
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:324
+#: module/Administrator/src/Administrator/Controller/UserController.php:175
 msgid "Xoa"
 msgstr "Xoá"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:307
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:306
 msgid "Hien thi {0}-{1}/{2} ho so"
 msgstr "Hiển thị {0}-{1}/{2} hồ sơ"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:323
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:322
 msgid "Dieu kien loc"
 msgstr "Điều kiện lọc"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:324
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:323
 msgid "Loc"
 msgstr "Lọc"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:326
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:325
 msgid "False"
 msgstr "False"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:327
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:326
 msgid "True"
 msgstr "True"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:329
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:328
 msgid "Co chua"
 msgstr "Có chứa"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:331
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:330
 msgid "Sau ngay"
 msgstr "Sau ngày"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:332
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:331
 msgid "Truoc ngay"
 msgstr "Trước ngày"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:333
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:332
 msgid "La ngay"
 msgstr "Là ngày"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:345
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:344
 msgid "Co chac chan muon xoa?"
 msgstr "Có chắc chắn muốn xoá?"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:352
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:351
 msgid "Them ho so"
 msgstr "Thêm hồ sơ"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:546
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:608
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:641
-#: module/Administrator/src/Administrator/Controller/UserController.php:345
-#: module/Administrator/src/Administrator/Controller/UserController.php:393
-#: module/Administrator/src/Administrator/Controller/UserController.php:424
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:616
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:649
+#: module/Administrator/src/Administrator/Controller/UserController.php:350
+#: module/Administrator/src/Administrator/Controller/UserController.php:398
+#: module/Administrator/src/Administrator/Controller/UserController.php:429
 msgid "Truy cap bi han che"
 msgstr "Truy cập bị hạn chế"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:62
+#: module/Administrator/src/Administrator/Controller/UserController.php:66
 msgid "Them thanh vien"
 msgstr "Thêm thành viên"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:84
+#: module/Administrator/src/Administrator/Controller/UserController.php:88
 msgid "Nhom"
 msgstr "Nhóm"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:91
+#: module/Administrator/src/Administrator/Controller/UserController.php:95
 msgid "Chon nhom thanh vien"
 msgstr "Chọn nhóm thành viên"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:116
+#: module/Administrator/src/Administrator/Controller/UserController.php:120
 #: module/Administrator/view/administrator/authentication/login.phtml:25
 msgid "Email"
 msgstr "Email"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:122
+#: module/Administrator/src/Administrator/Controller/UserController.php:126
 #: module/Administrator/view/administrator/authentication/login.phtml:33
 msgid "Mat khau"
 msgstr "Mật khẩu"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:125
+#: module/Administrator/src/Administrator/Controller/UserController.php:129
 msgid "De trong neu khong muon thay doi"
 msgstr "Để trống nếu không muốn thay đổi"
 
@@ -436,6 +440,7 @@ msgid "Bai on tap ly thuyet sat hach, cap giay phep lai xe hang A1, A2"
 msgstr "Bài ôn tập lý thuyết sát hạch, cấp giấy phép lái xe hạng A1, A2"
 
 #: module/Application/view/application/document/index.phtml:439
+#: module/Application/view/application/result/index.phtml:65
 msgid "Chu y:"
 msgstr "Chú ý:"
 
@@ -655,17 +660,17 @@ msgstr "Câu"
 msgid "Bai so&nbsp;"
 msgstr "Bài số &nbsp;"
 
-#: module/Application/view/application/fixture/index.phtml:14
+#: module/Application/view/application/fixture/index.phtml:17
 msgid "Lich thi cap bang lai xe hang A1"
 msgstr "Lịch thi cấp bằng lái xe hạng A1"
 
-#: module/Application/view/application/fixture/index.phtml:21
-#: module/Application/view/application/result/index.phtml:20
+#: module/Application/view/application/fixture/index.phtml:24
+#: module/Application/view/application/result/index.phtml:24
 msgid "Tim theo ten thi sinh"
 msgstr "Tìm theo tên thí sinh"
 
-#: module/Application/view/application/fixture/index.phtml:25
-#: module/Application/view/application/result/index.phtml:24
+#: module/Application/view/application/fixture/index.phtml:28
+#: module/Application/view/application/result/index.phtml:28
 msgid "Tim kiem"
 msgstr "Tìm kiếm"
 
@@ -794,122 +799,146 @@ msgstr ""
 "sau tùy theo sự sắp xếp của ban tổ chức, không theo thứ tự hay quy tắc nào "
 "cả. Học viên xác định phải mất cả một buổi sáng để thi."
 
-#: module/Application/view/application/index/index.phtml:9
+#: module/Application/view/application/index/index.phtml:12
 msgid "blx_introdution"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:15
+#: module/Application/view/application/index/index.phtml:18
 msgid "Moi nguoi noi gi ve BLX.VN"
 msgstr "Mọi người nói gì về BLX.VN"
 
-#: module/Application/view/application/index/index.phtml:33
+#: module/Application/view/application/index/index.phtml:39
 msgid "people_talk_1"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:38
-#: module/Application/view/application/index/index.phtml:51
-#: module/Application/view/application/index/index.phtml:64
-#: module/Application/view/application/index/index.phtml:77
-#: module/Application/view/application/index/index.phtml:90
-#: module/Application/view/application/index/index.phtml:103
+#: module/Application/view/application/index/index.phtml:44
+#: module/Application/view/application/index/index.phtml:58
+#: module/Application/view/application/index/index.phtml:72
+#: module/Application/view/application/index/index.phtml:86
+#: module/Application/view/application/index/index.phtml:100
+#: module/Application/view/application/index/index.phtml:114
 #: module/Application/view/layout/administrator.phtml:57
 msgid "Luu Hoang Nam"
 msgstr "Lưu Hoàng Nam"
 
-#: module/Application/view/application/index/index.phtml:39
-#: module/Application/view/application/index/index.phtml:52
-#: module/Application/view/application/index/index.phtml:65
-#: module/Application/view/application/index/index.phtml:78
-#: module/Application/view/application/index/index.phtml:91
-#: module/Application/view/application/index/index.phtml:104
+#: module/Application/view/application/index/index.phtml:45
+#: module/Application/view/application/index/index.phtml:59
+#: module/Application/view/application/index/index.phtml:73
+#: module/Application/view/application/index/index.phtml:87
+#: module/Application/view/application/index/index.phtml:101
+#: module/Application/view/application/index/index.phtml:115
 msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
 msgstr "sinh viên K56 Đại học Bách Khoa Hà Nội"
 
-#: module/Application/view/application/index/index.phtml:46
-#: module/Application/view/application/index/index.phtml:59
-#: module/Application/view/application/index/index.phtml:72
-#: module/Application/view/application/index/index.phtml:85
-#: module/Application/view/application/index/index.phtml:98
+#: module/Application/view/application/index/index.phtml:53
+#: module/Application/view/application/index/index.phtml:67
+#: module/Application/view/application/index/index.phtml:81
+#: module/Application/view/application/index/index.phtml:95
+#: module/Application/view/application/index/index.phtml:109
 msgid "people_talk_2"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:116
+#: module/Application/view/application/index/index.phtml:127
 msgid "Quy trinh thi cap bang lai xe hang A1"
 msgstr "Quy trình cấp bằng lái xe hạng A1"
 
-#: module/Application/view/application/index/index.phtml:122
+#: module/Application/view/application/index/index.phtml:132
 #: module/Application/view/layout/layout.phtml:76
 #: module/Application/view/layout/layout.phtml:78
 msgid "Nop ho so"
 msgstr "Nộp hồ sơ"
 
-#: module/Application/view/application/index/index.phtml:131
+#: module/Application/view/application/index/index.phtml:138
 msgid "Xem lich thi"
 msgstr "Xem lịch thi"
 
-#: module/Application/view/application/index/index.phtml:140
+#: module/Application/view/application/index/index.phtml:144
 msgid "Di thi"
 msgstr "Đi thi"
 
-#: module/Application/view/application/index/index.phtml:149
+#: module/Application/view/application/index/index.phtml:150
 msgid "Xem ket qua"
 msgstr "Xem kết quả"
 
-#: module/Application/view/application/index/index.phtml:158
+#: module/Application/view/application/index/index.phtml:156
 msgid "Nhan bang"
 msgstr "Nhận bằng"
 
-#: module/Application/view/application/index/index.phtml:170
+#: module/Application/view/application/index/index.phtml:167
 msgid "Nop ho so truc tiep"
 msgstr "Nộp hồ sơ trực tiếp"
 
-#: module/Application/view/application/index/index.phtml:175
+#: module/Application/view/application/index/index.phtml:172
 msgid "Ho so bao gom"
 msgstr "Hồ sơ bao gồm"
 
-#: module/Application/view/application/index/index.phtml:178
+#: module/Application/view/application/index/index.phtml:175
 msgid "6 anh chan dung 3x4"
 msgstr "6 ảnh chân dung 3x$"
 
-#: module/Application/view/application/index/index.phtml:181
+#: module/Application/view/application/index/index.phtml:178
 msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
 msgstr "1 bản photocopy chứng minh thư 2 mặt không cần công chứng"
 
-#: module/Application/view/application/index/index.phtml:187
+#: module/Application/view/application/index/index.phtml:184
 msgid "Chu y le phi thi gom 2 khoan"
 msgstr "Chú ý lệ phí thi gồm 2 khoản"
 
-#: module/Application/view/application/index/index.phtml:189
+#: module/Application/view/application/index/index.phtml:186
 msgid "Le phi dao tao"
 msgstr "Lệ phí đào tạo"
 
-#: module/Application/view/application/index/index.phtml:190
+#: module/Application/view/application/index/index.phtml:187
 msgid "Le phi thi"
 msgstr "Lệ phí thi"
 
-#: module/Application/view/application/index/index.phtml:196
+#: module/Application/view/application/index/index.phtml:193
 msgid "Dia diem nop ho so"
 msgstr "Địa điểm nộp hồ sơ"
 
-#: module/Application/view/application/index/index.phtml:201
+#: module/Application/view/application/index/index.phtml:197
 msgid "Do Viet Dung"
 msgstr "Đỗ Việt Dũng"
 
-#: module/Application/view/application/index/index.phtml:202
+#: module/Application/view/application/index/index.phtml:198
 msgid "DoVietDung_PhoneNumbers"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:203
+#: module/Application/view/application/index/index.phtml:199
 msgid "DoVietDung_Address"
 msgstr ""
 
-#: module/Application/view/application/index/index.phtml:225
+#: module/Application/view/application/index/index.phtml:220
 msgid "BLX.VN tren mang xa hoi"
 msgstr "BLX.VN trên mạng xã hội"
 
-#: module/Application/view/application/result/index.phtml:13
+#: module/Application/view/application/result/index.phtml:17
 msgid "Ket qua thi cap bang lai xe hang A1"
 msgstr "Kết quả thi cấp bằng lái xe hạng A1"
+
+#: module/Application/view/application/result/index.phtml:43
+msgid "Giay phep lai xe cua"
+msgstr "Giấy phép lái xe của"
+
+#: module/Application/view/application/result/index.phtml:48
+msgid "Mat truoc"
+msgstr "Mặt trước"
+
+#: module/Application/view/application/result/index.phtml:51
+msgid "Mat sau"
+msgstr "Mặt sau"
+
+#: module/Application/view/application/result/index.phtml:65
+msgid "Lien he voi cong tac vien"
+msgstr "Liên hệ với cộng tác viên"
+
+#: module/Application/view/application/result/index.phtml:65
+msgid "de nhan bang."
+msgstr "để nhận bằng."
+
+#: module/Application/view/application/result/index.phtml:69
+msgid "&quot;Khoe&quot; voi ban be"
+msgstr "&quot;Khoe&quot; với bạn bè"
 
 #: module/Application/view/error/404.phtml:1
 msgid "A 404 error occurred"

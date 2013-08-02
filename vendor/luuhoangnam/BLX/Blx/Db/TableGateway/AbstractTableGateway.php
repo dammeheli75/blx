@@ -10,6 +10,8 @@ use Zend\Db\Sql\Expression;
 
 abstract class AbstractTableGateway extends \Zend\Db\TableGateway\AbstractTableGateway implements TableGatewayInterface
 {
+    const LOGIC_AND = 'and';
+    const LOGIC_OR = 'or';
 
     protected $primaryKey;
 

@@ -356,16 +356,16 @@ class ProfileController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url('http://localhost/blx/public/administrator/profiles/read');
+        $transportRead->url($this->url()->fromRoute('administrator/profiles') . '/read');
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url('http://localhost/blx/public/administrator/profiles/create')->type('POST');
+        $transportCreate->url($this->url()->fromRoute('administrator/profiles') . '/create')->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url('http://localhost/blx/public/administrator/profiles/update')->type('POST');
+        $transportUpdate->url($this->url()->fromRoute('administrator/profiles') . '/update')->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url('http://localhost/blx/public/administrator/profiles/destroy')->type('POST');
+        $transportDestroy->url($this->url()->fromRoute('administrator/profiles') . '/destroy')->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)
             ->create($transportCreate)
@@ -523,7 +523,8 @@ class ProfileController extends AbstractActionController
                 'test_date' => $testDate ? $testDate->format('Y-m-d') : NULL,
                 'license_front' => $postData['licenseFront'],
                 'license_back' => $postData['licenseBack'],
-                'note' => $postData['note']
+                'note' => $postData['note'],
+                'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
             
             if ($collaboratorModel->isExists($postData['collaborator'])) {
@@ -569,7 +570,7 @@ class ProfileController extends AbstractActionController
             $venueModel = new Venue($serviceManager);
             
             $birthday = new \DateTime($postData['birthday']);
-            $testDate = new \DateTime($postData['testDate']);
+            
             $timeCreated = new \DateTime();
             
             $profile = array(
@@ -579,7 +580,6 @@ class ProfileController extends AbstractActionController
                 'phone_number' => $postData['phoneNumber'],
                 'phone_onlysms' => false,
                 'test_status' => $postData['testStatus'],
-                'test_date' => $testDate->format('Y-m-d'),
                 'license_front' => $postData['licenseFront'],
                 'license_back' => $postData['licenseBack'],
                 'note' => $postData['note']
@@ -593,6 +593,15 @@ class ProfileController extends AbstractActionController
                 if ($venueModel->isExists($postData['testVenue']['ID'])) {
                     $profile['test_venue_id'] = $postData['testVenue']['ID'];
                 }
+            } else {
+                $profile['test_venue_id'] = NULL;
+            }
+            
+            if (strlen($postData['testDate']) > 0) {
+                $testDate = new \DateTime($postData['testDate']);
+                $profile['test_date'] = $testDate->format('Y-m-d');
+            } else {
+                $profile['test_date'] = NULL;
             }
             
             if ($profileModel->isExists($postData['ID'])) {

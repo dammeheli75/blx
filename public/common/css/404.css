@@ -1,0 +1,13 @@
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 68px;
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 22px;
+    padding-bottom: 100px;
+}

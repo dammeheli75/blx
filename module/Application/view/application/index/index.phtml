@@ -1,251 +1,238 @@
-<?php 
-    $this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.min.css');
-    $this->headScript()->appendFile($this->basePath() . '/common/js/home.min.js');
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.min.css');
+$this->headScript()
+    ->appendFile($this->basePath() . '/common/js/home.min.js')
+    ->prependFile('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+    ->prependFile($this->basePath() . '/nivo-slider/js/jquery.nivo.slider.pack.js');
 ?>
 
 <div id="overview" class="span12">
-    <div id="about">
-        <p>
+	<div id="about">
+		<p>
             <?php echo $this->translate('blx_introdution')?>
         </p>
-    </div>
+	</div>
 
-    <div class="people-talk">
-        <div class="block-header">
-            <h2><?php echo $this->translate('Moi nguoi noi gi ve BLX.VN')?></h2>
-        </div>
-        <div class="block-body">
-            <div id="people-talk-carousel" class="carousel slide" data-interval="1000">
-                <ol class="carousel-indicators">
-                    <li data-target="#people-talk-carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#people-talk-carousel" data-slide-to="1"></li>
-                    <li data-target="#people-talk-carousel" data-slide-to="2"></li>
-                    <li data-target="#people-talk-carousel" data-slide-to="3"></li>
-                    <li data-target="#people-talk-carousel" data-slide-to="4"></li>
-                    <li data-target="#people-talk-carousel" data-slide-to="5"></li>
-                </ol>
-                <!-- Carousel items -->
-                <div class="carousel-inner">
-                    <div class="active item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+	<div class="people-talk">
+		<div class="block-header">
+			<h2><?php echo $this->translate('Moi nguoi noi gi ve BLX.VN')?></h2>
+		</div>
+		<div class="block-body">
+			<div id="people-talk-carousel" class="carousel slide"
+				data-interval="1000">
+				<ol class="carousel-indicators">
+					<li data-target="#people-talk-carousel" data-slide-to="0"
+						class="active"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="1"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="2"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="3"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="4"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="5"></li>
+				</ol>
+				<!-- Carousel items -->
+				<div class="carousel-inner">
+					<div class="active item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_1')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+					<div class="item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_2')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+					<div class="item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_2')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+					<div class="item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_2')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+					<div class="item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_2')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                    <div class="item">
-                        <img class="avatar" src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+					<div class="item">
+						<img class="avatar"
+							src="common/images/avatar-luuhoangnam-80x80.png" alt="" title="">
 
-                        <p class="quote">
+						<p class="quote">
                             <?php echo $this->translate('people_talk_2')?>
                         </p>
 
-                        <div class="clearfix"></div>
-                        <h6 class="people-info">
-                            <span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
-                                class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
-                        </h6>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+						<div class="clearfix"></div>
+						<h6 class="people-info">
+							<span class="people-name"><?php echo $this->translate('Luu Hoang Nam')?></span>&nbsp;&dash;&nbsp;<span
+								class="people-address"><?php echo $this->translate('sinh vien K56 Dai hoc Bach Khoa Ha Noi')?></span>
+						</h6>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="register-step" class="span12">
-    <div class="block">
-        <div class="block-header">
-            <h2><?php echo $this->translate('Quy trinh thi cap bang lai xe hang A1')?></h2>
-        </div>
-        <div class="block-body">
-            <ul>
-                <li id="filing" class="step">
-                    <a href="#nop-ho-so">
-                        <h3><?php echo $this->translate('Nop ho so')?></h3>
-                        <span class="illustration base64"></span>
-                    </a>
-                </li>
-                <li class="tri-angle-right">
-                    <i></i>
-                </li>
-                <li id="view-fixture" class="step">
-                    <a href="<?php echo $this->url('fixture')?>">
-                        <h3><?php echo $this->translate('Xem lich thi')?></h3>
-                        <span class="illustration base64"></span>
-                    </a>
-                </li>
-                <li class="tri-angle-right">
-                    <i></i>
-                </li>
-                <li id="take-exam" class="step">
-                    <a href="<?php echo $this->url('guiding')?>">
-                        <h3><?php echo $this->translate('Di thi')?></h3>
-                        <span class="illustration base64"></span>
-                    </a>
-                </li>
-                <li class="tri-angle-right">
-                    <i></i>
-                </li>
-                <li id="view-result" class="step">
-                    <a href="<?php echo $this->url('result')?>">
-                        <h3><?php echo $this->translate('Xem ket qua')?></h3>
-                        <span class="illustration base64"></span>
-                    </a>
-                </li>
-                <li class="tri-angle-right">
-                    <i></i>
-                </li>
-                <li id="take-license" class="step">
-                    <a href="<?php echo $this->url('result')?>">
-                        <h3><?php echo $this->translate('Nhan bang')?></h3>
-                        <span class="illustration base64"></span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="block">
+		<div class="block-header">
+			<h2><?php echo $this->translate('Quy trinh thi cap bang lai xe hang A1')?></h2>
+		</div>
+		<div class="block-body">
+			<ul>
+				<li id="filing" class="step"><a href="#nop-ho-so">
+						<h3><?php echo $this->translate('Nop ho so')?></h3> <span
+						class="illustration base64"></span>
+				</a></li>
+				<li class="tri-angle-right"><i></i></li>
+				<li id="view-fixture" class="step"><a
+					href="<?php echo $this->url('fixture')?>">
+						<h3><?php echo $this->translate('Xem lich thi')?></h3> <span
+						class="illustration base64"></span>
+				</a></li>
+				<li class="tri-angle-right"><i></i></li>
+				<li id="take-exam" class="step"><a
+					href="<?php echo $this->url('guiding')?>">
+						<h3><?php echo $this->translate('Di thi')?></h3> <span
+						class="illustration base64"></span>
+				</a></li>
+				<li class="tri-angle-right"><i></i></li>
+				<li id="view-result" class="step"><a
+					href="<?php echo $this->url('result')?>">
+						<h3><?php echo $this->translate('Xem ket qua')?></h3> <span
+						class="illustration base64"></span>
+				</a></li>
+				<li class="tri-angle-right"><i></i></li>
+				<li id="take-license" class="step"><a
+					href="<?php echo $this->url('result')?>">
+						<h3><?php echo $this->translate('Nhan bang')?></h3> <span
+						class="illustration base64"></span>
+				</a></li>
+			</ul>
+		</div>
+	</div>
 </div>
 
 <div id="nop-ho-so" class="span12">
-    <div class="block block-square">
-        <div class="block-header block-header-inverse">
-            <h2><?php echo $this->translate('Nop ho so truc tiep')?></h2>
-        </div>
-        <div class="block-body">
-            <div class="profile-requirement">
-                <div class="requirement">
-                    <h3><?php echo $this->translate('Ho so bao gom')?></h3>
-                    <ul>
-                        <li>
+	<div class="block block-square">
+		<div class="block-header block-header-inverse">
+			<h2><?php echo $this->translate('Nop ho so truc tiep')?></h2>
+		</div>
+		<div class="block-body">
+			<div class="profile-requirement">
+				<div class="requirement">
+					<h3><?php echo $this->translate('Ho so bao gom')?></h3>
+					<ul>
+						<li>
                             <?php echo $this->translate('6 anh chan dung 3x4')?>
                         </li>
-                        <li>
+						<li>
                             <?php echo $this->translate('1 ban photocopy chung minh thu 2 mat khong can cong chung')?>
                         </li>
-                    </ul>
-                </div>
+					</ul>
+				</div>
 
-                <div class="note">
-                    <h3><?php echo $this->translate('Chu y le phi thi gom 2 khoan')?></h3>
-                    <ol>
-                        <li><?php echo $this->translate('Le phi dao tao')?></li>
-                        <li><?php echo $this->translate('Le phi thi')?></li>
-                    </ol>
-                </div>
-            </div>
-            <div class="filling-places">
-                <div>
-                    <h3><?php echo $this->translate('Dia diem nop ho so')?></h3>
+				<div class="note">
+					<h3><?php echo $this->translate('Chu y le phi thi gom 2 khoan')?></h3>
+					<ol>
+						<li><?php echo $this->translate('Le phi dao tao')?></li>
+						<li><?php echo $this->translate('Le phi thi')?></li>
+					</ol>
+				</div>
+			</div>
+			<div class="filling-places">
+				<div>
+					<h3><?php echo $this->translate('Dia diem nop ho so')?></h3>
 
-                    <ul class="nav nav-tabs" id="fillingPlaceTab">
-                        <li class="active">
-                            <a href="#collaborator-viet-dung">
+					<ul class="nav nav-tabs" id="fillingPlaceTab">
+						<li class="active"><a href="#collaborator-viet-dung">
                                 <?php echo $this->translate('Do Viet Dung')?>
                                 <span class="phone"><?php echo $this->translate('DoVietDung_PhoneNumbers')?></span>
-                                <span class="address"><?php echo $this->translate('DoVietDung_Address')?></span>
-                            </a>
-                        </li>
-                    </ul>
+								<span class="address"><?php echo $this->translate('DoVietDung_Address')?></span>
+						</a></li>
+					</ul>
 
-                    <div class="tab-content hide">
-                        <div class="tab-pane active" id="collaborator-viet-dung"></div>
-                    </div>
-                </div>
+					<div class="tab-content hide">
+						<div class="tab-pane active" id="collaborator-viet-dung"></div>
+					</div>
+				</div>
 
-                <div class="map-container">
-                    <div id="map-canvas"></div>
-                </div>
-            </div>
-        </div>
-    </div>
+				<div class="map-container">
+					<div id="map-canvas"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
 
 <div id="blx-social-network" class="span12">
-    <div class="block">
-        <div class="block-body">
-            <div class="blx-on-social-network">
-                <h2><?php echo $this->translate('BLX.VN tren mang xa hoi')?></h2>
-            </div>
-            <ul class="social-network-list">
-                <li>
-                    <a href="#">
-                        <img src="common/images/facebook-logo-38x38.png" alt="" title="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="common/images/youtube-logo-38x38.png" alt="" title="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="common/images/twitter-logo-38x38.png" alt="" title="">
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="common/images/google-plus-logo-38x38.png" alt="" title="">
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
+	<div class="block">
+		<div class="block-body">
+			<div class="blx-on-social-network">
+				<h2><?php echo $this->translate('BLX.VN tren mang xa hoi')?></h2>
+			</div>
+			<ul class="social-network-list">
+				<li><a href="#"> <img src="common/images/facebook-logo-38x38.png"
+						alt="" title="">
+				</a></li>
+				<li><a href="#"> <img src="common/images/youtube-logo-38x38.png"
+						alt="" title="">
+				</a></li>
+				<li><a href="#"> <img src="common/images/twitter-logo-38x38.png"
+						alt="" title="">
+				</a></li>
+				<li><a href="#"> <img src="common/images/google-plus-logo-38x38.png"
+						alt="" title="">
+				</a></li>
+			</ul>
+		</div>
+	</div>
 </div>

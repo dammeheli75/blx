@@ -6,7 +6,10 @@ $this->headLink()
 
 $this->headScript()
     ->prependFile($this->basePath() . '/common/js/fixture.min.js')
-    ->prependFile($this->basePath() . '/kendoui/js/kendo.web.min.js');
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.grid.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.pager.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.data.min.js')
+    ->prependFile($this->basePath() . '/kendoui/js/kendo.core.min.js');
 ?>
 
 <div class="span12 header">

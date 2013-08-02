@@ -34,6 +34,7 @@ class UserController extends AbstractActionController
 {
 
     /**
+     *
      * @todo Fix date time error. Display in vietnam format
      * @see \Zend\Mvc\Controller\AbstractActionController::indexAction()
      */
@@ -181,16 +182,23 @@ class UserController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url('http://localhost/blx/public/administrator/users/read');
+        $transportRead->url($this->url()
+            ->fromRoute('administrator/users') . '/read');
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url('http://localhost/blx/public/administrator/users/create')->type('POST');
+        $transportCreate->url($this->url()
+            ->fromRoute('administrator/users') . '/create')
+            ->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url('http://localhost/blx/public/administrator/users/update')->type('POST');
+        $transportUpdate->url($this->url()
+            ->fromRoute('administrator/users') . '/update')
+            ->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url('http://localhost/blx/public/administrator/users/destroy')->type('POST');
+        $transportDestroy->url($this->url()
+            ->fromRoute('administrator/users') . '/destroy')
+            ->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)
             ->create($transportCreate)
