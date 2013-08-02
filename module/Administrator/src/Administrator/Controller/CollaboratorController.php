@@ -31,7 +31,7 @@ class CollaboratorController extends AbstractActionController
         
         $collaboratorModel = new Collaborator($serviceManager);
         
-        $collaborators = $collaboratorModel->getCollaborators();
+        $collaborators = $collaboratorModel->cache->getCollaborators();
         
         $response = array(
             'success' => true,
@@ -40,10 +40,10 @@ class CollaboratorController extends AbstractActionController
         
         foreach ($collaborators as $collaborator) {
             $response['collaborators'][] = array(
-                'ID' => $collaborator->collaborator_id,
-                'title' => $collaborator->title,
-                'address' => $collaborator->address,
-                'joinDate' => $collaborator->time_created
+                'ID' => $collaborator['collaborator_id'],
+                'title' => $collaborator['title'],
+                'address' => $collaborator['address'],
+                'joinDate' => $collaborator['time_created']
             );
         }
         

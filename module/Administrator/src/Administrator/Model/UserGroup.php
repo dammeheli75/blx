@@ -8,12 +8,12 @@ class UserGroup extends AbstractTableGateway
 {
 
     protected $table = 'user_groups';
-    
+
     protected $primaryKey = 'group_id';
 
     public function getGroups()
     {
-        return $this->select();
+        return $this->select()->toArray();
     }
 
     public function getGroup(array $options)
@@ -24,6 +24,8 @@ class UserGroup extends AbstractTableGateway
             $where->equalTo('group_id', $options['group_id']);
         }
         
-        return $this->select($where)->current();
+        $result = $this->select($where)->toArray();
+        
+        return $result[0];
     }
 }

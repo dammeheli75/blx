@@ -459,32 +459,32 @@ class ProfileController extends AbstractActionController
         );
         
         foreach ($profiles as $profile) {
-            $collaborator = $collaboratorModel->getCollaborator(array(
-                'collaborator_id' => $profile->collaborator_id
+            $collaborator = $collaboratorModel->cache->getCollaborator(array(
+                'collaborator_id' => $profile['collaborator_id']
             ));
-            $venue = $profile->test_venue_id ? $venueModel->getVenue(array(
-                'venue_id' => $profile->test_venue_id
+            $venue = $profile['test_venue_id'] ? $venueModel->cache->getVenue(array(
+                'venue_id' => $profile['test_venue_id']
             )) : NULL;
             
             $response['profiles'][] = array(
-                'ID' => $profile->profile_id,
-                'fullName' => $profile->full_name,
-                'birthday' => $profile->birthday,
-                'address' => $profile->address,
-                'phoneNumber' => $profile->phone_number,
+                'ID' => $profile['profile_id'],
+                'fullName' => $profile['full_name'],
+                'birthday' => $profile['birthday'],
+                'address' => $profile['address'],
+                'phoneNumber' => $profile['phone_number'],
                 'collaborator' => array(
-                    'ID' => $profile->collaborator_id,
-                    'title' => $collaborator->title
+                    'ID' => $profile['collaborator_id'],
+                    'title' => $collaborator['title']
                 ),
-                'testStatus' => $profile->test_status,
-                'testDate' => $profile->test_date,
-                'testVenue' => ($profile->test_venue_id && $venue) ? array(
-                    'ID' => $profile->test_venue_id,
-                    'title' => $venue->title
+                'testStatus' => $profile['test_status'],
+                'testDate' => $profile['test_date'],
+                'testVenue' => ($profile['test_venue_id'] && $venue) ? array(
+                    'ID' => $profile['test_venue_id'],
+                    'title' => $venue['title']
                 ) : NULL,
-                'licenseFront' => $profile->license_front,
-                'licenseBack' => $profile->license_back,
-                'note' => $profile->note
+                'licenseFront' => $profile['license_front'],
+                'licenseBack' => $profile['license_back'],
+                'note' => $profile['note']
             );
         }
         
@@ -534,12 +534,12 @@ class ProfileController extends AbstractActionController
                 'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
             
-            if ($collaboratorModel->isExists($postData['collaborator'])) {
+            if ($collaborator->cache->isExists($postData['collaborator'])) {
                 $profile['collaborator_id'] = $postData['collaborator'];
             }
             
             if (is_array($postData['testVenue'])) {
-                if ($venueModel->isExists($postData['testVenue']['ID'])) {
+                if ($venueModel->cache->isExists($postData['testVenue']['ID'])) {
                     $profile['test_venue_id'] = $postData['testVenue']['ID'];
                 }
             }
@@ -592,12 +592,12 @@ class ProfileController extends AbstractActionController
                 'note' => $postData['note']
             );
             
-            if ($collaboratorModel->isExists($postData['collaborator']['ID'])) {
+            if ($collaboratorModel->cache->isExists($postData['collaborator']['ID'])) {
                 $profile['collaborator_id'] = $postData['collaborator']['ID'];
             }
             
             if (is_array($postData['testVenue'])) {
-                if ($venueModel->isExists($postData['testVenue']['ID'])) {
+                if ($venueModel->cache->isExists($postData['testVenue']['ID'])) {
                     $profile['test_venue_id'] = $postData['testVenue']['ID'];
                 }
             } else {

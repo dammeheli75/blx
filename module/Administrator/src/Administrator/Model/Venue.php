@@ -13,7 +13,7 @@ class Venue extends AbstractTableGateway
 
     public function getVenues()
     {
-        return $this->select();
+        return $this->select()->toArray();
     }
 
     public function getVenue($conditions = null)
@@ -24,6 +24,8 @@ class Venue extends AbstractTableGateway
             $where->equalTo('venue_id', $conditions['venue_id']);
         }
         
-        return $this->select($where)->current();
+        $result = $this->select($where)->toArray();
+        
+        return $result[0];
     }
 }

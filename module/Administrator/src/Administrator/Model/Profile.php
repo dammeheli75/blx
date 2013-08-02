@@ -15,7 +15,7 @@ class Profile extends AbstractTableGateway
     
     public function getProfiles()
     {
-        return $this->select();
+        return $this->select()->toArray();
     }
 
     public function getProfilesForFixture($filterable = null, $pageable = null, $option = null)
@@ -39,7 +39,7 @@ class Profile extends AbstractTableGateway
             $select->limit($pageable['limit']);
         }
         
-        return $this->selectWith($select);
+        return $this->selectWith($select)->toArray();
     }
 
     public function countProfilesForFixture($filterable = null)
@@ -70,7 +70,9 @@ class Profile extends AbstractTableGateway
             $where->equalTo('profile_id', $conditions['profile_id']);
         }
         
-        return $this->select($where)->current();
+        $result = $this->select($where)->toArray();
+        
+        return $result[0];
     }
 
     public function createProfile(array $profile)

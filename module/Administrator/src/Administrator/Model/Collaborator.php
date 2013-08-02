@@ -13,7 +13,7 @@ class Collaborator extends AbstractTableGateway
 
     public function getCollaborators()
     {
-        return $this->select();
+        return $this->select()->toArray();
     }
 
     public function getCollaborator($condition = null)
@@ -24,6 +24,8 @@ class Collaborator extends AbstractTableGateway
             $where->equalTo('collaborator_id', $condition['collaborator_id']);
         }
         
-        return $this->select($where)->current();
+        $result = $this->select($where)->toArray();
+        
+        return $result[0];
     }
 }

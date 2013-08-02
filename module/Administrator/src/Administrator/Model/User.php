@@ -13,7 +13,7 @@ class User extends AbstractTableGateway
 
     public function getUsers()
     {
-        return $this->select();
+        return $this->select()->toArray();
     }
 
     public function getUser($term = null)
@@ -30,7 +30,9 @@ class User extends AbstractTableGateway
             $where->equalTo('phone_number', $term['phone_number']);
         }
         
-        return $this->select($where)->current();
+        $result = $this->select($where)->toArray();
+        
+        return $result[0];
     }
 
     public function createUser(array $user)

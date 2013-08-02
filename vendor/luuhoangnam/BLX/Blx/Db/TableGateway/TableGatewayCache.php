@@ -32,11 +32,10 @@ class TableGatewayCache
         $class_methods = get_class_methods($class);
         
         if (in_array($method, $class_methods)) {
-            $caller = Array(
+            return call_user_func_array(array(
                 $this->cache,
                 $method
-            );
-            return call_user_func_array($caller, $args);
+            ), $args);
         }
         
         throw new \Exception(" Method " . $method . " does not exist in this class " . get_class($class) . ".");

@@ -40,11 +40,11 @@ class VenueController extends AbstractActionController
         
         foreach ($venues as $venue) {
             $response['venues'][] = array(
-                'ID' => $venue->venue_id,
-                'title' => $venue->title,
-                'longitude' => $venue->longitude,
-                'laitude' => $venue->laitude,
-                'joinDate' => $venue->time_created
+                'ID' => $venue['venue_id'],
+                'title' => $venue['title'],
+                'longitude' => $venue['longitude'],
+                'laitude' => $venue['laitude'],
+                'joinDate' => $venue['time_created']
             );
         }
         

@@ -275,7 +275,7 @@ class UserController extends AbstractActionController
         $userModel = new User($serviceManager);
         $userGroupModel = new UserGroup($serviceManager);
         
-        $users = $userModel->getUsers();
+        $users = $userModel->cache->getUsers();
         
         $response = array(
             'succes' => true,
@@ -283,24 +283,24 @@ class UserController extends AbstractActionController
         );
         
         foreach ($users as $user) {
-            $userGroup = $userGroupModel->getGroup(array(
-                'group_id' => $user->group_id
+            $userGroup = $userGroupModel->cache->getGroup(array(
+                'group_id' => $user['group_id']
             ));
             
             $response['users'][] = array(
-                'ID' => $user->user_id,
+                'ID' => $user['user_id'],
                 'group' => array(
-                    'ID' => $user->group_id,
-                    'title' => $userGroup->title
+                    'ID' => $user['group_id'],
+                    'title' => $userGroup['title']
                 ),
-                'fullName' => $user->full_name,
-                'email' => $user->email,
-                'password' => $user->password,
-                'birthday' => $user->birthday,
-                'address' => $user->address,
-                'phoneNumber' => $user->phone_number,
-                'joinDate' => $user->time_created,
-                'lastUpdate' => $user->last_updated
+                'fullName' => $user['full_name'],
+                'email' => $user['email'],
+                'password' => $user['password'],
+                'birthday' => $user['birthday'],
+                'address' => $user['address'],
+                'phoneNumber' => $user['phone_number'],
+                'joinDate' => $user['time_created'],
+                'lastUpdate' => $user['last_updated']
             );
         }
         
