@@ -16,7 +16,15 @@ class StorageFactory
         
         // Options
         $filesystemOptions = new FilesystemOptions();
-        $filesystemOptions->setCacheDir(DATA_PATH . DS . 'cache')->setTtl($config['ttl']);
+        $filesystemOptions->setCacheDir(DATA_PATH . DS . 'cache');
+        
+        if (isset($config['ttl'])) {
+            $filesystemOptions->setTtl((int) $config['ttl']);
+        }
+        
+        if (isset($config['namespace'])) {
+            $filesystemOptions->setNamespace($config['namespace']);
+        }
         
         // Plugins
         $exceptionHandler = new ExceptionHandler();

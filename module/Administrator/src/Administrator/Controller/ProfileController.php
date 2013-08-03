@@ -76,11 +76,11 @@ class ProfileController extends AbstractActionController
         $birthdayColumn = new GridColumn();
         $birthdayColumn->field('birthday')
             ->title($translator->translate('Nam sinh'))
+            ->width(100)
             ->hidden(true)
-            ->filterable(false)
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.birthday) {
-                        return kendo.toString(dataItem.birthday, 'yyyy/MM/dd');
+                        return kendo.toString(dataItem.birthday, 'dd/MM/yyyy');
                     } else {
                         return '--';
                     }
@@ -90,7 +90,8 @@ class ProfileController extends AbstractActionController
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: 'year'
+                            depth: 'year',
+                            format: 'dd/MM/yyyy'
                         });
                 }"));
         $grid->addColumn($birthdayColumn);
@@ -145,7 +146,7 @@ class ProfileController extends AbstractActionController
             ->attributes(' style="text-align: center"')
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.testDate) {
-                        return kendo.toString(dataItem.testDate, \"yyyy/MM/dd\");
+                        return kendo.toString(dataItem.testDate, \"dd/MM/yyyy\");
                     } else {
                         return '--';
                     }
@@ -156,7 +157,8 @@ class ProfileController extends AbstractActionController
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: \"year\"
+                            depth: 'year',
+                            format: 'dd/MM/yyyy'
                         });
                 }"));
         $grid->addColumn($testDateColumn);
@@ -393,9 +395,7 @@ class ProfileController extends AbstractActionController
         $fullNameModelField->nullable(false)->validation($fullNameModelFieldValidation);
         $model->addField($fullNameModelField);
         $birthdayModelField = new DataSourceSchemaModelField('birthday');
-        $birthdayModelFieldValidation = new DataSourceSchemaModelFieldValidation();
-        $birthdayModelFieldValidation->required(true);
-        $birthdayModelField->nullable(false)->validation($birthdayModelFieldValidation);
+        $birthdayModelField->type('date');
         $model->addField($birthdayModelField);
         $addressModelField = new DataSourceSchemaModelField('address');
         $addressModelFieldValidation = new DataSourceSchemaModelFieldValidation();
@@ -410,6 +410,7 @@ class ProfileController extends AbstractActionController
         $testStatusModelField = new DataSourceSchemaModelField('testStatus');
         $model->addField($testStatusModelField);
         $testDateModelField = new DataSourceSchemaModelField('testDate');
+        $testDateModelField->type('date');
         $model->addField($testDateModelField);
         $testVenueModelField = new DataSourceSchemaModelField('testVenue');
         $model->addField($testVenueModelField);

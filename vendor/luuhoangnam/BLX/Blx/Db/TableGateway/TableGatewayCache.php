@@ -16,14 +16,21 @@ class TableGatewayCache
     public function __construct($model)
     {
         $this->model = $model;
+        $classParts = explode('\\', get_class($model));
         
         $this->cache = PatternFactory::factory('object', array(
             'object' => $this->model,
             'storage' => StorageFactory::factory(array(
-                'ttl' => $this->cacheTtl
+                'ttl' => $this->cacheTtl,
+                'namespace' => 'Model.' . $classParts[2]
             )),
             'cache_output' => false
         ));
+    }
+    
+    public function getCache()
+    {
+        return $this->cache;
     }
 
     public function __call($method, $args)

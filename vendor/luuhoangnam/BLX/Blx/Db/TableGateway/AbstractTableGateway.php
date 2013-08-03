@@ -7,7 +7,6 @@ use Zend\Db\Sql\Where;
 use Zend\Db\Sql\Select;
 use Zend\Db\Sql\Expression;
 use Zend\Db\TableGateway\Feature\GlobalAdapterFeature;
-use Zend\Db\ResultSet\HydratingResultSet;
 
 abstract class AbstractTableGateway extends \Zend\Db\TableGateway\AbstractTableGateway implements TableGatewayInterface
 {
@@ -28,16 +27,22 @@ abstract class AbstractTableGateway extends \Zend\Db\TableGateway\AbstractTableG
     public function __construct()
     {
         $this->featureSet = new FeatureSet(array(
-            new RowGatewayFeature($this->getPrimaryKey())
+            new RowGatewayFeature($this->getPrimaryKey()),
+            new GlobalAdapterFeature()
         ));
-        
-        $this->featureSet->addFeature(new GlobalAdapterFeature());
-        $this->initialize();
         
         // Cache
         $this->cache = new TableGatewayCache($this);
         
         return $this;
+    }
+
+    public function clearCache()
+    {
+        $classParts = explode('\\', get_class($this));
+        $this->cache->getCache()->getOptions()
+            ->getStorage()
+            ->clearByNamespace("Model.{$classParts[2]}");
     }
 
     public function isExists($primaryKeyValue)

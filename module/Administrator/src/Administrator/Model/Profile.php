@@ -12,7 +12,7 @@ class Profile extends AbstractTableGateway
     protected $table = 'profiles';
 
     protected $primaryKey = 'profile_id';
-    
+
     public function getProfiles()
     {
         return $this->select()->toArray();
@@ -77,18 +77,28 @@ class Profile extends AbstractTableGateway
 
     public function createProfile(array $profile)
     {
-        return $this->insert($profile);
+        $result = $this->insert($profile);
+        
+        if ($result) {
+            $this->clearCache();
+        }
+        return $result;
     }
 
-    public function updateProfile(array $where, array $profile)
+    public function updateProfile(array $conditions, array $profile)
     {
-        $row = $this->getProfile($where);
+        $where = new Where();
         
-        foreach ($profile as $field => $value) {
-            $row->$field = $value;
+        if (isset($conditions['profile_id'])) {
+            $where->equalTo('profile_id', $conditions['profile_id']);
         }
         
-        return $row->save();
+        $result = $this->update($profile, $where);
+        if ($result) {
+            $this->clearCache();
+        }
+        
+        return $result;
     }
 
     public function removeProfile(array $conditions)

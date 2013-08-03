@@ -71,15 +71,15 @@ class AuthenticationController extends AbstractActionController
                     $authResult = $auth->authenticate();
                     
                     if (! $authResult->isValid()) {
+                        $response['success'] = false;
+                        $response['errorMessage'] = $translator->translate('Sai email hoac mat khau');
+                    } else {
                         // Save results
                         $auth->getStorage()
                             ->getSession()
                             ->getManager()
                             ->rememberMe(86400); // 1 day
                         
-                        $response['success'] = false;
-                        $response['errorMessage'] = $translator->translate('Sai email hoac mat khau');
-                    } else {
                         $response['success'] = true;
                         if ($redirectUrl) {
                             $response['redirectUrl'] = urldecode($redirectUrl);

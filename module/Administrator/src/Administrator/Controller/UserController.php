@@ -127,7 +127,7 @@ class UserController extends AbstractActionController
             ->title($translator->translate('Mat khau'))
             ->hidden(true)
             ->editor(new JavaScriptFunction("function (container, options) {
-                    $('<input type=\"password\" class=\"k-input k-textbox\" placeholder=\"" . $translator->translate('De trong neu khong muon thay doi') . "\"/>')
+                    $('<input name=\"password\" type=\"password\" class=\"k-input k-textbox\" placeholder=\"" . $translator->translate('De trong neu khong muon thay doi') . "\" data-bind=\"'+options.field+'\"/>')
                         .appendTo(container);
                 }"));
         $grid->addColumn($passwordColumn);
@@ -139,7 +139,7 @@ class UserController extends AbstractActionController
             ->attributes(" style= \"text-align: center;\"")
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.birthday) {
-                        return kendo.toString(dataItem.birthday, 'yyyy/MM/dd');
+                        return kendo.toString(dataItem.birthday, 'dd/MM/yyyy');
                     } else {
                         return '--';
                     }
@@ -149,7 +149,8 @@ class UserController extends AbstractActionController
                         .appendTo(container)
                         .kendoDatePicker({
                             // defines when the calendar should return date
-                            depth: 'year'
+                            depth: 'year',
+                            format: 'dd/MM/yyyy'
                         });
                 }"));
         $grid->addColumn($birthdayColumn);
@@ -255,8 +256,8 @@ class UserController extends AbstractActionController
         
         // Events
         $grid->dataBound(new JavaScriptFunction("function () { \$('[data-toggle=\"tooltip\"]').tooltip({placement: \"right\"});}"));
-        $grid->edit(new JavaScriptFunction("function () {
-            \$('input[type=\"password\"]').val('');
+        $grid->edit(new JavaScriptFunction("function (e) {
+            e.model.set('password','');
         }"));
         
         $viewModel->setVariable('grid', $grid);
@@ -378,6 +379,9 @@ class UserController extends AbstractActionController
             $postData = $this->getRequest()->getPost();
             
             $userModel = new User($serviceManager);
+            $existsUser = $userModel->cache->getUser(array(
+                'user_id' => $postData['ID']
+            ));
             
             $birthday = new \DateTime($postData['birthday']);
             $password = $postData['password'];
@@ -387,12 +391,11 @@ class UserController extends AbstractActionController
                 'full_name' => $postData['fullName'],
                 'birthday' => $birthday->format('Y-m-d'),
                 'email' => $postData['email'],
-                'phone_number' => $postData['phone_number'],
                 'address' => $postData['address'],
                 'phone_number' => $postData['phoneNumber']
             );
             
-            if ($password && strlen($password) > 0) {
+            if ($password && strlen($password) > 0 && $password != $existsUser['password']) {
                 $user['password'] = md5($password);
             }
             

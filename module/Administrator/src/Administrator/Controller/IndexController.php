@@ -20,28 +20,15 @@ class IndexController extends AbstractActionController
 
     public function fooAction()
     {
-//         $filter       = new \Zend\Filter\RealPath();
-//         $cachedFilter = \Zend\Cache\PatternFactory::factory('object', array(
-//         		'object'     => $filter,
-//         		'object_key' => 'RealpathFilter',
-//         		'storage'    => \Blx\Cache\StorageFactory::factory(),
+        // 8a89b27a092603ba5abdfc4dbb1aa617
         
-//         		// The realpath filter doesn't output anything
-//         		// so the output don't need to be caught and cached
-//         		'cache_output' => false,
-//         ));
+        $cache = \Blx\Cache\StorageFactory::factory(array(
+            'ttl' => 3600
+        ));
         
-//         $path = $cachedFilter->filter('/www/var/path/../../mypath');
-        
-//         echo '<pre>';
-//         print_r($path);
-//         echo '</pre>';
-
         echo '<pre>';
-        print_r(__CLASS__ . '::' . __FUNCTION__);
+        print_r($cache->clearByNamespace('Model.Profile'));
         echo '</pre>';
-        
-        $profileModel = new \Administrator\Model\Profile();
         
         // This shows the :controller and :action parameters in default route
         // are working when you browse to /index/index/foo

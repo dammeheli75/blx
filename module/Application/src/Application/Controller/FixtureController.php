@@ -50,29 +50,28 @@ class FixtureController extends AbstractActionController
             $filterable['full_name'] = $filterOption['filters'][0]['value'];
         }
         
-        $profiles = $profileModel->getProfilesForFixture($filterable, $pageable);
+        $profiles = $profileModel->cache->getProfilesForFixture($filterable, $pageable);
         
         $response = array(
             'success' => true,
-            'total' => $profileModel->countProfilesForFixture($filterable)
-        )
-        ;
+            'total' => $profileModel->cache->countProfilesForFixture($filterable)
+        );
         
         foreach ($profiles as $profile) {
-            $collaborator = $collaboratorModel->getCollaborator(array(
-                'collaborator_id' => $profile->collaborator_id
+            $collaborator = $collaboratorModel->cache->getCollaborator(array(
+                'collaborator_id' => $profile['collaborator_id']
             ));
-            $venue = $venueModel->getVenue(array(
-                'venue_id' => $profile->test_venue_id
+            $venue = $venueModel->cache->getVenue(array(
+                'venue_id' => $profile['test_venue_id']
             ));
             
             $response['students'][] = array(
-                'fullName' => $profile->full_name,
-                'birthday' => $profile->birthday,
-                'address' => $profile->address,
-                'collaborator' => $collaborator->title,
-                'testDate' => $profile->test_date,
-                'venueAddress' => $venue->title
+                'fullName' => $profile['full_name'],
+                'birthday' => $profile['birthday'],
+                'address' => $profile['address'],
+                'collaborator' => $collaborator['title'],
+                'testDate' => $profile['test_date'],
+                'venueAddress' => $venue['title']
             );
         }
         

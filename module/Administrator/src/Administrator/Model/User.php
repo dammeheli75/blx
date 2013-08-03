@@ -37,18 +37,28 @@ class User extends AbstractTableGateway
 
     public function createUser(array $user)
     {
-        return $this->insert($user);
+        $result = $this->insert($user);
+        
+        if ($result) {
+            $this->clearCache();
+        }
+        return $result;
     }
 
-    public function updateUser(array $where, array $user)
+    public function updateUser(array $conditions, array $user)
     {
-        $row = $this->getUser($where);
+        $where = new Where();
         
-        foreach ($user as $field => $value) {
-            $row->$field = $value;
+        if (isset($conditions['user_id'])) {
+            $where->equalTo('user_id', $conditions['user_id']);
         }
         
-        return $row->save();
+        $result = $this->update($user, $where);
+        if ($result) {
+            $this->clearCache();
+        }
+        
+        return $result;
     }
 
     public function removeUser(array $conditions)
@@ -65,6 +75,10 @@ class User extends AbstractTableGateway
             $where->equalTo('phone_number', $conditions['phone_number']);
         }
         
-        return $this->delete($where);
+        $result = $this->delete($where);
+        if ($result) {
+            $this->clearCache();
+        }
+        return $result;
     }
 }
