@@ -77,6 +77,7 @@ class ProfileController extends AbstractActionController
         $birthdayColumn->field('birthday')
             ->title($translator->translate('Nam sinh'))
             ->width(100)
+            ->filterable(false)
             ->hidden(true)
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.birthday) {
@@ -146,7 +147,7 @@ class ProfileController extends AbstractActionController
             ->attributes(' style="text-align: center"')
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.testDate) {
-                        return kendo.toString(dataItem.testDate, \"dd/MM/yyyy\");
+                        return '<a class=\"tooltip-cell\" data-toggle=\"tooltip\" title=\"" . $translator->translate('Dia diem:') . "&nbsp;'+dataItem.testVenue.title+'\">'+kendo.toString(dataItem.testDate, \"dd/MM/yyyy\")+'</a>';
                     } else {
                         return '--';
                     }
@@ -167,6 +168,7 @@ class ProfileController extends AbstractActionController
         $testVenueColumn->field('testVenue')
             ->title($translator->translate('Dia diem thi'))
             ->filterable(false)
+            ->hidden(true)
             ->template(new JavaScriptFunction("function (dataItem) {
                 if (dataItem.testVenue)
                     return dataItem.testVenue.title;
@@ -254,7 +256,7 @@ class ProfileController extends AbstractActionController
             ->width(76)
             ->filterable(false)
             ->sortable(false)
-            ->attributes(' style="padding-left: 15px"')
+            ->attributes(' style="padding-left: 10px"')
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.licenseFront) {
                         return '<img width=\"50\" height=\"32\" src=\"' + dataItem.licenseFront + '\" alt=\'" . $translator->translate('Bang lai xe cua') . "&nbsp;' + dataItem.fullName + '\'>';
@@ -270,7 +272,7 @@ class ProfileController extends AbstractActionController
             ->width(76)
             ->filterable(false)
             ->sortable(false)
-            ->attributes(' style="padding-left: 15px"')
+            ->attributes(' style="padding-left: 10px"')
             ->template(new JavaScriptFunction("function (dataItem) {
                     if (dataItem.licenseBack) {
                         return '<img width=\"50\" height=\"32\" src=\"' + dataItem.licenseBack + '\" alt=\'" . $translator->translate('Bang lai xe cua') . "&nbsp;' + dataItem.fullName + '\'>';
@@ -433,7 +435,45 @@ class ProfileController extends AbstractActionController
         $grid->dataSource($dataSource);
         
         // Events
-        $grid->dataBound(new JavaScriptFunction("function () { \$('[data-toggle=\"tooltip\"]').tooltip({placement: \"right\"});}"));
+        $grid->dataBound(new JavaScriptFunction("function () {
+            // Tooltip Activate
+            $('[data-toggle=\"tooltip\"]').tooltip({
+                placement: \"right\"
+            });
+
+            var self = this;
+            var quickSearch = $('form#quickSearch');
+            quickSearch.find('input[name=\"q\"]').on('change keydown paste input', function () {
+                // Filter
+                var q = $(this).val();
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: \"fullName\",
+                        operator: \"contains\",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+            });
+
+            quickSearch.submit(function () {
+                // Filter
+                var q = $(this).find('input[name=\"q\"]').val();
+
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: \"fullName\",
+                        operator: \"contains\",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+
+                return false;
+            });
+        }"));
         
         $viewModel->setVariable('grid', $grid);
         return $viewModel;

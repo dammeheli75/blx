@@ -377,6 +377,39 @@ $(document).ready(function () {
             $('[data-toggle="tooltip"]').tooltip({
                 placement: "right"
             });
+
+            var self = this;
+            var quickSearch = $('form#quickSearch');
+            quickSearch.find('input[name="q"]').on('change keydown paste input', function () {
+                // Filter
+                var q = $(this).val();
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: "fullName",
+                        operator: "contains",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+            });
+
+            quickSearch.submit(function () {
+                // Filter
+                var q = $(this).find('input[name="q"]').val();
+
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: "fullName",
+                        operator: "contains",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+
+                return false;
+            });
         }
     });
 
