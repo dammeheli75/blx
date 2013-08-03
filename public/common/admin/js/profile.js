@@ -400,10 +400,19 @@ $(document).ready(function () {
 
                 if (q != lastQuickSearch) {
                     self.dataSource.filter({
-                        field: "fullName",
-                        operator: "contains",
-                        value: q
-                    });
+                        logic: "or",
+                        filters: [
+                            {
+                                field: "fullName",
+                                operator: "contains",
+                                value: q
+                            },
+                            {
+                                field: "phoneNumber",
+                                operator: "contains",
+                                value: q
+                            }
+                        ]});
 
                     lastQuickSearch = q;
                 }
