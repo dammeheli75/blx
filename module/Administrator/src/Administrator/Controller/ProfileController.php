@@ -128,7 +128,7 @@ class ProfileController extends AbstractActionController
                             dataValueField: \"ID\",
                             dataSource: {
                                 transport: {
-                                    read: \"http://localhost/blx/public/administrator/collaborator/read\"
+                                    read: \"{$this->url()->fromRoute('administrator/default', array('controller' => 'collaborator','action' => 'read'))}\"
                                 },
                                 schema: {
                                     data: 'collaborators'
@@ -183,7 +183,7 @@ class ProfileController extends AbstractActionController
                             dataValueField: \"ID\",
                             dataSource: {
                                 transport: {
-                                    read: 'http://localhost/blx/public/administrator/venue/read'
+                                    read: '{$this->url()->fromRoute('administrator/default', array('controller' => 'venue','action' => 'read'))}'
                                 },
                                 schema: {
                                     data: 'venues'
@@ -360,22 +360,18 @@ class ProfileController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url($this->url()
-            ->fromRoute('administrator/profiles') . '/read');
+        $transportRead->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'read')));
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url($this->url()
-            ->fromRoute('administrator/profiles') . '/create')
+        $transportCreate->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'create')))
             ->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url($this->url()
-            ->fromRoute('administrator/profiles') . '/update')
+        $transportUpdate->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'update')))
             ->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url($this->url()
-            ->fromRoute('administrator/profiles') . '/destroy')
+        $transportDestroy->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'destroy')))
             ->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)

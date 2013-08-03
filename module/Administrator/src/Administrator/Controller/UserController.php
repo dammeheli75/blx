@@ -99,7 +99,7 @@ class UserController extends AbstractActionController
                             dataSource: {
                                 transport: {
                                     read: {
-                                        url: 'http://localhost/blx/public/administrator/user-groups/read'
+                                        url: '{$this->url()->fromRoute('administrator/default', array('controller' => 'user-groups','action' => 'read'))}'
                                     }
                                 },
                                 schema: {
@@ -183,22 +183,18 @@ class UserController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url($this->url()
-            ->fromRoute('administrator/users') . '/read');
+        $transportRead->url($this->url()->fromRoute('administrator/users/default', array('action' => 'read')));
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url($this->url()
-            ->fromRoute('administrator/users') . '/create')
+        $transportCreate->url($this->url()->fromRoute('administrator/users/default', array('action' => 'create')))
             ->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url($this->url()
-            ->fromRoute('administrator/users') . '/update')
+        $transportUpdate->url($this->url()->fromRoute('administrator/users/default', array('action' => 'update')))
             ->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url($this->url()
-            ->fromRoute('administrator/users') . '/destroy')
+        $transportDestroy->url($this->url()->fromRoute('administrator/users/default', array('action' => 'destroy')))
             ->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)

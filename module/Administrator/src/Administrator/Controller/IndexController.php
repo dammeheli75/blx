@@ -6,32 +6,31 @@
  * @copyright Copyright (c) 2005-2012 Zend Technologies USA Inc. (http://www.zend.com)
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
-
 namespace Administrator\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
+use Zend\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
+
     public function indexAction()
     {
-        return array();
+        $viewModel = new ViewModel();
+        
+        return $viewModel;
     }
 
     public function fooAction()
     {
-        // 8a89b27a092603ba5abdfc4dbb1aa617
-        
-        $cache = \Blx\Cache\StorageFactory::factory(array(
-            'ttl' => 3600
-        ));
+        $viewModel = new ViewModel();
         
         echo '<pre>';
-        print_r($cache->clearByNamespace('Model.Profile'));
+        print_r($this->url()->fromRoute('administrator/users/default', array('action' => 'read')));
         echo '</pre>';
         
         // This shows the :controller and :action parameters in default route
         // are working when you browse to /index/index/foo
-        return array();
+        return $viewModel;
     }
 }
