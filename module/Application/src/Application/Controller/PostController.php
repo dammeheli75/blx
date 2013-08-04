@@ -18,6 +18,7 @@ use Zend\Paginator\Paginator;
 use Zend\Paginator\Adapter\DbSelect;
 use Zend\Db\Sql\Select;
 use Zend\Db\Sql\Where;
+use Blx\Cache\StorageFactory;
 
 class PostController extends AbstractActionController
 {
@@ -95,10 +96,16 @@ class PostController extends AbstractActionController
             }
         });
         
+        // Paginator Configuration
         $paginatorAdapter = new DbSelect($select, $serviceManager->get('db'));
         $posts = new Paginator($paginatorAdapter);
-        // Paginator Configuration
-        $posts->setCurrentPageNumber($currentPage)->setItemCountPerPage(1);
+        $paginatorCache = StorageFactory::factory(array(
+            'ttl' => 86400,
+            'namespace' => 'Model.Post'
+        ));
+        $posts->setCache($paginatorCache);
+        $posts->setCurrentPageNumber($currentPage);
+        $posts->setItemCountPerPage(10);
         
         $viewModel->setVariables(array(
             'userModel' => $userModel,
