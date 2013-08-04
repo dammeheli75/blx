@@ -11,6 +11,7 @@ namespace Application;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Zend\Db\TableGateway\Feature\GlobalAdapterFeature;
+use Administrator\Model\User;
 
 class Module
 {
@@ -52,6 +53,11 @@ class Module
                 if (! $auth->hasIdentity()) {
                     $controller->redirect()
                         ->toRoute('administrator/authentication/login');
+                } else {
+                    $userModel = new User();
+                    $controller->layout()->currentUser = $controller->currentUser = $userModel->cache->getUser(array(
+                        'email' => $auth->getIdentity()
+                    ));
                 }
             }
         }, 200);

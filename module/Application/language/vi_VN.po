@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-05 02:09+0700\n"
-"PO-Revision-Date: 2013-08-05 02:13+0700\n"
+"POT-Creation-Date: 2013-08-05 02:14+0700\n"
+"PO-Revision-Date: 2013-08-05 02:14+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -1229,7 +1229,7 @@ msgstr "Tin tức"
 
 #: module/Application/view/layout/administrator.phtml:55
 msgid "Bai viet"
-msgstr ""
+msgstr "Bài viết"
 
 #: module/Application/view/layout/administrator.phtml:57
 msgid "Thanh vien"

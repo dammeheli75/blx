@@ -380,10 +380,7 @@ class PostController extends AbstractActionController
                 $postModel = new Post();
                 
                 // Get author ID
-                $userModel = new User();
-                $user = $userModel->cache->getUser(array(
-                    'email' => $this->auth->getIdentity()
-                ));
+                $user = $this->currentUser;
                 
                 $timeCreated = new \DateTime();
                 
@@ -500,10 +497,7 @@ class PostController extends AbstractActionController
                 $postModel = new Post();
                 
                 // Get author ID
-                $userModel = new User();
-                $user = $userModel->cache->getUser(array(
-                    'email' => $this->auth->getIdentity()
-                ));
+                $user = $this->currentUser;
                 
                 $timeCreated = new \DateTime();
                 
