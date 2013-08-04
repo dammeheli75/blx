@@ -11,9 +11,15 @@ class Post extends AbstractTableGateway
 
     protected $primaryKey = 'post_id';
 
-    public function getPosts()
+    public function getPosts($conditions = NULL)
     {
-        return $this->select()->toArray();
+        $where = new Where();
+        
+        if (isset($conditions['category_id'])) {
+            $where->equalTo('category_id', $conditions['category_id']);
+        }
+        
+        return $this->select($where)->toArray();
     }
 
     public function getPost($conditions = null)

@@ -21,12 +21,17 @@
         <item url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/js/common.min.js" />
-        <item url="file://$PROJECT_DIR$/public/common/admin/js/news.min.js" />
+        <item url="file://$PROJECT_DIR$/public/common/js/post.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/admin/js/news.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/js/uploader.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/js/notice.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/js/filing-captcha.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/js/filling.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/news.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/post-edit.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/login.min.js" />
@@ -47,7 +52,7 @@
       <root url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/common.min.js" />
-      <root url="file://$PROJECT_DIR$/public/common/admin/js/news.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/js/post.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

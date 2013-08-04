@@ -24,6 +24,10 @@ class Category extends AbstractTableGateway
             $where->equalTo('category_id', $conditions['category_id']);
         }
         
+        if (isset($conditions['slug'])) {
+        	$where->equalTo('slug', $conditions['slug']);
+        }
+        
         $result = $this->select($where)->toArray();
         if (count($result) > 0) {
             return $result[0];

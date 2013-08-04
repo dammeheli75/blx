@@ -97,6 +97,10 @@
     text-decoration: underline;
 }
 
+.authorName {
+    color: #005580;
+}
+
 /* Pagination */
 .pagination-block, .comment-block {
     margin-top: 10px;

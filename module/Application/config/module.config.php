@@ -132,6 +132,55 @@ return array(
                         )
                     )
                 )
+            ),
+            'news' => array(
+                'type' => 'Literal',
+                'options' => array(
+                    'route' => '/tin-tuc',
+                    'defaults' => array(
+                        '__NAMESPACE__' => 'Application\Controller',
+                        'controller' => 'Post',
+                        'action' => 'index'
+                    )
+                ),
+                'may_terminate' => true,
+                'child_routes' => array(
+                    'category' => array(
+                        'type' => 'Segment',
+                        'options' => array(
+                            'route' => '/:category_slug',
+                            'constraints' => array(
+                                'category_slug' => '[a-zA-Z0-9-]+'
+                            ),
+                            'defaults' => array(
+                                'action' => 'index',
+                                'page' => 1
+                            )
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            'paginator' => array(
+                                'type' => 'segment',
+                                'options' => array(
+                                    'route' => '/trang-:page',
+                                    'defaults' => array(
+                                        'page' => 1
+                                    )
+                                )
+                            )
+                        )
+                    ),
+                    'detail' => array(
+                        'type' => 'Regex',
+                        'options' => array(
+                            'regex' => '/(?<category_slug>[a-zA-Z0-9_-]+)/(?<post_slug>[a-zA-Z0-9_-]+)\.(?<post_id>\d+)\.html',
+                            'defaults' => array(
+                                'action' => 'detail'
+                            ),
+                            'spec' => '/%category_slug%/%post_slug%.%post_id%.html'
+                        )
+                    )
+                )
             )
         )
     ),
@@ -158,7 +207,8 @@ return array(
             'Application\Controller\Fixture' => 'Application\Controller\FixtureController',
             'Application\Controller\Result' => 'Application\Controller\ResultController',
             'Application\Controller\Document' => 'Application\Controller\DocumentController',
-            'Application\Controller\Guiding' => 'Application\Controller\GuidingController'
+            'Application\Controller\Guiding' => 'Application\Controller\GuidingController',
+            'Application\Controller\Post' => 'Application\Controller\PostController'
         )
     ),
     'view_manager' => array(

@@ -1,0 +1,62 @@
+<?php
+$this->headLink()->prependStylesheet($this->basePath() . '/common/css/post.min.css');
+
+$this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
+
+?>
+
+<?php $post = $this->post?>
+<div class="span3 sidebar">
+	<ul class="nav nav-list sidenav">
+		<li class="nav-header"><?php echo $this->translate('Chuyen muc')?></li>
+		<?php foreach ($this->categories as $category) : ?>
+		    <?php if ($post['category_id'] == $category['category_id']) : ?>
+    	    <li class="active">
+    	    <?php else : ?>
+    	    <li>
+    	    <?php endif; ?>
+		    <a href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
+		    </li>
+		<?php endforeach; ?>
+	</ul>
+</div>
+
+<div class="span9 news-container">
+	<!-- Post Detail -->
+	<div class="row news-item">
+		<div class="span9">
+			<div class="block news-block block-square">
+				<div class="block-header">
+					<h2>
+						<a
+							href="<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
+							title="<?php echo $post['title'] ?>"><?php echo $post['title'] ?></a>
+					</h2>
+				</div>
+				<div class="block-body">
+					<div class="news-content">
+						<div class="author">
+							<span>
+                                <?php echo $this->translate('dang boi')?>
+                                <span class="authorName"><?php echo $post['author']['full_name'] ?></span>&nbsp;<?php echo $this->translate('vao luc')?>&nbsp;<?php echo $post['last_updated']->format('H:i:s') ?>&nbsp;<?php echo $this->translate('ngay')?>&nbsp;<?php echo $post['last_updated']->format('d/m/Y')?>
+							</span>
+						</div>
+						<div class="newsText">
+							<?php echo $post['content']?>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Comments -->
+	<div class="row comments">
+		<div class="span9">
+			<div class="block block-square comment-block">
+				<!-- Facebook comment -->
+				<h1>Facebook Comment</h1>
+			</div>
+		</div>
+	</div>
+</div>
