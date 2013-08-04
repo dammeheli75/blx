@@ -29,20 +29,11 @@ class IndexController extends AbstractActionController
             ->getServiceManager();
         $translator = $serviceManager->get('translator');
         
-        $string = \Blx\Utility\String::seoUrl($translator->translate('thanh-nien-nghiem-tuc-2013---------'));
+        $date = new \DateTime();
         
-        echo '<pre>Before: ';
-        print_r($string);
+        echo '<pre>';
+        print_r($date->format('h:i:s'));
         echo '</pre>';
-        
-        if ($string[strlen($string)-1] === '-') {
-        	$string = substr($string, 0, strlen($string) - 1);
-        }
-        
-        echo '<pre>After: ';
-        print_r($string);
-        echo '</pre>';
-        
         
         // This shows the :controller and :action parameters in default route
         // are working when you browse to /index/index/foo

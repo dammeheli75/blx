@@ -1,0 +1,57 @@
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/post-edit.min.css');
+$this->headScript()
+    ->prependFile($this->basePath() . '/common/admin/js/post-edit.min.js')
+    ->prependFile($this->basePath() . '/ckeditor/adapters/jquery.js')
+    ->prependFile($this->basePath() . '/ckeditor/ckeditor.js');
+?>
+
+<div class="postEditContainer">
+	<form id="postEditForm" method="post"
+		action="<?php echo $this->url('administrator/posts/default', array('action'=>'save-edit'))?>">
+		<input type="hidden" name="ID" value="<?php echo $this->post['post_id']?>">
+		<div id="postOptions" class="pull-left">
+			<div class="block block-post-options">
+				<div class="block-header block-header-inverse">
+					<h2><?php echo $this->translate('Tuy chon')?></h2>
+				</div>
+				<div class="block-body">
+					<div class="control-line">
+						<label class="create-at"><?php echo $this->translate('Tao luc:')?>&nbsp;<?php echo $this->post['time_created']->format('h:i:s d-m-Y') ?></label>
+					</div>
+
+					<div class="control-line">
+						<label class="last-edit"><?php echo $this->translate('Sua lan cuoi:')?>&nbsp;<?php echo $this->post['last_updated']->format('h:i:s d-m-Y') ?></label>
+					</div>
+
+					<div class="control-line control-group">
+						<label for="categoryInput" class="control-label"><?php echo $this->translate('Chuyen muc')?></label>
+						<div class="controls">
+							<?php echo $this->categoryDropdown->render()?>
+						</div>
+					</div>
+
+					<div class="control-line">
+						<label for="statusInput" class="control-label"><?php echo $this->translate('Trang thai')?></label>
+						<div class="controls">
+							<?php echo $this->statusDropdown->render()?>
+						</div>
+					</div>
+
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary btn-save pull-right"><?php echo $this->translate('Luu bai viet')?></button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="postBodyContent" class="pull-left">
+			<label> <input type="text" class="input-large" id="titleInput"
+				name="title"
+				placeholder="<?php echo $this->translate('Tieu de bai viet')?>"
+				required value="<?php echo $this->post['title']?>">
+			</label> <label> <textarea id="ckEditorContainer" name="content"><?php echo $this->post['content']?></textarea>
+			</label>
+		</div>
+	</form>
+</div>

@@ -11,7 +11,7 @@ return array(
             'Administrator\Controller\Collaborator' => 'Administrator\Controller\CollaboratorController',
             'Administrator\Controller\Venue' => 'Administrator\Controller\VenueController',
             'Administrator\Controller\Category' => 'Administrator\Controller\CategoryController',
-            'Administrator\Controller\Post' => 'Administrator\Controller\PostController',
+            'Administrator\Controller\Post' => 'Administrator\Controller\PostController'
         )
     ),
     'router' => array(
@@ -224,6 +224,18 @@ return array(
                                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
                                     ),
                                     'defaults' => array()
+                                )
+                            ),
+                            'edit' => array(
+                                'type' => 'Segment',
+                                'options' => array(
+                                    'route' => '/edit[/:post_id]',
+                                    'constraints' => array(
+                                        'post_id' => '\d*'
+                                    ),
+                                    'defaults' => array(
+                                        'action' => 'edit'
+                                    )
                                 )
                             )
                         )

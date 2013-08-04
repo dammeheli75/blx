@@ -4,24 +4,24 @@ namespace Administrator\Model;
 use Blx\Db\TableGateway\AbstractTableGateway;
 use Zend\Db\Sql\Where;
 
-class Category extends AbstractTableGateway
+class Post extends AbstractTableGateway
 {
 
-    protected $table = 'categories';
+    protected $table = 'posts';
 
-    protected $primaryKey = 'category_id';
+    protected $primaryKey = 'post_id';
 
-    public function getCategories()
+    public function getPosts()
     {
         return $this->select()->toArray();
     }
 
-    public function getCategory($conditions = null)
+    public function getPost($conditions = null)
     {
         $where = new Where();
         
-        if (isset($conditions['category_id'])) {
-            $where->equalTo('category_id', $conditions['category_id']);
+        if (isset($conditions['post_id'])) {
+            $where->equalTo('post_id', $conditions['post_id']);
         }
         
         $result = $this->select($where)->toArray();
@@ -31,9 +31,9 @@ class Category extends AbstractTableGateway
         return false;
     }
 
-    public function createCategory($category)
+    public function createPost($post)
     {
-        $result = $this->insert($category);
+        $result = $this->insert($post);
         
         if ($result) {
             $this->clearCache();
@@ -41,15 +41,15 @@ class Category extends AbstractTableGateway
         return $result;
     }
 
-    public function updateCategory(array $conditions, array $category)
+    public function updatePost(array $conditions, array $post)
     {
         $where = new Where();
         
-        if (isset($conditions['category_id'])) {
-            $where->equalTo('category_id', $conditions['category_id']);
+        if (isset($conditions['post_id'])) {
+            $where->equalTo('post_id', $conditions['post_id']);
         }
         
-        $result = $this->update($category, $where);
+        $result = $this->update($post, $where);
         if ($result) {
             $this->clearCache();
         }
@@ -57,12 +57,12 @@ class Category extends AbstractTableGateway
         return $result;
     }
 
-    public function removeCategory(array $conditions)
+    public function removePost(array $conditions)
     {
         $where = new Where();
         
-        if (isset($conditions['category_id'])) {
-            $where->equalTo('category_id', $conditions['category_id']);
+        if (isset($conditions['post_id'])) {
+            $where->equalTo('post_id', $conditions['post_id']);
         }
         
         $result = $this->delete($where);

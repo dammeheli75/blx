@@ -4,13 +4,13 @@ $(document).ready(function () {
         $("#titleInput").width($(window).width() - 390);
     });
 
-    $("#categoryInput").kendoDropDownList({
+    $("#categoryInputOld").kendoDropDownList({
         dataTextField: "title",
         dataValueField: "ID",
         dataSource: {
             transport: {
                 read: {
-                    url: "http://localhost/blx/public/prototype/data/categories.json",
+                    url: "http://localhost/blx/public/administrator/categories/read",
                     dataType: "json"
                 }
             },
@@ -20,7 +20,7 @@ $(document).ready(function () {
         }
     });
 
-    $("#statusInput").kendoDropDownList({
+    $("#statusInputOld").kendoDropDownList({
         dataTextField: "text",
         dataValueField: "value",
         dataSource: [
@@ -50,7 +50,8 @@ $(document).ready(function () {
         language: 'vi',
         removeButtons: 'Underline,Subscript,Superscript',
         format_tags: 'p;h1;h2;h3;pre',
-        removeDialogTabs: 'image:advanced;link:advanced'
+        removeDialogTabs: 'image:advanced;link:advanced',
+        height: $(window).height() - 280
     });
 
 });

@@ -1,3 +1,18 @@
+<!-- Templates -->
+<script type="text/x-kendo-template" id="quickSearchPostTemplate">
+    <form id="quickSearchPost" class="navbar-search pull-right" action="">
+        <label><input type="text" class="search-query span3" placeholder="<?php echo $this->translate('Tim kiem nhanh') ?>" name="q"></label>
+    </form>
+</script>
+
+<script type="text/x-kendo-template" id="addButtonTemplate">
+    <a href="\#" class="btn btn-success btn-add pull-right"  onclick="window.location.href='<?php echo $this->url('administrator/posts/default', array('action'=>'add'))?>'"><?php echo $this->translate('Tao bai viet') ?></a>
+</script>
+
+<script type="text/javascript">
+var lastQuickSearch = "";
+</script>
+
 <?php
 $this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/post.min.css');
 $this->headScript()->prependFile($this->basePath() . '/common/admin/js/post.min.js');
@@ -5,7 +20,6 @@ $this->headScript()->prependFile($this->basePath() . '/common/admin/js/post.min.
 echo $this->grid->render();
 
 ?>
-
 
 <script type="text/javascript">
     $('.k-grid-toolbar').ready(function () {

@@ -10,7 +10,7 @@
     <link href="../common/admin/css/kendo.common.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="../common/admin/css/kendo.min.css" media="screen" rel="stylesheet" type="text/css">
     <link href="../common/admin/css/common.min.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="../common/admin/css/news.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../common/admin/css/post.css" media="screen" rel="stylesheet" type="text/css">
 
 
     <!-- Scripts -->
@@ -20,7 +20,7 @@
     <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../kendoui/js/kendo.web.min.js"></script>
     <script type="text/javascript" src="../common/admin/js/common.min.js"></script>
-    <script type="text/javascript" src="../common/admin/js/news.js"></script>
+    <script type="text/javascript" src="../common/admin/js/post.js"></script>
 
 </head>
 <body id="AdministratorControllerUserController">
@@ -66,6 +66,7 @@
     <div class="row"></div>
 </div>
 
+<!-- Templates -->
 <script type="text/x-kendo-template" id="quickSearchPostTemplate">
     <form id="quickSearchPost" class="navbar-search pull-right" action="">
         <label><input type="text" class="search-query span3" placeholder="Tìm kiếm nhanh" name="q"></label>
@@ -74,12 +75,12 @@
 
 <script type="text/x-kendo-template" id="addButtonTemplate">
     <!--suppress HtmlUnknownTarget -->
-    <a href="\#" class="btn btn-success btn-add pull-right">Tạo bài viết</a>
+    <a href="\#" class="btn btn-success btn-add pull-right" onclick="window.location.href='http://localhost/blx/public/prototype/news.html'">Tạo bài viết</a>
 </script>
 
 
 <!-- Grid -->
-<div id="grid">
+<div id="gridOld">
 
 </div>
 

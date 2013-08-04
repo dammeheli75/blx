@@ -16,7 +16,7 @@
         <item url="file://$PROJECT_DIR$/public/common/js/filling.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/admin/js/user.min.js" />
         <item url="file://$PROJECT_DIR$/public/ckeditor/config.min.js" />
-        <item url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
+        <item url="file://$PROJECT_DIR$/public/common/admin/js/post.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/js/result.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
         <item url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
@@ -26,6 +26,8 @@
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/admin/js/news.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/post-edit.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/login.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/category.min.js" />
@@ -40,7 +42,7 @@
       <root url="file://$PROJECT_DIR$/public/common/admin/js/common.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/user.min.js" />
       <root url="file://$PROJECT_DIR$/public/ckeditor/config.min.js" />
-      <root url="file://$PROJECT_DIR$/public/common/admin/js/news-category.min.js" />
+      <root url="file://$PROJECT_DIR$/public/common/admin/js/post.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/result.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/admin/js/profile.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />

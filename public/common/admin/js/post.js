@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $("#grid").kendoGrid({
+    $("#gridOld").kendoGrid({
         columns: [
             {
                 field: "ID",
@@ -21,7 +21,7 @@ $(document).ready(function () {
                 title: "Tác giả",
                 width: 140,
                 sortable: false,
-                template: "<a class='author-name'>#= author.fullName #</a>",
+                template: "#= author.fullName #",
                 attributes: {
                     style: "text-align: center"
                 }
@@ -31,7 +31,7 @@ $(document).ready(function () {
                 title: "Chuyên mục",
                 width: 180,
                 sortable: false,
-                template: "<a class='category-title'>#= category.title #</a>"
+                template: "#= category.title #"
             },
             {
                 field: "status", // "published" | "pending_review" | "draft"
@@ -133,9 +133,47 @@ $(document).ready(function () {
             }
         },
         editable: {
-            create: false,
-            update: false,
             confirmation: "Chú ý: bài viết đã xoá sẽ không lấy lại được. Có chắc chắn muốn xoá bài viết này?"
+        },
+        dataBound: function () {
+            // Tooltip Activate
+            $('[data-toggle="tooltip"]').tooltip({
+                placement: "right"
+            });
+
+            var self = this;
+            var quickSearchPost = $('form#quickSearchPost');
+
+            quickSearchPost.find('input[name="q"]').on('change keydown paste input', function () {
+                // Filter
+                var q = $(this).val();
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: "title",
+                        operator: "contains",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+            });
+
+            quickSearchPost.submit(function () {
+                // Filter
+                var q = $(this).find('input[name="q"]').val();
+
+                if (q != lastQuickSearch) {
+                    self.dataSource.filter({
+                        field: "title",
+                        operator: "contains",
+                        value: q
+                    });
+
+                    lastQuickSearch = q;
+                }
+
+                return false;
+            });
         }
     });
 });

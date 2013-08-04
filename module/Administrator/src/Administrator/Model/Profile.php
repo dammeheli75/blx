@@ -72,7 +72,10 @@ class Profile extends AbstractTableGateway
         
         $result = $this->select($where)->toArray();
         
-        return $result[0];
+        if (count($result) > 0) {
+            return $result[0];
+        }
+        return false;
     }
 
     public function createProfile(array $profile)

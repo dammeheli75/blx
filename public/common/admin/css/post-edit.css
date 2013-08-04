@@ -12,12 +12,12 @@
 }
 
 #postOptions .block-body {
-    padding: 10px;
     overflow: hidden;
+    padding-top: 10px;
 }
 
 #postOptions .control-line {
-    padding: 6px 0;
+    padding: 10px;
 }
 
 #postOptions label {
@@ -44,4 +44,12 @@
     color: #333333;
     height: 24px;
     padding: 6px 14px;
+}
+
+.btn.btn-save {
+    margin-top: 10px;
+}
+
+.form-actions {
+    margin-bottom: 0;
 }
