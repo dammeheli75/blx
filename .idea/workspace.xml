@@ -46,7 +46,7 @@
     <file path="/filling.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426419780" ignored="false" />
     <file path="/filing-captcha.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426422329" ignored="false" />
     <file path="/news.html" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375530757859" ignored="false" />
-    <file path="$PROJECT_DIR$/public/common/css/common.min.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375520698902" ignored="false" />
+    <file path="$PROJECT_DIR$/public/common/css/common.min.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375642678780" ignored="false" />
     <file path="/news.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375555518385" ignored="false" />
     <file path="/news-detail.html" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375532391188" ignored="false" />
     <file path="/dummy.xml" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375532162748" ignored="false" />
@@ -85,16 +85,16 @@
       <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/prototype/news.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="120" column="14" selection-start="2911" selection-end="7474" vertical-scroll-proportion="-39.375">
+            <state line="101" column="24" selection-start="6533" selection-end="6533" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/common/css/post.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.7446808">
+            <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news-detail.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="news-detail.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/prototype/news-detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="12" selection-start="8131" selection-end="8459" vertical-scroll-proportion="-7.278481">
+            <state line="118" column="12" selection-start="8131" selection-end="8131" vertical-scroll-proportion="0.94311374">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/css/common.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="212" column="14" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -139,8 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/css/category.css" />
         <option value="$PROJECT_DIR$/public/prototype/test.html" />
         <option value="$PROJECT_DIR$/public/prototype/admin-news-category.html" />
         <option value="$PROJECT_DIR$/public/common/admin/js/category.js" />
@@ -155,6 +162,8 @@
         <option value="$PROJECT_DIR$/public/common/admin/js/post.js" />
         <option value="$PROJECT_DIR$/public/common/js/post.js" />
         <option value="$PROJECT_DIR$/public/common/css/post.css" />
+        <option value="$PROJECT_DIR$/../BLX.VN/home.html" />
+        <option value="$PROJECT_DIR$/public/common/css/common.css" />
       </list>
     </option>
   </component>
@@ -579,23 +588,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/ckeditor/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="63" selection-start="1269" selection-end="1319" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/admin-news-category.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="16" selection-start="2750" selection-end="2750" vertical-scroll-proportion="-22.583334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/css/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="1" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/prototype/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="78" column="16" selection-start="2591" selection-end="2591" vertical-scroll-proportion="-0.39473686" />
@@ -663,13 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="14" selection-start="2911" selection-end="7474" vertical-scroll-proportion="-39.375">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/common/js/post.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="70" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.54545456">
@@ -677,16 +662,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/news-detail.html">
+    <entry file="file://$PROJECT_DIR$/public/common/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="12" selection-start="8131" selection-end="8459" vertical-scroll-proportion="-7.278481">
+        <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/css/post.css">
+    <entry file="file://$PROJECT_DIR$/public/prototype/news.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.7446808">
+        <state line="101" column="24" selection-start="6533" selection-end="6533" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="212" column="14" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../BLX.VN/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="2813" selection-end="2853" vertical-scroll-proportion="0.4266467">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/prototype/news-detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="12" selection-start="8131" selection-end="8131" vertical-scroll-proportion="0.94311374">
           <folding />
         </state>
       </provider>

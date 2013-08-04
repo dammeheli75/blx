@@ -14,6 +14,10 @@ use Administrator\Model\Category;
 use Administrator\Model\Post;
 use Administrator\Model\User;
 use Zend\Cache\PatternFactory;
+use Zend\Paginator\Paginator;
+use Zend\Paginator\Adapter\DbSelect;
+use Zend\Db\Sql\Select;
+use Zend\Db\Sql\Where;
 
 class PostController extends AbstractActionController
 {
@@ -40,11 +44,31 @@ class PostController extends AbstractActionController
         $userModel = new User();
         
         $categorySlug = $this->params('category_slug', null);
+        $currentPage = $this->params('page');
         
         // Get categories
-        
         $categories = $categoryModel->cache->getCategories();
         $viewModel->setVariable('categories', $categories);
+        
+        // Check is category page
+        if ($categorySlug && strlen($categorySlug) > 0) {
+            // Category Page
+            $categoryQuery = $categoryModel->cache->getCategory(array(
+                'slug' => $categorySlug
+            ));
+            
+            if (! $categoryQuery) {
+                $this->getResponse()->setStatusCode(404);
+                return;
+            }
+        } else {
+            // Index Page
+            $categoryQuery = null;
+        }
+        
+        // Pagination
+        $select = new Select();
+        $select->from('posts');
         
         // Get posts
         if ($categorySlug && strlen($categorySlug) > 0) {
@@ -63,37 +87,24 @@ class PostController extends AbstractActionController
         }
         
         $viewModel->setVariable('categoryQuery', $categoryQuery);
-        $postConditions = array();
-        if ($categoryQuery) {
-            // Category Page
-            $postConditions['category_id'] = $categoryQuery['category_id'];
-        }
         
-        $posts = $postModel->cache->getPosts($postConditions);
-        
-        foreach ($posts as $index => $post) {
-            // Author
-            $author = $userModel->cache->getUser(array(
-                'user_id' => $post['author_id']
-            ));
-            if ($author)
-                $posts[$index]['author'] = $author;
-                
-                // Category
-            $category = $categoryModel->cache->getCategory(array(
-                'category_id' => $post['category_id']
-            ));
-            if ($category) {
-                $posts[$index]['category'] = $category;
+        $select->where(function (Where $where) use($categoryQuery)
+        {
+            if ($categoryQuery) {
+                $where->equalTo('category_id', $categoryQuery['category_id']);
             }
-            
-            // Datetime
-            $posts[$index]['last_updated'] = new \DateTime($post['last_updated']);
-            
-            // Post Slug
-            $posts[$index]['slug'] = $stringUtilityCache->seoUrl($post['title']);
-        }
+        });
         
+        $paginatorAdapter = new DbSelect($select, $serviceManager->get('db'));
+        $posts = new Paginator($paginatorAdapter);
+        // Paginator Configuration
+        $posts->setCurrentPageNumber($currentPage)->setItemCountPerPage(1);
+        
+        $viewModel->setVariables(array(
+            'userModel' => $userModel,
+            'categoryModel' => $categoryModel,
+            'stringUtilityCache' => $stringUtilityCache
+        ));
         $viewModel->setVariable('posts', $posts);
         
         return $viewModel;

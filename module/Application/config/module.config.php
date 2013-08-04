@@ -140,22 +140,34 @@ return array(
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Post',
-                        'action' => 'index'
+                        'action' => 'index',
+                        'page' => 1
                     )
                 ),
                 'may_terminate' => true,
                 'child_routes' => array(
-                    'category' => array(
-                        'type' => 'Segment',
+                    'paginator' => array(
+                        'type' => 'segment',
                         'options' => array(
-                            'route' => '/:category_slug',
+                            'route' => '/trang-:page',
                             'constraints' => array(
-                                'category_slug' => '[a-zA-Z0-9-]+'
+                                'page' => '\d+'
                             ),
                             'defaults' => array(
                                 'action' => 'index',
                                 'page' => 1
                             )
+                        )
+                    ),
+                    'category' => array(
+                        'type' => 'Regex',
+                        'options' => array(
+                            'regex' => '/(?<category_slug>(?!trang-\d+$)[a-zA-Z0-9_-]+)',
+                            'defaults' => array(
+                                'action' => 'index',
+                                'page' => 1
+                            ),
+                            'spec' => '/%category_slug%'
                         ),
                         'may_terminate' => true,
                         'child_routes' => array(
@@ -163,6 +175,9 @@ return array(
                                 'type' => 'segment',
                                 'options' => array(
                                     'route' => '/trang-:page',
+                                    'constraints' => array(
+                                        'page' => '\d+'
+                                    ),
                                     'defaults' => array(
                                         'page' => 1
                                     )

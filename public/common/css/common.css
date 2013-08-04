@@ -205,12 +205,12 @@ a:hover {
 }
 
 .navbar .nav>li {
-    width: 188px;
+    width: 155px;
     border-left: 1px solid #526da4;
 }
 
 .navbar .nav>li:first-child {
-    width: 183px;
+    width: 159px;
 }
 
 /* Breadcrumb */

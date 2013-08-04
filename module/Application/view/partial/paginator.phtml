@@ -1,0 +1,30 @@
+<?php if ($this->pageCount): ?>
+<nav class="pagination pagination-centered">
+	<ul>
+    	<!-- Previous page link -->
+    	<?php if (isset($this->previous)): ?>
+          <li><a href="<?php echo $this->url($this->route, array('page' => $this->previous, 'category_slug' => $this->category_slug)); ?>"><?php echo $this->translate('Truoc')?></a></li>
+        <?php else: ?>
+          <li class="disabled"><a href="#"><?php echo $this->translate('Truoc')?></a></li>
+        <?php endif; ?>
+        
+        
+        <!-- Numbered page links -->
+        <?php foreach ($this->pagesInRange as $page): ?>
+          <?php if ($page != $this->current): ?>
+            <li><a href="<?php echo $this->url($this->route, array('page' => $page, 'category_slug' => $this->category_slug)); ?>"><?php echo $page; ?></a></li>
+          <?php else: ?>
+            <li class="active"><a href="<?php echo $this->url($this->route, array('page' => $page)); ?>"><?php echo $page; ?></a></li>
+          <?php endif; ?>
+        <?php endforeach; ?>
+        
+        
+		<!-- Next page link -->
+        <?php if (isset($this->next)): ?>
+          <li><a href="<?php echo $this->url($this->route, array('page' => $this->next, 'category_slug' => $this->category_slug)); ?>"><?php echo $this->translate('Sau')?></a></li>
+        <?php else: ?>
+          <li class="disabled"><a href="#"><?php echo $this->translate('Sau')?></a></li>
+        <?php endif; ?>
+	</ul>
+</nav>
+<?php endif; ?>

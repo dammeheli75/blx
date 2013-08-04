@@ -12,14 +12,24 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 		<?php if ($this->categoryQuery && $this->categoryQuery['category_id'] == $category['category_id']) : ?>
 		  <li class="active">
 		  <?php else : ?>
-		  <li>
+		  
+		
+		
+		
+		
+		
+		<li>
 		<?php endif; ?>
 		<a
 			href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
 		</li>
 		
 		
+		
+		
 		<?php endforeach; ?>
+	
+	
 	
 	
 	</ul>
@@ -27,6 +37,28 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 
 <div class="span9 news-container">
     <?php foreach ($this->posts as $post) : ?>
+    <?php
+        // Data Initialize
+        $author = $this->userModel->cache->getUser(array(
+            'user_id' => $post['author_id']
+        ));
+        if ($author)
+            $post->author = $author;
+            
+            // Category
+        $category = $this->categoryModel->cache->getCategory(array(
+            'category_id' => $post['category_id']
+        ));
+        if ($category) {
+            $post->category = $category;
+        }
+        
+        // Datetime
+        $post->last_updated = new \DateTime($post['last_updated']);
+        
+        // Post Slug
+        $post->slug = $this->stringUtilityCache->seoUrl($post['title']);
+        ?>
 	<div class="row news-item">
 		<div class="span9">
 			<div class="block news-block block-square">
@@ -56,27 +88,21 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 		</div>
 	</div>
 	<?php endforeach; ?>
-
+	
 	<!-- Pagination -->
 	<div class="row">
 		<div class="span9">
 			<div class="block pagination-block block-square">
-				<nav class="pagination pagination-centered">
-					<ul>
-						<li><a href="#"><?php echo $this->translate('Truoc')?></a></li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li><a href="#">4</a></li>
-						<li><a href="#">5</a></li>
-						<li><a href="#">6</a></li>
-						<li><a href="#">7</a></li>
-						<li><a href="#">8</a></li>
-						<li><a href="#">9</a></li>
-						<li><a href="#">10</a></li>
-						<li><a href="#"><?php echo $this->translate('Sau')?></a></li>
-					</ul>
-				</nav>
+                <?php
+                if ($this->categoryQuery) {
+                    $route = 'news/category/paginator';
+                    $categorySlug = $this->categoryQuery['slug'];
+                } else {
+                    $route = 'news/paginator';
+                    $categorySlug = null;
+                }
+                echo $this->paginationControl($this->posts, 'Sliding', 'partial/paginator', array('route' => $route, 'category_slug' => $categorySlug));
+                ?>
 			</div>
 		</div>
 	</div>
