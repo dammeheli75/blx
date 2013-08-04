@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+<script>
+    jQuery(function () {
+        jQuery("#grid").kendoGrid({
+            "height": $(window).height() - 66,
+            "toolbar": [
+                {
+                    "name": "create",
+                    "text": "Tao chuyen muc moi"
+                }
+            ],
+            "pageable": {
+                "messages": {
+                    "display": "Hien thi {0}-{1}\/{2} chuyen muc",
+                    "empty": "Khong co chuyen muc nao"
+                },
+                "pageSize": 50
+            },
+            "sortable": true,
+            "filterable": {
+                "messages": {
+                    "info": "Loc theo:",
+                    "and": "va",
+                    "or": "hoac",
+                    "filter": "L\u1ecdc",
+                    "clear": "Xo\u00e1"
+                },
+                "operators": {
+                    "string": {
+                        "contains": "C\u00f3 ch\u1ee9a"
+                    }
+                }
+            },
+            "editable": {
+                "mode": "popup",
+                "confirmation": "Co chac chan muon xoa chuyen muc nay?"
+            },
+            "columns": [
+                {
+                    "field": "ID",
+                    "title": "#",
+                    "width": 80,
+                    "attributes": " style=\"text-align: center\"",
+                    "filterable": false
+                },
+                {
+                    "field": "title",
+                    "title": "Ten chuyen muc",
+                    "width": 320
+                },
+                {
+                    "field": "description",
+                    "title": "Mo ta",
+                    "width": 360,
+                    "filterable": false
+                },
+                {
+                    "field": "slug",
+                    "title": "Slug",
+                    "width": 240,
+                    "filterable": false,
+                    "editor": function (container, options) {
+                        $('<input type="text" name="slug" class="k-input k-textbox"  placeholder="Neu de trong slug se duoc tao tu dong" data-bind="value:' + options.field + '"/>')
+                                .appendTo(container);
+                    }
+                },
+                {
+                    "field": "postCount",
+                    "title": "So bai viet",
+                    "width": 120,
+                    "filterable": false,
+                    "attributes": " style=\"text-align: center\""
+                },
+                {
+                    "command": [
+                        {
+                            "name": "edit",
+                            "text": "S\u1eeda"
+                        },
+                        {
+                            "name": "destroy",
+                            "text": "Xo\u00e1"
+                        }
+                    ]
+                }
+            ],
+            "dataSource": {
+                "transport": {
+                    "read": {
+                        "url": "\/blx\/public\/administrator\/categories\/read"
+                    },
+                    "create": {
+                        "url": "\/blx\/public\/administrator\/categories\/create",
+                        "type": "POST"
+                    },
+                    "update": {
+                        "url": "\/blx\/public\/administrator\/categories\/update",
+                        "type": "POST"},
+                    "destroy": {
+                        "url": "\/blx\/public\/administrator\/categories\/destroy",
+                        "type": "POST"
+                    }
+                },
+                "schema": {
+                    "data": "categories",
+                    "total": "total",
+                    "model": {
+                        "fields": [
+                            {
+                                "field": "ID",
+                                "editable": false,
+                                "type": "number",
+                                "defaultValue": null
+                            },
+                            {
+                                "field": "title",
+                                "nullable": false,
+                                "validation": {
+                                    "required": true
+                                }
+                            },
+                            {
+                                "field": "description",
+                                "type": "string"
+                            },
+                            {
+                                "field": "slug",
+                                "type": "string"
+                            },
+                            {
+                                "field": "postCount",
+                                "type": "number",
+                                "editable": false,
+                                "defaultValue": 0,
+                                "validation": {
+                                    "required": true
+                                }
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });</script>
+
+</body>
+</html>

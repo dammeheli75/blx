@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-03 14:30+0700\n"
-"PO-Revision-Date: 2013-08-03 14:30+0700\n"
+"POT-Creation-Date: 2013-08-03 15:26+0700\n"
+"PO-Revision-Date: 2013-08-03 15:30+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -183,12 +183,12 @@ msgstr "Có chắc chắn muốn xoá?"
 msgid "Them ho so"
 msgstr "Thêm hồ sơ"
 
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:612
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:682
-#: module/Administrator/src/Administrator/Controller/ProfileController.php:715
-#: module/Administrator/src/Administrator/Controller/UserController.php:359
-#: module/Administrator/src/Administrator/Controller/UserController.php:409
-#: module/Administrator/src/Administrator/Controller/UserController.php:440
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:608
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:678
+#: module/Administrator/src/Administrator/Controller/ProfileController.php:711
+#: module/Administrator/src/Administrator/Controller/UserController.php:355
+#: module/Administrator/src/Administrator/Controller/UserController.php:405
+#: module/Administrator/src/Administrator/Controller/UserController.php:436
 msgid "Truy cap bi han che"
 msgstr "Truy cập bị hạn chế"
 
@@ -821,7 +821,7 @@ msgstr ""
 #: module/Application/view/application/index/index.phtml:86
 #: module/Application/view/application/index/index.phtml:100
 #: module/Application/view/application/index/index.phtml:114
-#: module/Application/view/layout/administrator.phtml:57
+#: module/Application/view/layout/administrator.phtml:58
 msgid "Luu Hoang Nam"
 msgstr "Lưu Hoàng Nam"
 
@@ -878,7 +878,7 @@ msgstr "Hồ sơ bao gồm"
 
 #: module/Application/view/application/index/index.phtml:175
 msgid "6 anh chan dung 3x4"
-msgstr "6 ảnh chân dung 3x$"
+msgstr "6 ảnh chân dung 3x4"
 
 #: module/Application/view/application/index/index.phtml:178
 msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
@@ -889,12 +889,16 @@ msgid "Chu y le phi thi gom 2 khoan"
 msgstr "Chú ý lệ phí thi gồm 2 khoản"
 
 #: module/Application/view/application/index/index.phtml:186
-msgid "Le phi dao tao"
-msgstr "Lệ phí đào tạo"
+msgid "Le phi dao tao 150.000<sup>d</sup>"
+msgstr "Lệ phí đào tạo 150.000<sup>đ</sup>."
 
 #: module/Application/view/application/index/index.phtml:187
-msgid "Le phi thi"
-msgstr "Lệ phí thi"
+msgid ""
+"Le phi thi 225.000<sup>d</sup> (40.000<sup>d</sup> thi ly thuyet, "
+"50.000<sup>d</sup> thi thuc hanh, 135.00<sup>d</sup> in va cap bang)"
+msgstr ""
+"Lệ phí thi 225.000 <sup>d</sup> (40.000<sup>đ</sup> thi lý thuyết, "
+"50.000<sup>đ</sup> thi thực hành, 135.000<sup>đ</sup> in và cấp bằng)."
 
 #: module/Application/view/application/index/index.phtml:193
 msgid "Dia diem nop ho so"
@@ -1040,15 +1044,15 @@ msgstr "Thành viên"
 msgid "He thong"
 msgstr "Hệ thống"
 
-#: module/Application/view/layout/administrator.phtml:60
+#: module/Application/view/layout/administrator.phtml:61
 msgid "Thong tin ca nhan"
 msgstr "Thông tin cá nhân"
 
-#: module/Application/view/layout/administrator.phtml:62
+#: module/Application/view/layout/administrator.phtml:64
 msgid "Dang xuat"
 msgstr "Đăng xuất"
 
-#: module/Application/view/layout/administrator.phtml:68
+#: module/Application/view/layout/administrator.phtml:71
 msgid "Tim nhanh bang ten hoac so dien thoai"
 msgstr "Tìm nhanh bằng tên hoặc số điện thoại"
 
@@ -1150,6 +1154,12 @@ msgstr "Thi bằng lái xe moto"
 #: module/Application/view/layout/login.phtml:4
 msgid "Dang nhap vao he thong quan ly BLX.VN"
 msgstr "Đăng nhập vào hệ thống quản lý BLX.VN"
+
+#~ msgid "Le phi dao tao"
+#~ msgstr "Lệ phí đào tạo"
+
+#~ msgid "Le phi thi"
+#~ msgstr "Lệ phí thi"
 
 #~ msgid "Tim kiem nhanh"
 #~ msgstr "Tìm kiếm nhanh"

@@ -1,0 +1,30 @@
+{
+    "success": true,
+    "total": 1,
+    "categories": [
+        {
+            "ID": 1,
+            "title": "Chuyên mục 1",
+            "description": "",
+            "slug": "chuyen-muc-1",
+            "newsCount": 1,
+            "createAt": "2013-08-03 20:13:46"
+        },
+        {
+            "ID": 2,
+            "title": "Công nghệ",
+            "description": "",
+            "slug": "cong-nghe",
+            "newsCount": 1,
+            "createAt": "2013-08-03 20:13:46"
+        },
+        {
+            "ID": 3,
+            "title": "Luật giao thông",
+            "description": "",
+            "slug": "luat-giao-thong",
+            "newsCount": 1,
+            "createAt": "2013-08-03 20:13:46"
+        }
+    ]
+}

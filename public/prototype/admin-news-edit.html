@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <title>BLX Admin Control Panel</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link href="../bootstrap/css/bootstrap.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../bootstrap/css/bootstrap-responsive.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../common/admin/css/kendo.common.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../common/admin/css/kendo.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../common/admin/css/common.min.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="../common/admin/css/post-edit.css" media="screen" rel="stylesheet" type="text/css">
+
+
+    <!-- Scripts -->
+
+    <link href="../common/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+    <script type="text/javascript" src="../jquery/js/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../kendoui/js/kendo.web.min.js"></script>
+    <script type="text/javascript" src="../ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="../ckeditor/adapters/jquery.js"></script>
+    <script type="text/javascript" src="../common/admin/js/common.min.js"></script>
+    <script type="text/javascript" src="../common/admin/js/post-edit.js"></script>
+
+</head>
+<body id="AdministratorControllerUserController">
+
+<div class="navbar">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="brand">BLX.VN</a>
+
+            <div class="nav-collapse collapse navbar-responsive-collapse">
+                <ul class="nav">
+                    <li><a href="#">Trang chủ</a>
+                    </li>
+                    <li><a href="#">Hồ sơ</a>
+                    </li>
+                    <li><a href="#">Thành viên</a>
+                    </li>
+                    <li><a href="#">Hệ thống</a>
+                    </li>
+                </ul>
+
+                <ul class="nav pull-right">
+                    <li class="divider-vertical"></li>
+                    <li class="dropdown"><a
+                            href="#"
+                            class="dropdown-toggle" data-toggle="dropdown">Lưu Hoàng Nam&nbsp;<b
+                            class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <!-- <li><a href="/blx/public/administrator/users">Thông tin cá nhân</a></li>
+                            <li class="divider"></li> -->
+                            <li><a
+                                    href="#">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Quick search results -->
+<div id="quick-search-result" class="container hide">
+    <div class="row"></div>
+</div>
+
+<div class="postEditContainer">
+    <form id="postEditForm" method="post" action="">
+        <div id="postOptions" class="pull-left">
+            <div class="block block-post-options">
+                <div class="block-header block-header-inverse">
+                    <h2>Tuỳ chọn</h2>
+                </div>
+                <div class="block-body">
+                    <div class="control-line">
+                        <label class="create-at">Tạo lúc: 23:43:19 03/08/2013</label>
+                    </div>
+
+                    <div class="control-line">
+                        <label class="last-edit">Sửa lần cuối: 01:47:03 04/08/2013</label>
+                    </div>
+
+                    <div class="control-line control-group">
+                        <label for="categoryInput" class="control-label">Chuyên mục</label>
+                        <div class="controls">
+                            <input id="categoryInput" name="category">
+                        </div>
+                    </div>
+
+                    <div class="control-line">
+                        <label for="statusInput" class="control-label">Trạng thái</label>
+                        <div class="controls">
+                            <input id="statusInput" name="status">
+                        </div>
+                    </div>
+
+                    <div class="control-line">
+                        <button type="submit" class="btn btn-primary btn-save pull-right">Lưu bài viết</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="postBodyContent" class="pull-left">
+            <label>
+                <input type="text" class="input-large" id="titleInput" name="title" placeholder="Tiêu đề bài viết">
+            </label>
+            <label>
+                <textarea id="ckEditorContainer" name="content"></textarea>
+            </label>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

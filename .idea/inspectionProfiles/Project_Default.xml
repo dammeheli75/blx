@@ -1,0 +1,36 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0" is_locked="false">
+    <option name="myName" value="Project Default" />
+    <option name="myLocal" value="false" />
+    <inspection_tool class="HtmlUnknownTag" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myValues">
+        <value>
+          <list size="8">
+            <item index="0" class="java.lang.String" itemvalue="nobr" />
+            <item index="1" class="java.lang.String" itemvalue="noembed" />
+            <item index="2" class="java.lang.String" itemvalue="comment" />
+            <item index="3" class="java.lang.String" itemvalue="noscript" />
+            <item index="4" class="java.lang.String" itemvalue="embed" />
+            <item index="5" class="java.lang.String" itemvalue="script" />
+            <item index="6" class="java.lang.String" itemvalue="a" />
+            <item index="7" class="java.lang.String" itemvalue="form" />
+          </list>
+        </value>
+      </option>
+      <option name="myCustomValuesEnabled" value="true" />
+    </inspection_tool>
+    <inspection_tool class="QuirksModeInspectionTool" enabled="false" level="WARNING" enabled_by_default="false">
+      <option name="IE50" value="false" />
+      <option name="IE55" value="false" />
+      <option name="IE6" value="false" />
+      <option name="IE7" value="false" />
+      <option name="IE_MAC" value="false" />
+      <option name="MOZILLA" value="true" />
+      <option name="OPERA7" value="false" />
+      <option name="OPERA8" value="false" />
+      <option name="OPERA85" value="false" />
+      <option name="OPERA9" value="false" />
+      <option name="SAFARI" value="true" />
+    </inspection_tool>
+  </profile>
+</component>

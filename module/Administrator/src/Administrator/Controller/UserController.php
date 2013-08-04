@@ -269,8 +269,8 @@ class UserController extends AbstractActionController
             ->getServiceManager();
         $response = array();
         
-        $userModel = new User($serviceManager);
-        $userGroupModel = new UserGroup($serviceManager);
+        $userModel = new User();
+        $userGroupModel = new UserGroup();
         
         $users = $userModel->cache->getUsers();
         
@@ -325,7 +325,7 @@ class UserController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $postData = $this->getRequest()->getPost();
             
-            $userModel = new User($serviceManager);
+            $userModel = new User();
             $birthday = new \DateTime($postData['birthday']);
             $timeCreated = new \DateTime();
             
@@ -374,7 +374,7 @@ class UserController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $postData = $this->getRequest()->getPost();
             
-            $userModel = new User($serviceManager);
+            $userModel = new User();
             $existsUser = $userModel->cache->getUser(array(
                 'user_id' => $postData['ID']
             ));
@@ -424,7 +424,7 @@ class UserController extends AbstractActionController
         if ($this->getRequest()->isPost()) {
             $postData = $this->getRequest()->getPost();
             
-            $userModel = new User($serviceManager);
+            $userModel = new User();
             
             if ($userModel->removeUser(array(
                 'user_id' => $postData['ID']

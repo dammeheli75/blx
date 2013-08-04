@@ -1,0 +1,16 @@
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/post.min.css');
+$this->headScript()->prependFile($this->basePath() . '/common/admin/js/post.min.js');
+
+echo $this->grid->render();
+
+?>
+
+
+<script type="text/javascript">
+    $('.k-grid-toolbar').ready(function () {
+    	$('.k-grid-toolbar').ready(function () {
+    	    $(".k-grid-toolbar").css("overflow", "hidden").prepend('<h1 class="pull-left" style="font-size: 18px;color: #3b5998;margin: 0;padding: 0;line-height: 28px; font-weight: normal"><?php echo $this->translate('Quan ly bai viet')?></h1>');
+    	});
+    });
+</script>

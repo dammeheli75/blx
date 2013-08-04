@@ -21,6 +21,7 @@
 /* Result Page */
 .license {
     cursor: pointer;
+    display: inline-block;
 }
 
 #license-detail-modal .modal-header {

@@ -24,10 +24,25 @@ class IndexController extends AbstractActionController
     public function fooAction()
     {
         $viewModel = new ViewModel();
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $translator = $serviceManager->get('translator');
         
-        echo '<pre>';
-        print_r($this->url()->fromRoute('administrator/users/default', array('action' => 'read')));
+        $string = \Blx\Utility\String::seoUrl($translator->translate('thanh-nien-nghiem-tuc-2013---------'));
+        
+        echo '<pre>Before: ';
+        print_r($string);
         echo '</pre>';
+        
+        if ($string[strlen($string)-1] === '-') {
+        	$string = substr($string, 0, strlen($string) - 1);
+        }
+        
+        echo '<pre>After: ';
+        print_r($string);
+        echo '</pre>';
+        
         
         // This shows the :controller and :action parameters in default route
         // are working when you browse to /index/index/foo

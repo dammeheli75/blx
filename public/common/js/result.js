@@ -60,7 +60,7 @@ $(document).ready(function () {
                 field: "license",
                 title: "Bằng",
                 template: function (dataItem) {
-                    if (dataItem.licenseFront && dataItem.licenseBack) return '<img width="50" height="32" data-toggle="tooltip" class="license" src="' + dataItem.licenseFront + '" data-original-title="Click để xem ảnh lớn" data-placement="right">';
+                    if (dataItem.licenseFront && dataItem.licenseBack) return '<a data-toggle="tooltip" class="license" data-original-title="Click để xem ảnh lớn" data-placement="left"><img width="50" height="32" src="' + dataItem.licenseFront + '" data-original-title="Click để xem ảnh lớn" data-placement="right">&nbsp;&nbsp;<img width="50" height="32" data-toggle="tooltip" class="license" src="' + dataItem.licenseBack + '"></a>';
                     return '<em>Chưa có bằng</em>'
                 },
                 attributes: {

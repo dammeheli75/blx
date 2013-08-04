@@ -1,0 +1,108 @@
+/* Sidenav for Docs
+-------------------------------------------------- */
+
+.sidenav {
+    margin-top: 10px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
+}
+
+.nav-header {
+    text-align: center;
+    color: #FFF;
+    background: #6D84B4;
+    margin: 0 !important;
+    font-size: 16px;
+    height: 32px;
+    line-height: 32px;
+    text-shadow: none !important;
+    text-transform: none !important;
+    border-bottom: 1px solid #ffffff;
+}
+
+.sidenav li:not(.nav-header) a:first-child {
+    border-top: none;
+}
+
+.sidenav > li > a {
+    display: block;
+    width: 190px;
+    margin: 0;
+    padding: 8px 14px;
+    border: 1px solid #e5e5e5;
+}
+
+.sidenav > .active > a {
+    position: relative;
+    z-index: 2;
+    padding: 9px 15px;
+    border: 0;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidenav > li > a:hover {
+    background-color: #f5f5f5;
+}
+
+.nav-list>.active>a, .nav-list>.active>a:hover, .nav-list>.active>a:focus {
+    color: #FFF;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #6D84B4;
+    cursor: default;
+}
+
+/* News Display */
+.news-block {
+    margin: 10px 0 20px 0;
+    border: 1px solid #d6d6d6;
+}
+
+.news-block .block-header {
+    height: auto;
+    padding: 10px 15px;
+    background: #F1F1EC;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+.news-block .block-header h2 {
+    text-align: left;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
+    line-height: 1.27;
+}
+
+.news-block .block-header h2 a {
+    color: #333333;
+    cursor: pointer;
+}
+
+.news-block .block-header h2 a:hover {
+    text-decoration: underline;
+}
+
+.news-block .block-body {
+    padding: 15px;
+}
+
+.news-block .block-body .author {
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed #D7EDFC;
+}
+
+.news-block .block-body .author a:hover {
+    text-decoration: underline;
+}
+
+/* Pagination */
+.pagination-block, .comment-block {
+    margin-top: 10px;
+    border: 1px solid #d6d6d6;
+}
+
+.comment-block {
+    padding: 15px;
+}

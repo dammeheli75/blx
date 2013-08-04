@@ -244,8 +244,7 @@ a:hover {
 #breadcrumb .block-header li.home a i.logo {
     width: 38px;
     height: 22px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAWCAYAAACsR+4DAAAED0lEQVR42sVWS0hUURgedcosyMAgCpJate1BUFRQGy0zLWvGppePyiztOk5lBK3qnAMRBC2CKGpR1CKIsXk46jijjmYgkbSQSKJVuIkWEhERYd/vPZ3uY673tmrgcu+c85/v/87/9rn9TvPUpk4WnzzPEpOdLDZ5kvdV+v737wjPrDrHkt0dLD4LYrP0bmfJ8RM8veaQGCpwO08yDTxdjsvUtbLUVZy9eQZv/N9/nA+srheDhOH9B7Ct7SwxAQtJMgkiNvfW8B/r9P2xkfdXO2FgrxIyUyRLTxjnNJynd0SuAfMd5Ha6EqoVIwvaWPLpRfaCAOig40P7JAf58ZDIlv3BCPFM6VnWM3SRdbti0KUv6BixWpFblJdUlRhdCMEvUGYD0CSIZlekrAEXPT/DU8/C0qJ2jLgjBsgBI/ajWoyW2IiB9Tsi1a4OKLMTMYqtn4qIRbFmWNcsShVRiaFkDQRJpzTItIkUgvl4F+s2xVJECjbw/u1IgpIDYrgI70WIvw1QMIFbOrlIYUiZ9zizmc5KjJJGnt6C9Q/YN+nsYtFZxNx5GVc5f1gGuQQlUuQa8ntRPrfXiJGC06z3rgR2JNXCUk9I1gGjsIX1PokYMDqkdfeL3EIf0naXIa5k9sS/7RZjhW7J0oass7hVYZC1K8TYvOWgUrwqgNxnyJtcCgvX+GCZO2BpCkSYOuSlrBzlmc0WlyqMY3zApQyoMKo2YhCXVtbzmIJ+ChYybYR4dqUX0CAfXAzz5w34ep5d6gXjMM+WGQ0jE+2DDx9fzZkYI9DlXkADYqhY011vKy1E2uPlSvNk+YwPpD4ZbxzR3bDeCygsu0Ld1oIBN5d7C4eBdRF7OEz7WnnPMyM4faNQJr2AoufdyhdjVPuw98ALRgtPPYW8yWPoHCnqaUFrtSdlqDcV87sgu5HkNMeWlYDl09tc4mu79WLUypp430nfQTG8mKykWdoHzEu3bgiKQb+JECaCJt6/D/vGBp+3BUEpKQkExGChBaOomffVA4PkbB2kTgzriXOK9969ZKn82t/q/x2F8gbInEVRvYa9ab1NOZIyKQrrWfYZGJwwUFQF9mZ0UtizeKqZ9XF1g71i1C/HE6syNeYQkByDHCcF5z3vGIiv50f4wBJFro4Pl8NqVnKu/bBDNnrVY40z3D8+qKmzl1mUyEWtNWUtsuKXDGpXN12Qcxuq9w7Ehf8gHnxvIWJeMSISA6TUfLdHvCy2ZQoUFCOFr+mmN40ytgkU4/K9Q3zIVuGxtgSt7nZYYcQtGDFlWSSBwPj+9sr16BypCvGq0G3eL0VSHECdu09zPkCn8H4DMz/CeiiEVuJagEVmGWSD6H0PcfY1jUBw8Tj+P8B6AEV4mT5p5EqwJqrESzXN/AYICIuCRdE1CgAAAABJRU5ErkJggg==);
-    background-repeat: no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACYAAAAWCAYAAACsR+4DAAAED0lEQVR42sVWS0hUURgedcosyMAgCpJate1BUFRQGy0zLWvGppePyiztOk5lBK3qnAMRBC2CKGpR1CKIsXk46jijjmYgkbSQSKJVuIkWEhERYd/vPZ3uY673tmrgcu+c85/v/87/9rn9TvPUpk4WnzzPEpOdLDZ5kvdV+v737wjPrDrHkt0dLD4LYrP0bmfJ8RM8veaQGCpwO08yDTxdjsvUtbLUVZy9eQZv/N9/nA+srheDhOH9B7Ct7SwxAQtJMgkiNvfW8B/r9P2xkfdXO2FgrxIyUyRLTxjnNJynd0SuAfMd5Ha6EqoVIwvaWPLpRfaCAOig40P7JAf58ZDIlv3BCPFM6VnWM3SRdbti0KUv6BixWpFblJdUlRhdCMEvUGYD0CSIZlekrAEXPT/DU8/C0qJ2jLgjBsgBI/ajWoyW2IiB9Tsi1a4OKLMTMYqtn4qIRbFmWNcsShVRiaFkDQRJpzTItIkUgvl4F+s2xVJECjbw/u1IgpIDYrgI70WIvw1QMIFbOrlIYUiZ9zizmc5KjJJGnt6C9Q/YN+nsYtFZxNx5GVc5f1gGuQQlUuQa8ntRPrfXiJGC06z3rgR2JNXCUk9I1gGjsIX1PokYMDqkdfeL3EIf0naXIa5k9sS/7RZjhW7J0oass7hVYZC1K8TYvOWgUrwqgNxnyJtcCgvX+GCZO2BpCkSYOuSlrBzlmc0WlyqMY3zApQyoMKo2YhCXVtbzmIJ+ChYybYR4dqUX0CAfXAzz5w34ep5d6gXjMM+WGQ0jE+2DDx9fzZkYI9DlXkADYqhY011vKy1E2uPlSvNk+YwPpD4ZbxzR3bDeCygsu0Ld1oIBN5d7C4eBdRF7OEz7WnnPMyM4faNQJr2AoufdyhdjVPuw98ALRgtPPYW8yWPoHCnqaUFrtSdlqDcV87sgu5HkNMeWlYDl09tc4mu79WLUypp430nfQTG8mKykWdoHzEu3bgiKQb+JECaCJt6/D/vGBp+3BUEpKQkExGChBaOomffVA4PkbB2kTgzriXOK9969ZKn82t/q/x2F8gbInEVRvYa9ab1NOZIyKQrrWfYZGJwwUFQF9mZ0UtizeKqZ9XF1g71i1C/HE6syNeYQkByDHCcF5z3vGIiv50f4wBJFro4Pl8NqVnKu/bBDNnrVY40z3D8+qKmzl1mUyEWtNWUtsuKXDGpXN12Qcxuq9w7Ehf8gHnxvIWJeMSISA6TUfLdHvCy2ZQoUFCOFr+mmN40ytgkU4/K9Q3zIVuGxtgSt7nZYYcQtGDFlWSSBwPj+9sr16BypCvGq0G3eL0VSHECdu09zPkCn8H4DMz/CeiiEVuJagEVmGWSD6H0PcfY1jUBw8Tj+P8B6AEV4mT5p5EqwJqrESzXN/AYICIuCRdE1CgAAAABJRU5ErkJggg==) no-repeat;
     display: block;
     margin-top: 6px;
 }
@@ -255,8 +254,7 @@ a:hover {
 }
 
 #breadcrumb .block-header li.separator {
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAA0ElEQVR42pXUoQrCYBSG4W2IG2hyM1hMMhAEbVpk0SZoEhQEse4OBMGJ0WbxAgwTsQi24bB6Ub6X8J0fnvZy2H825qTHVwzXUQ5hgqmjHuICVTVuY2eZfkGoxjXcLdM36Kmxh9KyyhFmlsd5W1bZwt4y/YxIjQM8LNMX6FtWWVhWOcDc8jhPyyqbOKhxhJMa5wiUsIu1Eroo4SnxBIkSVvBRL5UiVsI6cnXqFaH6D8ksfydfCYdYqd/uT30BS4yV0MdXvVSGjvqt3tSpWzSU9g+d/JPk5TOwxgAAAABJRU5ErkJggg==);
-    background-repeat: no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAkCAYAAABfVsDFAAAA0ElEQVR42pXUoQrCYBSG4W2IG2hyM1hMMhAEbVpk0SZoEhQEse4OBMGJ0WbxAgwTsQi24bB6Ub6X8J0fnvZy2H825qTHVwzXUQ5hgqmjHuICVTVuY2eZfkGoxjXcLdM36Kmxh9KyyhFmlsd5W1bZwt4y/YxIjQM8LNMX6FtWWVhWOcDc8jhPyyqbOKhxhJMa5wiUsIu1Eroo4SnxBIkSVvBRL5UiVsI6cnXqFaH6D8ksfydfCYdYqd/uT30BS4yV0MdXvVSGjvqt3tSpWzSU9g+d/JPk5TOwxgAAAABJRU5ErkJggg==) no-repeat;
     width: 11px;
     height: 36px;
 }
@@ -427,89 +425,5 @@ a:hover {
 
 .modal.error .modal-body ul li p {
     color: #860000;
-}
-
-.docs-sidenav {
-    width: 228px;
-    margin: 30px 0 0;
-    padding: 0;
-    background-color: #fff;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    border-radius: 6px;
-    -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
-    -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
-    box-shadow: 0 1px 4px rgba(0, 0, 0, .065);
-}
-
-.docs-sidenav > li > a {
-    display: block;
-    width: 190px                     \9;
-    margin: 0 0 -1px;
-    padding: 8px 14px;
-    border: 1px solid #e5e5e5;
-}
-
-.docs-sidenav > li:first-child > a {
-    -webkit-border-radius: 6px 6px 0 0;
-    -moz-border-radius: 6px 6px 0 0;
-    border-radius: 6px 6px 0 0;
-}
-
-.docs-sidenav > li:last-child > a {
-    -webkit-border-radius: 0 0 6px 6px;
-    -moz-border-radius: 0 0 6px 6px;
-    border-radius: 0 0 6px 6px;
-}
-
-.docs-sidenav > .active > a {
-    position: relative;
-    z-index: 2;
-    padding: 9px 15px;
-    border: 0;
-    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
-    -webkit-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
-    -moz-box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
-    box-shadow: inset 1px 0 0 rgba(0, 0, 0, .1), inset -1px 0 0 rgba(0, 0, 0, .1);
-}
-
-/* Chevrons */
-.docs-sidebar {
-    margin-top: 10px;
-}
-
-.docs-sidenav .icon-chevron-right {
-    float: right;
-    margin-top: 2px;
-    margin-right: -6px;
-    opacity: .25;
-}
-
-.docs-sidenav > li > a:hover {
-    background-color: #f5f5f5;
-}
-
-.docs-sidenav a:hover .icon-chevron-right {
-    opacity: .5;
-}
-
-.docs-sidenav .active .icon-chevron-right,
-.docs-sidenav .active a:hover .icon-chevron-right {
-    background-image: url(../../bootstrap/img/glyphicons-halflings-white.png);
-    opacity: 1;
-}
-
-.docs-sidenav.affix {
-    top: 40px;
-}
-
-.docs-sidenav.affix-bottom {
-    position: absolute;
-    top: auto;
-    bottom: 270px;
-}
-
-.nav-list > .active > a, .nav-list > .active > a:hover, .nav-list > .active > a:focus {
-    background-color: #6d84b4;
 }
 
