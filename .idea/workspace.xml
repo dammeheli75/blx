@@ -3,19 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="316f4f3c-1558-453f-9d2a-4fd5eea13d27" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blx.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/Module.php" afterPath="$PROJECT_DIR$/module/Application/Module.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.po" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.po" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Administrator/config/module.config.php" afterPath="$PROJECT_DIR$/module/Administrator/config/module.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Administrator/Module.php" afterPath="$PROJECT_DIR$/module/Administrator/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/Module.php" afterPath="$PROJECT_DIR$/module/Application/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Administrator/config/module.config.php" afterPath="$PROJECT_DIR$/module/Administrator/config/module.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.po" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.po" />
     </list>
     <ignored path="blx.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,15 +28,15 @@
     <file path="/kendo.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375396310878" ignored="false" />
     <file path="/fixture.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375412977528" ignored="false" />
     <file path="/result.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375517752580" ignored="false" />
-    <file path="/home.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375414162634" ignored="false" />
+    <file path="/home.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646185202" ignored="false" />
     <file path="/fixture-and-results.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375517817079" ignored="false" />
-    <file path="/common.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375417871767" ignored="false" />
-    <file path="/404.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426352790" ignored="false" />
+    <file path="/common.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646069469" ignored="false" />
+    <file path="/404.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646230399" ignored="false" />
     <file path="/document.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426355264" ignored="false" />
     <file path="/filling.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426359288" ignored="false" />
     <file path="/guiding.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426362203" ignored="false" />
     <file path="/help.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426366578" ignored="false" />
-    <file path="/home.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426369765" ignored="false" />
+    <file path="/home.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646079245" ignored="false" />
     <file path="/notice.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375515693864" ignored="false" />
     <file path="/guiding.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426386245" ignored="false" />
     <file path="/document.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426392667" ignored="false" />
@@ -58,12 +58,21 @@
     <file path="/admin-news.html" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375606607361" ignored="false" />
     <file path="/posts.json" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375545154702" ignored="false" />
     <file path="/admin-news-edit.html" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375608954709" ignored="false" />
-    <file path="/post-edit.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375607426360" ignored="false" />
+    <file path="/post-edit.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375648638319" ignored="false" />
     <file path="/post-edit.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375613456889" ignored="false" />
     <file path="/category.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375562538496" ignored="false" />
     <file path="/category.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375569284817" ignored="false" />
     <file path="/post.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375623391944" ignored="false" />
     <file path="/post.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375631392158" ignored="false" />
+    <file path="/config.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646819324" ignored="false" />
+    <file path="$PROJECT_DIR$/public/ckeditor/build-config.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375645649823" ignored="false" />
+    <file path="/kendo.common.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646088618" ignored="false" />
+    <file path="/login.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646092873" ignored="false" />
+    <file path="/profile.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646096196" ignored="false" />
+    <file path="/option.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646202594" ignored="false" />
+    <file path="/user-group.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646209367" ignored="false" />
+    <file path="$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375647135386" ignored="false" />
+    <file path="/a.dummy" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375648569523" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,52 +86,47 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="blx" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="news.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/prototype/news.html">
+      <file leaf-file-name="post-edit.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/admin/js/post-edit.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="24" selection-start="6533" selection-end="6533" vertical-scroll-proportion="-3.125">
+            <state line="27" column="39" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/common/css/post.css">
+      <file leaf-file-name="fixture.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/js/fixture.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
+            <state line="57" column="26" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/common/js/post.js">
+      <file leaf-file-name="result.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/common/js/result.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="70" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.54545456">
+            <state line="72" column="52" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news-detail.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/prototype/news-detail.html">
+      <file leaf-file-name="index.phtml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="118" column="12" selection-start="8131" selection-end="8131" vertical-scroll-proportion="0.94311374">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/common/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="212" column="14" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="478" column="32" selection-start="626090" selection-end="626935" vertical-scroll-proportion="0.42276424">
+              <folding>
+                <element signature="tag#section#0;tag#div#2" expanded="false" />
+                <element signature="tag#div#1;tag#section#0;tag#div#2" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -148,29 +152,30 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/prototype/test.html" />
-        <option value="$PROJECT_DIR$/public/prototype/admin-news-category.html" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/category.js" />
-        <option value="$PROJECT_DIR$/public/prototype/news.html" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/news.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/css/post.css" />
-        <option value="$PROJECT_DIR$/public/prototype/admin-news.html" />
-        <option value="$PROJECT_DIR$/public/prototype/admin-news-edit.html" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/common.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/home.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/kendo.common.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/login.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/css/profile.css" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/home.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/option.js" />
+        <option value="$PROJECT_DIR$/public/common/admin/js/user-group.js" />
+        <option value="$PROJECT_DIR$/public/common/css/404.css" />
+        <option value="$PROJECT_DIR$/public/ckeditor/plugins/autosave/lang/de.js" />
+        <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/public/ckeditor/lang/vi.js" />
         <option value="$PROJECT_DIR$/public/common/admin/js/post-edit.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/css/post-edit.css" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/profile.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/post.js" />
-        <option value="$PROJECT_DIR$/public/common/js/post.js" />
-        <option value="$PROJECT_DIR$/public/common/css/post.css" />
-        <option value="$PROJECT_DIR$/../BLX.VN/home.html" />
-        <option value="$PROJECT_DIR$/public/common/css/common.css" />
+        <option value="$PROJECT_DIR$/public/common/js/fixture.js" />
+        <option value="$PROJECT_DIR$/public/common/js/result.js" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/document/index.phtml" />
       </list>
     </option>
   </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="801" />
+    <option name="height" value="798" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -263,33 +268,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="prototype" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -303,33 +286,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -343,71 +308,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="post-edit.js" />
-              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blx" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -421,19 +334,37 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
+              <option name="myItemId" value="Application" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="view" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="application" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="document" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -445,29 +376,22 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="settings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ckeditor" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/ckeditor/plugins" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/public/prototype" />
       <recent name="$PROJECT_DIR$/public/prototype/images" />
       <recent name="$PROJECT_DIR$/public/common/css" />
-      <recent name="$PROJECT_DIR$/public/common/js" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -504,25 +428,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="801" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="798" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23098996" sideWeight="0.67400277" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23457676" sideWeight="0.669863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32880434" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32599726" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32469305" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33016303" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287858" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -588,119 +513,94 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public/prototype/test.html">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/kendo.common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="16" selection-start="2591" selection-end="2591" vertical-scroll-proportion="-0.39473686" />
+        <state line="22" column="0" selection-start="328" selection-end="328" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/js/category.js">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="13" selection-start="3393" selection-end="3393" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="20" column="28" selection-start="234" selection-end="234" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/css/post.css">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/css/profile.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="15" selection-start="197" selection-end="197" vertical-scroll-proportion="0.27659574">
-          <folding />
-        </state>
+        <state line="20" column="20" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/css/post-edit.css">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/home.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="210" selection-end="210" vertical-scroll-proportion="0.04255319">
-          <folding />
-        </state>
+        <state line="22" column="5" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/admin-news-edit.html">
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/option.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="52" selection-start="3428" selection-end="3428" vertical-scroll-proportion="0.02202643">
-          <folding />
-        </state>
+        <state line="2" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/admin/js/user-group.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="13" selection-start="437" selection-end="437" vertical-scroll-proportion="0.3617021" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/lang/vi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="18713" selection-start="18858" selection-end="18858" vertical-scroll-proportion="0.033259425" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/ckeditor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="931" column="23" selection-start="484451" selection-end="484451" vertical-scroll-proportion="0.79910713" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/lang/en.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="17580" selection-start="17725" selection-end="17725" vertical-scroll-proportion="0.035545025" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/css/404.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="56" selection-start="140" selection-end="140" vertical-scroll-proportion="0.2662722" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/common/admin/js/post-edit.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="52" selection-start="938" selection-end="938" vertical-scroll-proportion="0.61702126">
+        <state line="27" column="39" selection-start="1145" selection-end="1145" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/js/profile.js">
+    <entry file="file://$PROJECT_DIR$/public/common/js/post.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="399" column="26" selection-start="14437" selection-end="14437" vertical-scroll-proportion="0.08959538">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/js/fixture.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/js/fixture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="26" selection-start="1816" selection-end="1816" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/common/js/result.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="52" selection-start="2717" selection-end="2717" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="478" column="32" selection-start="626090" selection-end="626935" vertical-scroll-proportion="0.42276424">
           <folding>
-            <marker date="1375622307000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1375622307000" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1375622307000" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="tag#section#0;tag#div#2" expanded="false" />
+            <element signature="tag#div#1;tag#section#0;tag#div#2" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/admin/js/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="137" column="19" selection-start="4314" selection-end="5514" vertical-scroll-proportion="0.04255319">
-          <folding>
-            <marker date="1375622436000" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/admin-news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="59" selection-start="3362" selection-end="3443" vertical-scroll-proportion="0.6255507">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/js/post.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="70" selection-start="36" selection-end="36" vertical-scroll-proportion="-0.54545456">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/css/post.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="1" selection-start="1977" selection-end="1977" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/news.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="24" selection-start="6533" selection-end="6533" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/common/css/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="212" column="14" selection-start="3579" selection-end="3579" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../BLX.VN/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="2813" selection-end="2853" vertical-scroll-proportion="0.4266467">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/prototype/news-detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="12" selection-start="8131" selection-end="8131" vertical-scroll-proportion="0.94311374">
-          <folding />
         </state>
       </provider>
     </entry>

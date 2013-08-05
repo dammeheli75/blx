@@ -29,7 +29,9 @@ class IndexController extends AbstractActionController
             ->getServiceManager();
         $translator = $serviceManager->get('translator');
         
-        $date = new \DateTime();
+//         $date = new \DateTime("Mon Aug 05 2013 21:24:54 GMT+0700 (SE Asia Standard Time");
+        $date = \DateTime::createFromFormat('D M d Y H:i:s e+', "Mon Aug 05 2013 21:24:54 GMT+0700 (SE Asia Standard Time");
+        
         
         echo '<pre>';
         print_r($date->format('h:i:s'));

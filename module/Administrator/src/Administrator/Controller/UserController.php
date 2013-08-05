@@ -326,7 +326,7 @@ class UserController extends AbstractActionController
             $postData = $this->getRequest()->getPost();
             
             $userModel = new User();
-            $birthday = new \DateTime($postData['birthday']);
+            $birthday = \DateTime::createFromFormat('D M d Y H:i:s e+', $postData['birthday']);
             $timeCreated = new \DateTime();
             
             $password = $postData['password'];
@@ -379,7 +379,7 @@ class UserController extends AbstractActionController
                 'user_id' => $postData['ID']
             ));
             
-            $birthday = new \DateTime($postData['birthday']);
+            $birthday = \DateTime::createFromFormat('D M d Y H:i:s e+', $postData['birthday']);
             $password = $postData['password'];
             
             $user = array(

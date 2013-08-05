@@ -1,12 +1,17 @@
 <?php echo $this->doctype(); ?>
 <html lang="vi">
 <head>
-    <?php echo $this->headTitle($this->translate('Thi bang lai xe may tai Ha Noi'))->setSeparator(' - ')->setAutoEscape(false)?>
+    <?php echo $this->headTitle($this->translate('BLX.VN - Thi bang lai xe may hang A1/A2 tai Ha Noi'))->setSeparator(' | ')->setAutoEscape(false)?>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <?php echo $this->headMeta()->appendName('viewport', 'width=device-width, initial-scale=1.0')?>
-
+    
     <!-- Styles -->
     <?php
+    
+    /**
+     *
+     * @todo Missing Meta Description & Meta Keywords for each page
+     */
     
     $this->headLink(array(
         'rel' => 'shortcut icon',
@@ -29,7 +34,8 @@
 				<ul class="nav">
 					<li><a class="logo" href="<?php echo $this->url('home') ?>"> <img
 							src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAcCAYAAADIrlf0AAAEPElEQVR42tXYS2gcdRwH8N9u0ihpNVVrVUTwYLXGQlS01ENFsPTSkwerFw8iSMGDSCsIggUPXnqIlhRLJTUUjVFQaZqmtFpsbNOk2zxMY7K7yZr3a3cz+5idnffMz+8eKiHOzM5s9pIP7C7L7s78d/7//+8x5NdEWgsz88D6x81ZeRttFn+vqA3sICFoe2gDcBFqh5eUnTNZ/WnL5sZ4Wts1sKjsuDFTrKFquBArhMaS6gvJgtGsGnaSHeDEWk4xOyYF7WB3vFBHPlyMFbZgsK/nFOt7/N6RadnF1aL5dTSl7vtzuhimSowsK3sVw45zAKUBJVa1t38dE0PkIpbS3sD3DA5AM+2F4UXlVfKrfSQXTknmSd4ASbcGemeLD9MaPdPF7XnVusYbIMjmuY47+VryciaSqS3q1ihXSbpots1m9Y9x8tNcJZiVuW8Hs/eQk+YbqyEsn1HeBAzLXmrpE8K03kLeOOHjx0JGNlsRSY6nJOMrbPZola5uArPWUjquUDTP6Ja9wmVgybfRWr9NSo+V2bDC0JLy/PWZ/0eJ/nn5CUmzrnAFFN3ui8zLT2K/hGgNnCc0sKA04qLNsIeeqeJTdBcGEWEXedXs6RjBZipjNqcf5wAW80YzlfHDX7kwZr6TXWD5T1EJYnsDu8C05k/1Z8LkU1oyu9gH5JVe8unLXgF71VpgF1cT0iM0uaq9xS6wVPZRAOej4jb24dJEYQcFgGTXyC6wj45QVjFb2YFts4VBhSgg5ILL7AEhfIgqYGJVsIOCav1MuumclVESXKIKTGW0d9nDXE4/ShXAUm11iZgJwmvWJYS1UgUmVtXD7GFK0N6jCiyJxhfsTCA8pdmBirqJKrAsGp5RKi0ZLVQBRNDr7CxJso4PXXTHxa0UkG5x1jvn2MaPd/IhCqBzXKxjF6ppR0rT9Dm7QN1zggJA4jrAPgwu629SAIign7CLZGlm0ZDs9c6K0svkA67uAxxA93jmUfIB1UQjexhdUQ/QL2NimMtAV3eQPPTNybu4Ardn83u8exp1P5dxflzcQiXTGe1TLqO0sdCK7sfMPdQVE+tvzckN6M6a0H2d5Q3IqNweT6svRhbk7V1RsX5wUXkQy+cV0TPfAKDr+4juOjuQreFN6MqkdB+t67yaeJNBAdiJewBb19/ReIc3GSzzi7ReLK0d5ioo7RX0BM9d/UfaiXW+G03UKa4yWbdHv7mdqScnvTPys6hJklwhhL1D5ABB4bUqzkD/yZtCjXeWjBZq4pgVtI5L7IONx3RGP3Z5suCZ5X9PSPfiex+YPm/b6GiJEYUOXYiJj6MUyjOg8r6GPiNMfiHZhMaT6jOoPt/PKlYb/lQfSocoqt8hhMGfkPGPYnO9hMHVBewRasdTahM6vA9xnHYcL2LZPIbj9+P9ufmcfiSa0hr/mJL+G+x3w7n7USV/dvpWJkRr/At93ongHuu6PAAAAABJRU5ErkJggg=="
-							alt="" title="">
+							alt="<?php echo $this->translate('BLX.VN - Thi bang lai xe may hang A1/A2 tai Ha Noi')?>"
+							title="<?php echo $this->translate('BLX.VN - Thi bang lai xe may hang A1/A2 tai Ha Noi')?>">
 					</a></li>
 					<li><a href="<?php echo $this->url('fixture')?>"><?php echo $this->translate('Lich thi')?></a></li>
 					<li><a href="<?php echo $this->url('result')?>"><?php echo $this->translate('Ket qua thi')?></a></li>
@@ -49,13 +55,23 @@
 <div id="breadcrumb" class="span12">
 				<div class="block">
 					<div class="block-header">
+					    <?php if (isset($this->breadcrumb)) : ?>
 						<ul>
-							<li class="home"><a href="#"><i class="logo"></i></a></li>
-							<li class="separator"></li>
-							<li><a href="#"><?php echo $this->translate('Thong bao')?></a></li>
-							<li class="separator"></li>
-							<li><a href="#"><?php echo $this->translate('Tin tuc')?></a></li>
+						    <?php foreach ($this->breadcrumb as $key => $item) : ?>
+    							<li
+								class="<?php echo isset($item['class']) ? $item['class'] : '' ?>">
+    							     <?php if ($key < count($this->breadcrumb)-1) : ?>
+    								 <a href="<?php echo isset($item['url'])?$item['url']:'' ?>"><?php echo isset($item['content']) ? $item['content'] : ''?></a>
+    						         <?php else : ?>
+    						         <a><?php echo isset($item['content']) ? $item['content'] : ''?></a>
+    						         <?php endif; ?>
+    						    </li>
+    							<?php if ($key < count($this->breadcrumb)-1) : ?>
+    							<li class="separator"></li>
+    							<?php endif;?>
+							<?php endforeach; ?>
 						</ul>
+						<?php endif; ?>
 					</div>
 
 					<div class="block-body">

@@ -55,7 +55,7 @@ $(document).ready(function () {
         dataSource: {
             transport: {
                 read: {
-                    url: "http://localhost/blx/public/lich-thi/read",
+                    url: "/blx/public/lich-thi/read",
                     dataType: "json"
                 }
             },

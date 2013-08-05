@@ -3,6 +3,12 @@ $this->headLink()->prependStylesheet($this->basePath() . '/common/css/post.min.c
 
 $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 
+if ($this->categoryQuery) {
+    $this->headTitle()->prepend($this->categoryQuery['title']);
+} else {
+    $this->headTitle()->prepend($this->translate('Tin tuc'));
+}
+
 ?>
 
 <div class="span3 sidebar">
@@ -12,10 +18,6 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 		<?php if ($this->categoryQuery && $this->categoryQuery['category_id'] == $category['category_id']) : ?>
 		  <li class="active">
 		  <?php else : ?>
-		  
-		
-		
-		
 		
 		
 		<li>
@@ -23,15 +25,7 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 		<a
 			href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
 		</li>
-		
-		
-		
-		
 		<?php endforeach; ?>
-	
-	
-	
-	
 	</ul>
 </div>
 
@@ -101,7 +95,10 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
                     $route = 'news/paginator';
                     $categorySlug = null;
                 }
-                echo $this->paginationControl($this->posts, 'Sliding', 'partial/paginator', array('route' => $route, 'category_slug' => $categorySlug));
+                echo $this->paginationControl($this->posts, 'Sliding', 'partial/paginator', array(
+                    'route' => $route,
+                    'category_slug' => $categorySlug
+                ));
                 ?>
 			</div>
 		</div>

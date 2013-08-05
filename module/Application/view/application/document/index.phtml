@@ -1,10 +1,13 @@
 <?php
 $this->headLink()->prependStylesheet($this->basePath() . '/common/css/document.min.css');
 $this->headScript()->prependFile($this->basePath() . '/common/js/document.min.js');
+
+$this->headtitle()->prepend($this->translate('Tai lieu on tap thi bang lai xe hang A1/A2'));
+
 ?>
 
 <div class="span12 page-title">
-	<h1><?php echo $this->translate('Tai lieu on tap thi bang lai xe hang A1')?></h1>
+	<h1><?php echo $this->translate('Tai lieu on tap thi bang lai xe hang A1/A2')?></h1>
 </div>
 
 <div class="span3 docs-sidebar">
@@ -485,7 +488,8 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/document.min.js
 											<li class="answer"><?php echo $this->translate('Duong, cau duong bo, ham duong bo, ben pha duong bo')?></li>
 											<li class="answer"><?php echo $this->translate('Duong, cau duong bo, ham duong bo, ben pha duong bo va cac cong trinh phu tro khac')?></li>
 										</ol>
-									</div></li>
+									</div>
+                                </li>
 								<li class="question"><label><?php echo $this->translate('Cau 2')?></label>
 
 									<p class="question-p"><?php echo $this->translate('Co quan nao quy dinh cac doan duong cam di, duong di mot chieu, noi cam dung, cam do, cam quay dau xe, lap dat bao hieu duong bo thuoc dia phuong quan ly&#63;')?></p>

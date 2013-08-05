@@ -20,7 +20,24 @@ class FixtureController extends AbstractActionController
 
     public function indexAction()
     {
-        return new ViewModel();
+        $viewModel = new ViewModel();
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $translator = $serviceManager->get('translator');
+        
+        $this->layout()->breadcrumb = array(
+            array(
+                'url' => $this->url()->fromRoute('home'),
+                'class' => 'home',
+                'content' => '<i class="logo"></i>'
+            ),
+            array(
+                'content' => $translator->translate('Lich thi cap bang lai xe hang A1')
+            )
+        );
+        
+        return $viewModel;
     }
 
     public function readAction()

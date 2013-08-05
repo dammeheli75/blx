@@ -117,12 +117,15 @@ class ProfileController extends AbstractActionController
             ->width(110)
             ->filterable(false)
             ->template(new JavaScriptFunction("function (dataItem) {
-            return dataItem.collaborator.title;
+                if(dataItem.collaborator.title) {
+                    return dataItem.collaborator.title;
+                } return '--';
         }"))
             ->editor(new JavaScriptFunction("function (container, options) {
                     \$('<input data-bind=\"value:' + options.field + '\"/>')
                         .appendTo(container)
                         .kendoDropDownList({
+                            autoBind: true,
                             optionLabel: '" . $translator->translate('Chon cong tac vien') . "',
                             dataTextField: \"title\",
                             dataValueField: \"ID\",
@@ -146,7 +149,7 @@ class ProfileController extends AbstractActionController
             ->filterable(false)
             ->attributes(' style="text-align: center"')
             ->template(new JavaScriptFunction("function (dataItem) {
-                    if (dataItem.testDate) {
+                    if (dataItem.testDate && dataItem.testVenue) {
                         return '<a class=\"tooltip-cell\" data-toggle=\"tooltip\" title=\"" . $translator->translate('Dia diem:') . "&nbsp;'+dataItem.testVenue.title+'\">'+kendo.toString(dataItem.testDate, \"dd/MM/yyyy\")+'</a>';
                     } else {
                         return '--';
@@ -360,18 +363,30 @@ class ProfileController extends AbstractActionController
         $dataSource = new DataSource();
         // Transport Read
         $transportRead = new DataSourceTransportRead();
-        $transportRead->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'read')));
+        $transportRead->url($this->url()
+            ->fromRoute('administrator/profiles/default', array(
+            'action' => 'read'
+        )));
         // Transport Create
         $transportCreate = new DataSourceTransportCreate();
-        $transportCreate->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'create')))
+        $transportCreate->url($this->url()
+            ->fromRoute('administrator/profiles/default', array(
+            'action' => 'create'
+        )))
             ->type('POST');
         // Transport Update
         $transportUpdate = new DataSourceTransportUpdate();
-        $transportUpdate->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'update')))
+        $transportUpdate->url($this->url()
+            ->fromRoute('administrator/profiles/default', array(
+            'action' => 'update'
+        )))
             ->type('POST');
         // Transport Destroy
         $transportDestroy = new DataSourceTransportDestroy();
-        $transportDestroy->url($this->url()->fromRoute('administrator/profiles/default', array('action' => 'destroy')))
+        $transportDestroy->url($this->url()
+            ->fromRoute('administrator/profiles/default', array(
+            'action' => 'destroy'
+        )))
             ->type('POST');
         $transport = new DataSourceTransport();
         $transport->read($transportRead)
@@ -565,37 +580,47 @@ class ProfileController extends AbstractActionController
         $response = array();
         
         if ($this->getRequest()->isPost()) {
-            $postData = $this->getRequest()->getPost();
+            $fullName = $this->getRequest()->getPost('fullName');
+            $birthday = $this->getRequest()->getPost('birthday');
+            $address = $this->getRequest()->getPost('address');
+            $collaborator = $this->getRequest()->getPost('collaborator');
+            $phoneNumber = $this->getRequest()->getPost('phoneNumber');
+            $testStatus = $this->getRequest()->getPost('testStatus');
+            $testVenue = $this->getRequest()->getPost('testVenue');
+            $testDate = $this->getRequest()->getPost('testDate');
+            $licenseFront = $this->getRequest()->getPost('licenseFront');
+            $licenseBack = $this->getRequest()->getPost('licenseBack');
+            $note = $this->getRequest()->getPost('note');
             
             $profileModel = new Profile($serviceManager);
             $collaboratorModel = new Collaborator($serviceManager);
             $venueModel = new Venue($serviceManager);
             
-            $birthday = strlen($postData['birthday']) > 0 ? new \DateTime($postData['birthday']) : NULL;
-            $testDate = strlen($postData['testDate']) > 0 ? new \DateTime($postData['testDate']) : NULL;
+            $birthday = strlen($birthday) > 0 ? \DateTime::createFromFormat('D M d Y H:i:s e+', $birthday) : NULL;
+            $testDate = strlen($testDate) > 0 ? \DateTime::createFromFormat('D M d Y H:i:s e+', $testDate) : NULL;
             $timeCreated = new \DateTime();
             
             $profile = array(
-                'full_name' => $postData['fullName'],
+                'full_name' => $fullName,
                 'birthday' => $birthday ? $birthday->format('Y-m-d') : NULL,
-                'address' => $postData['address'],
-                'phone_number' => $postData['phoneNumber'],
+                'address' => $address,
+                'phone_number' => $phoneNumber,
                 'phone_onlysms' => false,
-                'test_status' => $postData['testStatus'],
+                'test_status' => $testStatus,
                 'test_date' => $testDate ? $testDate->format('Y-m-d') : NULL,
-                'license_front' => $postData['licenseFront'],
-                'license_back' => $postData['licenseBack'],
-                'note' => $postData['note'],
+                'license_front' => $licenseFront,
+                'license_back' => $licenseBack,
+                'note' => $note,
                 'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
             
-            if ($collaborator->cache->isExists($postData['collaborator'])) {
-                $profile['collaborator_id'] = $postData['collaborator'];
+            if ($collaboratorModel->isExists($collaborator)) {
+                $profile['collaborator_id'] = $collaborator;
             }
             
-            if (is_array($postData['testVenue'])) {
-                if ($venueModel->cache->isExists($postData['testVenue']['ID'])) {
-                    $profile['test_venue_id'] = $postData['testVenue']['ID'];
+            if (is_array($testVenue)) {
+                if ($venueModel->cache->isExists($testVenue['ID'])) {
+                    $profile['test_venue_id'] = $testVenue['ID'];
                 }
             }
             
@@ -631,7 +656,7 @@ class ProfileController extends AbstractActionController
             $collaboratorModel = new Collaborator($serviceManager);
             $venueModel = new Venue($serviceManager);
             
-            $birthday = new \DateTime($postData['birthday']);
+            $birthday = \DateTime::createFromFormat('D M d Y H:i:s e+', $postData['birthday']);
             
             $timeCreated = new \DateTime();
             
@@ -660,7 +685,7 @@ class ProfileController extends AbstractActionController
             }
             
             if (strlen($postData['testDate']) > 0) {
-                $testDate = new \DateTime($postData['testDate']);
+                $testDate = \DateTime::createFromFormat('D M d Y H:i:s e+', $postData['testDate']);
                 $profile['test_date'] = $testDate->format('Y-m-d');
             } else {
                 $profile['test_date'] = NULL;

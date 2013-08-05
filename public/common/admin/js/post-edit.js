@@ -4,32 +4,6 @@ $(document).ready(function () {
         $("#titleInput").width($(window).width() - 390);
     });
 
-    $("#categoryInputOld").kendoDropDownList({
-        dataTextField: "title",
-        dataValueField: "ID",
-        dataSource: {
-            transport: {
-                read: {
-                    url: "http://localhost/blx/public/administrator/categories/read",
-                    dataType: "json"
-                }
-            },
-            schema: {
-                data: "categories"
-            }
-        }
-    });
-
-    $("#statusInputOld").kendoDropDownList({
-        dataTextField: "text",
-        dataValueField: "value",
-        dataSource: [
-            { text: "Xuất bản", value: "published" },
-            { text: "Chờ xem lại", value: "pending_review" },
-            { text: "Bản nháp", value: "draft" }
-        ]
-    });
-
 //    Editor
     $("#ckEditorContainer").ckeditor({
         toolbarGroups: [
@@ -51,7 +25,6 @@ $(document).ready(function () {
         removeButtons: 'Underline,Subscript,Superscript',
         format_tags: 'p;h1;h2;h3;pre',
         removeDialogTabs: 'image:advanced;link:advanced',
-        height: $(window).height() - 280
+        height: $(window).height() - 300
     });
-
 });

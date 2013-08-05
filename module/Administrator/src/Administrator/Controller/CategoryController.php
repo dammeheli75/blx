@@ -275,6 +275,7 @@ class CategoryController extends AbstractActionController
             
             $slug = $postData['slug'];
             $timeCreated = new \DateTime();
+            
             $stringUtilityCache = PatternFactory::factory('class', array(
                 'class' => 'Blx\Utility\String',
                 'storage' => \Blx\Cache\StorageFactory::factory(array(

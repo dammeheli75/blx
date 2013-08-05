@@ -29,6 +29,19 @@ class PostController extends AbstractActionController
         $serviceManager = $this->getEvent()
             ->getApplication()
             ->getServiceManager();
+        $translator = $serviceManager->get('translator');
+        
+        $breadcrumb = array(
+            array(
+                'url' => $this->url()->fromRoute('home'),
+                'class' => 'home',
+                'content' => '<i class="logo"></i>'
+            ),
+            array(
+                'url' => $this->url()->fromRoute('news'),
+                'content' => $translator->translate('Tin tuc')
+            )
+        );
         
         // Cache
         $stringUtilityCache = PatternFactory::factory('class', array(
@@ -69,31 +82,28 @@ class PostController extends AbstractActionController
         
         // Pagination
         $select = new Select();
-        $select->from('posts');
-        
-        // Get posts
-        if ($categorySlug && strlen($categorySlug) > 0) {
-            // Category Page
-            $categoryQuery = $categoryModel->cache->getCategory(array(
-                'slug' => $categorySlug
-            ));
-            
-            if (! $categoryQuery) {
-                $this->getResponse()->setStatusCode(404);
-                return;
-            }
-        } else {
-            // Index Page
-            $categoryQuery = null;
-        }
+        $select->from('posts')->order('last_updated DESC');
         
         $viewModel->setVariable('categoryQuery', $categoryQuery);
+        
+        if ($categoryQuery) {
+            $breadcrumb[] = array(
+                'url' => $this->url()->fromRoute('news/category', array(
+                    'category_slug' => $categoryQuery['slug']
+                )),
+                'content' => $categoryQuery['title']
+            );
+        }
+        
+        $this->layout()->breadcrumb = $breadcrumb;
         
         $select->where(function (Where $where) use($categoryQuery)
         {
             if ($categoryQuery) {
                 $where->equalTo('category_id', $categoryQuery['category_id']);
             }
+            
+            $where->equalTo('status', 'published');
         });
         
         // Paginator Configuration
@@ -123,6 +133,7 @@ class PostController extends AbstractActionController
         $serviceManager = $this->getEvent()
             ->getApplication()
             ->getServiceManager();
+        $translator = $serviceManager->get('translator');
         
         // Cache
         $stringUtilityCache = PatternFactory::factory('class', array(
@@ -177,6 +188,29 @@ class PostController extends AbstractActionController
             $post['slug'] = $stringUtilityCache->seoUrl($post['title']);
             
             $viewModel->setVariable('post', $post);
+            
+            $breadcrumb = array(
+                array(
+                    'url' => $this->url()->fromRoute('home'),
+                    'class' => 'home',
+                    'content' => '<i class="logo"></i>'
+                ),
+                array(
+                    'url' => $this->url()->fromRoute('news'),
+                    'content' => $translator->translate('Tin tuc')
+                ),
+                array(
+                    'url' => $this->url()->fromRoute('news/category', array(
+                        'category_slug' => $category['slug']
+                    )),
+                    'content' => $category['title']
+                ),
+                array(
+                    'content' => $post['title']
+                )
+            );
+            
+            $this->layout()->breadcrumb = $breadcrumb;
         } else {
             $this->getResponse()->setStatusCode(404);
             return;

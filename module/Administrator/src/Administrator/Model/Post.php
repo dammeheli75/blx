@@ -3,6 +3,7 @@ namespace Administrator\Model;
 
 use Blx\Db\TableGateway\AbstractTableGateway;
 use Zend\Db\Sql\Where;
+use Zend\Db\Sql\Select;
 
 class Post extends AbstractTableGateway
 {
@@ -11,15 +12,18 @@ class Post extends AbstractTableGateway
 
     protected $primaryKey = 'post_id';
 
-    public function getPosts($conditions = NULL)
+    public function getPosts($conditions = NULL, $order = 'last_updated DESC')
     {
+        $select = new Select($this->getTable());
         $where = new Where();
         
         if (isset($conditions['category_id'])) {
             $where->equalTo('category_id', $conditions['category_id']);
         }
         
-        return $this->select($where)->toArray();
+        $select->where($where)->order($order);
+        
+        return $this->selectWith($select)->toArray();
     }
 
     public function getPost($conditions = null)

@@ -3,9 +3,11 @@ $this->headLink()->prependStylesheet($this->basePath() . '/common/css/post.min.c
 
 $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 
-?>
+$post = $this->post;
 
-<?php $post = $this->post?>
+$this->headTitle()->prepend($post['title']);
+
+?>
 <div class="span3 sidebar">
 	<ul class="nav nav-list sidenav">
 		<li class="nav-header"><?php echo $this->translate('Chuyen muc')?></li>

@@ -70,7 +70,7 @@ $(document).ready(function () {
         ],
         dataSource: {
             transport: {
-                read: "http://localhost/blx/public/ket-qua-thi/read"
+                read: "/blx/public/ket-qua-thi/read"
             },
             schema: {
                 total: "total",

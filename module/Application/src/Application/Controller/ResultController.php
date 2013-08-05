@@ -19,15 +19,31 @@ class ResultController extends AbstractActionController
 
     public function indexAction()
     {
-        return new ViewModel();
+        $viewModel = new ViewModel();
+        $serviceManager = $this->getEvent()
+            ->getApplication()
+            ->getServiceManager();
+        $translator = $serviceManager->get('translator');
+        
+        $this->layout()->breadcrumb = array(
+            array(
+                'url' => $this->url()->fromRoute('home'),
+                'class' => 'home',
+                'content' => '<i class="logo"></i>'
+            ),
+            array(
+                'content' => $translator->translate('Ket qua thi cap bang lai xe hang A1')
+            )
+        );
+        
+        return $viewModel;
     }
 
     public function readAction()
     {
-//         echo '<pre>';
-//         print_r($this->auth->getIdentity());
-//         echo '</pre>';
-        
+        // echo '<pre>';
+        // print_r($this->auth->getIdentity());
+        // echo '</pre>';
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);
         $serviceManager = $this->getEvent()

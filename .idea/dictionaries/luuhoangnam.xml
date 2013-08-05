@@ -2,6 +2,7 @@
   <dictionary name="luuhoangnam">
     <words>
       <w>&quot;editor&quot;</w>
+      <w>autosave</w>
       <w>basicstyles</w>
       <w>bidi</w>
       <w>chiếm</w>
