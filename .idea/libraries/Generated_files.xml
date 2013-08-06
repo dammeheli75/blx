@@ -2,9 +2,7 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/public/common/admin/js/post-edit.min.js" />
-        <item url="file://$PROJECT_DIR$/public/common/js/result.min.js" />
-        <item url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/common/admin/js/venue.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
@@ -49,6 +47,7 @@
       <root url="file://$PROJECT_DIR$/public/common/admin/js/post-edit.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/result.min.js" />
       <root url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/common/admin/js/venue.min.js" />
     </CLASSES>
     <SOURCES />
   </library>

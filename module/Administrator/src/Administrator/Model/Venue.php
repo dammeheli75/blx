@@ -31,4 +31,45 @@ class Venue extends AbstractTableGateway
         }
         return false;
     }
+
+    public function createVenue(array $venue)
+    {
+        $result = $this->insert($venue);
+        
+        if ($result) {
+            $this->clearCache();
+        }
+        return $result;
+    }
+
+    public function updateVenue(array $conditions, array $venue)
+    {
+        $where = new Where();
+        
+        if (isset($conditions['venue_id'])) {
+            $where->equalTo('venue_id', $conditions['venue_id']);
+        }
+        
+        $result = $this->update($venue, $where);
+        if ($result) {
+            $this->clearCache();
+        }
+        
+        return $result;
+    }
+
+    public function removeVenue(array $conditions)
+    {
+        $where = new Where();
+        
+        if (isset($conditions['venue_id'])) {
+            $where->equalTo('venue_id', $conditions['venue_id']);
+        }
+        
+        $result = $this->delete($where);
+        if ($result) {
+            $this->clearCache();
+        }
+        return $result;
+    }
 }

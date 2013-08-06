@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-07 01:47+0700\n"
-"PO-Revision-Date: 2013-08-07 02:05+0700\n"
+"POT-Creation-Date: 2013-08-07 03:26+0700\n"
+"PO-Revision-Date: 2013-08-07 03:26+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -57,7 +57,8 @@ msgstr "Lọc"
 #: module/Administrator/src/Administrator/Controller/PostController.php:168
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:299
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:331
-#: module/Administrator/src/Administrator/Controller/UserController.php:177
+#: module/Administrator/src/Administrator/Controller/UserController.php:191
+#: module/Administrator/src/Administrator/Controller/VenueController.php:89
 msgid "Xoa"
 msgstr "Xoá"
 
@@ -72,6 +73,7 @@ msgstr "Có chắc chắn muốn xoá chuyên mục này?"
 
 #: module/Administrator/src/Administrator/Controller/CategoryController.php:105
 #: module/Administrator/src/Administrator/Controller/PostController.php:92
+#: module/Administrator/src/Administrator/Controller/VenueController.php:52
 msgid "#"
 msgstr "#"
 
@@ -97,7 +99,8 @@ msgstr "Số bài viết"
 
 #: module/Administrator/src/Administrator/Controller/CategoryController.php:146
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:297
-#: module/Administrator/src/Administrator/Controller/UserController.php:174
+#: module/Administrator/src/Administrator/Controller/UserController.php:188
+#: module/Administrator/src/Administrator/Controller/VenueController.php:87
 msgid "Sua"
 msgstr "Sửa"
 
@@ -108,9 +111,12 @@ msgstr "Sửa"
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:633
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:703
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:736
-#: module/Administrator/src/Administrator/Controller/UserController.php:355
-#: module/Administrator/src/Administrator/Controller/UserController.php:405
-#: module/Administrator/src/Administrator/Controller/UserController.php:436
+#: module/Administrator/src/Administrator/Controller/UserController.php:369
+#: module/Administrator/src/Administrator/Controller/UserController.php:419
+#: module/Administrator/src/Administrator/Controller/UserController.php:450
+#: module/Administrator/src/Administrator/Controller/VenueController.php:256
+#: module/Administrator/src/Administrator/Controller/VenueController.php:293
+#: module/Administrator/src/Administrator/Controller/VenueController.php:324
 msgid "Truy cap bi han che"
 msgstr "Truy cập bị hạn chế"
 
@@ -131,6 +137,7 @@ msgstr ""
 "này?"
 
 #: module/Administrator/src/Administrator/Controller/PostController.php:100
+#: module/Administrator/src/Administrator/Controller/VenueController.php:59
 msgid "Tieu de"
 msgstr "Tiêu đề"
 
@@ -143,7 +150,7 @@ msgstr "Tác giả"
 #: module/Administrator/view/administrator/post/edit.phtml:28
 #: module/Application/view/application/post/detail.phtml:13
 #: module/Application/view/application/post/index.phtml:16
-#: module/Application/view/layout/administrator.phtml:53
+#: module/Application/view/layout/administrator.phtml:55
 msgid "Chuyen muc"
 msgstr "Chuyên mục"
 
@@ -183,7 +190,7 @@ msgid "Xuat ban"
 msgstr "Xuất bản"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:69
-#: module/Administrator/src/Administrator/Controller/UserController.php:115
+#: module/Administrator/src/Administrator/Controller/UserController.php:129
 msgid "Ho va ten"
 msgstr "Họ và tên"
 
@@ -192,17 +199,17 @@ msgid "Nam sinh:"
 msgstr "Năm sinh:"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:78
-#: module/Administrator/src/Administrator/Controller/UserController.php:137
+#: module/Administrator/src/Administrator/Controller/UserController.php:151
 msgid "Nam sinh"
 msgstr "Năm sinh"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:102
-#: module/Administrator/src/Administrator/Controller/UserController.php:160
+#: module/Administrator/src/Administrator/Controller/UserController.php:174
 msgid "Dia chi"
 msgstr "Địa chỉ"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:109
-#: module/Administrator/src/Administrator/Controller/UserController.php:166
+#: module/Administrator/src/Administrator/Controller/UserController.php:180
 msgid "Dien thoai"
 msgstr "Điện thoại"
 
@@ -225,6 +232,7 @@ msgstr "Địa điểm:"
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:172
 #: module/Application/view/application/guiding/index.phtml:20
 #: module/Application/view/application/guiding/index.phtml:70
+#: module/Application/view/layout/administrator.phtml:48
 msgid "Dia diem thi"
 msgstr "Địa điểm thi"
 
@@ -323,31 +331,59 @@ msgstr "Có chắc chắn muốn xoá?"
 msgid "Them ho so"
 msgstr "Thêm hồ sơ"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:67
+#: module/Administrator/src/Administrator/Controller/UserController.php:62
+msgid "Hien thi {0}-{1}/{2} thanh vien"
+msgstr "Hiển thị {0}-{1}/{2} thành viên"
+
+#: module/Administrator/src/Administrator/Controller/UserController.php:70
+msgid "Co chac chan muon xoa thanh vien nay?"
+msgstr "Có chắc chắn muốn xoá thành viên này?"
+
+#: module/Administrator/src/Administrator/Controller/UserController.php:81
 msgid "Them thanh vien"
 msgstr "Thêm thành viên"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:89
+#: module/Administrator/src/Administrator/Controller/UserController.php:103
 msgid "Nhom"
 msgstr "Nhóm"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:96
+#: module/Administrator/src/Administrator/Controller/UserController.php:110
 msgid "Chon nhom thanh vien"
 msgstr "Chọn nhóm thành viên"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:121
+#: module/Administrator/src/Administrator/Controller/UserController.php:135
 #: module/Administrator/view/administrator/authentication/login.phtml:25
 msgid "Email"
 msgstr "Email"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:127
+#: module/Administrator/src/Administrator/Controller/UserController.php:141
 #: module/Administrator/view/administrator/authentication/login.phtml:33
 msgid "Mat khau"
 msgstr "Mật khẩu"
 
-#: module/Administrator/src/Administrator/Controller/UserController.php:130
+#: module/Administrator/src/Administrator/Controller/UserController.php:144
 msgid "De trong neu khong muon thay doi"
 msgstr "Để trống nếu không muốn thay đổi"
+
+#: module/Administrator/src/Administrator/Controller/VenueController.php:65
+msgid "Kinh do"
+msgstr "Kinh độ"
+
+#: module/Administrator/src/Administrator/Controller/VenueController.php:76
+msgid "Vi do"
+msgstr "Vĩ độ"
+
+#: module/Administrator/src/Administrator/Controller/VenueController.php:165
+msgid "Co chac chan muon xoa dia diem nay?"
+msgstr "Có chắc chắn muốn xoá địa điểm này?"
+
+#: module/Administrator/src/Administrator/Controller/VenueController.php:179
+msgid "Hien thi {0}-{1}/{2} dia diem"
+msgstr "Hiển thị {0}-{1}/{2} địa điểm"
+
+#: module/Administrator/src/Administrator/Controller/VenueController.php:188
+msgid "Them dia diem"
+msgstr "Thêm địa điểm"
 
 #: module/Application/src/Application/Controller/DocumentController.php:32
 #: module/Application/view/application/document/index.phtml:5
@@ -376,7 +412,7 @@ msgstr "Trang chủ"
 #: module/Application/src/Application/Controller/PostController.php:42
 #: module/Application/src/Application/Controller/PostController.php:200
 #: module/Application/view/application/post/index.phtml:9
-#: module/Application/view/layout/administrator.phtml:49
+#: module/Application/view/layout/administrator.phtml:51
 #: module/Application/view/layout/layout.phtml:48
 msgid "Tin tuc"
 msgstr "Tin tức"
@@ -469,6 +505,10 @@ msgstr "Danh sách hồ sơ"
 #: module/Administrator/view/administrator/user/index.phtml:10
 msgid "Danh sach thanh vien"
 msgstr "Danh sách thành viên"
+
+#: module/Administrator/view/administrator/venue/index.phtml:9
+msgid "Danh sach dia diem thi"
+msgstr "Danh sách địa điểm thi"
 
 #: module/Application/view/application/document/index.phtml:16
 msgid "Bien bao giao thong"
@@ -1887,7 +1927,7 @@ msgstr ""
 
 #: module/Application/view/application/index/index.phtml:127
 msgid "Quy trinh thi cap bang lai xe hang A1"
-msgstr "Quy trình cấp bằng lái xe hạng A1"
+msgstr "Quy trình thi cấp bằng lái xe hạng A1"
 
 #: module/Application/view/application/index/index.phtml:132
 #: module/Application/view/layout/layout.phtml:97
@@ -2054,27 +2094,27 @@ msgstr "BLX Admin Control Panel"
 msgid "BLX.VN"
 msgstr "BLX.VN"
 
-#: module/Application/view/layout/administrator.phtml:55
+#: module/Application/view/layout/administrator.phtml:57
 msgid "Bai viet"
 msgstr "Bài viết"
 
-#: module/Application/view/layout/administrator.phtml:57
+#: module/Application/view/layout/administrator.phtml:59
 msgid "Thanh vien"
 msgstr "Thành viên"
 
-#: module/Application/view/layout/administrator.phtml:59
+#: module/Application/view/layout/administrator.phtml:61
 msgid "He thong"
 msgstr "Hệ thống"
 
-#: module/Application/view/layout/administrator.phtml:70
+#: module/Application/view/layout/administrator.phtml:72
 msgid "Thong tin ca nhan"
 msgstr "Thông tin cá nhân"
 
-#: module/Application/view/layout/administrator.phtml:73
+#: module/Application/view/layout/administrator.phtml:75
 msgid "Dang xuat"
 msgstr "Đăng xuất"
 
-#: module/Application/view/layout/administrator.phtml:80
+#: module/Application/view/layout/administrator.phtml:82
 msgid "Tim nhanh bang ten hoac so dien thoai"
 msgstr "Tìm nhanh bằng tên hoặc số điện thoại"
 

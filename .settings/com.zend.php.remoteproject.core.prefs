@@ -1,5 +1,5 @@
 LaunchURL=http\://server/folder
-Save\ Mode=MANUALLY
+Save\ Mode=ON_SAVE
 SelectedHostGUID=2bcf900a-1de7-44df-8ea8-263ddad88362
 UploadFolder=/
 eclipse.preferences.version=1

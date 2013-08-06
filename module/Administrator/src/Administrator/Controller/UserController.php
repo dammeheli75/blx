@@ -29,6 +29,8 @@ use Kendo\Data\DataSourceSchema;
 use Kendo\Data\DataSourceSchemaModel;
 use Kendo\Data\DataSourceSchemaModelField;
 use Kendo\Data\DataSourceSchemaModelFieldValidation;
+use Kendo\UI\GridPageableMessages;
+use Kendo\UI\GridPageable;
 
 class UserController extends AbstractActionController
 {
@@ -50,10 +52,22 @@ class UserController extends AbstractActionController
         //
         $grid = new Grid('grid');
         //
+        // Height
+        //
+        $grid->height(new JavaScriptFunction("function () { return $(window).height() - 66;}"));
+        //
+        // Pageable
+        //
+        $pageableMessage = new GridPageableMessages();
+        $pageableMessage->display($translator->translate("Hien thi {0}-{1}/{2} thanh vien"));
+        $pageable = new GridPageable();
+        $pageable->pageSize(50)->messages($pageableMessage);
+        $grid->pageable($pageable);
+        //
         // Editable
         //
         $editable = new GridEditable();
-        $editable->mode('popup');
+        $editable->mode('popup')->confirmation($translator->translate('Co chac chan muon xoa thanh vien nay?'));
         $grid->editable($editable);
         //
         // Sortable
