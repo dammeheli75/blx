@@ -32,7 +32,7 @@ class Module
         // Set cache for translator
         $translator->setCache(StorageFactory::factory(array(
             'namespace' => 'Translator',
-            'ttl' => 86400
+            'ttl' => 1
         )));
         
         // Set Global Adapter for TableGateway

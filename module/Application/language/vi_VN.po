@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-07 01:29+0700\n"
-"PO-Revision-Date: 2013-08-07 01:32+0700\n"
+"POT-Creation-Date: 2013-08-07 01:47+0700\n"
+"PO-Revision-Date: 2013-08-07 02:05+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -1866,11 +1866,23 @@ msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
 msgstr "sinh viên K56 Đại học Bách Khoa Hà Nội"
 
 #: module/Application/view/application/index/index.phtml:53
-#: module/Application/view/application/index/index.phtml:67
-#: module/Application/view/application/index/index.phtml:81
-#: module/Application/view/application/index/index.phtml:95
-#: module/Application/view/application/index/index.phtml:109
 msgid "people_talk_2"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:67
+msgid "people_talk_3"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:81
+msgid "people_talk_4"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:95
+msgid "people_talk_5"
+msgstr ""
+
+#: module/Application/view/application/index/index.phtml:109
+msgid "people_talk_6"
 msgstr ""
 
 #: module/Application/view/application/index/index.phtml:127
@@ -1921,7 +1933,7 @@ msgstr "Chú ý lệ phí thi gồm 2 khoản"
 
 #: module/Application/view/application/index/index.phtml:186
 msgid "Le phi dao tao 150.000<sup>d</sup>"
-msgstr "Lệ phí đào tạo 150.000<sup>đ</sup>."
+msgstr "Lệ phí đào tạo 180.000<sup>đ</sup>."
 
 #: module/Application/view/application/index/index.phtml:187
 msgid ""
@@ -2124,12 +2136,12 @@ msgid "Thu vi"
 msgstr "Thú vị"
 
 #: module/Application/view/layout/layout.phtml:136
-msgid "Noi dung thu vi"
-msgstr "Nội dung thú vị"
+msgid "noi_dung_thu_vi"
+msgstr "Mỗi tháng BLX.VN tiếp nhận và xử lý <strong>hơn 690 hồ sơ</strong>."
 
 #: module/Application/view/layout/layout.phtml:150
 msgid "copyright"
-msgstr ""
+msgstr "Toàn bộ nội dung thuộc về BLX.VN."
 
 #: module/Application/view/layout/layout.phtml:155
 msgid "Thiet ke va xay dung boi Luu Hoang Nam"
