@@ -12,6 +12,7 @@ use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Zend\Db\TableGateway\Feature\GlobalAdapterFeature;
 use Administrator\Model\User;
+use Blx\Cache\StorageFactory;
 
 class Module
 {
@@ -28,11 +29,17 @@ class Module
         $router = $serviceManager->get('router');
         $router->setBaseUrl(BASE_URL);
         
+        // Set cache for translator
+        $translator->setCache(StorageFactory::factory(array(
+            'namespace' => 'Translator',
+            'ttl' => 86400
+        )));
+        
         // Set Global Adapter for TableGateway
         GlobalAdapterFeature::setStaticAdapter($serviceManager->get('db'));
         
         // Set default timezone
-//         @date_default_timezone_set('Asia/Ho_Chi_Minh');
+        // @date_default_timezone_set('Asia/Ho_Chi_Minh');
         
         // Check authentication
         $e->getApplication()

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-07 01:16+0700\n"
-"PO-Revision-Date: 2013-08-07 01:19+0700\n"
+"POT-Creation-Date: 2013-08-07 01:29+0700\n"
+"PO-Revision-Date: 2013-08-07 01:32+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -682,11 +682,11 @@ msgstr "Đề"
 #: module/Application/view/application/document/index.phtml:790
 #: module/Application/view/application/document/index.phtml:930
 #: module/Application/view/application/document/index.phtml:1070
-#: module/Application/view/application/document/index.phtml:1158
-#: module/Application/view/application/document/index.phtml:1175
-#: module/Application/view/application/document/index.phtml:1192
-#: module/Application/view/application/document/index.phtml:1209
-#: module/Application/view/application/document/index.phtml:1226
+#: module/Application/view/application/document/index.phtml:1208
+#: module/Application/view/application/document/index.phtml:1298
+#: module/Application/view/application/document/index.phtml:1315
+#: module/Application/view/application/document/index.phtml:1332
+#: module/Application/view/application/document/index.phtml:1349
 msgid "Bai on tap ly thuyet"
 msgstr "Bài ôn tập lý thuyết"
 
@@ -695,11 +695,11 @@ msgstr "Bài ôn tập lý thuyết"
 #: module/Application/view/application/document/index.phtml:791
 #: module/Application/view/application/document/index.phtml:931
 #: module/Application/view/application/document/index.phtml:1071
-#: module/Application/view/application/document/index.phtml:1159
-#: module/Application/view/application/document/index.phtml:1176
-#: module/Application/view/application/document/index.phtml:1193
-#: module/Application/view/application/document/index.phtml:1210
-#: module/Application/view/application/document/index.phtml:1227
+#: module/Application/view/application/document/index.phtml:1209
+#: module/Application/view/application/document/index.phtml:1299
+#: module/Application/view/application/document/index.phtml:1316
+#: module/Application/view/application/document/index.phtml:1333
+#: module/Application/view/application/document/index.phtml:1350
 msgid "sat hach, cap giay phep lai xe"
 msgstr "sát hạch, cấp giấy phép lái xe"
 
@@ -708,11 +708,11 @@ msgstr "sát hạch, cấp giấy phép lái xe"
 #: module/Application/view/application/document/index.phtml:792
 #: module/Application/view/application/document/index.phtml:932
 #: module/Application/view/application/document/index.phtml:1072
-#: module/Application/view/application/document/index.phtml:1160
-#: module/Application/view/application/document/index.phtml:1177
-#: module/Application/view/application/document/index.phtml:1194
-#: module/Application/view/application/document/index.phtml:1211
-#: module/Application/view/application/document/index.phtml:1228
+#: module/Application/view/application/document/index.phtml:1210
+#: module/Application/view/application/document/index.phtml:1300
+#: module/Application/view/application/document/index.phtml:1317
+#: module/Application/view/application/document/index.phtml:1334
+#: module/Application/view/application/document/index.phtml:1351
 msgid "Hang <strong>A1, A2</strong>"
 msgstr "Hạng <strong> A1, A2 </strong> "
 
@@ -725,6 +725,7 @@ msgstr "Bài số"
 #: module/Application/view/application/document/index.phtml:802
 #: module/Application/view/application/document/index.phtml:942
 #: module/Application/view/application/document/index.phtml:1082
+#: module/Application/view/application/document/index.phtml:1220
 msgid "Cau 1"
 msgstr "Câu 1"
 
@@ -755,6 +756,7 @@ msgstr ""
 #: module/Application/view/application/document/index.phtml:815
 #: module/Application/view/application/document/index.phtml:954
 #: module/Application/view/application/document/index.phtml:1095
+#: module/Application/view/application/document/index.phtml:1233
 msgid "Cau 2"
 msgstr "Câu 2"
 
@@ -781,6 +783,7 @@ msgstr "Tất cả các ý trên."
 #: module/Application/view/application/document/index.phtml:828
 #: module/Application/view/application/document/index.phtml:967
 #: module/Application/view/application/document/index.phtml:1107
+#: module/Application/view/application/document/index.phtml:1246
 msgid "Cau 3"
 msgstr "Câu 3"
 
@@ -811,6 +814,7 @@ msgstr ""
 #: module/Application/view/application/document/index.phtml:841
 #: module/Application/view/application/document/index.phtml:979
 #: module/Application/view/application/document/index.phtml:1119
+#: module/Application/view/application/document/index.phtml:1259
 msgid "Cau 4"
 msgstr "Câu 4"
 
@@ -838,9 +842,9 @@ msgstr "Cả 2 ý trên."
 #: module/Application/view/application/document/index.phtml:714
 #: module/Application/view/application/document/index.phtml:854
 #: module/Application/view/application/document/index.phtml:992
-#, fuzzy
+#: module/Application/view/application/document/index.phtml:1132
 msgid "Cau 5"
-msgstr "Câu 1"
+msgstr "Câu 5"
 
 #: module/Application/view/application/document/index.phtml:532
 msgid "cau_hoi_1_5"
@@ -864,9 +868,9 @@ msgstr "Cả 2 ý trên."
 #: module/Application/view/application/document/index.phtml:728
 #: module/Application/view/application/document/index.phtml:867
 #: module/Application/view/application/document/index.phtml:1005
-#, fuzzy
+#: module/Application/view/application/document/index.phtml:1144
 msgid "Cau 6"
-msgstr "Câu 1"
+msgstr "Câu 6"
 
 #: module/Application/view/application/document/index.phtml:545
 msgid "cau_hoi_1_6"
@@ -894,9 +898,9 @@ msgstr ""
 #: module/Application/view/application/document/index.phtml:740
 #: module/Application/view/application/document/index.phtml:879
 #: module/Application/view/application/document/index.phtml:1018
-#, fuzzy
+#: module/Application/view/application/document/index.phtml:1157
 msgid "Cau 7"
-msgstr "Câu 1"
+msgstr "Câu 7"
 
 #: module/Application/view/application/document/index.phtml:558
 msgid "cau_hoi_1_7"
@@ -918,7 +922,9 @@ msgstr "Loại di động."
 #: module/Application/view/application/document/index.phtml:904
 #: module/Application/view/application/document/index.phtml:1031
 #: module/Application/view/application/document/index.phtml:1044
-#: module/Application/view/application/document/index.phtml:1132
+#: module/Application/view/application/document/index.phtml:1169
+#: module/Application/view/application/document/index.phtml:1182
+#: module/Application/view/application/document/index.phtml:1272
 msgid "Cau 8"
 msgstr "Câu 8"
 
@@ -953,7 +959,8 @@ msgstr ""
 #: module/Application/view/application/document/index.phtml:766
 #: module/Application/view/application/document/index.phtml:906
 #: module/Application/view/application/document/index.phtml:1046
-#: module/Application/view/application/document/index.phtml:1134
+#: module/Application/view/application/document/index.phtml:1184
+#: module/Application/view/application/document/index.phtml:1274
 msgid "Thu tu cac xe di nhu the nao la dung quy tac giao thong&#63;"
 msgstr "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông &#63;"
 
@@ -961,7 +968,8 @@ msgstr "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông 
 #: module/Application/view/application/document/index.phtml:776
 #: module/Application/view/application/document/index.phtml:916
 #: module/Application/view/application/document/index.phtml:1056
-#: module/Application/view/application/document/index.phtml:1144
+#: module/Application/view/application/document/index.phtml:1194
+#: module/Application/view/application/document/index.phtml:1284
 msgid "Xe tai, xe lam, xe con, mo to."
 msgstr "Xe tải, xe lam, xe con, moto"
 
@@ -969,7 +977,8 @@ msgstr "Xe tải, xe lam, xe con, moto"
 #: module/Application/view/application/document/index.phtml:777
 #: module/Application/view/application/document/index.phtml:917
 #: module/Application/view/application/document/index.phtml:1057
-#: module/Application/view/application/document/index.phtml:1145
+#: module/Application/view/application/document/index.phtml:1195
+#: module/Application/view/application/document/index.phtml:1285
 msgid "Xe tai, mo to, xe lam, xe con."
 msgstr "Xe tải, moto, xe lam, xe con."
 
@@ -977,7 +986,8 @@ msgstr "Xe tải, moto, xe lam, xe con."
 #: module/Application/view/application/document/index.phtml:778
 #: module/Application/view/application/document/index.phtml:918
 #: module/Application/view/application/document/index.phtml:1058
-#: module/Application/view/application/document/index.phtml:1146
+#: module/Application/view/application/document/index.phtml:1196
+#: module/Application/view/application/document/index.phtml:1286
 msgid "Xe lam, xe tai, xe con, mo to."
 msgstr "Xe lam, xe tải, xe con, moto."
 
@@ -985,7 +995,8 @@ msgstr "Xe lam, xe tải, xe con, moto."
 #: module/Application/view/application/document/index.phtml:779
 #: module/Application/view/application/document/index.phtml:919
 #: module/Application/view/application/document/index.phtml:1059
-#: module/Application/view/application/document/index.phtml:1147
+#: module/Application/view/application/document/index.phtml:1197
+#: module/Application/view/application/document/index.phtml:1287
 msgid "Mo to, xe lam, xe tai, xe con."
 msgstr "Moto, xe lam, xe tải, xe con."
 
@@ -1002,11 +1013,11 @@ msgstr "Câu"
 #: module/Application/view/application/document/index.phtml:796
 #: module/Application/view/application/document/index.phtml:936
 #: module/Application/view/application/document/index.phtml:1076
-#: module/Application/view/application/document/index.phtml:1164
-#: module/Application/view/application/document/index.phtml:1181
-#: module/Application/view/application/document/index.phtml:1198
-#: module/Application/view/application/document/index.phtml:1215
-#: module/Application/view/application/document/index.phtml:1232
+#: module/Application/view/application/document/index.phtml:1214
+#: module/Application/view/application/document/index.phtml:1304
+#: module/Application/view/application/document/index.phtml:1321
+#: module/Application/view/application/document/index.phtml:1338
+#: module/Application/view/application/document/index.phtml:1355
 msgid "Bai so&nbsp;"
 msgstr "Bài số &nbsp;"
 
@@ -1517,6 +1528,176 @@ msgstr "Người tham gia giao thông ở các hướng phải dừng lại."
 msgid "dap_an_5_4_3"
 msgstr "Tất cả các trường hợp trên."
 
+#: module/Application/view/application/document/index.phtml:1134
+msgid "cau_hoi_5_5"
+msgstr ""
+"Tại nơi đường giao nhau, khi người điều khiển giao thông ra hiệu lệnh bằng "
+"tay phải giơ về phía trước để báo hiệu thì người tham gia giao thông phải đi "
+"như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1139
+msgid "dap_an_5_5_1"
+msgstr ""
+"Người tham gia giao thông ở phía sau người điều khiển phải dừng lại; người ở "
+"phía trước người điều khiển được rẽ trái; người ở phía bên trái người điều "
+"khiển được rẽ trái; người đi bộ qua đường phải dừng lại sau lưng người điều "
+"khiển giao thông."
+
+#: module/Application/view/application/document/index.phtml:1140
+msgid "dap_an_5_5_2"
+msgstr ""
+"Người tham gia giao thông ở phía sau và bên phải người điều khiển phải dừng "
+"lại; người ở phía trước người điều khiển được rẽ phải; người ở phía bên trái "
+"người điều khiển giao thông được đi tất cả các hướng; người đi bộ qua đường "
+"phải đi bộ sau lưng người điều khiển giao thông."
+
+#: module/Application/view/application/document/index.phtml:1146
+msgid "cau_hoi_5_6"
+msgstr ""
+"Trên đường giao thông, khi hiệu lệnh của người điều khiển giao thông trái "
+"với hiệu lệnh của đèn hoặc biển báo hiệu thì người tham gia giao thông phải "
+"chấp hành theo hiệu lệnh nào?"
+
+#: module/Application/view/application/document/index.phtml:1151
+msgid "dap_an_5_6_1"
+msgstr "Hiệu lệnh của người điều khiển giao thông."
+
+#: module/Application/view/application/document/index.phtml:1152
+msgid "dap_an_5_6_2"
+msgstr "Hiệu lệnh của đèn điều khiển giao thông."
+
+#: module/Application/view/application/document/index.phtml:1153
+msgid "dap_an_5_6_3"
+msgstr "Hiệu lệnh của biển báo hiệu đường bộ."
+
+#: module/Application/view/application/document/index.phtml:1159
+msgid "cau_hoi_5_7"
+msgstr ""
+"Tại nơi có biển báo hiệu cố định lại có báo hiệu tạm thời thì người tham gia "
+"giao thông phải chấp hành hiệu lệnh của báo hiệu nào?"
+
+#: module/Application/view/application/document/index.phtml:1164
+msgid "dap_an_5_7_1"
+msgstr "Biển báo hiệu cố định."
+
+#: module/Application/view/application/document/index.phtml:1165
+msgid "dap_an_5_7_2"
+msgstr "Báo hiệu tạm thời."
+
+#: module/Application/view/application/document/index.phtml:1171
+msgid "cau_hoi_5_8"
+msgstr ""
+"Trên đường có nhiều làn đường cho xe  đi cùng chiều được phân biệt bằng vạch "
+"kẻ phân làn đường, người điều khiển phương tiện phải cho xe đi như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1176
+msgid "dap_an_5_8_1"
+msgstr ""
+"Cho xe đi trên bất kỳ làn đường nào; khi cần thiết phải chuyển làn đường, "
+"người lái xe phải có tín hiệu đèn báo trước và phải bảo đảm an toàn."
+
+#: module/Application/view/application/document/index.phtml:1177
+msgid "dap_an_5_8_2"
+msgstr ""
+"Phải cho xe đi trong một làn đường và chỉ được chuyển làn ở những nơi cho "
+"phép; khi chuyển làn phải có tín hiệu đèn báo trước và phải bảo đảm an toàn."
+
+#: module/Application/view/application/document/index.phtml:1178
+msgid "dap_an_5_8_3"
+msgstr ""
+"Phải cho xe đi trong một làn đường, khi chuyển làn phải có tín hiệu báo "
+"trước, chú ý quan sát để bảo đảm an toàn."
+
+#: module/Application/view/application/document/index.phtml:1222
+msgid "cau_hoi_6_1"
+msgstr ""
+"Trên đường một chiều có vạch kẻ phân làn đường, xe thô sơ và xe cơ giới phải "
+"đi như thế nào là đúng quy tắc giao thông?"
+
+#: module/Application/view/application/document/index.phtml:1227
+msgid "dap_an_6_1_1"
+msgstr ""
+"Xe thô sơ phải đi trên làn đường bên trái trong cung, xe cơ giới xe máy "
+"chuyên dùng đi trên làn đường bên phải."
+
+#: module/Application/view/application/document/index.phtml:1228
+msgid "dap_an_6_1_2"
+msgstr ""
+"Xe thô sơ phải đi trên làn đường bên phải trong cùng, xe cơ giới xe máy "
+"chuyên dùng đi trên làn đường bên trái."
+
+#: module/Application/view/application/document/index.phtml:1229
+msgid "dap_an_6_1_3"
+msgstr ""
+"Xe thô sơ đi trên làn đường phù hợp không gây cản trở giao thông, xe cơ "
+"giới, xe máy chuyên dùng đi trên làn đường bên phải."
+
+#: module/Application/view/application/document/index.phtml:1235
+msgid "cau_hoi_6_2"
+msgstr ""
+"Trên đường có nhiều làn đường, người điều khiển phương tiện tham gia giao "
+"thông sử dụng làn đường như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1240
+msgid "dap_an_6_2_1"
+msgstr ""
+"Trên đường có nhiều làn đường, người điều khiển phương tiện tham gia giao "
+"thông sử dụng làn đường như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1241
+msgid "dap_an_6_2_2"
+msgstr ""
+"Phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp hơn đi về "
+"bên trái."
+
+#: module/Application/view/application/document/index.phtml:1242
+msgid "dap_an_6_2_3"
+msgstr ""
+"Trên đường một chiều có vạch kẻ phân làn đường, xe thô sơ phải đi trên làn "
+"đường bê phải trong cùng, xe cơ giới xe máy chuyên dùng đi trên làn đường "
+"bên trái; phương tiện tham gia giao thông đường bộ di chuyển với tốc độ thấp "
+"hơn đi về bên phải."
+
+#: module/Application/view/application/document/index.phtml:1248
+msgid "cau_hoi_6_3"
+msgstr ""
+"Xe sau có thể vượt lên bên phải xe khác đang chạy phía trước trong trường "
+"hợp nào?"
+
+#: module/Application/view/application/document/index.phtml:1253
+msgid "dap_an_6_3_1"
+msgstr ""
+"Khi xe phía trước có tín hiệu rẽ trái hoặc đang rẽ trái; khi xe điện đang "
+"chạy giữa đường."
+
+#: module/Application/view/application/document/index.phtml:1254
+msgid "dap_an_6_3_2"
+msgstr ""
+"Khi xe chuyên dùng đang làm việc trên đường mà không thể vượt bên trái được."
+
+#: module/Application/view/application/document/index.phtml:1255
+msgid "dap_an_6_3_3"
+msgstr "Khi có đủ khoảng trống để vượt xe."
+
+#: module/Application/view/application/document/index.phtml:1261
+msgid "cau_hoi_6_4"
+msgstr ""
+"Người lái xe phải làm gì khi quay đầu xe trên cầu, gầm cầu vượt, đường ngầm "
+"hay khu vực đường bộ giao nhau cùng mức với đường sắt?"
+
+#: module/Application/view/application/document/index.phtml:1266
+msgid "dap_an_6_4_1"
+msgstr "Không được quay đầu xe."
+
+#: module/Application/view/application/document/index.phtml:1267
+msgid "dap_an_6_4_2"
+msgstr ""
+"Lợi dụng chỗ rộng và phải có người làm tín hiệu sau xe để bảo đảm an toàn."
+
+#: module/Application/view/application/document/index.phtml:1268
+msgid "dap_an_6_4_3"
+msgstr "Lợi dụng chỗ rộng có thể quay đầu được để quay đầu xe cho an toàn."
+
 #: module/Application/view/application/fixture/index.phtml:26
 #: module/Application/view/application/result/index.phtml:26
 msgid "Tim theo ten thi sinh"
@@ -1987,6 +2168,10 @@ msgstr "Trước"
 #: module/Application/view/partial/paginator.phtml:26
 msgid "Sau"
 msgstr "Sau"
+
+#, fuzzy
+#~ msgid "dap_an_5_7_3"
+#~ msgstr "Cả 2 ý nêu trên."
 
 #~ msgid "Khai niem &quot;duong bo&quot; duoc hieu nhu the nao la dung&#63;"
 #~ msgstr "Khái niệm &quot;đường bộ &quot; được hiểu như thế nao là đúng &#63;"
