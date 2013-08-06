@@ -24,6 +24,10 @@ class Module
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
         
+        // Set base Url
+        $router = $serviceManager->get('router');
+        $router->setBaseUrl(BASE_URL);
+        
         // Set Global Adapter for TableGateway
         GlobalAdapterFeature::setStaticAdapter($serviceManager->get('db'));
         

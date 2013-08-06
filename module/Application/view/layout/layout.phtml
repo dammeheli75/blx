@@ -24,6 +24,10 @@
     
     echo $this->headlink();
     ?>
+    
+    <script type="text/javascript">
+        var baseUrl = "<?php echo $this->url('home')?>";
+    </script>
 
     </head>
 <body id="home-page">
@@ -80,7 +84,7 @@
 								<ul>
 									<li class="link-group-title"><span><?php echo $this->translate('BLX.VN')?></span>
 									</li>
-									<li class="link"><a href="#"><?php echo $this->translate('Trang chu')?></a>
+									<li class="link"><a href="<?php echo $this->url('home') ?>"><?php echo $this->translate('Trang chu')?></a>
 									</li>
 									<li class="link"><a href="#"><?php echo $this->translate('Dieu khoan')?></a>
 									</li>
@@ -90,13 +94,13 @@
 								<ul>
 									<li class="link-group-title"><span><?php echo $this->translate('Thi bang lai xe')?></span>
 									</li>
-									<li class="link"><a href="#"><?php echo $this->translate('Nop ho so')?></a>
+									<li class="link"><a href="<?php echo $this->url('home')?>#nop-ho-so"><?php echo $this->translate('Nop ho so')?></a>
 									</li>
-									<li class="link"><a href="#"><?php echo $this->translate('Nop ho so')?></a>
+									<li class="link"><a href="<?php echo $this->url('fixture')?>"><?php echo $this->translate('Xem lich thi')?></a>
 									</li>
-									<li class="link"><a href="#"><?php echo $this->translate('Huong dan thi')?></a>
+									<li class="link"><a href="<?php echo $this->url('guiding')?>"><?php echo $this->translate('Huong dan thi')?></a>
 									</li>
-									<li class="link"><a href="#"><?php echo $this->translate('Ket qua thi')?></a>
+									<li class="link"><a href="<?php echo $this->url('result')?>"><?php echo $this->translate('Ket qua thi')?></a>
 									</li>
 								</ul>
 							</li>
