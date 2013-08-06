@@ -1,6 +1,8 @@
 <?php
 $this->headLink()->prependStylesheet($this->basePath() . '/common/css/guiding.min.css');
-$this->headScript()->prependFile($this->basePath() . '/common/js/guiding.min.js');
+$this->headScript()
+    ->prependFile($this->basePath() . '/common/js/guiding.min.js')
+    ->prependFile('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false');
 
 $this->headtitle()->prepend($this->translate('Huong dan thi bang lai xe hang A1'));
 ?>
@@ -11,12 +13,9 @@ $this->headtitle()->prepend($this->translate('Huong dan thi bang lai xe hang A1'
 
 <div class="span3 docs-sidebar">
 	<ul class="nav nav-list docs-sidenav">
-		<li>
-		<a href="#test-time"> <i class="test-time-icon base64"></i> 
-		<i
+		<li><a href="#test-time"> <i class="test-time-icon base64"></i> <i
 				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Thoi gian thi')?>
-		</a>
-		</li>
+		</a></li>
 		<li><a href="#venue"> <i class="venue-icon base64"></i> <i
 				class="icon-chevron-right"></i>&nbsp;<?php echo $this->translate('Dia diem thi')?>
 		</a></li>
