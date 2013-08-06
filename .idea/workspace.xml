@@ -93,10 +93,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="guiding.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="guiding.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="84" selection-start="452" selection-end="452" vertical-scroll-proportion="0.5319149">
+            <state line="25" column="84" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="document.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="15" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0650289">
               <folding />
             </state>
           </provider>
@@ -120,7 +129,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/common/admin/css/kendo.common.css" />
         <option value="$PROJECT_DIR$/public/common/admin/css/login.css" />
         <option value="$PROJECT_DIR$/public/common/admin/css/profile.css" />
         <option value="$PROJECT_DIR$/public/common/admin/js/home.js" />
@@ -136,6 +144,7 @@
         <option value="$PROJECT_DIR$/public/common/js/result.js" />
         <option value="$PROJECT_DIR$/public/common/js/fixture.js" />
         <option value="$PROJECT_DIR$/public_html/common/css/guiding.css" />
+        <option value="$PROJECT_DIR$/public_html/common/css/document.css" />
       </list>
     </option>
   </component>
@@ -423,7 +432,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="84" selection-start="452" selection-end="452" vertical-scroll-proportion="0.5319149">
+        <state line="25" column="84" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="15" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0650289">
           <folding />
         </state>
       </provider>
