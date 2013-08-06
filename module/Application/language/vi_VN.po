@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-05 22:26+0700\n"
-"PO-Revision-Date: 2013-08-05 22:26+0700\n"
+"POT-Creation-Date: 2013-08-07 01:16+0700\n"
+"PO-Revision-Date: 2013-08-07 01:19+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: \n"
 "Language: Tiếng Việt\n"
@@ -223,8 +223,8 @@ msgid "Dia diem:"
 msgstr "Địa điểm:"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:172
-#: module/Application/view/application/guiding/index.phtml:21
-#: module/Application/view/application/guiding/index.phtml:71
+#: module/Application/view/application/guiding/index.phtml:20
+#: module/Application/view/application/guiding/index.phtml:70
 msgid "Dia diem thi"
 msgstr "Địa điểm thi"
 
@@ -362,14 +362,14 @@ msgid "Lich thi cap bang lai xe hang A1"
 msgstr "Lịch thi cấp bằng lái xe hạng A1"
 
 #: module/Application/src/Application/Controller/GuidingController.php:32
-#: module/Application/view/application/guiding/index.phtml:5
-#: module/Application/view/application/guiding/index.phtml:9
+#: module/Application/view/application/guiding/index.phtml:7
+#: module/Application/view/application/guiding/index.phtml:11
 msgid "Huong dan thi bang lai xe hang A1"
 msgstr "Hướng dẫn thi bằng lái xe hạng A1"
 
 #: module/Application/src/Application/Controller/IndexController.php:32
 #: module/Application/view/layout/administrator.phtml:44
-#: module/Application/view/layout/layout.phtml:83
+#: module/Application/view/layout/layout.phtml:87
 msgid "Trang chu"
 msgstr "Trang chủ"
 
@@ -377,7 +377,7 @@ msgstr "Trang chủ"
 #: module/Application/src/Application/Controller/PostController.php:200
 #: module/Application/view/application/post/index.phtml:9
 #: module/Application/view/layout/administrator.phtml:49
-#: module/Application/view/layout/layout.phtml:44
+#: module/Application/view/layout/layout.phtml:48
 msgid "Tin tuc"
 msgstr "Tin tức"
 
@@ -678,41 +678,41 @@ msgid "De"
 msgstr "Đề"
 
 #: module/Application/view/application/document/index.phtml:467
-#: module/Application/view/application/document/index.phtml:602
-#: module/Application/view/application/document/index.phtml:619
-#: module/Application/view/application/document/index.phtml:636
 #: module/Application/view/application/document/index.phtml:653
-#: module/Application/view/application/document/index.phtml:670
-#: module/Application/view/application/document/index.phtml:687
-#: module/Application/view/application/document/index.phtml:704
-#: module/Application/view/application/document/index.phtml:721
-#: module/Application/view/application/document/index.phtml:738
+#: module/Application/view/application/document/index.phtml:790
+#: module/Application/view/application/document/index.phtml:930
+#: module/Application/view/application/document/index.phtml:1070
+#: module/Application/view/application/document/index.phtml:1158
+#: module/Application/view/application/document/index.phtml:1175
+#: module/Application/view/application/document/index.phtml:1192
+#: module/Application/view/application/document/index.phtml:1209
+#: module/Application/view/application/document/index.phtml:1226
 msgid "Bai on tap ly thuyet"
 msgstr "Bài ôn tập lý thuyết"
 
 #: module/Application/view/application/document/index.phtml:468
-#: module/Application/view/application/document/index.phtml:603
-#: module/Application/view/application/document/index.phtml:620
-#: module/Application/view/application/document/index.phtml:637
 #: module/Application/view/application/document/index.phtml:654
-#: module/Application/view/application/document/index.phtml:671
-#: module/Application/view/application/document/index.phtml:688
-#: module/Application/view/application/document/index.phtml:705
-#: module/Application/view/application/document/index.phtml:722
-#: module/Application/view/application/document/index.phtml:739
+#: module/Application/view/application/document/index.phtml:791
+#: module/Application/view/application/document/index.phtml:931
+#: module/Application/view/application/document/index.phtml:1071
+#: module/Application/view/application/document/index.phtml:1159
+#: module/Application/view/application/document/index.phtml:1176
+#: module/Application/view/application/document/index.phtml:1193
+#: module/Application/view/application/document/index.phtml:1210
+#: module/Application/view/application/document/index.phtml:1227
 msgid "sat hach, cap giay phep lai xe"
 msgstr "sát hạch, cấp giấy phép lái xe"
 
 #: module/Application/view/application/document/index.phtml:469
-#: module/Application/view/application/document/index.phtml:604
-#: module/Application/view/application/document/index.phtml:621
-#: module/Application/view/application/document/index.phtml:638
 #: module/Application/view/application/document/index.phtml:655
-#: module/Application/view/application/document/index.phtml:672
-#: module/Application/view/application/document/index.phtml:689
-#: module/Application/view/application/document/index.phtml:706
-#: module/Application/view/application/document/index.phtml:723
-#: module/Application/view/application/document/index.phtml:740
+#: module/Application/view/application/document/index.phtml:792
+#: module/Application/view/application/document/index.phtml:932
+#: module/Application/view/application/document/index.phtml:1072
+#: module/Application/view/application/document/index.phtml:1160
+#: module/Application/view/application/document/index.phtml:1177
+#: module/Application/view/application/document/index.phtml:1194
+#: module/Application/view/application/document/index.phtml:1211
+#: module/Application/view/application/document/index.phtml:1228
 msgid "Hang <strong>A1, A2</strong>"
 msgstr "Hạng <strong> A1, A2 </strong> "
 
@@ -721,152 +721,801 @@ msgid "Bai so"
 msgstr "Bài số"
 
 #: module/Application/view/application/document/index.phtml:479
+#: module/Application/view/application/document/index.phtml:665
+#: module/Application/view/application/document/index.phtml:802
+#: module/Application/view/application/document/index.phtml:942
+#: module/Application/view/application/document/index.phtml:1082
 msgid "Cau 1"
 msgstr "Câu 1"
 
 #: module/Application/view/application/document/index.phtml:481
-msgid "Khai niem &quot;duong bo&quot; duoc hieu nhu the nao la dung&#63;"
-msgstr "Khái niệm &quot;đường bộ &quot; được hiểu như thế nao là đúng &#63;"
+msgid "cau_hoi_1_1"
+msgstr "Khái niệm \"Đường bộ\" được hiểu như thế nào?"
 
 #: module/Application/view/application/document/index.phtml:485
 msgid "Duong bo gom:"
 msgstr "Đường bộ gồm:"
 
 #: module/Application/view/application/document/index.phtml:487
-msgid "Duong, cau duong bo, ham duong bo"
-msgstr "Đường, cầu đường bộ, hầm đường bộ"
+msgid "dap_an_1_1_1"
+msgstr "Đường, cầu đường bộ."
 
 #: module/Application/view/application/document/index.phtml:488
-msgid "Duong, cau duong bo, ham duong bo, ben pha duong bo"
-msgstr "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ"
+msgid "dap_an_1_1_2"
+msgstr "Hầm đường bộ, bến phà đường bộ."
 
 #: module/Application/view/application/document/index.phtml:489
-msgid ""
-"Duong, cau duong bo, ham duong bo, ben pha duong bo va cac cong trinh phu "
-"tro khac"
+msgid "dap_an_1_1_3"
 msgstr ""
 "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ và các công trình phụ "
-"trợ khác"
+"trợ khác."
 
 #: module/Application/view/application/document/index.phtml:493
+#: module/Application/view/application/document/index.phtml:678
+#: module/Application/view/application/document/index.phtml:815
+#: module/Application/view/application/document/index.phtml:954
+#: module/Application/view/application/document/index.phtml:1095
 msgid "Cau 2"
 msgstr "Câu 2"
 
 #: module/Application/view/application/document/index.phtml:495
-msgid ""
-"Co quan nao quy dinh cac doan duong cam di, duong di mot chieu, noi cam "
-"dung, cam do, cam quay dau xe, lap dat bao hieu duong bo thuoc dia phuong "
-"quan ly&#63;"
-msgstr ""
-"Cơ quan nào quy định các đoạn đường cấm đi, đường đi một chiều, nơi cấm "
-"dừng, cấm đôc, cấm quay đầu xe, lắp đặt biển báo hiệu đường bộ thuộc địa "
-"phận quản lý &#63;"
+msgid "cau_hoi_1_2"
+msgstr "Vạch kẻ đường được hiểu như thế nào là đúng?"
 
 #: module/Application/view/application/document/index.phtml:500
-msgid "Co quan quan ly giao thong van tai."
-msgstr "Cơ quan quản lý giao thông vận tải."
+msgid "dap_an_1_2_1"
+msgstr ""
+"Vạch kẻ đường là vạch chỉ sự phân chia làn đường, vị trid hoặc hướng đi, vị "
+"trí dừng lại."
 
 #: module/Application/view/application/document/index.phtml:501
-msgid "Uy ban nhan dan cap tinh."
-msgstr "Ủy ban nhân dân cấp tỉnh."
+msgid "dap_an_1_2_2"
+msgstr "Vạch kẻ đường là vạch chỉ sự phân biệt vị trí dừng, đỗ trên đường."
 
 #: module/Application/view/application/document/index.phtml:502
-msgid "Co quan canh sat giao thong duong bo."
-msgstr "Cơ quan cảnh sát giao thông đường bộ."
+msgid "dap_an_1_2_3"
+msgstr "Tất cả các ý trên."
 
-#: module/Application/view/application/document/index.phtml:503
-msgid "Thanh tra giao thong duong bo."
-msgstr "Thanh tra giao thông đường bộ."
-
-#: module/Application/view/application/document/index.phtml:506
+#: module/Application/view/application/document/index.phtml:505
+#: module/Application/view/application/document/index.phtml:690
+#: module/Application/view/application/document/index.phtml:828
+#: module/Application/view/application/document/index.phtml:967
+#: module/Application/view/application/document/index.phtml:1107
 msgid "Cau 3"
 msgstr "Câu 3"
 
-#: module/Application/view/application/document/index.phtml:508
-msgid ""
-"Nguoi dieu khien phuong tien giao thong duong bo ma trong co the co chat ma "
-"tuy co bi nghiem cam hay khong&#63;"
+#: module/Application/view/application/document/index.phtml:507
+msgid "cau_hoi_1_3"
+msgstr "Khái niệm \"Phần đường xe chạy\" đực hiểu như thế nào là đúng?"
+
+#: module/Application/view/application/document/index.phtml:512
+msgid "dap_an_1_3_1"
 msgstr ""
-"Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma "
-"túy có bị nghiêm cấm hay không &#63;"
+"Là phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại."
 
 #: module/Application/view/application/document/index.phtml:513
-msgid "Nghiem cam."
-msgstr "Nghiêm cấm."
+msgid "dap_an_1_3_2"
+msgstr ""
+"Là phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại, "
+"diair đất dọc hai bên đường để bảo đảm an toàn giao thông."
 
 #: module/Application/view/application/document/index.phtml:514
-msgid "Khong bi nghiem cam."
-msgstr "Không bị nghiêm cấm."
+msgid "dap_an_1_3_3"
+msgstr ""
+"Là phần đường bộ được sử dụng cho các phương tiện giao thông qua lại, các "
+"công trình, thiết bị phụ trợ khác và dải đất dọc hai bên đường để bảo đảm an "
+"toàn giao thông."
 
-#: module/Application/view/application/document/index.phtml:515
-msgid "Nghiem cam trong truong hop su dung trai phep."
-msgstr "Nghiêm cấm trong trường hợp sử dụng trái phép."
-
-#: module/Application/view/application/document/index.phtml:518
+#: module/Application/view/application/document/index.phtml:517
+#: module/Application/view/application/document/index.phtml:702
+#: module/Application/view/application/document/index.phtml:841
+#: module/Application/view/application/document/index.phtml:979
+#: module/Application/view/application/document/index.phtml:1119
 msgid "Cau 4"
 msgstr "Câu 4"
 
-#: module/Application/view/application/document/index.phtml:520
-msgid "Dam bao trat tu, an toan giao thong duong bo la trach nhiem cua ai&#63;"
+#: module/Application/view/application/document/index.phtml:519
+msgid "cau_hoi_1_4"
+msgstr "Khái niệm \"làn đường\" được hiểu như thế nào là đúng?"
+
+#: module/Application/view/application/document/index.phtml:524
+msgid "dan_an_1_4_1"
 msgstr ""
-"Đảm bảo trật tự, an toàn giao thông đường bộ là trách nhiệm của ai &#63;"
+"Là một phần của đường được chia theo chiều ngang của đường, có bề rộng đủ "
+"cho xe đỗ an toàn."
 
 #: module/Application/view/application/document/index.phtml:525
-msgid "La trach nhiem cua nganh Giao thong van tai va nganh Cong an."
-msgstr "Là trách nhiệm của ngành Giao thông vận tải và ngành Công an."
+msgid "dan_an_1_4_2"
+msgstr ""
+"Là một phần của đường xe chạy được chia theo chiều dọc của đường, có bề rộng "
+"đủ cho xe chạy an toàn."
 
 #: module/Application/view/application/document/index.phtml:526
-msgid "La trach nhiem cua co quan, to chuc, ca nhan."
-msgstr "Là trách nhiệm của cơ quan, tổ chức, cá nhân."
-
-#: module/Application/view/application/document/index.phtml:527
-msgid "La trach nhiem cua canh sat giao thong."
-msgstr "Là trách nhiệm của cảnh sát giao thông."
+msgid "dan_an_1_4_3"
+msgstr "Cả 2 ý trên."
 
 #: module/Application/view/application/document/index.phtml:530
+#: module/Application/view/application/document/index.phtml:714
+#: module/Application/view/application/document/index.phtml:854
+#: module/Application/view/application/document/index.phtml:992
+#, fuzzy
+msgid "Cau 5"
+msgstr "Câu 1"
+
+#: module/Application/view/application/document/index.phtml:532
+msgid "cau_hoi_1_5"
+msgstr "Khái niệm \"đường phố\" được hiểu như thế nào là đúng?"
+
+#: module/Application/view/application/document/index.phtml:537
+msgid "dan_an_1_5_1"
+msgstr "Đường phố là đường đô thị, gồm lòng đường và hè phố."
+
+#: module/Application/view/application/document/index.phtml:538
+msgid "dan_an_1_5_2"
+msgstr ""
+"Đường phố là đường bộ ngoài đô thị có lòng đường đủ rộng cho các phương tiện "
+"giao thông qua lại."
+
+#: module/Application/view/application/document/index.phtml:539
+msgid "dan_an_1_5_3"
+msgstr "Cả 2 ý trên."
+
+#: module/Application/view/application/document/index.phtml:543
+#: module/Application/view/application/document/index.phtml:728
+#: module/Application/view/application/document/index.phtml:867
+#: module/Application/view/application/document/index.phtml:1005
+#, fuzzy
+msgid "Cau 6"
+msgstr "Câu 1"
+
+#: module/Application/view/application/document/index.phtml:545
+msgid "cau_hoi_1_6"
+msgstr "Khái niệm \"dải phân cách\" được hiểu như thế nào là đúng?"
+
+#: module/Application/view/application/document/index.phtml:550
+msgid "dan_an_1_6_1"
+msgstr ""
+"Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng "
+"biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ."
+
+#: module/Application/view/application/document/index.phtml:551
+msgid "dan_an_1_6_2"
+msgstr ""
+"Là bộ phận của đường để xác định ranh giới của đất dành cho dduwowngf bộ teo "
+"chiều ngang của đường."
+
+#: module/Application/view/application/document/index.phtml:552
+msgid "dan_an_1_6_3"
+msgstr ""
+"Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không "
+"được phép."
+
+#: module/Application/view/application/document/index.phtml:556
+#: module/Application/view/application/document/index.phtml:740
+#: module/Application/view/application/document/index.phtml:879
+#: module/Application/view/application/document/index.phtml:1018
+#, fuzzy
+msgid "Cau 7"
+msgstr "Câu 1"
+
+#: module/Application/view/application/document/index.phtml:558
+msgid "cau_hoi_1_7"
+msgstr "Dải phân cách trên đường bộ có những loại nào?"
+
+#: module/Application/view/application/document/index.phtml:563
+msgid "dan_an_1_7_1"
+msgstr "Loại cố định."
+
+#: module/Application/view/application/document/index.phtml:564
+msgid "dan_an_1_7_2"
+msgstr "Loại di động."
+
+#: module/Application/view/application/document/index.phtml:568
+#: module/Application/view/application/document/index.phtml:581
+#: module/Application/view/application/document/index.phtml:752
+#: module/Application/view/application/document/index.phtml:764
+#: module/Application/view/application/document/index.phtml:891
+#: module/Application/view/application/document/index.phtml:904
+#: module/Application/view/application/document/index.phtml:1031
+#: module/Application/view/application/document/index.phtml:1044
+#: module/Application/view/application/document/index.phtml:1132
 msgid "Cau 8"
 msgstr "Câu 8"
 
-#: module/Application/view/application/document/index.phtml:532
+#: module/Application/view/application/document/index.phtml:570
+msgid "cau_hoi_1_8"
+msgstr ""
+"Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ "
+"phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi đường "
+"giao nhau, có thể được cắm biển báo hiệu đường ưu tiên."
+
+#: module/Application/view/application/document/index.phtml:575
+msgid "dan_an_1_8_1"
+msgstr ""
+"Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ "
+"phải nhường đường cho các phương tiện đến từ hướng khác khi qua nơi đường "
+"giao nhau, có thể được cắm biển báo hiệu đường ưu tiên."
+
+#: module/Application/view/application/document/index.phtml:576
+msgid "dan_an_1_8_2"
+msgstr ""
+"Đường ưu tiên là đường mà trên đó phương tiện tham gia giao thông đường bộ "
+"được các phương tiện đến từ hướng khác nhường đường khi qua nơi đường giao "
+"nhau, được cắm biển báo hiệu đường ưu tiên."
+
+#: module/Application/view/application/document/index.phtml:577
+msgid "dan_an_1_8_3"
+msgstr ""
+"Đường ưu tiên là đường chỉ dành cho một số loại phương tiện tham gia giao "
+"thông, được cắm biển báo hiệu đường ưu tiên."
+
+#: module/Application/view/application/document/index.phtml:583
+#: module/Application/view/application/document/index.phtml:766
+#: module/Application/view/application/document/index.phtml:906
+#: module/Application/view/application/document/index.phtml:1046
+#: module/Application/view/application/document/index.phtml:1134
 msgid "Thu tu cac xe di nhu the nao la dung quy tac giao thong&#63;"
 msgstr "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông &#63;"
 
-#: module/Application/view/application/document/index.phtml:542
+#: module/Application/view/application/document/index.phtml:593
+#: module/Application/view/application/document/index.phtml:776
+#: module/Application/view/application/document/index.phtml:916
+#: module/Application/view/application/document/index.phtml:1056
+#: module/Application/view/application/document/index.phtml:1144
 msgid "Xe tai, xe lam, xe con, mo to."
 msgstr "Xe tải, xe lam, xe con, moto"
 
-#: module/Application/view/application/document/index.phtml:543
+#: module/Application/view/application/document/index.phtml:594
+#: module/Application/view/application/document/index.phtml:777
+#: module/Application/view/application/document/index.phtml:917
+#: module/Application/view/application/document/index.phtml:1057
+#: module/Application/view/application/document/index.phtml:1145
 msgid "Xe tai, mo to, xe lam, xe con."
 msgstr "Xe tải, moto, xe lam, xe con."
 
-#: module/Application/view/application/document/index.phtml:544
+#: module/Application/view/application/document/index.phtml:595
+#: module/Application/view/application/document/index.phtml:778
+#: module/Application/view/application/document/index.phtml:918
+#: module/Application/view/application/document/index.phtml:1058
+#: module/Application/view/application/document/index.phtml:1146
 msgid "Xe lam, xe tai, xe con, mo to."
 msgstr "Xe lam, xe tải, xe con, moto."
 
-#: module/Application/view/application/document/index.phtml:545
+#: module/Application/view/application/document/index.phtml:596
+#: module/Application/view/application/document/index.phtml:779
+#: module/Application/view/application/document/index.phtml:919
+#: module/Application/view/application/document/index.phtml:1059
+#: module/Application/view/application/document/index.phtml:1147
 msgid "Mo to, xe lam, xe tai, xe con."
 msgstr "Moto, xe lam, xe tải, xe con."
 
-#: module/Application/view/application/document/index.phtml:555
-#: module/Application/view/application/document/index.phtml:578
+#: module/Application/view/application/document/index.phtml:606
+#: module/Application/view/application/document/index.phtml:629
 msgid "Dap an"
 msgstr "Đáp án"
 
-#: module/Application/view/application/document/index.phtml:560
+#: module/Application/view/application/document/index.phtml:611
 msgid "Cau"
 msgstr "Câu"
 
-#: module/Application/view/application/document/index.phtml:608
-#: module/Application/view/application/document/index.phtml:625
-#: module/Application/view/application/document/index.phtml:642
 #: module/Application/view/application/document/index.phtml:659
-#: module/Application/view/application/document/index.phtml:676
-#: module/Application/view/application/document/index.phtml:693
-#: module/Application/view/application/document/index.phtml:710
-#: module/Application/view/application/document/index.phtml:727
-#: module/Application/view/application/document/index.phtml:744
+#: module/Application/view/application/document/index.phtml:796
+#: module/Application/view/application/document/index.phtml:936
+#: module/Application/view/application/document/index.phtml:1076
+#: module/Application/view/application/document/index.phtml:1164
+#: module/Application/view/application/document/index.phtml:1181
+#: module/Application/view/application/document/index.phtml:1198
+#: module/Application/view/application/document/index.phtml:1215
+#: module/Application/view/application/document/index.phtml:1232
 msgid "Bai so&nbsp;"
 msgstr "Bài số &nbsp;"
+
+#: module/Application/view/application/document/index.phtml:667
+msgid "cau_hoi_2_1"
+msgstr "\"Phương tiện giao thông đường bộ\" gồm những loại nào?"
+
+#: module/Application/view/application/document/index.phtml:672
+msgid "dap_an_2_1_1"
+msgstr ""
+"Phương tiện giao thông cơ giới đường bộ, phương tiện giao thông thô sơ đường "
+"bộ."
+
+#: module/Application/view/application/document/index.phtml:673
+msgid "dap_an_2_1_2"
+msgstr ""
+"Phương tiện giao thông thô sơ đường bộ; phương tiện giao thông cơ giới đường "
+"bộ và xe máy chuyên dùng."
+
+#: module/Application/view/application/document/index.phtml:674
+msgid "dap_an_2_1_3"
+msgstr "Cả 2 ý trên."
+
+#: module/Application/view/application/document/index.phtml:680
+msgid "cau_hoi_2_2"
+msgstr ""
+"Khái niệm \"Phương tiện giao thông cơ giới đường bộ\" được hiểu như thế nào "
+"là đúng?"
+
+#: module/Application/view/application/document/index.phtml:685
+msgid "dap_an_2_2_1"
+msgstr ""
+"Gồm xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ "
+"giới dành cho người khuyết tật và xe máy chuyên dùng."
+
+#: module/Application/view/application/document/index.phtml:686
+msgid "dap_an_2_2_2"
+msgstr ""
+"Gồm xe ô tô; máy kéo; rơ moóc hoặc xe sơ mi rơ moóc được kéo bởi xe ô tô, "
+"máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy (kể cả xe máy điện) "
+"và các loại xe tương tự."
+
+#: module/Application/view/application/document/index.phtml:692
+msgid "cau_hoi_2_3"
+msgstr "\"Phương tiện tham gia giao thông đường bộ\" gồm những loại nào?"
+
+#: module/Application/view/application/document/index.phtml:697
+msgid "dap_an_2_3_1"
+msgstr "Phương tiện giao thông cơ giới đường bộ."
+
+#: module/Application/view/application/document/index.phtml:698
+msgid "dap_an_2_3_2"
+msgstr "Phương tiện giao thông thô sơ đường bộ và xe máy chuyên dùng."
+
+#: module/Application/view/application/document/index.phtml:704
+msgid "cau_hoi_2_4"
+msgstr "\"Người tham gia giao thông đường bộ\" gồm những đối tượng nào?"
+
+#: module/Application/view/application/document/index.phtml:709
+msgid "dap_an_2_4_1"
+msgstr ""
+"Người điều khiển, người sử dụng phương tiện tham gia giao thông đường bộ."
+
+#: module/Application/view/application/document/index.phtml:710
+msgid "dap_an_2_4_2"
+msgstr "Người điều khiển, dẫn dắt súc vật; người đi bộ trên đường bộ."
+
+#: module/Application/view/application/document/index.phtml:716
+msgid "cau_hoi_2_5"
+msgstr ""
+"Khái niệm \"Người điều khiển giao thông\" được hiểu như thế nào là đúng?"
+
+#: module/Application/view/application/document/index.phtml:721
+msgid "dap_an_2_5_1"
+msgstr "Là người điều khiển phương tiện tham gia giao thông."
+
+#: module/Application/view/application/document/index.phtml:722
+msgid "dap_an_2_5_2"
+msgstr ""
+"Là người được giao nhiệm vụ hướng dẫn thông tại nơi thi công, nơi ùn tắc "
+"giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt."
+
+#: module/Application/view/application/document/index.phtml:723
+msgid "dap_an_2_5_3"
+msgstr "Là cảnh sát giao thông."
+
+#: module/Application/view/application/document/index.phtml:724
+msgid "dap_an_2_5_4"
+msgstr "Tất cả các ý nêu trên."
+
+#: module/Application/view/application/document/index.phtml:730
+msgid "cau_hoi_2_6"
+msgstr "Các hành vi nào ghi ở dưới đây bị nghiêm cấm?"
+
+#: module/Application/view/application/document/index.phtml:735
+msgid "dap_an_2_6_1"
+msgstr ""
+"Phá hoại đường, cầu, hầm, bến phà đường bộ, phá hoại đèn tin hiệu, cọc tiêu, "
+"biển báo hiệu, gương cầu, giải phân cách."
+
+#: module/Application/view/application/document/index.phtml:736
+msgid "dap_an_2_6_2"
+msgstr ""
+"Phá hoại hệ thống thoát nước và các công trình, thiết bị khác thuộc kết cấu "
+"hạ tầng giao thông đường bộ."
+
+#: module/Application/view/application/document/index.phtml:742
+msgid "cau_hoi_2_7"
+msgstr "Những hành vi nào ghi ở dưới đây bị nghiêm cấm?"
+
+#: module/Application/view/application/document/index.phtml:747
+msgid "dap_an_2_7_1"
+msgstr "Đua xe, cổ vũ đua xe, tổ chức đua xe trái phép."
+
+#: module/Application/view/application/document/index.phtml:748
+msgid "dap_an_2_7_2"
+msgstr "Lạng lách, đánh võng."
+
+#: module/Application/view/application/document/index.phtml:754
+msgid "cau_hoi_2_8"
+msgstr ""
+"Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma "
+"túy có bị nghiêm cấm hay không?"
+
+#: module/Application/view/application/document/index.phtml:759
+msgid "dap_an_2_8_1"
+msgstr "Bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:760
+msgid "dap_an_2_8_2"
+msgstr "Không bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:804
+msgid "cau_hoi_3_1"
+msgstr ""
+"Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong "
+"máu có nồng độ cồn vượt quá bao nhiêu thì bị cấm?"
+
+#: module/Application/view/application/document/index.phtml:809
+msgid "dap_an_3_1_1"
+msgstr ""
+"Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong "
+"máu có nồng độ cồn vượt quá 50 miligam/ 100 mililit máu hoặc 0,25 "
+"miligam/1lit khí thở."
+
+#: module/Application/view/application/document/index.phtml:810
+msgid "dap_an_3_1_2"
+msgstr ""
+"Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong "
+"máu hoặc hơi thở có nồng độ cồn."
+
+#: module/Application/view/application/document/index.phtml:811
+msgid "dap_an_3_1_3"
+msgstr ""
+"Người điều khiển xe ô tô, máy kéo, xe máy chuyên dùng trên đường mà trong "
+"máu có nồng độ cồn vượt quá 80 miligam/ 100 mililit máu hoặc 40 miligam/ 1 "
+"lit khí thở."
+
+#: module/Application/view/application/document/index.phtml:817
+msgid "cau_hoi_3_2"
+msgstr ""
+"Người điều khiển xe mô tô, xe gắn máy trên đường mà trong máu có nồng độ cồn "
+"vượt quá bao nhiêu thì bị cấm?"
+
+#: module/Application/view/application/document/index.phtml:822
+msgid "dap_an_3_2_1"
+msgstr "Nồng độ cồn vượt quá 50 miligam/ 100 mililit máu."
+
+#: module/Application/view/application/document/index.phtml:823
+msgid "dap_an_3_2_2"
+msgstr "Nồng độ cồn vượt quá 40 miligam/ 100 mililit máu."
+
+#: module/Application/view/application/document/index.phtml:824
+msgid "dap_an_3_2_3"
+msgstr "Nồng độ cồn vượt quá 30 miligam/ 100 mililit máu."
+
+#: module/Application/view/application/document/index.phtml:830
+msgid "cau_hoi_3_3"
+msgstr ""
+"Người điều khiển xe mô tô, xe gắn máy trên đường mà trong khí thở có nồng độ "
+"cồn vượt quá bao nhiêu thì bị cấm?"
+
+#: module/Application/view/application/document/index.phtml:835
+msgid "dap_an_3_3_1"
+msgstr "Nồng độ cồn vượt quá 0,25 miligam/ 1 lit khí thở. "
+
+#: module/Application/view/application/document/index.phtml:836
+msgid "dap_an_3_3_2"
+msgstr "Nồng độ cồn vượt quá 0,20 miligam/ 1 lit khí thở. "
+
+#: module/Application/view/application/document/index.phtml:837
+msgid "dap_an_3_3_3"
+msgstr "Nồng độ cồn vượt quá 0,15 miligam/ 1 lit khí thở. "
+
+#: module/Application/view/application/document/index.phtml:843
+msgid "cau_hoi_3_4"
+msgstr ""
+"Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để "
+"điều khiển xe tham gia giao thông có bị nghiêm cấm hay không?"
+
+#: module/Application/view/application/document/index.phtml:848
+msgid "dap_an_3_4_1"
+msgstr "Không bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:849
+msgid "dap_an_3_4_2"
+msgstr "Bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:850
+msgid "dap_an_3_4_3"
+msgstr "Nghiêm cấm tùy từng trường hợp."
+
+#: module/Application/view/application/document/index.phtml:856
+msgid "cau_hoi_3_5"
+msgstr ""
+"Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu "
+"có bị nghiêm cấm hay không?"
+
+#: module/Application/view/application/document/index.phtml:861
+msgid "dap_an_3_5_1"
+msgstr "Bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:862
+msgid "dap_an_3_5_2"
+msgstr "Bị nghiêm cấm tùy từng trường hợp."
+
+#: module/Application/view/application/document/index.phtml:863
+msgid "dap_an_3_5_3"
+msgstr "Không bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:869
+msgid "cau_hoi_3_6"
+msgstr "Những hành vi nào sau đây bị cấm?"
+
+#: module/Application/view/application/document/index.phtml:874
+msgid "dap_an_3_6_1"
+msgstr "Bấm còi, rú ga liên tục, bấm còi trong thời gian từ 22 giờ đến 5 giờ."
+
+#: module/Application/view/application/document/index.phtml:875
+msgid "dap_an_3_6_2"
+msgstr ""
+"Bấm còi hơi, sử dụng đèn chiếu xa trong khu đô thị và khu dân cư, trừ các xe "
+"ưu tiên khi đang làm nhiệm vụ."
+
+#: module/Application/view/application/document/index.phtml:881
+msgid "cau_hoi_3_7"
+msgstr "Các hành vi nào sau đây bị nghiêm cấm?"
+
+#: module/Application/view/application/document/index.phtml:886
+msgid "dap_an_3_7_1"
+msgstr ""
+"Lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng "
+"loại xe cơ giớ."
+
+#: module/Application/view/application/document/index.phtml:887
+msgid "dap_an_3_7_2"
+msgstr ""
+"Sử dụng thiết bị âm thanh gây mất trật tự an toàn giao thồn, trật tự công "
+"cộng."
+
+#: module/Application/view/application/document/index.phtml:893
+msgid "cau_hoi_3_8"
+msgstr ""
+"Hành vi bỏ trốn sau khi gây tai nạn để trốn tránh trách nhiệm hoặc khi có "
+"điều kiện mà cố ý không cứu giúp người bị tai nạn giao thông có bị nghiêm "
+"cấm hay không?"
+
+#: module/Application/view/application/document/index.phtml:898
+msgid "dap_an_3_8_1"
+msgstr "Không bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:899
+msgid "dap_an_3_8_2"
+msgstr "Nghiêm cấm tùy từng trường hợp cụ thể."
+
+#: module/Application/view/application/document/index.phtml:900
+msgid "dap_an_3_8_3"
+msgstr "Bị nghiêm cấm."
+
+#: module/Application/view/application/document/index.phtml:944
+msgid "cau_hoi_4_1"
+msgstr ""
+"Khi sảy ra tai nạn giao thông, những hành vi nào ghi dưới đây bị nghiêm cấm?"
+
+#: module/Application/view/application/document/index.phtml:949
+msgid "dap_an_4_1_1"
+msgstr ""
+"Xâm phạm tính mạng, sức khỏe, tài sản của người bị tai nạn giao thông; xâm "
+"phạm tính mạng, sức khỏe, tài sản của người gây tai nạn giao thông."
+
+#: module/Application/view/application/document/index.phtml:950
+msgid "dap_an_4_1_2"
+msgstr ""
+"Lợi dụng việc sảy ra tai nạn giao thông để hành hung, đe dọa, xúi giục, gây "
+"sức ép, làm mất trật tự, cản trở việc sử lý tai nạn giao thông."
+
+#: module/Application/view/application/document/index.phtml:956
+msgid "cau_hoi_4_2"
+msgstr ""
+"Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được "
+"quy định như thế nào trong luật giao thông đường bộ?"
+
+#: module/Application/view/application/document/index.phtml:961
+msgid "dap_an_4_2_1"
+msgstr "Nghiêm cấm sản xuất, được phép sử dụng."
+
+#: module/Application/view/application/document/index.phtml:962
+msgid "dap_an_4_2_2"
+msgstr "Nghiêm cấm mua bán, cho phép sử dụng."
+
+#: module/Application/view/application/document/index.phtml:963
+msgid "dap_an_4_2_3"
+msgstr "Nghiêm cấm sản xuất, mua bán, sử dụng trái phép."
+
+#: module/Application/view/application/document/index.phtml:969
+msgid "cau_hoi_4_3"
+msgstr ""
+"Người lái xe không được vượt xe khác khi gặp trường hợp nào ghi ở dưới đây?"
+
+#: module/Application/view/application/document/index.phtml:974
+msgid "dap_an_4_3_1"
+msgstr ""
+"Trên cầu hẹp có một làn xe; nơi đường giao nhau, đường bộ giao nhau cùng mức "
+"với đường sắt."
+
+#: module/Application/view/application/document/index.phtml:975
+msgid "dap_an_4_3_2"
+msgstr ""
+"Điều kiện thời tiết hoặc đường không đảm bảo an toàn cho việc vượt; xe ưu "
+"tiên đang phát tín hiệu ưu tiên làm nhiệm vụ."
+
+#: module/Application/view/application/document/index.phtml:981
+msgid "cau_hoi_4_4"
+msgstr ""
+"Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng "
+"các xe để kéo, đẩy các xe khác, vật khác khi tham gia giao thông không?"
+
+#: module/Application/view/application/document/index.phtml:986
+msgid "dap_an_4_4_1"
+msgstr "Được phép."
+
+#: module/Application/view/application/document/index.phtml:987
+msgid "dap_an_4_4_2"
+msgstr "Tùy trường hợp."
+
+#: module/Application/view/application/document/index.phtml:988
+msgid "dap_an_4_4_3"
+msgstr "Không được phép."
+
+#: module/Application/view/application/document/index.phtml:994
+msgid "cau_hoi_4_5"
+msgstr ""
+"Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao "
+"thông được phép thực hiện hành vi nào dưới đây?"
+
+#: module/Application/view/application/document/index.phtml:999
+msgid "dap_an_4_5_1"
+msgstr "Đội mũ bảo hiểm và cài quai đúng quy cách."
+
+#: module/Application/view/application/document/index.phtml:1000
+msgid "dap_an_4_5_2"
+msgstr "Sử dụng ô; bám, kéo hoặc đẩy các phương tiện khác."
+
+#: module/Application/view/application/document/index.phtml:1001
+msgid "dap_an_4_5_3"
+msgstr ""
+"Đứng trên yên, giá đèo hàng hoặc ngồi trên tay lái; các hành vi khác gây mất "
+"trật tự an toàn giao thông."
+
+#: module/Application/view/application/document/index.phtml:1007
+msgid "cau_hoi_4_6"
+msgstr ""
+"Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao "
+"thông có được mang, vác vật cồng kềnh hay không?"
+
+#: module/Application/view/application/document/index.phtml:1012
+msgid "dap_an_4_6_1"
+msgstr "Được mang, vác tùy trường hợp cụ thể."
+
+#: module/Application/view/application/document/index.phtml:1013
+msgid "dap_an_4_6_2"
+msgstr "Không được mang, vác."
+
+#: module/Application/view/application/document/index.phtml:1014
+msgid "dap_an_4_6_3"
+msgstr "Được mang, vác nhưng phải đảm bảo an toàn."
+
+#: module/Application/view/application/document/index.phtml:1020
+msgid "cau_hoi_4_7"
+msgstr ""
+"Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành "
+"vi nào không được phép?"
+
+#: module/Application/view/application/document/index.phtml:1025
+msgid "dap_an_4_7_1"
+msgstr ""
+"Buông cả hai tay hoặc đi xe máy bằng một bánh đối với xe hai bánh, bằng hai "
+"bánh đối với xe ba bánh; chạy quá tốc độ quy định."
+
+#: module/Application/view/application/document/index.phtml:1026
+msgid "dap_an_4_7_2"
+msgstr ""
+"Sử dụng xe để kéo, đẩy xe khác, vật khác và chở vật cồng kềnh; để chân chống "
+"quẹt xuống đất và các hành vi khác gây mất trật tự an toàn giao thông."
+
+#: module/Application/view/application/document/index.phtml:1027
+msgid "dap_an_4_7_3"
+msgstr ""
+"Chạy đúng với tốt độ quy định và chấp hành đúng quy tắc giao thông đường bộ."
+
+#: module/Application/view/application/document/index.phtml:1033
+msgid "cau_hoi_4_8"
+msgstr "Bảo đảm an toàn, trật tự giao thông đường bộ là trách nhiệm của ai?"
+
+#: module/Application/view/application/document/index.phtml:1038
+msgid "dap_an_4_8_1"
+msgstr "Là trách nhiệm của ngành Giao thông vận tải và ngành Công an."
+
+#: module/Application/view/application/document/index.phtml:1039
+msgid "dap_an_4_8_2"
+msgstr "Là trách nhiệm của cơ quan, tổ chức, cá nhân."
+
+#: module/Application/view/application/document/index.phtml:1040
+msgid "dap_an_4_8_3"
+msgstr "Là trách nhiệm của cảnh sát giao thông."
+
+#: module/Application/view/application/document/index.phtml:1084
+msgid "cau_hoi_5_1"
+msgstr ""
+"Tại nơi đường giao nhau, khi đèn tín hiệu điều khiển giao thông có tín hiêu "
+"vàng, người điều khiển phương tiện giao thông phải thực hiện như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1089
+msgid "dap_an_5_1_1"
+msgstr ""
+"Phải cho xe dừng lại trước vạch dường, trừ trường hợp đã đi quá vạch dừng "
+"thì được đi tiếp; trong trường hợp tín hiệu vàng nhấp nháy là được đi nhưng "
+"phải giảm tốc độ, chú ý quan sát, nhừng đường cho người đi bộ qua đường."
+
+#: module/Application/view/application/document/index.phtml:1090
+msgid "dap_an_5_1_2"
+msgstr ""
+"Phải cho xe nhanh chóng vượt qua vạch dừng để đi qua đường giao nhau và chú "
+"ý đảm bảo an toàn; khi đèn tín hiệu vàng nhấp nháy là được đi nhưng phải "
+"giảm tốc độ, chú ý quan sát người đi bộ để bảo đảm an toàn."
+
+#: module/Application/view/application/document/index.phtml:1091
+msgid "dap_an_5_1_3"
+msgstr "Cả 2 ý nêu trên."
+
+#: module/Application/view/application/document/index.phtml:1097
+msgid "cau_hoi_5_2"
+msgstr "Biển báo hiệu đường bộ gồm những nhóm nào, ý nghĩa của từng nhóm?"
+
+#: module/Application/view/application/document/index.phtml:1102
+msgid "dap_an_5_2_1"
+msgstr ""
+"Nhóm biển báo cấm để biểu thị các điều cấm; nhóm biển báo nguy hiểm để cảnh "
+"báo các tình huống nguy hiểm có thể sảy ra; nhóm biển báo lệnh để báo hiệu "
+"các hiệu lệnh phải thi hành."
+
+#: module/Application/view/application/document/index.phtml:1103
+msgid "dap_an_5_2_2"
+msgstr ""
+"Nhóm biển chỉ dẫn để chỉ dẫn hướng đi hoặc các điều cần biết; nhóm biển báo "
+"phụ để thuyết minh bổ sung các loại biển báo cấm, biển báo nguy hiểm, biển "
+"báo hiệu lệnh và biển báo chỉ dẫn."
+
+#: module/Application/view/application/document/index.phtml:1109
+msgid "cau_hoi_5_3"
+msgstr ""
+"Tại nơi đường giao nhau, khi người điều khiển giao thông ra hiệu lệnh bằng "
+"hai tay hoặc một tay giang ngang để báo hiệu thì người tham gia giao thông "
+"phải đi như thế nào là đúng quy tắc giao thông?"
+
+#: module/Application/view/application/document/index.phtml:1114
+msgid "dap_an_5_3_1"
+msgstr ""
+"Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao "
+"thông phải dừng lại; người tham gia giao thông ở phía bên phải và bên trái "
+"người điều khiển được đi."
+
+#: module/Application/view/application/document/index.phtml:1115
+msgid "dap_an_5_3_2"
+msgstr ""
+"Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao "
+"thông được đi thẳng; người tham gia giao thông ở phía bên phải và bên trái "
+"người điều khiển được đi thẳng và rẽ phải."
+
+#: module/Application/view/application/document/index.phtml:1121
+msgid "cau_hoi_5_4"
+msgstr ""
+"Tại nơi giao nhau khi người điều khiển giao thông ra hiệu lệnh tay giơ thẳng "
+"đứng để báo hiệu thì người tham gia giao thông phải đi như thế nào?"
+
+#: module/Application/view/application/document/index.phtml:1126
+msgid "dap_an_5_4_1"
+msgstr ""
+"Người tham gia giao thông ở phía trước và ở phía sau người điều khiển giao "
+"thông phải dừng lại; người tham gia giao thông ở phía bên phải và bên trái "
+"người điều khiển được đi."
+
+#: module/Application/view/application/document/index.phtml:1127
+msgid "dap_an_5_4_2"
+msgstr "Người tham gia giao thông ở các hướng phải dừng lại."
+
+#: module/Application/view/application/document/index.phtml:1128
+msgid "dap_an_5_4_3"
+msgstr "Tất cả các trường hợp trên."
 
 #: module/Application/view/application/fixture/index.phtml:26
 #: module/Application/view/application/result/index.phtml:26
@@ -879,29 +1528,29 @@ msgid "Tim kiem"
 msgstr "Tìm kiếm"
 
 #: module/Application/view/application/guiding/index.phtml:17
-#: module/Application/view/application/guiding/index.phtml:37
+#: module/Application/view/application/guiding/index.phtml:36
 msgid "Thoi gian thi"
 msgstr "Thời gian thi"
 
-#: module/Application/view/application/guiding/index.phtml:24
+#: module/Application/view/application/guiding/index.phtml:23
 msgid "Quy che thi"
 msgstr "Quy chế thi"
 
-#: module/Application/view/application/guiding/index.phtml:27
+#: module/Application/view/application/guiding/index.phtml:26
 msgid "Chu y can ghi nho"
 msgstr "Chú ý cần ghi nhớ"
 
-#: module/Application/view/application/guiding/index.phtml:45
+#: module/Application/view/application/guiding/index.phtml:44
 msgid "Co mat tai san thi de lam quen voi san thi thuc hanh."
 msgstr "Có mặt tại sân thi để làm quen với sân thi thực hành."
 
-#: module/Application/view/application/guiding/index.phtml:50
+#: module/Application/view/application/guiding/index.phtml:49
 msgid ""
 "Khai mac thi, truong ban giam khao doc toan van quyet dinh khai mac buoi thi."
 msgstr ""
 "Khai mạc thi, trưởng ban giám khảo đọc toàn văn quyết định khai mạc buổi thi."
 
-#: module/Application/view/application/guiding/index.phtml:55
+#: module/Application/view/application/guiding/index.phtml:54
 msgid ""
 "Goi ten hoc vien len ky ho so, hoc vien ky ho so xong xuong phia duoi cho "
 "xep vao lop thi."
@@ -909,68 +1558,68 @@ msgstr ""
 "Gọi tên học viên lên ký hồ sơ, học viên ký hồ sơ xong xuống phía dưới chờ "
 "xếp vào lớp thi."
 
-#: module/Application/view/application/guiding/index.phtml:60
+#: module/Application/view/application/guiding/index.phtml:59
 msgid "Thi xong."
 msgstr "Thi xong."
 
-#: module/Application/view/application/guiding/index.phtml:76
+#: module/Application/view/application/guiding/index.phtml:75
 msgid "So 1 Quoc Tu Giam"
 msgstr "Số 1 Quốc Tử Giám"
 
-#: module/Application/view/application/guiding/index.phtml:77
+#: module/Application/view/application/guiding/index.phtml:76
 msgid "Cach van mieu Quoc Tu Giam 500m"
 msgstr "Cách Văn Miếu Quốc Tử Giám 500m"
 
-#: module/Application/view/application/guiding/index.phtml:79
+#: module/Application/view/application/guiding/index.phtml:78
 msgid "101 To Vinh Dien"
 msgstr "101 Tô Vĩnh Diện"
 
-#: module/Application/view/application/guiding/index.phtml:80
+#: module/Application/view/application/guiding/index.phtml:79
 msgid "Nga Tu So di vao 1km"
 msgstr "Ngã Tư Sở đi vào 1km"
 
-#: module/Application/view/application/guiding/index.phtml:100
+#: module/Application/view/application/guiding/index.phtml:99
 msgid "Quy che thi cap giay phep lai xe hang A1"
 msgstr "Quy chế thi cấp giấy phép lái xe hạng A1"
 
-#: module/Application/view/application/guiding/index.phtml:104
+#: module/Application/view/application/guiding/index.phtml:103
 msgid "Phong thi va lop thi"
 msgstr "Phòng thi và lớp thi"
 
-#: module/Application/view/application/guiding/index.phtml:106
+#: module/Application/view/application/guiding/index.phtml:105
 msgid "quy_che_phong_thi_va_lop_thi"
 msgstr ""
 
-#: module/Application/view/application/guiding/index.phtml:108
+#: module/Application/view/application/guiding/index.phtml:107
 msgid "Bai thi gom co 2 phan: Ly thuyet va thuc hanh"
 msgstr "Bài thi gồm có 2 phần: Lý thuyết và thực hành"
 
-#: module/Application/view/application/guiding/index.phtml:111
+#: module/Application/view/application/guiding/index.phtml:110
 msgid "Thi ly thuyet"
 msgstr "Thi lý thuyết"
 
-#: module/Application/view/application/guiding/index.phtml:111
+#: module/Application/view/application/guiding/index.phtml:110
 msgid "quy_che_thi_ly_thuyet"
 msgstr ""
 
-#: module/Application/view/application/guiding/index.phtml:113
+#: module/Application/view/application/guiding/index.phtml:112
 msgid "Thi thuc hanh"
 msgstr "Thi thực hành"
 
-#: module/Application/view/application/guiding/index.phtml:113
+#: module/Application/view/application/guiding/index.phtml:112
 msgid "quy_che_thi_thuc_hanh"
 msgstr ""
 
-#: module/Application/view/application/guiding/index.phtml:117
+#: module/Application/view/application/guiding/index.phtml:116
 msgid "neu_dat_ca_2_phan_thi"
 msgstr ""
 
-#: module/Application/view/application/guiding/index.phtml:126
+#: module/Application/view/application/guiding/index.phtml:125
 msgid "Nhung dieu luu y can ghi nho khi di thi cap giay phep lai xe hang A1"
 msgstr ""
 "Những điều cần lưu ý, cần ghi nhớ khi đi thi cấp giấy phép lái xe hạng A1"
 
-#: module/Application/view/application/guiding/index.phtml:131
+#: module/Application/view/application/guiding/index.phtml:130
 msgid ""
 "Neu cac ban truot ly thuyet hoac thuc hanh, vi khong thi lai duoc ngay nen "
 "cac ban khong can mat cong xin xo, tranh bi cac doi tuong &quot;co&quot; mat "
@@ -980,7 +1629,7 @@ msgstr ""
 "các bạn không cần mất công xin xỏ, tránh bị các đối tượng &quot; cò &quot; "
 "mất tiền oan. "
 
-#: module/Application/view/application/guiding/index.phtml:132
+#: module/Application/view/application/guiding/index.phtml:131
 msgid ""
 "Khi thi truot ly thuyet hoac thuc hanh, banj lien lac voi chung toi de to "
 "chuc xep lich thi lai cho ban. (Chung toi se lien he cho ban neu khong thay "
@@ -989,7 +1638,7 @@ msgstr ""
 "Khi thi trượt lý thuyết hoặc thực hành, các bạn liên lạc với chúng tôi để tổ "
 "chức xếp lịch thi lại cho các bạn."
 
-#: module/Application/view/application/guiding/index.phtml:133
+#: module/Application/view/application/guiding/index.phtml:132
 msgid ""
 "Moi hoi dong thi se co ~250 thi sinh. Co hoc vien duoc thi truoc, co ban "
 "phai thi sau tuy theo su sap xep cua ban to chuc, khong theo thu tu hay quy "
@@ -1002,6 +1651,12 @@ msgstr ""
 #: module/Application/view/application/index/index.phtml:12
 msgid "blx_introdution"
 msgstr ""
+"<strong>BLX.VN</strong> chuyên về đào tạo và tổ chức thi lấy <em>giấy phép "
+"lái xe moto hạng A1</em>. Với phương châm <em>UY TÍN, TIỆN LỢI, NHIỆT TÌNH, "
+"CHẤT LƯỢNG</em> chúng tôi muốn rằng tất cả các thí sinh đến đăng ký học và "
+"thi sẽ có một nền tảng kiến thức <em>đầy đủ nhất</em> để tự hào cầm trên tay "
+"tấm bằng lái xe trong <em>thời gian ngắn</em> cùng <em>thủ tục gọn nhẹ dễ "
+"dàng nhất</em>."
 
 #: module/Application/view/application/index/index.phtml:18
 msgid "Moi nguoi noi gi ve BLX.VN"
@@ -1042,12 +1697,12 @@ msgid "Quy trinh thi cap bang lai xe hang A1"
 msgstr "Quy trình cấp bằng lái xe hạng A1"
 
 #: module/Application/view/application/index/index.phtml:132
-#: module/Application/view/layout/layout.phtml:93
-#: module/Application/view/layout/layout.phtml:95
+#: module/Application/view/layout/layout.phtml:97
 msgid "Nop ho so"
 msgstr "Nộp hồ sơ"
 
 #: module/Application/view/application/index/index.phtml:138
+#: module/Application/view/layout/layout.phtml:99
 msgid "Xem lich thi"
 msgstr "Xem lịch thi"
 
@@ -1116,17 +1771,17 @@ msgid "BLX.VN tren mang xa hoi"
 msgstr "BLX.VN trên mạng xã hội"
 
 #: module/Application/view/application/post/detail.phtml:42
-#: module/Application/view/application/post/index.phtml:70
+#: module/Application/view/application/post/index.phtml:75
 msgid "dang boi"
 msgstr "đăng bởi"
 
 #: module/Application/view/application/post/detail.phtml:43
-#: module/Application/view/application/post/index.phtml:72
+#: module/Application/view/application/post/index.phtml:77
 msgid "vao luc"
 msgstr "vào lúc"
 
 #: module/Application/view/application/post/detail.phtml:43
-#: module/Application/view/application/post/index.phtml:73
+#: module/Application/view/application/post/index.phtml:78
 msgid "ngay"
 msgstr "ngày"
 
@@ -1154,78 +1809,47 @@ msgstr "để nhận bằng."
 msgid "&quot;Khoe&quot; voi ban be"
 msgstr "&quot;Khoe&quot; với bạn bè"
 
-#: module/Application/view/error/404.phtml:1
-msgid "A 404 error occurred"
-msgstr ""
+#: module/Application/view/error/404.phtml:7
+msgid ":( 404"
+msgstr ":( 404"
 
 #: module/Application/view/error/404.phtml:10
-msgid "The requested controller was unable to dispatch the request."
-msgstr ""
-
-#: module/Application/view/error/404.phtml:13
 msgid ""
-"The requested controller could not be mapped to an existing controller class."
+"Duong dan ban truy cap khong ton tai hoac da bi xoa <br> Hay kiem tra lai "
+"duong dan hoac truy cap vao trang khac."
+msgstr ""
+"Đường dẫn bạn truy cập không tồn tại hoặc đã bị xoá <br> Hãy kiểm tra lại "
+"đường dẫn hoặc truy cập vào trang khác."
+
+#: module/Application/view/error/index.phtml:1
+msgid "An error occurred"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:16
-msgid "The requested controller was not dispatchable."
-msgstr ""
-
-#: module/Application/view/error/404.phtml:19
-msgid "The requested URL could not be matched by routing."
-msgstr ""
-
-#: module/Application/view/error/404.phtml:22
-msgid "We cannot determine at this time why a 404 was generated."
-msgstr ""
-
-#: module/Application/view/error/404.phtml:34
-msgid "Controller"
-msgstr ""
-
-#: module/Application/view/error/404.phtml:41
-#, php-format
-msgid "resolves to %s"
-msgstr ""
-
-#: module/Application/view/error/404.phtml:53
 #: module/Application/view/error/index.phtml:8
 msgid "Additional information"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:56
-#: module/Application/view/error/404.phtml:80
 #: module/Application/view/error/index.phtml:11
 #: module/Application/view/error/index.phtml:35
 msgid "File"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:60
-#: module/Application/view/error/404.phtml:84
 #: module/Application/view/error/index.phtml:15
 #: module/Application/view/error/index.phtml:39
 msgid "Message"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:64
-#: module/Application/view/error/404.phtml:88
 #: module/Application/view/error/index.phtml:19
 #: module/Application/view/error/index.phtml:43
 msgid "Stack trace"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:74
 #: module/Application/view/error/index.phtml:29
 msgid "Previous exceptions"
 msgstr ""
 
-#: module/Application/view/error/404.phtml:103
 #: module/Application/view/error/index.phtml:58
 msgid "No Exception available"
-msgstr ""
-
-#: module/Application/view/error/index.phtml:1
-msgid "An error occurred"
 msgstr ""
 
 #: module/Application/view/layout/administrator.phtml:4
@@ -1233,7 +1857,7 @@ msgid "BLX Admin control panel"
 msgstr "BLX Admin Control Panel"
 
 #: module/Application/view/layout/administrator.phtml:40
-#: module/Application/view/layout/layout.phtml:81
+#: module/Application/view/layout/layout.phtml:85
 msgid "BLX.VN"
 msgstr "BLX.VN"
 
@@ -1262,91 +1886,91 @@ msgid "Tim nhanh bang ten hoac so dien thoai"
 msgstr "Tìm nhanh bằng tên hoặc số điện thoại"
 
 #: module/Application/view/layout/layout.phtml:4
-#: module/Application/view/layout/layout.phtml:37
-#: module/Application/view/layout/layout.phtml:38
+#: module/Application/view/layout/layout.phtml:41
+#: module/Application/view/layout/layout.phtml:42
 msgid "BLX.VN - Thi bang lai xe may hang A1/A2 tai Ha Noi"
 msgstr "BLX.VN - Thi bằng lái xe máy hạng A1/A2 tại Hà Nội"
 
-#: module/Application/view/layout/layout.phtml:40
+#: module/Application/view/layout/layout.phtml:44
 msgid "Lich thi"
 msgstr "Lịch thi"
 
-#: module/Application/view/layout/layout.phtml:41
-#: module/Application/view/layout/layout.phtml:99
+#: module/Application/view/layout/layout.phtml:45
+#: module/Application/view/layout/layout.phtml:103
 msgid "Ket qua thi"
 msgstr "Kết quả thi"
 
-#: module/Application/view/layout/layout.phtml:42
+#: module/Application/view/layout/layout.phtml:46
 msgid "Tai lieu on thi"
 msgstr "Tài liệu ôn thi"
 
-#: module/Application/view/layout/layout.phtml:43
-#: module/Application/view/layout/layout.phtml:97
+#: module/Application/view/layout/layout.phtml:47
+#: module/Application/view/layout/layout.phtml:101
 msgid "Huong dan thi"
 msgstr "Hướng dẫn thi"
 
-#: module/Application/view/layout/layout.phtml:85
+#: module/Application/view/layout/layout.phtml:89
 msgid "Dieu khoan"
 msgstr "Điều khoản"
 
-#: module/Application/view/layout/layout.phtml:91
-#: module/Application/view/layout/layout.phtml:159
+#: module/Application/view/layout/layout.phtml:95
+#: module/Application/view/layout/layout.phtml:163
 msgid "Thi bang lai xe"
 msgstr "Thi bằng lái xe"
 
-#: module/Application/view/layout/layout.phtml:105
+#: module/Application/view/layout/layout.phtml:109
 msgid "Cong tac vien"
 msgstr "Cộng tác viên"
 
-#: module/Application/view/layout/layout.phtml:107
+#: module/Application/view/layout/layout.phtml:111
 msgid "Dang ky"
 msgstr "Đăng ký"
 
-#: module/Application/view/layout/layout.phtml:109
+#: module/Application/view/layout/layout.phtml:113
 msgid "Dieu le"
 msgstr "Điều lệ"
 
-#: module/Application/view/layout/layout.phtml:115
+#: module/Application/view/layout/layout.phtml:119
 msgid "Tro giup"
 msgstr "Trợ giúp"
 
-#: module/Application/view/layout/layout.phtml:117
+#: module/Application/view/layout/layout.phtml:121
 msgid "Cau hoi thuong gap"
 msgstr "Câu hỏi thường gặp"
 
-#: module/Application/view/layout/layout.phtml:124
+#: module/Application/view/layout/layout.phtml:128
 msgid "Thu vi"
 msgstr "Thú vị"
 
-#: module/Application/view/layout/layout.phtml:132
+#: module/Application/view/layout/layout.phtml:136
 msgid "Noi dung thu vi"
 msgstr "Nội dung thú vị"
 
-#: module/Application/view/layout/layout.phtml:146
+#: module/Application/view/layout/layout.phtml:150
 msgid "copyright"
 msgstr ""
 
-#: module/Application/view/layout/layout.phtml:151
+#: module/Application/view/layout/layout.phtml:155
 msgid "Thiet ke va xay dung boi Luu Hoang Nam"
-msgstr "Thiết kế và xây dựng bởi Lưu Hòng Nam"
+msgstr "Thiết kế và xây dựng bởi Lưu Hoàng Nam"
 
-#: module/Application/view/layout/layout.phtml:158
+#: module/Application/view/layout/layout.phtml:162
 msgid "Bang lai xe"
 msgstr "Bằng lái xe"
 
-#: module/Application/view/layout/layout.phtml:160
+#: module/Application/view/layout/layout.phtml:164
 msgid "Bang lai xe o Ha Noi"
 msgstr "Bằng lái xe ở Hà Nội"
 
-#: module/Application/view/layout/layout.phtml:162
+#: module/Application/view/layout/layout.phtml:166
 msgid "Bang lai xe A1"
 msgstr "Bằng lái xe A1"
 
-#: module/Application/view/layout/layout.phtml:163
+#: module/Application/view/layout/layout.phtml:167
 msgid "Thi bang lai xe may"
 msgstr "Thi bằng lái xe máy"
 
-#: module/Application/view/layout/layout.phtml:165
+#: module/Application/view/layout/layout.phtml:169
 msgid "Thi bang lai xe moto"
 msgstr "Thi bằng lái xe moto"
 
@@ -1363,6 +1987,73 @@ msgstr "Trước"
 #: module/Application/view/partial/paginator.phtml:26
 msgid "Sau"
 msgstr "Sau"
+
+#~ msgid "Khai niem &quot;duong bo&quot; duoc hieu nhu the nao la dung&#63;"
+#~ msgstr "Khái niệm &quot;đường bộ &quot; được hiểu như thế nao là đúng &#63;"
+
+#~ msgid "Duong, cau duong bo, ham duong bo"
+#~ msgstr "Đường, cầu đường bộ, hầm đường bộ"
+
+#~ msgid "Duong, cau duong bo, ham duong bo, ben pha duong bo"
+#~ msgstr "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ"
+
+#~ msgid ""
+#~ "Duong, cau duong bo, ham duong bo, ben pha duong bo va cac cong trinh phu "
+#~ "tro khac"
+#~ msgstr ""
+#~ "Đường, cầu đường bộ, hầm đường bộ, bến phà đường bộ và các công trình phụ "
+#~ "trợ khác"
+
+#~ msgid ""
+#~ "Co quan nao quy dinh cac doan duong cam di, duong di mot chieu, noi cam "
+#~ "dung, cam do, cam quay dau xe, lap dat bao hieu duong bo thuoc dia phuong "
+#~ "quan ly&#63;"
+#~ msgstr ""
+#~ "Cơ quan nào quy định các đoạn đường cấm đi, đường đi một chiều, nơi cấm "
+#~ "dừng, cấm đôc, cấm quay đầu xe, lắp đặt biển báo hiệu đường bộ thuộc địa "
+#~ "phận quản lý &#63;"
+
+#~ msgid "Co quan quan ly giao thong van tai."
+#~ msgstr "Cơ quan quản lý giao thông vận tải."
+
+#~ msgid "Uy ban nhan dan cap tinh."
+#~ msgstr "Ủy ban nhân dân cấp tỉnh."
+
+#~ msgid "Co quan canh sat giao thong duong bo."
+#~ msgstr "Cơ quan cảnh sát giao thông đường bộ."
+
+#~ msgid "Thanh tra giao thong duong bo."
+#~ msgstr "Thanh tra giao thông đường bộ."
+
+#~ msgid ""
+#~ "Nguoi dieu khien phuong tien giao thong duong bo ma trong co the co chat "
+#~ "ma tuy co bi nghiem cam hay khong&#63;"
+#~ msgstr ""
+#~ "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất "
+#~ "ma túy có bị nghiêm cấm hay không &#63;"
+
+#~ msgid "Nghiem cam."
+#~ msgstr "Nghiêm cấm."
+
+#~ msgid "Khong bi nghiem cam."
+#~ msgstr "Không bị nghiêm cấm."
+
+#~ msgid "Nghiem cam trong truong hop su dung trai phep."
+#~ msgstr "Nghiêm cấm trong trường hợp sử dụng trái phép."
+
+#~ msgid ""
+#~ "Dam bao trat tu, an toan giao thong duong bo la trach nhiem cua ai&#63;"
+#~ msgstr ""
+#~ "Đảm bảo trật tự, an toàn giao thông đường bộ là trách nhiệm của ai &#63;"
+
+#~ msgid "La trach nhiem cua nganh Giao thong van tai va nganh Cong an."
+#~ msgstr "Là trách nhiệm của ngành Giao thông vận tải và ngành Công an."
+
+#~ msgid "La trach nhiem cua co quan, to chuc, ca nhan."
+#~ msgstr "Là trách nhiệm của cơ quan, tổ chức, cá nhân."
+
+#~ msgid "La trach nhiem cua canh sat giao thong."
+#~ msgstr "Là trách nhiệm của cảnh sát giao thông."
 
 #~ msgid "Thong bao"
 #~ msgstr "Thông báo"

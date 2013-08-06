@@ -203,7 +203,8 @@ return array(
         'factories' => array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
             'db' => 'Blx\Db\DbServiceFactory',
-            'auth' => 'Blx\Authentication\AuthenticationServiceFactory'
+            'auth' => 'Blx\Authentication\AuthenticationServiceFactory',
+            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory'
         )
     ),
     'translator' => array(
@@ -223,7 +224,8 @@ return array(
             'Application\Controller\Result' => 'Application\Controller\ResultController',
             'Application\Controller\Document' => 'Application\Controller\DocumentController',
             'Application\Controller\Guiding' => 'Application\Controller\GuidingController',
-            'Application\Controller\Post' => 'Application\Controller\PostController'
+            'Application\Controller\Post' => 'Application\Controller\PostController',
+            'Application\Controller\Sitemap' => 'Application\Controller\SitemapController'
         )
     ),
     'view_manager' => array(
