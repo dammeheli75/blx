@@ -35,8 +35,8 @@ use Kendo\Data\DataSourceSchemaModelField;
 use Kendo\Data\DataSourceSchemaModelFieldValidation;
 use Zend\Json\Encoder;
 use Administrator\Model\Profile;
-use Administrator\Model\Collaborator;
 use Administrator\Model\Venue;
+use Administrator\Model\User;
 
 class ProfileController extends AbstractActionController
 {
@@ -517,9 +517,9 @@ class ProfileController extends AbstractActionController
             ->getServiceManager();
         $response = array();
         
-        $profileModel = new Profile($serviceManager);
-        $collaboratorModel = new Collaborator($serviceManager);
-        $venueModel = new Venue($serviceManager);
+        $profileModel = new Profile();
+        $userModel = new User();
+        $venueModel = new Venue();
         
         $profiles = $profileModel->cache->getProfiles();
         
@@ -529,8 +529,8 @@ class ProfileController extends AbstractActionController
         );
         
         foreach ($profiles as $profile) {
-            $collaborator = $collaboratorModel->cache->getCollaborator(array(
-                'collaborator_id' => $profile['collaborator_id']
+            $collaborator = $userModel->cache->getUser(array(
+                'user_id' => $profile['collaborator_id']
             ));
             $venue = $profile['test_venue_id'] ? $venueModel->cache->getVenue(array(
                 'venue_id' => $profile['test_venue_id']
@@ -544,7 +544,7 @@ class ProfileController extends AbstractActionController
                 'phoneNumber' => $profile['phone_number'],
                 'collaborator' => array(
                     'ID' => $profile['collaborator_id'],
-                    'title' => $collaborator['title']
+                    'title' => $collaborator['full_name']
                 ),
                 'testStatus' => $profile['test_status'],
                 'testDate' => $profile['test_date'],
@@ -592,9 +592,9 @@ class ProfileController extends AbstractActionController
             $licenseBack = $this->getRequest()->getPost('licenseBack');
             $note = $this->getRequest()->getPost('note');
             
-            $profileModel = new Profile($serviceManager);
-            $collaboratorModel = new Collaborator($serviceManager);
-            $venueModel = new Venue($serviceManager);
+            $profileModel = new Profile();
+            $userModel = new User();
+            $venueModel = new Venue();
             
             $birthday = strlen($birthday) > 0 ? \DateTime::createFromFormat('D M d Y H:i:s e+', $birthday) : NULL;
             $testDate = strlen($testDate) > 0 ? \DateTime::createFromFormat('D M d Y H:i:s e+', $testDate) : NULL;
@@ -614,7 +614,7 @@ class ProfileController extends AbstractActionController
                 'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
             
-            if ($collaboratorModel->isExists($collaborator)) {
+            if ($userModel->isExists($collaborator)) {
                 $profile['collaborator_id'] = $collaborator;
             }
             
@@ -653,7 +653,7 @@ class ProfileController extends AbstractActionController
             $postData = $this->getRequest()->getPost();
             
             $profileModel = new Profile($serviceManager);
-            $collaboratorModel = new Collaborator($serviceManager);
+            $userModel = new User();
             $venueModel = new Venue($serviceManager);
             
             $birthday = \DateTime::createFromFormat('D M d Y H:i:s e+', $postData['birthday']);
@@ -672,7 +672,7 @@ class ProfileController extends AbstractActionController
                 'note' => $postData['note']
             );
             
-            if ($collaboratorModel->cache->isExists($postData['collaborator']['ID'])) {
+            if ($userModel->cache->isExists($postData['collaborator']['ID'])) {
                 $profile['collaborator_id'] = $postData['collaborator']['ID'];
             }
             

@@ -11,23 +11,32 @@ class User extends AbstractTableGateway
 
     protected $primaryKey = 'user_id';
 
-    public function getUsers()
-    {
-        return $this->select()->toArray();
-    }
-
-    public function getUser($term = null)
+    public function getUsers($conditions = null)
     {
         $where = new Where();
         
-        if (isset($term['user_id'])) {
-            $where->equalTo('user_id', $term['user_id']);
+        if (isset($conditions['group_id'])) {
+            $where->equalTo('group_id', $conditions['group_id']);
         }
-        if (isset($term['email'])) {
-            $where->equalTo('email', $term['email']);
+        
+        return $this->select($where)->toArray();
+    }
+
+    public function getUser($conditions = null)
+    {
+        $where = new Where();
+        
+        if (isset($conditions['user_id'])) {
+            $where->equalTo('user_id', $conditions['user_id']);
         }
-        if (isset($term['phone_number'])) {
-            $where->equalTo('phone_number', $term['phone_number']);
+        if (isset($conditions['group_id'])) {
+            $where->equalTo('group_id', $conditions['group_id']);
+        }
+        if (isset($conditions['email'])) {
+            $where->equalTo('email', $conditions['email']);
+        }
+        if (isset($conditions['phone_number'])) {
+            $where->equalTo('phone_number', $conditions['phone_number']);
         }
         
         $result = $this->select($where)->toArray();

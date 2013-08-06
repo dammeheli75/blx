@@ -11,10 +11,11 @@ namespace Administrator\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Zend\Json\Encoder;
-use Administrator\Model\Collaborator;
+use Administrator\Model\User;
 
 class CollaboratorController extends AbstractActionController
 {
+    const COLLABORATOR_GROUP = 3;
 
     public function indexAction()
     {
@@ -29,9 +30,11 @@ class CollaboratorController extends AbstractActionController
             ->getApplication()
             ->getServiceManager();
         
-        $collaboratorModel = new Collaborator($serviceManager);
+        $userModel = new User();
         
-        $collaborators = $collaboratorModel->cache->getCollaborators();
+        $collaborators = $userModel->cache->getUsers(array(
+            'group_id' => self::COLLABORATOR_GROUP
+        ));
         
         $response = array(
             'success' => true,
@@ -40,8 +43,8 @@ class CollaboratorController extends AbstractActionController
         
         foreach ($collaborators as $collaborator) {
             $response['collaborators'][] = array(
-                'ID' => $collaborator['collaborator_id'],
-                'title' => $collaborator['title'],
+                'ID' => $collaborator['user_id'],
+                'title' => $collaborator['full_name'],
                 'address' => $collaborator['address'],
                 'joinDate' => $collaborator['time_created']
             );

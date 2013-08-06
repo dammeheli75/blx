@@ -11,8 +11,8 @@ namespace Application\Controller;
 use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Administrator\Model\Profile;
-use Administrator\Model\Collaborator;
 use Zend\Json\Encoder;
+use Administrator\Model\User;
 
 class ResultController extends AbstractActionController
 {
@@ -52,8 +52,8 @@ class ResultController extends AbstractActionController
         $translator = $serviceManager->get('translator');
         $response = array();
         
-        $profileModel = new Profile($serviceManager);
-        $collaboratorModel = new Collaborator($serviceManager);
+        $profileModel = new Profile();
+        $userModel = new User();
         $testStatus = array(
             'fail_ theoretical' => $translator->translate('Truot ly thuyet'),
             'pass' => $translator->translate('Dat'),
@@ -83,15 +83,15 @@ class ResultController extends AbstractActionController
         );
         
         foreach ($profiles as $profile) {
-            $collaborator = $collaboratorModel->cache->getCollaborator(array(
-                'collaborator_id' => $profile['collaborator_id']
+            $collaborator = $userModel->cache->getUser(array(
+                'user_id' => $profile['collaborator_id']
             ));
             
             $response['students'][] = array(
                 'fullName' => $profile['full_name'],
                 'birthday' => $profile['birthday'],
                 'address' => $profile['address'],
-                'collaborator' => $collaborator['title'],
+                'collaborator' => $collaborator['full_name'],
                 'result' => $profile['test_status'] ? $profile['test_status'] : NULL,
                 'licenseFront' => $profile['license_front'],
                 'licenseBack' => $profile['license_back']
