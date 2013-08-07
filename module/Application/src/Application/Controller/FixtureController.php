@@ -14,6 +14,7 @@ use Zend\Json\Encoder;
 use Administrator\Model\Profile;
 use Administrator\Model\Collaborator;
 use Administrator\Model\Venue;
+use Administrator\Model\User;
 
 class FixtureController extends AbstractActionController
 {
@@ -50,7 +51,7 @@ class FixtureController extends AbstractActionController
         $response = array();
         
         $profileModel = new Profile($serviceManager);
-        $collaboratorModel = new Collaborator($serviceManager);
+        $userModel = new User();
         $venueModel = new Venue($serviceManager);
         
         $filterOption = $this->getRequest()->getQuery('filter');
@@ -75,8 +76,8 @@ class FixtureController extends AbstractActionController
         );
         
         foreach ($profiles as $profile) {
-            $collaborator = $collaboratorModel->cache->getCollaborator(array(
-                'collaborator_id' => $profile['collaborator_id']
+            $collaborator = $userModel->cache->getUser(array(
+                'user_id' => $profile['collaborator_id']
             ));
             $venue = $venueModel->cache->getVenue(array(
                 'venue_id' => $profile['test_venue_id']
@@ -86,7 +87,7 @@ class FixtureController extends AbstractActionController
                 'fullName' => $profile['full_name'],
                 'birthday' => $profile['birthday'],
                 'address' => $profile['address'],
-                'collaborator' => $collaborator['title'],
+                'collaborator' => $collaborator['full_name'],
                 'testDate' => $profile['test_date'],
                 'venueAddress' => $venue['title']
             );

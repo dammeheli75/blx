@@ -618,13 +618,11 @@ class ProfileController extends AbstractActionController
                 $profile['collaborator_id'] = $collaborator;
             }
             
-            if (is_array($testVenue)) {
-                if ($venueModel->cache->isExists($testVenue['ID'])) {
-                    $profile['test_venue_id'] = $testVenue['ID'];
-                }
+            if ($venueModel->cache->isExists($testVenue)) {
+                $profile['test_venue_id'] = $testVenue;
             }
             
-            if ($profileModel->cache->createProfile($profile)) {
+            if ($profileModel->createProfile($profile)) {
                 $response['success'] = true;
                 $response['insert_id'] = $profileModel->getLastInsertValue();
             }

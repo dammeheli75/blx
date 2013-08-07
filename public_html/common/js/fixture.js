@@ -71,7 +71,8 @@ $(document).ready(function () {
         },
         pageable: {
             messages: {
-                display: "Hiển thị {0}-{1}/{2} hồ sơ"
+                display: "Hiển thị {0}-{1}/{2} hồ sơ",
+                empty: "Không có hồ sơ nào"
             }
         },
         height: function () {
@@ -79,7 +80,8 @@ $(document).ready(function () {
         },
         dataBound: function () {
             var self = this;
-            $('#fixture-search').find('input[name="q"]').on('change keydown paste input', function () {
+            var fixtureSearch = $('#fixture-search');
+            fixtureSearch.find('input[name="q"]').on('change keydown paste input', function () {
                 // Filter
                 var q = $(this).val();
                 if (q != lastQuery && (q[q.length - 1] == " " || q == "")) {
@@ -93,7 +95,7 @@ $(document).ready(function () {
                 }
             });
 
-            $('#fixture-search').submit(function () {
+            fixtureSearch.submit(function () {
                 // Filter
                 var q = $(this).find('input[name="q"]').val();
 
@@ -113,7 +115,8 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-        $("#grid").height($(window).height() - 130);
-        $(".k-grid-content").height($("#grid").height() - 80);
+        var grid = $("#grid");
+        grid.height($(window).height() - 130);
+        $(".k-grid-content").height(grid.height() - 80);
     });
 });

@@ -112,6 +112,11 @@ class Profile extends AbstractTableGateway
             $where->equalTo('profile_id', $conditions['profile_id']);
         }
         
-        return $this->delete($where);
+        $result = $this->delete($where);
+        if ($result) {
+            $this->clearCache();
+        }
+        
+        return $result;
     }
 }
