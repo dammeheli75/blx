@@ -4,11 +4,224 @@
         "groupSignDescription": "Hình tròn, viền đỏ, nền trắng và hình vẽ màu đen",
         "signs": [
             {
-                "signTitle": "Tiêu đề của biển",
+                "signTitle": " Đường cấm ",
                 "signCode": "101",
-                "description": "Thử nghiệm mô tả chi tiết",
+                "description": " Đường cấm tất cả các loại phương tiện (cơ giới và thô sơ) đi lại cả hai hướng, trừ các xe được ưu tiên theo luật lệ nhà nước quy định.",
                 "imgSrc": "common/images/signs/101.gif"
+            },
+            {
+                "signTitle": "Cấm đi ngược chiều",
+                "signCode": "102",
+                "description": "Đường cấm tất cả các loại xe (cơ giới và thô sơ) đi vào theo chiều đặt biển, trừ các xe được ưu tiên theo luật lệ nhà nước quy định.",
+                "imgSrc": "common/images/signs/102.gif"
+            },
+            {
+                "signTitle": "Cấm ôtô",
+                "signCode": "103a",
+                "description": "Đường cấm tất cả các loại xe cơ giới kể cả môtô 3 bánh có thùng đi qua, trừ môtô hai bánh, xe gắn máy và các xe được ưu tiên theo luật lệ nhà nước quy định.",
+                "imgSrc": "common/images/signs/103a.gif"
+            },
+            {
+                "signTitle": "Cấm môtô",
+                "signCode": "104",
+                "description": "Đường cấm tất cả các loại môtô đi qua, trừ các xe môtô được ưu tiên theo luật lệ nhà nước quy định.",
+                "imgSrc": "common/images/signs/104.gif"
+            },
+            {
+                "signTitle": "Cấm ôtô tải",
+                "signCode": "106",
+                "description": " Để báo đường cấm tất cả các loại ôtô tải có trọng lượng lớn nhất cho phép (bao gồm trọng lượng xe và hàng) trên 3,5Tấn đi qua trừ các xe được ưu tiên theo luật lệ nhà nước quy định.",
+                "imgSrc": "common/images/signs/106.gif"
+            },
+            {
+                "signTitle": "Cấm xe gắn máy",
+                "signCode": "111a",
+                "description": "Để báo đường cấm xe gắn máy đi qua. Biển không có giá trị đối với xe đạp.",
+                "imgSrc": "common/images/signs/111a.gif"
+            },
+            {
+                "signTitle": "Cấm người đi bộ",
+                "signCode": "112",
+                "description": "Để báo đường cấm đi bộ qua lại",
+                "imgSrc": "common/images/signs/112.gif"
+            },
+            {
+                "signTitle": "Hạn chế chiều dài ôtô kéo moóc",
+                "signCode": "120",
+                "description": "Đường cấm các loại xe (cơ giới và thô sơ) kéo theo moóc kể cả ôtô sơ-mi rơ-moóc và các loại xe được ưu tiên kéo moóc theo luật lệ nhà nước quy định, có độ dài toàn bộ kể cả xe, moóc và hàng lớn hơn trị số ghi trên biển đi qua.",
+                "imgSrc": "common/images/signs/120.gif"
+            },
+            {
+                "signTitle": "Dừng lại",
+                "signCode": "122",
+                "description": "Biển có hiệu lực buộc các xe cơ giới và thô sơ kể cả các xe được ưu tiên theo luật lệ Nhà nước quy định dừng lại trước biển hoặc trước vạch ngang đường và chỉ được phép đi khi thấy các tín hiệu (do người điều khiển giao thông hoặc đèn, cờ) cho phép đi.",
+                "imgSrc": "common/images/signs/122.gif"
+            },
+            {
+                "signTitle": "Cấm rẽ trái",
+                "signCode": "123a",
+                "description": "Cấm rẽ trái (theo hướng mũi tên chỉ) ở những chỗ đường giao nhau. Biển có hiệu lực cấm các loại xe (cơ giới và thô sơ) trừ các xe được ưu tiên theo luật lệ Nhà nước quy định được rẽ trái.",
+                "imgSrc": "common/images/signs/123a.gif"
+            },
+            {
+                "signTitle": "Cấm quay xe",
+                "signCode": "124a",
+                "description": " Cấm các loại xe (cơ giới và thô sơ) quay đầu theo kiểu chữ U, trừ các xe được ưu tiên theo luật lệ Nhà nước quy định.",
+                "imgSrc": "common/images/signs/124a.gif"
+            },
+            {
+                "signTitle": "Cấm dừng xe và đỗ xe",
+                "signCode": "130",
+                "description": " Để báo nơi cấm dừng xe và đỗ xe. Biển có hiệu lực cấm tất cả các loại xe cơ giới dừng và đỗ lại ở phía đường có đặt biển, trừ các xe được ưu tiên theo luật lệ Nhà nước quy định.",
+                "imgSrc": "common/images/signs/130.gif"
+            },
+            {
+                "signTitle": "Cấm đỗ xe",
+                "signCode": "131",
+                "description": "Để báo nơi cấm đỗ xe. Biển có hiệu lực cấm tất cả các loại xe cơ giới đỗ lại ở phía đường có đặt biển, trừ các xe được ưu tiên theo luật lệ Nhà nước quy định.",
+                "imgSrc": "common/images/signs/131.gif"
+            },
+            {
+                "signTitle": " Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+                "signCode": "132",
+                "description": "Để báo các loại xe (cơ giới và thô sơ) kể cả các xe được ưu tiên theo luật lệ nhà nước quy định đi theo chiều nhìn thấy biển phải nhường đường cho các loại xe cơ giới đi theo hướng ngược lại khi đi qua các đoạn đường và cầu hẹp.",
+                "imgSrc": "common/images/signs/132.gif"
             }
+        ]
+    },
+    {
+        "groupSignTitle": "B. Biển nguy hiểm",
+        "groupSignDescription": "Hình tam giác, viền đỏ, nền vàng và hình vẽ màu đen",
+        "signs": [
+            {
+                "signTitle": "Đường hai chiều",
+                "signCode": "204",
+                "description": " Để báo trước sắp đến đoạn đường vì lý do sửa chữa hoặc có trở ngại ở một phía đường mà phải giải quyết đi lại của phương tiện phía đường còn lại hoặc để báo trước đoạn đường đôi tạm thời hay thường xuyên các chiều xe đi và về phải đi chung.",
+                "imgSrc": "common/images/signs/204.gif"
+            },
+            {
+                "signTitle": " Đường giao nhau",
+                "signCode": "205e",
+                "description": "Báo trước sắp đến nơi giao nhau của các tuyến đường cùng cấp (không có đường nào ưu tiên).",
+                "imgSrc": "common/images/signs/205e.jpg"
+            },
+            {
+                "signTitle": "Giao nhau với đường không ưu tiên",
+                "signCode": "207a",
+                "description": "Đặt trên đường ưu tiên, để báo trước sắp đến nơi giao nhau với đường không ưu tiên.",
+                "imgSrc": "common/images/signs/207a.gif"
+            },
+            {
+                "signTitle": "Giao nhau với đường ưu tiên",
+                "signCode": "208",
+                "description": "Đặt trên đường không ưu tiên, để báo trước sắp đến nơi giao nhau với đường ưu tiên.",
+                "imgSrc": "common/images/signs/208.gif"
+            },
+            {
+                "signTitle": "Giao nhau có tín hiệu đèn",
+                "signCode": "209",
+                "description": "Để báo trước nơi giao nhau có sự điều khiển giao thông bằng tín hiệu đèn (hệ thống 3 đèn bật theo chiều đứng) và trong trường hợp thiết bị tín hiệu đèn không được nhìn thấy rõ ràng và kịp thời.",
+                "imgSrc": "common/images/signs/209.gif"
+            },
+            {
+                "signTitle": " Giao nhau với đường sắt có rào chắn",
+                "signCode": "210",
+                "description": "Báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt có rào chắn kín hay chắn nửa kín bố trí theo trật tự xen kẽ ở mỗi bên đường sắt và có nhân viên ngành đường sắt điều khiển giao thông.",
+                "imgSrc": "common/images/signs/210.gif"
+            },
+            {
+                "signTitle": " Giao nhau với đường sắt không có rào chắn",
+                "signCode": "211",
+                "description": "Báo trước sắp đến chỗ giao nhau giữa đường bộ và đường sắt không có rào chắn, không có người điều khiển giao thông.",
+                "imgSrc": "common/images/signs/211.gif"
+            },
+            {
+                "signTitle": "Đường người đi bộ cắt ngang",
+                "signCode": "224",
+                "description": " Báo trước sắp đến phần đường ngang dành cho người đi bộ sang qua đường. Gặp biển này các loại xe cộ phải nhường ưu tiên cho người đi bộ và chỉ được chạy xe nếu như không gây nguy hiểm cho người đi bộ.",
+                "imgSrc": "common/images/signs/224.gif"
+            }
+        ]
+    },
+    {
+        "groupSignTitle": "C. Biển hiệu lệnh",
+        "groupSignDescription": "Hình tròn, nền xanh và hình vẽ màu trắng",
+        "signs": [
+            {
+                "signTitle": "Hướng đi phải theo",
+                "signCode": "301a",
+                "description": " Để báo cho các loại xe (thô sơ và cơ giới) chỉ được đi thẳng.",
+                "imgSrc": "common/images/signs/301a.gif"
+            },
+            {
+                "signTitle": "Hướng đi phải theo",
+                "signCode": "301e",
+                "description": "Để báo cho các loại xe (thô sơ và cơ giới) chỉ được rẽ trái.",
+                "imgSrc": "common/images/signs/301e.gif"
+            },
+            {
+                "signTitle": "Hướng đi phải theo",
+                "signCode": "301f",
+                "description": "Để báo cho các loại xe (thô sơ và cơ giới) chỉ được đi thẳng và rẽ phải.",
+                "imgSrc": "common/images/signs/301f.gif"
+            },
+            {
+                "signTitle": "Hướng đi phải theo",
+                "signCode": "301i",
+                "description": "Để báo cho các loại xe (thô sơ và cơ giới) chỉ được rẽ trái và rẽ phải.",
+                "imgSrc": "common/images/signs/301i.gif"
+            },
+            {
+                "signTitle": "Đường dành cho người đi bộ",
+                "signCode": "305",
+                "description": " Báo đường dành cho người đi bộ. Các loại xe cơ giới và thô sơ kể cả các xe được ưu tiên theo luật lệ Nhà nước quy định không được phép đi vào đường đã đặt biển này, trừ trường hợp đi cắt ngang qua nhưng phải đảm bảo tuyệt đối an toàn cho người đi bộ.",
+                "imgSrc": "common/images/signs/305.gif"
+            },
+            {
+                "signTitle": "Tuyến đường cầu vượt cắt qua",
+                "signCode": "308a",
+                "description": " Biểu thị tại cầu vượt, xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ trái. Biển đặt tại vị trí thích hợp ngay trước khi vào đường rẽ trái hoặc qua cầu vượt.",
+                "imgSrc": "common/images/signs/308a.gif"
+            },
+            {
+                "signTitle": "Tuyến đường cầu vượt cắt qua",
+                "signCode": "308b",
+                "description": "Biểu thị tại cầu vượt, xe có thể đi thẳng hoặc theo chỉ dẫn trên hình vẽ để rẽ phải. Biển đặt tại vị trí thích hợp ngay trước khi vào đường rẽ phải hoặc qua cầu vượt.",
+                "imgSrc": "common/images/signs/308b.gif"
+            }
+        ]
+    },
+    {
+        "groupSignTitle": "D. Biển chỉ dẫn",
+        "groupSignDescription": "Hình chữ nhật hoặc hình vuông, nền xanh lam và hình vẽ màu trắng",
+        "signs": [
+            {
+                "signTitle": "Được ưu tiên qua đường hẹp",
+                "signCode": "406",
+                "description": "Thử nghiệm mô tả chi tiết",
+                "imgSrc": "common/images/signs/10_2ce3c.gif"
+            },
+
+            {
+                "signTitle": "Báo hiệu cầu vượt liên thông",
+                "signCode": "442",
+                "description": "Thử nghiệm mô tả chi tiết",
+                "imgSrc": "common/images/signs/44_b2fba.gif"
+            }
+        ]
+    },
+    {
+        "groupSignTitle": "E. Biển phụ",
+        "groupSignDescription": "Hình tròn, nền xanh và hình vẽ màu trắng",
+        "signs": [
+            {
+                "signTitle": "Tiêu đề của biển",
+                "signCode": "",
+                "description": "Thử nghiệm mô tả chi tiết",
+                "imgSrc": "common/images/signs/.gif"
+            }
+
+
         ]
     }
 ]

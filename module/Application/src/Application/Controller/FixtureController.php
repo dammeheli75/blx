@@ -12,7 +12,6 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Zend\Json\Encoder;
 use Administrator\Model\Profile;
-use Administrator\Model\Collaborator;
 use Administrator\Model\Venue;
 use Administrator\Model\User;
 

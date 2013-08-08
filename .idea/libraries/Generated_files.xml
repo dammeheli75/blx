@@ -3,12 +3,10 @@
     <properties>
       <sourceFilesUrls>
         <item url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
-        <item url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
       <root url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
-      <root url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
     </CLASSES>
     <SOURCES />
   </library>
