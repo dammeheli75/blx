@@ -234,14 +234,7 @@ return array(
         'doctype' => 'HTML5',
         'not_found_template' => 'error/404',
         'exception_template' => 'error/index',
-        'template_map' => array(
-            'layout/layout' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'layout.phtml',
-            'layout/administrator' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'administrator.phtml',
-            'layout/administrator/login' => MODULE_PATH . DS . 'Application' . DS . 'view' . DS . 'layout' . DS . 'login.phtml',
-            'application/index/index' => __DIR__ . '/../view/application/index/index.phtml',
-            'error/404' => __DIR__ . '/../view/error/404.phtml',
-            'error/index' => __DIR__ . '/../view/error/index.phtml'
-        ),
+        'template_map' => require MODULE_PATH . DS . 'Application' . DS . 'template_map.php',
         'template_path_stack' => array(
             __DIR__ . '/../view'
         )

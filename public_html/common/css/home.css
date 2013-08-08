@@ -297,8 +297,7 @@
     float: left;
     width: 10px;
     height: 10px;
-    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYUlEQVR4AWMAgdyWLUxAPB2IHwPxXxCGsqdD5eCKDqzacfn/+4/f///79w+EwWyQGEgOpIYBpAskgAPAFE9nAFkB0o0LgORAakAK/4KswgVAciA1RCsk2mqiPUNS8BAV4ACzSD6DniRI7AAAAABJRU5ErkJggg==);
-    background-repeat: no-repeat;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAYUlEQVR4AWMAgdyWLUxAPB2IHwPxXxCGsqdD5eCKDqzacfn/+4/f///79w+EwWyQGEgOpIYBpAskgAPAFE9nAFkB0o0LgORAakAK/4KswgVAciA1RCsk2mqiPUNS8BAV4ACzSD6DniRI7AAAAABJRU5ErkJggg==) no-repeat;
     cursor: pointer;
 }
 
@@ -308,6 +307,7 @@
 
 #people-talk-carousel .item {
     padding: 8px 12px;
+    height: 110px;
 }
 
 #people-talk-carousel .item .quote {
