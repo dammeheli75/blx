@@ -103,7 +103,7 @@
                 "signTitle": " Đường giao nhau",
                 "signCode": "205e",
                 "description": "Báo trước sắp đến nơi giao nhau của các tuyến đường cùng cấp (không có đường nào ưu tiên).",
-                "imgSrc": "common/images/signs/205e.jpg"
+                "imgSrc": "common/images/signs/205e.gif"
             },
             {
                 "signTitle": "Giao nhau với đường không ưu tiên",

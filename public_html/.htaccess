@@ -25,6 +25,7 @@ AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css a
 # 480 weeks
 <FilesMatch ".(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
 Header set Cache-Control "max-age=290304000, public"
+Header set Expires "Tue, 31 Dec 2013 23:59:59 GMT"
 </FilesMatch>
 
 # 2 DAYS
@@ -35,4 +36,9 @@ Header set Cache-Control "max-age=172800, public, must-revalidate"
 # 2 HOURS
 <FilesMatch ".(html|htm)$">
 Header set Cache-Control "max-age=7200, must-revalidate"
+</FilesMatch>
+
+# Language
+<FilesMatch ".(js)$">
+Header set Content-Language: "vi"
 </FilesMatch>

@@ -80,7 +80,7 @@
     <file path="/index.phtml" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375978164330" ignored="false" />
     <file path="/signs.json" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375974169136" ignored="false" />
     <file path="$PROJECT_DIR$/public_html/common/js/document.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375976062070" ignored="false" />
-    <file path="/.htaccess" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375989020082" ignored="false" />
+    <file path="/.htaccess" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375990054057" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,7 @@
       <file leaf-file-name=".htaccess" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.63829786">
+            <state line="27" column="50" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.5531915">
               <folding />
             </state>
           </provider>
@@ -616,7 +616,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="27" selection-start="1085" selection-end="1085" vertical-scroll-proportion="0.63829786">
+        <state line="27" column="50" selection-start="1084" selection-end="1084" vertical-scroll-proportion="0.5531915">
           <folding />
         </state>
       </provider>
