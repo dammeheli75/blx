@@ -1,0 +1,14 @@
+[
+    {
+        "groupSignTitle": "A. Biển báo cấm",
+        "groupSignDescription": "Hình tròn, viền đỏ, nền trắng và hình vẽ màu đen",
+        "signs": [
+            {
+                "signTitle": "Tiêu đề của biển",
+                "signCode": "101",
+                "description": "Thử nghiệm mô tả chi tiết",
+                "imgSrc": "common/images/signs/101.gif"
+            }
+        ]
+    }
+]

@@ -2,53 +2,12 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/public_html/common/admin/js/venue.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/public/ckeditor/lang/en.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/image/dialogs/image.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/table/dialogs/table.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/options.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/pastefromword/filter/default.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/tabletools/dialogs/tableCell.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/dialog/dialogDefinition.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/lang/vi.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/adapters/jquery.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/link.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/plugins/dialog/assets/my_dialog.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/specialchar.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/clipboard/dialogs/paste.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/assets/uilanguages/languages.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc_ie.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/anchor.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/lang/en.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/image/dialogs/image.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/table/dialogs/table.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/scayt/dialogs/options.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/pastefromword/filter/default.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/tabletools/dialogs/tableCell.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/dialog/dialogDefinition.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/lang/vi.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/adapters/jquery.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/plugins/htmlwriter/assets/outputforflash/swfobject.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/link.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/plugins/dialog/assets/my_dialog.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/specialchar/dialogs/specialchar.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/clipboard/dialogs/paste.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/samples/assets/uilanguages/languages.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/wsc/dialogs/wsc_ie.min.js" />
-      <root url="file://$PROJECT_DIR$/public/ckeditor/plugins/link/dialogs/anchor.min.js" />
-      <root url="file://$PROJECT_DIR$/public/common/admin/js/post-edit.min.js" />
-      <root url="file://$PROJECT_DIR$/public/common/js/result.min.js" />
-      <root url="file://$PROJECT_DIR$/public/common/js/fixture.min.js" />
-      <root url="file://$PROJECT_DIR$/public_html/common/admin/js/venue.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
     </CLASSES>
     <SOURCES />

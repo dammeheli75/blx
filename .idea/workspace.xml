@@ -4,17 +4,17 @@
     <list default="true" id="316f4f3c-1558-453f-9d2a-4fd5eea13d27" name="Default" comment="">
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/blx.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/Module.php" afterPath="$PROJECT_DIR$/module/Application/Module.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Administrator/config/module.config.php" afterPath="$PROJECT_DIR$/module/Administrator/config/module.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.mo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/administrator.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Administrator/Module.php" afterPath="$PROJECT_DIR$/module/Administrator/Module.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/module/Application/language/vi_VN.po" afterPath="$PROJECT_DIR$/module/Application/language/vi_VN.po" />
     </list>
     <ignored path="blx.iws" />
@@ -32,14 +32,14 @@
     <file path="/fixture-and-results.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375517817079" ignored="false" />
     <file path="/common.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646069469" ignored="false" />
     <file path="/404.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375799049393" ignored="false" />
-    <file path="/document.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426355264" ignored="false" />
+    <file path="/document.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375970966045" ignored="false" />
     <file path="/filling.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426359288" ignored="false" />
     <file path="/guiding.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426362203" ignored="false" />
     <file path="/help.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426366578" ignored="false" />
     <file path="/home.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375646079245" ignored="false" />
     <file path="/notice.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375515693864" ignored="false" />
     <file path="/guiding.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426386245" ignored="false" />
-    <file path="/document.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426392667" ignored="false" />
+    <file path="/document.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375978255260" ignored="false" />
     <file path="/notice.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426406808" ignored="false" />
     <file path="/uploader.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426410567" ignored="false" />
     <file path="/help.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426416014" ignored="false" />
@@ -77,7 +77,9 @@
     <file path="/404.html" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375799079802" ignored="false" />
     <file path="/venue.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375818075369" ignored="false" />
     <file path="/venue.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375817422562" ignored="false" />
-    <file path="/index.phtml" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375823068307" ignored="false" />
+    <file path="/index.phtml" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375978164330" ignored="false" />
+    <file path="/signs.json" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375974169136" ignored="false" />
+    <file path="$PROJECT_DIR$/public_html/common/js/document.min.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375976062070" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,26 +98,52 @@
     <favorites_list name="blx" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="document.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="1" selection-start="8260" selection-end="8260" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fixture.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/common/js/fixture.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="42" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.021551725">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.42324248">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="document.css" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="137" column="20" selection-start="8419" selection-end="8419" vertical-scroll-proportion="0.0">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="document.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/public_html/common/js/document.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="36" column="7" selection-start="913" selection-end="913" vertical-scroll-proportion="0.8490566">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="signs.json" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/public_html/common/json/signs.json">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="9" column="18" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.625">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.phtml" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="3" column="62" selection-start="178" selection-end="178" vertical-scroll-proportion="0.073529415">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -133,8 +161,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/ckeditor/lang/vi.js" />
-        <option value="$PROJECT_DIR$/public/common/admin/js/post-edit.js" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/public/common/js/result.js" />
         <option value="$PROJECT_DIR$/public/common/js/fixture.js" />
@@ -146,9 +172,11 @@
         <option value="$PROJECT_DIR$/public_html/prototype/404.html" />
         <option value="$PROJECT_DIR$/public_html/common/admin/css/venue.css" />
         <option value="$PROJECT_DIR$/public_html/common/admin/js/venue.js" />
-        <option value="$PROJECT_DIR$/module/Application/view/application/document/index.phtml" />
-        <option value="$PROJECT_DIR$/public_html/common/css/document.css" />
         <option value="$PROJECT_DIR$/public_html/common/js/fixture.js" />
+        <option value="$PROJECT_DIR$/public_html/common/css/document.css" />
+        <option value="$PROJECT_DIR$/public_html/common/json/signs.json" />
+        <option value="$PROJECT_DIR$/module/Application/view/application/document/index.phtml" />
+        <option value="$PROJECT_DIR$/public_html/common/js/document.js" />
       </list>
     </option>
   </component>
@@ -156,7 +184,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="792" />
+    <option name="height" value="795" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -194,7 +222,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -205,7 +233,105 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="json" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -214,8 +340,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/ckeditor" />
     <property name="FullScreen" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -227,6 +353,9 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -263,26 +392,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="792" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="795" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.2374462" sideWeight="0.669863" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.32880434" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32336956" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32215744" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33016303" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Runner" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -350,6 +479,39 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="123" column="46" selection-start="8153" selection-end="8153" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="52" selection-start="707" selection-end="707" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/fixture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="74" column="13" selection-start="2308" selection-end="2308" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="129" column="1" selection-start="8260" selection-end="8260" vertical-scroll-proportion="0.0">
           <folding />
         </state>
@@ -377,21 +539,42 @@
         <state line="82" column="48" selection-start="3345" selection-end="3345" vertical-scroll-proportion="0.5140187" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="17" selection-start="1097" selection-end="1097" vertical-scroll-proportion="0.5825243" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-4.7285275" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/css/document.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="1" selection-start="8260" selection-end="8260" vertical-scroll-proportion="0.0">
+        <state line="137" column="20" selection-start="8419" selection-end="8419" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/json/signs.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="18" selection-start="332" selection-end="332" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/js/fixture.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="42" selection-start="2338" selection-end="2338" vertical-scroll-proportion="0.021551725">
+        <state line="77" column="13" selection-start="2378" selection-end="2378" vertical-scroll-proportion="0.9669811">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/view/application/document/index.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="62" selection-start="178" selection-end="178" vertical-scroll-proportion="0.073529415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="7" selection-start="913" selection-end="913" vertical-scroll-proportion="0.8490566">
           <folding />
         </state>
       </provider>

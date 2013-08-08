@@ -622,9 +622,15 @@ class ProfileController extends AbstractActionController
                 $profile['test_venue_id'] = $testVenue;
             }
             
-            if ($profileModel->createProfile($profile)) {
-                $response['success'] = true;
-                $response['insert_id'] = $profileModel->getLastInsertValue();
+            if (!$profileModel->isExists(array(
+                'full_name' => $fullName,
+                'address' => $address,
+                'phone_number' => $phoneNumber
+            ))) {
+                if ($profileModel->createProfile($profile)) {
+                    $response['success'] = true;
+                    $response['insert_id'] = $profileModel->getLastInsertValue();
+                }
             }
         } else {
             $response['success'] = false;
