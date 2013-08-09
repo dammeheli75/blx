@@ -2,10 +2,14 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/public_html/common/js/result.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/public_html/common/js/result.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
     </CLASSES>
     <SOURCES />

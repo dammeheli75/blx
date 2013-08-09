@@ -1,5 +1,8 @@
 <?php
+$this->headMeta()->appendName('description', $this->translate('index_meta_description'));
+
 $this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.min.css');
+
 $this->headScript()
     ->appendFile($this->basePath() . '/common/js/home.min.js')
     ->prependFile('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
@@ -20,12 +23,13 @@ $this->headScript()
 		<div class="block-body">
 			<div id="people-talk-carousel" class="carousel slide"
 				data-interval="1000">
-				<?php 
-    			    // Random active item
-    			    $activeIndex = \Zend\Math\Rand::getInteger(0, 4);
-			    ?>
+				<?php
+    // Random active item
+    $activeIndex = \Zend\Math\Rand::getInteger(0, 4);
+    ?>
 				<ol class="carousel-indicators">
-					<li data-target="#people-talk-carousel" data-slide-to="0" class="active"></li>
+					<li data-target="#people-talk-carousel" data-slide-to="0"
+						class="active"></li>
 					<li data-target="#people-talk-carousel" data-slide-to="1"></li>
 					<li data-target="#people-talk-carousel" data-slide-to="2"></li>
 					<li data-target="#people-talk-carousel" data-slide-to="3"></li>
@@ -35,7 +39,10 @@ $this->headScript()
 				<div class="carousel-inner">
 					<div class="active item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>/common/images/avatar-tran-duc-duy-80x80.jpg" width="80" height="80" alt="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>" title="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
+							src="<?php echo $this->basePath()?>/common/images/avatar-tran-duc-duy-80x80.jpg"
+							width="80" height="80"
+							alt="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>"
+							title="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
 
 						<p class="quote">
                             <?php echo $this->translate('tran_duc_duy_talk_about_blx')?>
@@ -49,7 +56,10 @@ $this->headScript()
 					</div>
 					<div class="item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>common/images/avatar-nguyen-manh-cuong-80x80.jpg" width="80" height="80" alt="<?php echo $this->translate('Nguyen Manh Cuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>" title="<?php echo $this->translate('Nguyen Manh Cuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
+							src="<?php echo $this->basePath()?>common/images/avatar-nguyen-manh-cuong-80x80.jpg"
+							width="80" height="80"
+							alt="<?php echo $this->translate('Nguyen Manh Cuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>"
+							title="<?php echo $this->translate('Nguyen Manh Cuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
 
 						<p class="quote">
                             <?php echo $this->translate('nguyen_manh_cuong_talk_about_blx')?>
@@ -63,7 +73,10 @@ $this->headScript()
 					</div>
 					<div class="item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>common/images/avatar-an-duy-khuong-80x80.jpg" width="80" height="80" alt="<?php echo $this->translate('An Duy Khuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>" title="<?php echo $this->translate('An Duy Khuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
+							src="<?php echo $this->basePath()?>common/images/avatar-an-duy-khuong-80x80.jpg"
+							width="80" height="80"
+							alt="<?php echo $this->translate('An Duy Khuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>"
+							title="<?php echo $this->translate('An Duy Khuong sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
 
 						<p class="quote">
                             <?php echo $this->translate('an_duy_khuong_talk_about_blx')?>
@@ -77,7 +90,10 @@ $this->headScript()
 					</div>
 					<div class="item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>common/images/avatar-duong-hoai-thu-80x80.jpg" width="80" height="80" alt="<?php echo $this->translate('Duong Hoai Thu sinh vien Dai hoc khoa hoc Thai Nguyen')?>" title="<?php echo $this->translate('Duong Hoai Thu sinh vien Dai hoc khoa hoc Thai Nguyen')?>">
+							src="<?php echo $this->basePath()?>common/images/avatar-duong-hoai-thu-80x80.jpg"
+							width="80" height="80"
+							alt="<?php echo $this->translate('Duong Hoai Thu sinh vien Dai hoc khoa hoc Thai Nguyen')?>"
+							title="<?php echo $this->translate('Duong Hoai Thu sinh vien Dai hoc khoa hoc Thai Nguyen')?>">
 
 						<p class="quote">
                             <?php echo $this->translate('duong_hoai_thu_talk_about_blx')?>
@@ -91,7 +107,10 @@ $this->headScript()
 					</div>
 					<div class="item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>common/images/avatar-nguyen-van-tu-80x80.jpg" width="80" height="80" alt="<?php echo $this->translate('Nguyen Van Tu sinh vien Cao dang ky thuat Cong nghiep')?>" title="<?php echo $this->translate('Nguyen Van Tu sinh vien Cao dang ky thuat Cong nghiep')?>">
+							src="<?php echo $this->basePath()?>common/images/avatar-nguyen-van-tu-80x80.jpg"
+							width="80" height="80"
+							alt="<?php echo $this->translate('Nguyen Van Tu sinh vien Cao dang ky thuat Cong nghiep')?>"
+							title="<?php echo $this->translate('Nguyen Van Tu sinh vien Cao dang ky thuat Cong nghiep')?>">
 
 						<p class="quote">
                             <?php echo $this->translate('nguyen_van_tu_talk_about_blx')?>
@@ -208,17 +227,18 @@ $this->headScript()
 				<h2><?php echo $this->translate('BLX.VN tren mang xa hoi')?></h2>
 			</div>
 			<ul class="social-network-list">
-				<li><a href="https://www.facebook.com/blxvn"> <img src="common/images/facebook-logo-38x38.png" width="38" height="38"
+				<li><a href="https://www.facebook.com/blxvn"> <img
+						src="common/images/facebook-logo-38x38.png" width="38" height="38"
 						alt="" title="">
 				</a></li>
-				<li><a href="#"> <img src="common/images/youtube-logo-38x38.png" width="38" height="38"
-						alt="" title="">
+				<li><a href="#"> <img src="common/images/youtube-logo-38x38.png"
+						width="38" height="38" alt="" title="">
 				</a></li>
-				<li><a href="#"> <img src="common/images/twitter-logo-38x38.png" width="38" height="38"
-						alt="" title="">
+				<li><a href="#"> <img src="common/images/twitter-logo-38x38.png"
+						width="38" height="38" alt="" title="">
 				</a></li>
-				<li><a href="#"> <img src="common/images/google-plus-logo-38x38.png" width="38" height="38"
-						alt="" title="">
+				<li><a href="#"> <img src="common/images/google-plus-logo-38x38.png"
+						width="38" height="38" alt="" title="">
 				</a></li>
 			</ul>
 		</div>

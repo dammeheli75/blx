@@ -28,7 +28,7 @@ class AuthenticationController extends AbstractActionController
         }
         // If not
         $viewModel = new ViewModel();
-        $this->layout('layout/administrator/login');
+        $this->layout('layout/login');
         
         $redirectUrl = $this->getRequest()->getQuery('redirect_url');
         $viewModel->setVariable('redirectUrl', $redirectUrl);

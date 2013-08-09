@@ -64,7 +64,7 @@ class FixtureController extends AbstractActionController
         
         $filterable = array();
         if ($filterOption['filters'][0]['field'] === 'fullName' && $filterOption['filters'][0]['operator'] === 'contains' && isset($filterOption['filters'][0]['value'])) {
-            $filterable['full_name'] = $filterOption['filters'][0]['value'];
+            $filterable['full_name'] = urldecode($filterOption['filters'][0]['value']);
         }
         
         $profiles = $profileModel->cache->getProfilesForFixture($filterable, $pageable);

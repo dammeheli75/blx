@@ -1,9 +1,11 @@
 <?php
+$this->headMeta()->setName('description', $this->translate('news_index_meta_description'));
 $this->headLink()->prependStylesheet($this->basePath() . '/common/css/post.min.css');
 
 $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 
 if ($this->categoryQuery) {
+    $this->headMeta()->setName('description', $this->categoryQuery['title'] . ' | ' . $this->translate('news_index_meta_description'));
     $this->headTitle()->prepend($this->categoryQuery['title']);
 } else {
     $this->headTitle()->prepend($this->translate('Tin tuc'));
@@ -18,8 +20,6 @@ if ($this->categoryQuery) {
 		<?php if ($this->categoryQuery && $this->categoryQuery['category_id'] == $category['category_id']) : ?>
 		  <li class="active">
 		  <?php else : ?>
-		
-		
 		<li>
 		<?php endif; ?>
 		<a

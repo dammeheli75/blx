@@ -6,6 +6,7 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 $post = $this->post;
 
 $this->headTitle()->prepend($post['title']);
+$this->headMeta()->setName('description', $this->translate('news_detail_prepend_meta_description') . $post['title']);
 
 ?>
 <div class="span3 sidebar">

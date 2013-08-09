@@ -1,4 +1,5 @@
 <?php
+$this->headMeta()->appendName('description', $this->translate('guiding_meta_description'));
 $this->headLink()->prependStylesheet($this->basePath() . '/common/css/guiding.min.css');
 $this->headScript()
     ->prependFile($this->basePath() . '/common/js/guiding.min.js')
@@ -38,22 +39,22 @@ $this->headtitle()->prepend($this->translate('Huong dan thi bang lai xe hang A1'
 			</div>
 			<div class="block-body">
 				<ul>
-					<li><label class="time"> 7h00 </label>
+					<li><label class="time">6:30</label>
 
 						<div class="time-description">
-							<p><?php echo $this->translate('Co mat tai san thi de lam quen voi san thi thuc hanh.')?></p>
+							<p><?php echo $this->translate('Mo cua vao san thi de tap va lam quen voi san thi thuc hanh.')?></p>
 						</div></li>
-					<li><label class="time"> 8h00 </label>
+					<li><label class="time">7:30</label>
 
 						<div class="time-description">
 							<p><?php echo $this->translate('Khai mac thi, truong ban giam khao doc toan van quyet dinh khai mac buoi thi.')?></p>
 						</div></li>
-					<li><label class="time"> 8h15 </label>
+					<li><label class="time">8:00</label>
 
 						<div class="time-description">
 							<p><?php echo $this->translate('Goi ten hoc vien len ky ho so, hoc vien ky ho so xong xuong phia duoi cho xep vao lop thi.')?></p>
 						</div></li>
-					<li><label class="time"> 11h30 </label>
+					<li><label class="time"> 11:30 </label>
 
 						<div class="time-description">
 							<p><?php echo $this->translate('Thi xong.')?></p>

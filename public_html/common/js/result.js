@@ -98,7 +98,7 @@ $(document).ready(function () {
 
             $('#fixture-search').find('input[name="q"]').on('change keydown paste input', function () {
                 // Filter
-                var q = $(this).val();
+                var q = encodeURIComponent($(this).val().trim());
                 if (q != lastQuery && (q[q.length - 1] == " " || q == "")) {
                     self.dataSource.filter({
                         field: "fullName",
@@ -112,7 +112,7 @@ $(document).ready(function () {
 
             $('#fixture-search').submit(function () {
                 // Filter
-                var q = $(this).find('input[name="q"]').val();
+                var q = encodeURIComponent($(this).find('input[name="q"]').val().trim());
 
                 if (q != lastQuery) {
                     self.dataSource.filter({

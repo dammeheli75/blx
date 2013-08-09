@@ -311,8 +311,10 @@
 }
 
 #theoretical-question ul.questions > li.question.picture-question div.question-body > p.answer-prefix {
-    margin: 0 auto;
+    margin: 0 20px;
     max-width: 300px;
+    float: right;
+    overflow: hidden;
 }
 
 #theoretical-question ul.questions > li.question div.question-body > ol.answers li {

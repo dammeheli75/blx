@@ -201,27 +201,54 @@
                 "description": "Thử nghiệm mô tả chi tiết",
                 "imgSrc": "common/images/signs/10_2ce3c.gif"
             },
-
             {
                 "signTitle": "Báo hiệu cầu vượt liên thông",
                 "signCode": "442",
                 "description": "Thử nghiệm mô tả chi tiết",
                 "imgSrc": "common/images/signs/44_b2fba.gif"
+            },
+            {
+                "signTitle": "Hết đoạn đường ưu tiên",
+                "signCode": "",
+                "description": "Hết đoạn đường ưu tiên",
+                "imgSrc": "common/images/signs/het-duong-uu-tien.gif"
+            },
+            {
+                "signTitle": "Đường ưu tiên",
+                "signCode": "",
+                "description": "Đường ưu tiên",
+                "imgSrc": "common/images/signs/duong-uu-tien.gif"
             }
         ]
     },
     {
         "groupSignTitle": "E. Biển phụ",
-        "groupSignDescription": "Hình tròn, nền xanh và hình vẽ màu trắng",
+        "groupSignDescription": "",
         "signs": [
             {
-                "signTitle": "Tiêu đề của biển",
+                "signTitle": "Hướng tác dụng của biển",
                 "signCode": "",
-                "description": "Thử nghiệm mô tả chi tiết",
-                "imgSrc": "common/images/signs/.gif"
+                "description": "Hướng tác dụng của biển",
+                "imgSrc": "common/images/signs/huong-tac-dung-cua-bien.gif"
+            },
+            {
+                "signTitle": "Loại xe",
+                "signCode": "",
+                "description": "Loại xe",
+                "imgSrc": "common/images/signs/loai-xe.gif"
+            },
+            {
+                "signTitle": "Hướng đường ưu tiên",
+                "signCode": "",
+                "description": "Hướng đường ưu tiên",
+                "imgSrc": "common/images/signs/huong-duong-uu-tien-1.gif"
+            },
+            {
+                "signTitle": "Hướng đường ưu tiên",
+                "signCode": "",
+                "description": "Hướng đường ưu tiên",
+                "imgSrc": "common/images/signs/huong-duong-uu-tien-2.gif"
             }
-
-
         ]
     }
 ]
