@@ -60,7 +60,7 @@ $(document).ready(function () {
                 field: "license",
                 title: "Bằng",
                 template: function (dataItem) {
-                    if (dataItem.licenseFront && dataItem.licenseBack) return '<a data-toggle="tooltip" class="license" data-original-title="Click để xem ảnh lớn" data-placement="left"><img width="50" height="32" src="' + dataItem.licenseFront + '" data-original-title="Click để xem ảnh lớn" data-placement="right">&nbsp;&nbsp;<img width="50" height="32" data-toggle="tooltip" class="license" src="' + dataItem.licenseBack + '"></a>';
+                    if (dataItem.licenseFront) return '<a data-toggle="tooltip" class="license" data-original-title="Click để xem ảnh lớn" data-placement="left"><img width="50" height="32" src="' + dataItem.licenseFront + '" data-original-title="Click để xem ảnh lớn" data-placement="right"></a>';
                     return '<em>Chưa có bằng</em>'
                 },
                 attributes: {
@@ -92,11 +92,13 @@ $(document).ready(function () {
         },
         dataBound: function () {
             var self = this;
+            var fixtureSearch = $('#fixture-search');
+            var licenseDetailModal = $("#license-detail-modal");
 
             // Tooltip Activate
             $('[data-toggle="tooltip"]').tooltip();
 
-            $('#fixture-search').find('input[name="q"]').on('change keydown paste input', function () {
+            fixtureSearch.find('input[name="q"]').on('change keydown paste input', function () {
                 // Filter
                 var q = encodeURIComponent($(this).val().trim());
                 if (q != lastQuery && (q[q.length - 1] == " " || q == "")) {
@@ -110,7 +112,7 @@ $(document).ready(function () {
                 }
             });
 
-            $('#fixture-search').submit(function () {
+            fixtureSearch.submit(function () {
                 // Filter
                 var q = encodeURIComponent($(this).find('input[name="q"]').val().trim());
 
@@ -130,8 +132,8 @@ $(document).ready(function () {
             $(".license").click(function () {
                 var target = self.dataSource.getByUid($(this).parent().parent().attr('data-uid'));
                 //noinspection JSJQueryEfficiency
-                kendo.bind($("#license-detail-modal"), target);
-                $("#license-detail-modal").modal('show');
+                kendo.bind(licenseDetailModal, target);
+                licenseDetailModal.modal('show');
                 $('#licenseDetailTab').find('a').click(function (e) {
                     e.preventDefault();
                     $(this).tab('show');
@@ -141,7 +143,8 @@ $(document).ready(function () {
     });
 
     $(window).resize(function () {
-        $("#grid").height($(window).height() - 130);
-        $(".k-grid-content").height($("#grid").height() - 80);
+        var grid = $("#grid");
+        grid.height($(window).height() - 130);
+        $(".k-grid-content").height(grid.height() - 80);
     });
 });

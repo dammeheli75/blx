@@ -706,7 +706,7 @@ return array (
       'error/index' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/error/index.phtml',
       'layout/administrator' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/layout/administrator.phtml',
       'layout/layout' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/layout/layout.phtml',
-      'layout/administrator/login' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/layout/login.phtml',
+      'layout/login' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/layout/login.phtml',
       'partial/paginator' => '/Applications/XAMPP/xamppfiles/htdocs/blx/module/Application/view/partial/paginator.phtml',
     ),
     'template_path_stack' => 

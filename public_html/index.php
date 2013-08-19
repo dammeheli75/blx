@@ -16,7 +16,7 @@ define('PUBLIC_PATH', ROOT_PATH . DS . 'public');
 define('VENDOR_PATH', ROOT_PATH . DS . 'vendor');
 
 // Base URL
-define('BASE_URL', '/blx/public_html/');
+define('BASE_URL', '/');
 
 // Setup autoloading
 require 'init_autoloader.php';

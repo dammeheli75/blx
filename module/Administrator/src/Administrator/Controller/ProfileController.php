@@ -264,26 +264,10 @@ class ProfileController extends AbstractActionController
                     if (dataItem.licenseFront) {
                         return '<img width=\"50\" height=\"32\" src=\"' + dataItem.licenseFront + '\" alt=\'" . $translator->translate('Bang lai xe cua') . "&nbsp;' + dataItem.fullName + '\'>';
                     } else {
-                        return \"--\";
+                        return \"<span style=\'padding: 20px\'>--</span>\";
                     }
                 }"));
         $grid->addColumn($licenseFrontColumn);
-        // License Back
-        $licenseBackColumn = new GridColumn();
-        $licenseBackColumn->field('licenseBack')
-            ->title($translator->translate('BLX&nbsp;<sup>sau</sup>'))
-            ->width(76)
-            ->filterable(false)
-            ->sortable(false)
-            ->attributes(' style="padding-left: 10px"')
-            ->template(new JavaScriptFunction("function (dataItem) {
-                    if (dataItem.licenseBack) {
-                        return '<img width=\"50\" height=\"32\" src=\"' + dataItem.licenseBack + '\" alt=\'" . $translator->translate('Bang lai xe cua') . "&nbsp;' + dataItem.fullName + '\'>';
-                    } else {
-                        return \"--\";
-                    }
-                }"));
-        $grid->addColumn($licenseBackColumn);
         // Note
         $noteColumn = new GridColumn();
         $noteColumn->field('note')
@@ -432,9 +416,6 @@ class ProfileController extends AbstractActionController
         $licenseFrontModelField = new DataSourceSchemaModelField('licenseFront');
         $licenseFrontModelField->type('string');
         $model->addField($licenseFrontModelField);
-        $licenseBackModelField = new DataSourceSchemaModelField('licenseBack');
-        $licenseBackModelField->type('string');
-        $model->addField($licenseBackModelField);
         $noteModelField = new DataSourceSchemaModelField('note');
         $noteModelField->type('string');
         $model->addField($noteModelField);
@@ -553,7 +534,6 @@ class ProfileController extends AbstractActionController
                     'title' => $venue['title']
                 ) : NULL,
                 'licenseFront' => $profile['license_front'],
-                'licenseBack' => $profile['license_back'],
                 'note' => $profile['note']
             );
         }
@@ -589,7 +569,6 @@ class ProfileController extends AbstractActionController
             $testVenue = $this->getRequest()->getPost('testVenue');
             $testDate = $this->getRequest()->getPost('testDate');
             $licenseFront = $this->getRequest()->getPost('licenseFront');
-            $licenseBack = $this->getRequest()->getPost('licenseBack');
             $note = $this->getRequest()->getPost('note');
             
             $profileModel = new Profile();
@@ -609,7 +588,6 @@ class ProfileController extends AbstractActionController
                 'test_status' => $testStatus,
                 'test_date' => $testDate ? $testDate->format('Y-m-d') : NULL,
                 'license_front' => $licenseFront,
-                'license_back' => $licenseBack,
                 'note' => $note,
                 'time_created' => $timeCreated->format('Y-m-d h:i:s')
             );
@@ -672,7 +650,6 @@ class ProfileController extends AbstractActionController
                 'phone_onlysms' => false,
                 'test_status' => $postData['testStatus'],
                 'license_front' => $postData['licenseFront'],
-                'license_back' => $postData['licenseBack'],
                 'note' => $postData['note']
             );
             

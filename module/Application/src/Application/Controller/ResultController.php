@@ -41,9 +41,6 @@ class ResultController extends AbstractActionController
 
     public function readAction()
     {
-        // echo '<pre>';
-        // print_r($this->auth->getIdentity());
-        // echo '</pre>';
         $viewModel = new ViewModel();
         $viewModel->setTerminal(true);
         $serviceManager = $this->getEvent()
@@ -93,8 +90,7 @@ class ResultController extends AbstractActionController
                 'address' => $profile['address'],
                 'collaborator' => $collaborator['full_name'],
                 'result' => $profile['test_status'] ? $profile['test_status'] : NULL,
-                'licenseFront' => $profile['license_front'],
-                'licenseBack' => $profile['license_back']
+                'licenseFront' => $profile['license_front']
             );
         }
         
