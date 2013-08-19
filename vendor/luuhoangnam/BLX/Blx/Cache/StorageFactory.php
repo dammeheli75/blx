@@ -34,7 +34,12 @@ class StorageFactory
         
         $filesystemAdapter->setOptions($filesystemOptions);
         $filesystemAdapter->addPlugin($exceptionHandler)->addPlugin(new Serializer());
-        
         return $filesystemAdapter;
+    }
+    
+    public static function clearCache($namespace)
+    {
+        $filesystemAdapter = new Filesystem();
+        return $filesystemAdapter->clearByNamespace($namespace);
     }
 }

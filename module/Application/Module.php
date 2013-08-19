@@ -54,9 +54,12 @@ class Module
             $controllerClass = get_class($controller);
             $controllerClassPart = explode('\\', get_class($controller));
             $module = $controllerClassPart[0];
+            $config = $serviceManager->get('config');
+            $config = $config['layout_settings'];
             
             // set controller, layout variables
             $controller->auth = $controller->layout()->auth = $auth;
+            $controller->acl = $serviceManager->get('acl');
             $controller->layout()->controllerClass = $controllerClass;
             
             // Check access
@@ -71,33 +74,16 @@ class Module
                     ));
                 }
             }
-        }, 200);
-        
-        // Set layouts
-        $e->getApplication()
-            ->getEventManager()
-            ->getSharedManager()
-            ->attach('Zend\Mvc\Controller\AbstractActionController', MvcEvent::EVENT_DISPATCH, function ($e)
-        {
-            $serviceManager = $e->getApplication()
-                ->getServiceManager();
-            
-            $controller = $e->getTarget();
-            $controllerClass = explode('\\', get_class($controller));
-            $config = $serviceManager->get('config');
-            $config = $config['layout_settings'];
             
             // Set layout for Modules
-            $moduleNamespace = $controllerClass[0];
-            
-            if (isset($config['modules'][$moduleNamespace])) {
-                $controller->layout($config['modules'][$moduleNamespace]);
+            if (isset($config['modules'][$module])) {
+                $controller->layout($config['modules'][$module]);
             }
             // Set layout for controllers
-            if (isset($config['controllers'][$moduleNamespace . '\\' . $controllerClass[1]])) {
-                $controller->layout($config['controllers'][$moduleNamespace . '\\' . $controllerClass[1]]);
+            if (isset($config['controllers'][$module . '\\' . $controllerClassPart[1]])) {
+                $controller->layout($config['controllers'][$module . '\\' . $controllerClassPart[1]]);
             }
-        }, 100);
+        }, 200);
     }
 
     public function getConfig()
@@ -109,7 +95,7 @@ class Module
     {
         return array(
             'Zend\Loader\ClassMapAutoloader' => array(
-            		__DIR__ . '/autoload_classmap.php'
+                __DIR__ . '/autoload_classmap.php'
             ),
             'Zend\Loader\StandardAutoloader' => array(
                 'namespaces' => array(

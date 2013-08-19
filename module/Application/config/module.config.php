@@ -204,7 +204,7 @@ return array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
             'db' => 'Blx\Db\DbServiceFactory',
             'auth' => 'Blx\Authentication\AuthenticationServiceFactory',
-            'navigation' => 'Zend\Navigation\Service\DefaultNavigationFactory'
+            'acl' => 'Blx\Permissions\Acl\AclServiceFactory'
         )
     ),
     'translator' => array(
