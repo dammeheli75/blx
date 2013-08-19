@@ -7,6 +7,7 @@ use Administrator\Model\Permission;
 use Zend\Permissions\Acl\Role\GenericRole;
 use Zend\Permissions\Acl\Resource\GenericResource;
 use Blx\Cache\StorageFactory;
+use Application\View\Helper\Acl as AclHelper;
 
 class AclServiceFactory implements FactoryInterface
 {
@@ -41,11 +42,12 @@ class AclServiceFactory implements FactoryInterface
                 if ($permission['allow']) {
                     $acl->allow($role, $resource, $permission['privilege']);
                 }
-                if ($permission['deny'])
-                    $acl->deny($role, $resource, $permission['privilege']);
             }
             $cache->setItem('acl', $acl);
         }
+        
+        $viewHelper = new AclHelper();
+        $viewHelper->setServiceLocator($serviceLocator);
         
         return $acl;
     }

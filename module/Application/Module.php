@@ -11,8 +11,8 @@ namespace Application;
 use Zend\Mvc\ModuleRouteListener;
 use Zend\Mvc\MvcEvent;
 use Zend\Db\TableGateway\Feature\GlobalAdapterFeature;
-use Administrator\Model\User;
 use Blx\Cache\StorageFactory;
+use Blx\User\UserManager;
 
 class Module
 {
@@ -37,6 +37,7 @@ class Module
         
         // Set Global Adapter for TableGateway
         GlobalAdapterFeature::setStaticAdapter($serviceManager->get('db'));
+        UserManager::setStaticServiceManager($serviceManager);
         
         // Set default timezone
         // @date_default_timezone_set('Asia/Ho_Chi_Minh');
@@ -50,6 +51,7 @@ class Module
             $serviceManager = $e->getApplication()
                 ->getServiceManager();
             $auth = $serviceManager->get('auth');
+            $userManager = $serviceManager->get('userManager');
             $controller = $e->getTarget();
             $controllerClass = get_class($controller);
             $controllerClassPart = explode('\\', get_class($controller));
@@ -59,19 +61,17 @@ class Module
             
             // set controller, layout variables
             $controller->auth = $controller->layout()->auth = $auth;
-            $controller->acl = $serviceManager->get('acl');
+            // $controller->acl = $controller->layout()->acl = $serviceManager->get('acl');
             $controller->layout()->controllerClass = $controllerClass;
             
             // Check access
             if ($module == 'Administrator' && $controllerClassPart[2] !== 'AuthenticationController') {
-                if (! $auth->hasIdentity()) {
+                $currentUser = $userManager->getCurrentUser();
+                if (! $currentUser->isLogged()) {
                     $controller->redirect()
                         ->toRoute('administrator/authentication/login');
                 } else {
-                    $userModel = new User();
-                    $controller->layout()->currentUser = $controller->currentUser = $userModel->cache->getUser(array(
-                        'email' => $auth->getIdentity()
-                    ));
+                    $controller->layout()->currentUser = $controller->currentUser = $currentUser->getInfo();
                 }
             }
             

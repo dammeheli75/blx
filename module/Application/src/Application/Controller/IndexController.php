@@ -35,4 +35,11 @@ class IndexController extends AbstractActionController
         
         return $viewModel;
     }
+    
+    public function restrictionAccessAction()
+    {
+    	$viewModel = new ViewModel;
+    	 
+    	return $viewModel;
+    }
 }

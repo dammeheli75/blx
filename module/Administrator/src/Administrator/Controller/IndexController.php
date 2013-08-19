@@ -30,7 +30,7 @@ class IndexController extends AbstractActionController
         $translator = $serviceManager->get('translator');
         
         echo '<pre>';
-        print_r($this->acl);
+        print_r($serviceManager->getRegisteredServices());
         echo '</pre>';
         
         // This shows the :controller and :action parameters in default route

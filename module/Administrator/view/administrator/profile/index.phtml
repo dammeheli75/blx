@@ -6,7 +6,10 @@ var lastQuickSearch = "";
 $this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/profile.min.css');
 $this->headScript()->appendFile($this->basePath() . '/common/admin/js/profile.min.js');
 
-echo $this->grid->render();
+if (isset($this->grid)) {
+    echo $this->grid->render();
+}
+
 ?>
 
 <script type="text/javascript">

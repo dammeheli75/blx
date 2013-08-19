@@ -9,6 +9,16 @@
 return array(
     'router' => array(
         'routes' => array(
+            'restriction-access' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/truy-cap-bi-han-che',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'restriction-access'
+                    )
+                )
+            ),
             'home' => array(
                 'type' => 'Zend\Mvc\Router\Http\Literal',
                 'options' => array(
@@ -204,7 +214,8 @@ return array(
             'translator' => 'Zend\I18n\Translator\TranslatorServiceFactory',
             'db' => 'Blx\Db\DbServiceFactory',
             'auth' => 'Blx\Authentication\AuthenticationServiceFactory',
-            'acl' => 'Blx\Permissions\Acl\AclServiceFactory'
+            'acl' => 'Blx\Permissions\Acl\AclServiceFactory',
+            'userManager' => 'Blx\User\UserManagerServiceFactory'
         )
     ),
     'translator' => array(
@@ -226,6 +237,16 @@ return array(
             'Application\Controller\Guiding' => 'Application\Controller\GuidingController',
             'Application\Controller\Post' => 'Application\Controller\PostController',
             'Application\Controller\Sitemap' => 'Application\Controller\SitemapController'
+        )
+    ),
+    'controller_plugins' => array(
+        'invokables' => array(
+            'acl' => 'Blx\Mvc\Controller\Plugin\Acl'
+        )
+    ),
+    'view_helpers' => array(
+        'factories' => array(
+            'acl' => 'Application\View\Helper\Acl'
         )
     ),
     'view_manager' => array(
