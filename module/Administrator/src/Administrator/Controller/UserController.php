@@ -175,7 +175,7 @@ class UserController extends AbstractActionController
             $addressColumn = new GridColumn();
             $addressColumn->field('address')
                 ->title($translator->translate('Dia chi'))
-                ->width(260);
+                ->width(300);
             $grid->addColumn($addressColumn);
             // Phone Number
             $phoneNumberColumn = new GridColumn();

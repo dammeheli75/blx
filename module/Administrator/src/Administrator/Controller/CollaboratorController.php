@@ -15,7 +15,7 @@ use Administrator\Model\User;
 
 class CollaboratorController extends AbstractActionController
 {
-    const COLLABORATOR_GROUP = 3;
+    const COLLABORATOR_GROUP = 6;
 
     public function indexAction()
     {
