@@ -8,13 +8,13 @@ class Acl extends AbstractPlugin
 
     public function isAllowed($resource, $privilege)
     {
-        $controller = $this->getController();
-        $serviceManager = $controller->getEvent()
+        $serviceManager = $this->getController()
+            ->getEvent()
             ->getApplication()
             ->getServiceManager();
-        $acl = $serviceManager->get('acl');
         
-        $currentUser = (isset($controller->currentUser)) ? $controller->currentUser : 'guest';
-        return ($acl->hasRole("user_group_{$currentUser['group_id']}") && $acl->hasResource($resource) && $acl->isAllowed("user_group_{$currentUser['group_id']}", $resource, $privilege));
+        $currentUser = $serviceManager->get('userManager')->getCurrentUser();
+        
+        return $currentUser->isAllowed($resource, $privilege);
     }
 }

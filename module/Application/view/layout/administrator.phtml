@@ -29,6 +29,9 @@ $this->headScript()
     ->prependFile($this->basePath() . '/jquery/js/jquery-1.10.2.min.js');
 
 echo $this->headScript();
+
+if ($this->currentUser) {
+	$currentUserInfo = $this->currentUser->getInfo();
 ?>
 
 </head>
@@ -43,30 +46,51 @@ echo $this->headScript();
 					<ul class="nav">
 						<li><a href="<?php echo $this->url('administrator') ?>"><?php echo $this->translate('Trang chu')?></a>
 						</li>
-						<li><a href="<?php echo $this->url('administrator/profiles') ?>"><?php echo $this->translate('Ho so')?></a>
-						</li>
-						<li><a href="<?php echo $this->url('administrator/venues') ?>"><?php echo $this->translate('Dia diem thi')?></a>
-						</li>
-						<li class="dropdown"><a href="<?php echo $this->url('administrator/posts') ?>"
+						<?php if ($this->currentUser->isAllowed('profile','management') && $this->currentUser->isAllowed('profile','read')) : ?>
+						<li><a href="<?php echo $this->url('administrator/profiles') ?>"><?php echo $this->translate('Ho so')?></a></li>
+						<?php endif;?>
+						<?php if ($this->currentUser->isAllowed('venue','management') && $this->currentUser->isAllowed('venue','read')) : ?>
+						<li><a href="<?php echo $this->url('administrator/venues') ?>"><?php echo $this->translate('Dia diem thi')?></a></li>
+						<?php endif;?>
+						<?php if ($this->currentUser->isAllowed('post_category','management') || $this->currentUser->isAllowed('post','management')) : ?>
+						<li class="dropdown"><a
+							href="<?php echo $this->url('administrator/posts') ?>"
 							class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate('Tin tuc')?>&nbsp;<b
 								class="caret"></b></a>
 							<ul class="dropdown-menu">
+							    <?php if ($this->currentUser->isAllowed('post_category','management') && $this->currentUser->isAllowed('post_category','read')) : ?>
 								<li><a
 									href="<?php echo $this->url('administrator/categories') ?>"><?php echo $this->translate('Chuyen muc')?></a></li>
-									<li><a
-									href="<?php echo $this->url('administrator/posts') ?>"><?php echo $this->translate('Bai viet')?></a></li>
+								<?php endif; ?>
+								<?php if ($this->currentUser->isAllowed('post','management') && $this->currentUser->isAllowed('post','read')) : ?>
+								<li><a href="<?php echo $this->url('administrator/posts') ?>"><?php echo $this->translate('Bai viet')?></a></li>
+								<?php endif; ?>
 							</ul></li>
-						<li><a href="<?php echo $this->url('administrator/users') ?>"><?php echo $this->translate('Thanh vien')?></a>
-						</li>
-						<li><a href="<?php echo $this->url('administrator/system') ?>"><?php echo $this->translate('He thong')?></a>
-						</li>
+					    <?php endif;?>
+					    <?php if ($this->currentUser->isAllowed('user','management') || $this->currentUser->isAllowed('permission','management')) : ?>
+						<li class="dropdown"><a
+							href="<?php echo $this->url('administrator/users') ?>"
+							class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->translate('Thanh vien')?>&nbsp;<b
+								class="caret"></b></a>
+							<ul class="dropdown-menu">
+							    <?php if ($this->currentUser->isAllowed('user','management') && $this->currentUser->isAllowed('user','read')) : ?>
+								<li><a href="<?php echo $this->url('administrator/users') ?>"><?php echo $this->translate('Thanh vien')?></a></li>
+								<?php endif; ?>
+								<?php if($this->currentUser->isAllowed('permission','read')) : ?>
+								<li><a href="<?php echo $this->url('administrator/permissions') ?>"><?php echo $this->translate('Phan quyen')?></a></li>
+								<?php endif; ?>
+							</ul></li>
+					    <?php endif;?>
+						<?php if ($this->currentUser->isAllowed('setting','read')) : ?>
+						<li><a href="<?php echo $this->url('administrator/system') ?>"><?php echo $this->translate('He thong')?></a></li>
+						<?php endif; ?>
 					</ul>
 
 					<ul class="nav pull-right">
 						<li class="divider-vertical"></li>
 						<li class="dropdown"><a
 							href="<?php echo $this->url('administrator/users') ?>"
-							class="dropdown-toggle" data-toggle="dropdown"><?php echo $this->currentUser['full_name'] ?>&nbsp;<b
+							class="dropdown-toggle" data-toggle="dropdown"><?php echo $currentUserInfo['full_name'] ?>&nbsp;<b
 								class="caret"></b></a>
 							<ul class="dropdown-menu">
 								<!-- <li><a href="<?php echo $this->url('administrator/users') ?>"><?php echo $this->translate('Thong tin ca nhan')?></a></li>
@@ -76,7 +100,7 @@ echo $this->headScript();
 							</ul></li>
 					</ul>
 
-					<?php if ($this->controllerClass == 'Administrator\\Controller\\ProfileController') :?>
+					<?php if ($this->controllerClass == 'Administrator\\Controller\\ProfileController' && $this->currentUser->isAllowed('profile', 'quick_search')) :?>
 					<form id="quickSearch" class="navbar-search pull-right" action="">
 						<label> <input type="text" class="search-query span3"
 							placeholder="<?php echo $this->translate('Tim nhanh bang ten hoac so dien thoai')?>"
@@ -98,3 +122,4 @@ echo $this->headScript();
 
 </body>
 </html>
+<?php } ?>

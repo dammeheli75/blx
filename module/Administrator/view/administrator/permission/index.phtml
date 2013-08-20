@@ -1,0 +1,57 @@
+<?php
+$this->headLink()->appendStylesheet($this->basePath() . '/common/admin/css/permission.css');
+$this->headScript()->prependFile($this->basePath() . '/common/admin/js/permission.js');
+?>
+<div class="container">
+	<div class="row">
+		<div class="span12">
+			<div class="errors">
+<!-- 				<div class="alert"> -->
+<!-- 					<button type="button" class="close" data-dismiss="alert">&times;</button> -->
+<!-- 					<strong>Warning!</strong> Best check yo self, you're not looking -->
+<!-- 					too good. -->
+<!-- 				</div> -->
+			</div>
+			<form
+				action="<?php echo $this->url('administrator/permissions') ?>"
+				method="post">
+				<fieldset>
+					<legend><?php echo $this->translate('Quan ly phan quyen')?></legend>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th></th>
+                            <?php foreach ($this->userGroups as $groupID => $title) :?>
+                            <th><?php echo $title?></th>
+                            <?php endforeach; ?>
+                        </tr>
+						</thead>
+						<tbody>
+                        <?php foreach ($this->permissions as $resourceId => $resource) : ?>
+                            <?php foreach ($resource as $privilegeId => $privilege) :?>
+                            <tr>
+								<td><?php echo $privilege['description'] ?></td>
+                                <?php foreach ($privilege['groups'] as $role => $isAllowed) : ?>
+                                <td class="radio">
+                                    <label class="radio">
+                                        <input type="radio" name="<?php echo $role?>[<?php echo $resourceId?>][<?php echo $privilegeId?>]" value="on" <?php echo ($isAllowed) ? 'checked' : ''?>>On
+                                    </label>
+                                    <label class="radio">
+                                        <input type="radio" name="<?php echo $role?>[<?php echo $resourceId?>][<?php echo $privilegeId?>]" value="off" <?php echo (!$isAllowed) ? 'checked' : ''?>>Off
+                                    </label>
+								</td>
+                                <?php endforeach; ?>
+                            </tr>
+                            <?php endforeach;?>
+                        <?php endforeach;?>
+                        </tbody>
+					</table>
+					<div class="form-actions">
+						<button type="submit" class="btn btn-success"><?php echo $this->translate('Luu thay doi')?></button>
+						<button type="submit" class="btn"><?php echo $this->translate('Reset')?></button>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>

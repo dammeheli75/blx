@@ -11,7 +11,8 @@ return array(
             'Administrator\Controller\Collaborator' => 'Administrator\Controller\CollaboratorController',
             'Administrator\Controller\Venue' => 'Administrator\Controller\VenueController',
             'Administrator\Controller\Category' => 'Administrator\Controller\CategoryController',
-            'Administrator\Controller\Post' => 'Administrator\Controller\PostController'
+            'Administrator\Controller\Post' => 'Administrator\Controller\PostController',
+            'Administrator\Controller\Permission' => 'Administrator\Controller\PermissionController'
         )
     ),
     'router' => array(
@@ -83,6 +84,37 @@ return array(
                                 // the controllers for your module are found
                                 '__NAMESPACE__' => 'Administrator\Controller',
                                 'controller' => 'User',
+                                'action' => 'index'
+                            )
+                        ),
+                        'may_terminate' => true,
+                        'child_routes' => array(
+                            // This route is a sane default when developing a module;
+                            // as you solidify the routes for your module, however,
+                            // you may want to remove it and replace it with more
+                            // specific routes.
+                            'default' => array(
+                                'type' => 'Segment',
+                                'options' => array(
+                                    'route' => '[/:action]',
+                                    'constraints' => array(
+                                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*'
+                                    ),
+                                    'defaults' => array()
+                                )
+                            )
+                        )
+                    ),
+                    'permissions' => array(
+                        'type' => 'Literal',
+                        'options' => array(
+                            // Change this to something specific to your module
+                            'route' => '/permissions',
+                            'defaults' => array(
+                                // Change this value to reflect the namespace in which
+                                // the controllers for your module are found
+                                '__NAMESPACE__' => 'Administrator\Controller',
+                                'controller' => 'Permission',
                                 'action' => 'index'
                             )
                         ),

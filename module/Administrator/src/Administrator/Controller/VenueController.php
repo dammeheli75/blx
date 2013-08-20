@@ -36,6 +36,7 @@ class VenueController extends AbstractActionController
 
     public function indexAction()
     {
+        if ($this->acl()->isAllowed('venue', 'read')) {
         $viewModel = new ViewModel();
         $serviceManager = $this->getEvent()
             ->getApplication()
@@ -192,6 +193,10 @@ class VenueController extends AbstractActionController
         
         $viewModel->setVariable('grid', $grid);
         return $viewModel;
+        } else {
+            // Redirect
+            $this->redirect()->toRoute('restriction-access');
+        }
     }
 
     public function readAction()

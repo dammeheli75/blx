@@ -25,6 +25,9 @@ class Module
         $moduleRouteListener = new ModuleRouteListener();
         $moduleRouteListener->attach($eventManager);
         
+        // Config
+        $config = $serviceManager->get('config');
+        
         // Set base Url
         $router = $serviceManager->get('router');
         $router->setBaseUrl(BASE_URL);
@@ -61,9 +64,7 @@ class Module
             
             // set controller, layout variables
             $controller->auth = $controller->layout()->auth = $auth;
-            // $controller->acl = $controller->layout()->acl = $serviceManager->get('acl');
             $controller->layout()->controllerClass = $controllerClass;
-            
             // Check access
             if ($module == 'Administrator' && $controllerClassPart[2] !== 'AuthenticationController') {
                 $currentUser = $userManager->getCurrentUser();
@@ -71,7 +72,7 @@ class Module
                     $controller->redirect()
                         ->toRoute('administrator/authentication/login');
                 } else {
-                    $controller->layout()->currentUser = $controller->currentUser = $currentUser->getInfo();
+                    $controller->layout()->currentUser = $controller->currentUser = $currentUser;
                 }
             }
             

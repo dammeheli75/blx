@@ -59,9 +59,11 @@ class CategoryController extends AbstractActionController
             //
             // Toolbar
             //
-            $toolbarCreateButton = new GridToolbarItem();
-            $toolbarCreateButton->name('create')->text($translator->translate('Tao chuyen muc moi'));
-            $grid->addToolbarItem($toolbarCreateButton);
+            if ($this->acl()->isAllowed('post_category', 'create')) {
+                $toolbarCreateButton = new GridToolbarItem();
+                $toolbarCreateButton->name('create')->text($translator->translate('Tao chuyen muc moi'));
+                $grid->addToolbarItem($toolbarCreateButton);
+            }
             //
             // Pageable
             //
@@ -141,50 +143,65 @@ class CategoryController extends AbstractActionController
                 ->attributes(' style="text-align: center"');
             $grid->addColumn($postCountColumn);
             // Command
-            $commandColumn = new GridColumn();
-            $commandColumn->title('&nbsp;');
-            $editCommand = new GridColumnCommandItem();
-            $editCommand->name('edit')->text($translator->translate('Sua'));
-            $deleteCommand = new GridColumnCommandItem();
-            $deleteCommand->name('destroy')->text($translator->translate('Xoa'));
-            $commandColumn->addCommandItem($editCommand)->addCommandItem($deleteCommand);
-            $grid->addColumn($commandColumn);
+            if ($this->acl()->isAllowed('post_category', 'update') || $this->acl()->isAllowed('post_category', 'delete')) {
+                $commandColumn = new GridColumn();
+                $commandColumn->title('&nbsp;');
+                if ($this->acl()->isAllowed('post_category', 'update')) {
+                    $editCommand = new GridColumnCommandItem();
+                    $editCommand->name('edit')->text($translator->translate('Sua'));
+                    $commandColumn->addCommandItem($editCommand);
+                }
+                if ($this->acl()->isAllowed('post_category', 'delete')) {
+                    $deleteCommand = new GridColumnCommandItem();
+                    $deleteCommand->name('destroy')->text($translator->translate('Xoa'));
+                    $commandColumn->addCommandItem($deleteCommand);
+                }
+                $grid->addColumn($commandColumn);
+            }
             //
             // DataSource
             //
             $dataSource = new DataSource();
-            // Transport Read
-            $transportRead = new DataSourceTransportRead();
-            $transportRead->url($this->url()
-                ->fromRoute('administrator/categories/default', array(
-                'action' => 'read'
-            )));
-            // Transport Create
-            $transportCreate = new DataSourceTransportCreate();
-            $transportCreate->url($this->url()
-                ->fromRoute('administrator/categories/default', array(
-                'action' => 'create'
-            )))
-                ->type('POST');
-            // Transport Update
-            $transportUpdate = new DataSourceTransportUpdate();
-            $transportUpdate->url($this->url()
-                ->fromRoute('administrator/categories/default', array(
-                'action' => 'update'
-            )))
-                ->type('POST');
-            // Transport Destroy
-            $transportDestroy = new DataSourceTransportDestroy();
-            $transportDestroy->url($this->url()
-                ->fromRoute('administrator/categories/default', array(
-                'action' => 'destroy'
-            )))
-                ->type('POST');
             $transport = new DataSourceTransport();
-            $transport->read($transportRead)
-                ->create($transportCreate)
-                ->update($transportUpdate)
-                ->destroy($transportDestroy);
+            // Transport Read
+            if ($this->acl()->isAllowed('post_category', 'read')) {
+                $transportRead = new DataSourceTransportRead();
+                $transportRead->url($this->url()
+                    ->fromRoute('administrator/categories/default', array(
+                    'action' => 'read'
+                )));
+                $transport->read($transportRead);
+            }
+            // Transport Create
+            if ($this->acl()->isAllowed('post_category', 'create')) {
+                $transportCreate = new DataSourceTransportCreate();
+                $transportCreate->url($this->url()
+                    ->fromRoute('administrator/categories/default', array(
+                    'action' => 'create'
+                )))
+                    ->type('POST');
+                $transport->create($transportCreate);
+            }
+            // Transport Update
+            if ($this->acl()->isAllowed('post_category', 'update')) {
+                $transportUpdate = new DataSourceTransportUpdate();
+                $transportUpdate->url($this->url()
+                    ->fromRoute('administrator/categories/default', array(
+                    'action' => 'update'
+                )))
+                    ->type('POST');
+                $transport->update($transportUpdate);
+            }
+            // Transport Destroy
+            if ($this->acl()->isAllowed('post_category', 'delete')) {
+                $transportDestroy = new DataSourceTransportDestroy();
+                $transportDestroy->url($this->url()
+                    ->fromRoute('administrator/categories/default', array(
+                    'action' => 'destroy'
+                )))
+                    ->type('POST');
+                $transport->destroy($transportDestroy);
+            }
             $dataSource->transport($transport);
             // Model Fields
             $schemaModel = new DataSourceSchemaModel();

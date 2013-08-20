@@ -11,8 +11,8 @@ $(document).ready(function () {
 
     var map;
 
-    var vietDungLocation = new google.maps.LatLng(21.006345, 105.846190);
-    var viSongLocation = new google.maps.LatLng(21.036862, 105.774883);
+    var vietDungLocation = new google.maps.LatLng(21.005321, 105.847150);
+    var khuongDuyLocation = new google.maps.LatLng(21.006347, 105.846906);
 
     map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 15,
@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
     new google.maps.Marker({
-        position: viSongLocation,
+        position: khuongDuyLocation,
         map: map,
         draggable: false,
         animation: google.maps.Animation.DROP
@@ -43,7 +43,7 @@ $(document).ready(function () {
                 location = vietDungLocation;
                 break;
             case '#collaborator-vi-song':
-                location = viSongLocation;
+                location = khuongDuyLocation;
                 break;
             default:
                 break;

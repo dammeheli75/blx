@@ -27,13 +27,16 @@ class Permission extends AbstractTableGateway
                 return $this->update($perrmission['permission'], $where);
             } else 
                 if (isset($perrmission['role']) && isset($perrmission['resource']) && isset($perrmission['privilege']) && isset($perrmission['allow'])) {
+                    
                     $where->equalTo('role', $perrmission['role'])
                         ->equalTo('resource', $perrmission['resource'])
                         ->equalTo('privilege', $perrmission['privilege']);
+                    
                     $result = $this->update(array(
-                        'is_allow' => $perrmission['allow']
+                        'allow' => $perrmission['allow']
                     ), $where);
-                    if ($result){
+                    
+                    if ($result) {
                         $this->clearCache();
                         \Blx\Cache\StorageFactory::clearCache('Acl');
                     }

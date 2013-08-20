@@ -43,7 +43,7 @@ class ProfileController extends AbstractActionController
 
     public function indexAction()
     {
-        if ($this->acl()->isAllowed('profile', 'management')) {
+        if ($this->acl()->isAllowed('profile', 'management') && $this->acl()->isAllowed('profile', 'read')) {
             $viewModel = new ViewModel();
             $serviceManager = $this->getEvent()
                 ->getApplication()
@@ -277,16 +277,23 @@ class ProfileController extends AbstractActionController
                 ->sortable(false);
             $grid->addColumn($noteColumn);
             // Command
-            $commandColumn = new GridColumn();
-            $editCommand = new GridColumnCommandItem();
-            $editCommand->name('edit')->text($translator->translate('Sua'));
-            $destroyCommand = new GridColumnCommandItem();
-            $destroyCommand->name('destroy')->text($translator->translate('Xoa'));
-            $commandColumn->addCommandItem($editCommand)->addCommandItem($destroyCommand);
-            $commandColumn->title('&nbsp;')
-                ->width(160)
-                ->attributes(' style="padding-left: 15px"');
-            $grid->addColumn($commandColumn);
+            if ($this->acl()->isAllowed('profile', 'update') || $this->acl()->isAllowed('profile', 'delete')) {
+                $commandColumn = new GridColumn();
+                if ($this->acl()->isAllowed('profile', 'update')) {
+                    $editCommand = new GridColumnCommandItem();
+                    $editCommand->name('edit')->text($translator->translate('Sua'));
+                    $commandColumn->addCommandItem($editCommand);
+                }
+                if ($this->acl()->isAllowed('profile', 'delete')) {
+                    $destroyCommand = new GridColumnCommandItem();
+                    $destroyCommand->name('destroy')->text($translator->translate('Xoa'));
+                    $commandColumn->addCommandItem($destroyCommand);
+                }
+                $commandColumn->title('&nbsp;')
+                    ->width(160)
+                    ->attributes(' style="padding-left: 15px; text-align: center;"');
+                $grid->addColumn($commandColumn);
+            }
             //
             // Height
             //
@@ -338,46 +345,56 @@ class ProfileController extends AbstractActionController
             //
             // Toolbar
             //
-            $createButtonToolbar = new GridToolbarItem();
-            $createButtonToolbar->name('create');
-            $createButtonToolbar->text($translator->translate('Them ho so'));
-            $grid->addToolbarItem($createButtonToolbar);
+            if ($this->acl()->isAllowed('profile', 'create')) {
+                $createButtonToolbar = new GridToolbarItem();
+                $createButtonToolbar->name('create');
+                $createButtonToolbar->text($translator->translate('Them ho so'));
+                $grid->addToolbarItem($createButtonToolbar);
+            }
             //
             // DataSource
             //
             $dataSource = new DataSource();
+            $transport = new DataSourceTransport();
             // Transport Read
+            if ($this->acl()->isAllowed('profile', 'read')) {
             $transportRead = new DataSourceTransportRead();
             $transportRead->url($this->url()
                 ->fromRoute('administrator/profiles/default', array(
                 'action' => 'read'
             )));
+            $transport->read($transportRead);
+            }
             // Transport Create
-            $transportCreate = new DataSourceTransportCreate();
-            $transportCreate->url($this->url()
-                ->fromRoute('administrator/profiles/default', array(
-                'action' => 'create'
-            )))
-                ->type('POST');
+            if ($this->acl()->isAllowed('profile', 'create')) {
+                $transportCreate = new DataSourceTransportCreate();
+                $transportCreate->url($this->url()
+                    ->fromRoute('administrator/profiles/default', array(
+                    'action' => 'create'
+                )))
+                    ->type('POST');
+                $transport->create($transportCreate);
+            }
             // Transport Update
-            $transportUpdate = new DataSourceTransportUpdate();
-            $transportUpdate->url($this->url()
-                ->fromRoute('administrator/profiles/default', array(
-                'action' => 'update'
-            )))
-                ->type('POST');
+            if ($this->acl()->isAllowed('profile', 'update')) {
+                $transportUpdate = new DataSourceTransportUpdate();
+                $transportUpdate->url($this->url()
+                    ->fromRoute('administrator/profiles/default', array(
+                    'action' => 'update'
+                )))
+                    ->type('POST');
+                $transport->update($transportUpdate);
+            }
             // Transport Destroy
-            $transportDestroy = new DataSourceTransportDestroy();
-            $transportDestroy->url($this->url()
-                ->fromRoute('administrator/profiles/default', array(
-                'action' => 'destroy'
-            )))
-                ->type('POST');
-            $transport = new DataSourceTransport();
-            $transport->read($transportRead)
-                ->create($transportCreate)
-                ->update($transportUpdate)
-                ->destroy($transportDestroy);
+            if ($this->acl()->isAllowed('profile', 'destroy')) {
+                $transportDestroy = new DataSourceTransportDestroy();
+                $transportDestroy->url($this->url()
+                    ->fromRoute('administrator/profiles/default', array(
+                    'action' => 'destroy'
+                )))
+                    ->type('POST');
+                $transport->destroy($transportDestroy);
+            }
             $dataSource->transport($transport);
             // Schema
             $schema = new DataSourceSchema();
