@@ -358,12 +358,12 @@ class ProfileController extends AbstractActionController
             $transport = new DataSourceTransport();
             // Transport Read
             if ($this->acl()->isAllowed('profile', 'read')) {
-            $transportRead = new DataSourceTransportRead();
-            $transportRead->url($this->url()
-                ->fromRoute('administrator/profiles/default', array(
-                'action' => 'read'
-            )));
-            $transport->read($transportRead);
+                $transportRead = new DataSourceTransportRead();
+                $transportRead->url($this->url()
+                    ->fromRoute('administrator/profiles/default', array(
+                    'action' => 'read'
+                )));
+                $transport->read($transportRead);
             }
             // Transport Create
             if ($this->acl()->isAllowed('profile', 'create')) {
@@ -426,6 +426,7 @@ class ProfileController extends AbstractActionController
             $model->addField($testStatusModelField);
             $testDateModelField = new DataSourceSchemaModelField('testDate');
             $testDateModelField->type('date');
+            $testDateModelField->defaultValue(null);
             $model->addField($testDateModelField);
             $testVenueModelField = new DataSourceSchemaModelField('testVenue');
             $model->addField($testVenueModelField);
