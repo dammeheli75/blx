@@ -52,7 +52,7 @@ class Profile extends AbstractTableGateway
             $where->like('full_name', "%" . $filterable['full_name'] . "%");
         }
         
-        $where->isNotNull('test_date')->isNotNull('test_venue_id');
+//         $where->isNotNull('test_date')->isNotNull('test_venue_id');
         $select->where($where)->order('time_created DESC');
         $select->columns(array(
             $this->getPrimaryKey() => new Expression('COUNT(*)')

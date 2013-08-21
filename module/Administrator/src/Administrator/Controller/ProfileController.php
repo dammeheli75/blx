@@ -386,7 +386,7 @@ class ProfileController extends AbstractActionController
                 $transport->update($transportUpdate);
             }
             // Transport Destroy
-            if ($this->acl()->isAllowed('profile', 'destroy')) {
+            if ($this->acl()->isAllowed('profile', 'delete')) {
                 $transportDestroy = new DataSourceTransportDestroy();
                 $transportDestroy->url($this->url()
                     ->fromRoute('administrator/profiles/default', array(
