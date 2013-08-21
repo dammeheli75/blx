@@ -13,10 +13,6 @@ ul {
     margin: 0;
 }
 
-ul, li {
-    list-style: none;
-}
-
 /* Custom radio & checkbox */
 input[type="checkbox"] {
     -webkit-appearance: none;
@@ -226,6 +222,7 @@ a:hover {
 
 #breadcrumb .block-header li {
     float: left;
+    list-style: none;
 }
 
 #breadcrumb .block-header li a {
@@ -273,6 +270,7 @@ a:hover {
 #breadcrumb ul.link-group-list li {
     float: left;
     width: 130px;
+    list-style: none;
 }
 
 #breadcrumb ul.link-group-list > li > ul {
@@ -382,6 +380,7 @@ a:hover {
 
 #blx-social-network-fixed-left-side ul li {
     margin-top: 14px;
+    list-style: none;
 }
 
 #blx-social-network-fixed-left-side ul li a {

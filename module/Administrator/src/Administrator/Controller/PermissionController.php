@@ -65,7 +65,7 @@ class PermissionController extends AbstractActionController
                 $userGroupID = $temp3[2];
                 if (! array_key_exists($userGroupID, $userGroups)) {
                     if ($userGroupID != 'guest') {
-                        $userGroup = $userGroupModel->cache->getGroup(array(
+                        $userGroup = $userGroupModel->getGroup(array(
                             'group_id' => $userGroupID
                         ));
                         $userGroups[$permission['role']] = $userGroup['title'];

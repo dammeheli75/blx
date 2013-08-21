@@ -108,7 +108,7 @@ class ProfileController extends AbstractActionController
             $phoneNumberColumn = new GridColumn();
             $phoneNumberColumn->field('phoneNumber')
                 ->title($translator->translate('Dien thoai'))
-                ->width(110)
+                ->width(115)
                 ->filterable(false);
             $grid->addColumn($phoneNumberColumn);
             // Collaborator

@@ -72,10 +72,10 @@ if ($this->categoryQuery) {
 					<div class="news-content">
 						<div class="author">
 							<span>
+							<em>
                                 <?php echo $this->translate('dang boi')?>
-                                <a href="#" class="authorName"><?php echo $post['author']['full_name'] ?></a>
-                                &nbsp;<?php echo $this->translate('vao luc')?>&nbsp;
-                                <?php echo $post['last_updated']->format('H:i:s') ?>&nbsp;<?php echo $this->translate('ngay')?>&nbsp;<?php echo $post['last_updated']->format('d/m/Y')?>
+                                <a href="#" class="authorName"><?php echo $post['author']['full_name'] ?></a>&nbsp;<?php echo $this->translate('vao luc')?>&nbsp;<?php echo $post['last_updated']->format('H:i:s') ?>&nbsp;<?php echo $this->translate('ngay')?>&nbsp;<?php echo $post['last_updated']->format('d/m/Y')?>
+							</em>
 							</span>
 						</div>
 						<div class="newsText">

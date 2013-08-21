@@ -15,7 +15,10 @@ class Profile extends AbstractTableGateway
 
     public function getProfiles()
     {
-        return $this->select()->toArray();
+        $select = new Select($this->getTable());
+        $select->order('last_update DESC');
+        
+        return $this->selectWith($select)->toArray();
     }
 
     public function getProfilesForFixture($filterable = null, $pageable = null, $option = null)

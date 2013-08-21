@@ -1,3 +1,7 @@
+ul, li {
+    list-style: none;
+}
+
 /* Fixture */
 .header {
     border-top: 1px solid #6d84b4;

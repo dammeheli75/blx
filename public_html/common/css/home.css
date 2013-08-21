@@ -1,3 +1,7 @@
+ul, li {
+    list-style: none;
+}
+
 #overview {
     border: 1px solid #6d84b4;
     border-radius: 6px;

@@ -34,7 +34,7 @@ class UserGroupController extends AbstractActionController
         
         $userGroupModel = new UserGroup($serviceManager);
         
-        $groups = $userGroupModel->cache->getGroups();
+        $groups = $userGroupModel->getGroups();
         
         $response = array(
             'succes' => true,
@@ -45,8 +45,8 @@ class UserGroupController extends AbstractActionController
             $response['groups'][] = array(
                 'ID' => $group['group_id'],
                 'title' => $group['title'],
-                'timeCreated' => $group['time_created'],
-                'lastUpdate' => $group['last_updated']
+//                 'timeCreated' => $group['time_created'],
+//                 'lastUpdate' => $group['last_updated']
             );
         }
         

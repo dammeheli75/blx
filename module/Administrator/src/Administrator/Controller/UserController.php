@@ -328,7 +328,7 @@ class UserController extends AbstractActionController
             );
             
             foreach ($users as $user) {
-                $userGroup = $userGroupModel->cache->getGroup(array(
+                $userGroup = $userGroupModel->getGroup(array(
                     'group_id' => $user['group_id']
                 ));
                 

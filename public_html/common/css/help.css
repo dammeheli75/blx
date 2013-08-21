@@ -1,3 +1,7 @@
+ul, li {
+    list-style: none;
+}
+
 #helpTabs {
     border: 1px solid #6d84b4;
     border-bottom: 5px solid #6d84b4;

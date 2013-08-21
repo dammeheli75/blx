@@ -12,10 +12,10 @@ use Zend\Mvc\Controller\AbstractActionController;
 use Zend\View\Model\ViewModel;
 use Zend\Json\Encoder;
 use Administrator\Model\User;
+use Blx\User\UserManager;
 
 class CollaboratorController extends AbstractActionController
 {
-    const COLLABORATOR_GROUP = 6;
 
     public function indexAction()
     {
@@ -33,7 +33,7 @@ class CollaboratorController extends AbstractActionController
         $userModel = new User();
         
         $collaborators = $userModel->cache->getUsers(array(
-            'group_id' => self::COLLABORATOR_GROUP
+            'group_id' => UserManager::COLLABORATOR_GROUP
         ));
         
         $response = array(

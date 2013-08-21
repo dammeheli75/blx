@@ -2,7 +2,7 @@
 namespace Administrator\Model;
 
 use Blx\Db\TableGateway\AbstractTableGateway;
-use Zend\Db\Sql\Where;
+use Blx\User\UserManager;
 
 class UserGroup extends AbstractTableGateway
 {
@@ -13,22 +13,44 @@ class UserGroup extends AbstractTableGateway
 
     public function getGroups()
     {
-        return $this->select()->toArray();
+        $translator = UserManager::getStaticServiceManager()->get('translator');
+        
+        return array(
+            array(
+                'group_id' => UserManager::ADMINISTRATOR_GROUP,
+                'title' => $translator->translate('Administrator')
+            ),
+            array(
+                'group_id' => UserManager::MANAGER_GROUP,
+                'title' => $translator->translate('Manager')
+            ),
+            array(
+                'group_id' => UserManager::COLLABORATOR_GROUP,
+                'title' => $translator->translate('Collaborator')
+            )
+        );
     }
 
     public function getGroup(array $options)
     {
-        $where = new Where();
-        
+        $results = array();
         if (isset($options['group_id'])) {
-            $where->equalTo('group_id', $options['group_id']);
+            foreach ($this->getGroups() as $group) {
+                if ($group['group_id'] == $options['group_id']) {
+                    $results[] = $group;
+                }
+            }
+        } else {
+            $results = $this->getGroups();
         }
-        
-        $result = $this->select($where)->toArray();
-        
-        if (count($result) > 0) {
-            return $result[0];
+        if (count($results) > 0) {
+            return $results[0];
         }
-        return false;
+        return null;
+    }
+
+    public function count($conditions = null)
+    {
+        return count($this->getGroups());
     }
 }
