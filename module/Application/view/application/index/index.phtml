@@ -179,7 +179,7 @@ $this->headScript()
 					<h3><?php echo $this->translate('Ho so bao gom')?></h3>
 					<ul>
 						<li>
-                            <?php echo $this->translate('6 anh chan dung 3x4')?>
+                            <?php echo $this->translate('3 anh chan dung 3x4')?>
                         </li>
 						<li>
                             <?php echo $this->translate('1 ban photocopy chung minh thu 2 mat khong can cong chung')?>
@@ -210,11 +210,17 @@ $this->headScript()
                                 <span class="phone"><?php echo $this->translate('KhuongManhDuy_PhoneNumbers')?></span>
 								<span class="address"><?php echo $this->translate('KhuongManhDuy_Address')?></span>
 						</a></li>
+						<li><a href="#collaborator-cam-khang">
+                                <?php echo $this->translate('Luong Cam Khang')?>
+                                <span class="phone"><?php echo $this->translate('LuongCamKhang_PhoneNumbers')?></span>
+								<span class="address"><?php echo $this->translate('LuongCamKhang_Address')?></span>
+						</a></li>
 					</ul>
 
 					<div class="tab-content hide">
 						<div class="tab-pane active" id="collaborator-viet-dung"></div>
-						<div class="tab-pane active" id="collaborator-manh-duy"></div>
+						<div class="tab-pane" id="collaborator-manh-duy"></div>
+						<div class="tab-pane" id="collaborator-cam-khang"></div>
 					</div>
 				</div>
 

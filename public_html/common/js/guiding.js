@@ -14,24 +14,24 @@ $(document).ready(function () {
         })
     }, 100);
 
-    $('#venueTab a').click(function (e) {
+    $('#venueTab').find('a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     });
 
     var map;
 
-    var qtgLocation = new google.maps.LatLng(21.025742, 105.838132);
+    var lvtLocation = new google.maps.LatLng(21.001990, 105.802950);
     var tvdLocation = new google.maps.LatLng(20.998605, 105.820202);
 
     map = new google.maps.Map(document.getElementById('map-canvas'), {
         zoom: 16,
-        center: qtgLocation,
+        center: lvtLocation,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
     new google.maps.Marker({
-        position: qtgLocation,
+        position: lvtLocation,
         map: map,
         draggable: false,
         animation: google.maps.Animation.DROP
@@ -44,13 +44,13 @@ $(document).ready(function () {
         animation: google.maps.Animation.DROP
     });
 
-    $('#venue .nav-tabs li a').on('show', function (e) {
+    $('#venue').find('.nav-tabs li a').on('show', function (e) {
         var tabLocation = $(e.target).attr('href');
         var location;
 
         switch (tabLocation) {
-            case '#so-1-quoc-tu-giam':
-                location = qtgLocation;
+            case '#so-27-le-van-thiem':
+                location = lvtLocation;
                 break;
             case '#so-101-to-vinh-dien':
                 location = tvdLocation;

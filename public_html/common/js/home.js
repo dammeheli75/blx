@@ -4,7 +4,9 @@ $(document).ready(function () {
         interval: 5000
     });
 
-    $('#fillingPlaceTab').find('a').click(function (e) {
+    var fillingPlaceTab = $('#fillingPlaceTab');
+
+    fillingPlaceTab.find('a').click(function (e) {
         e.preventDefault();
         $(this).tab('show');
     });
@@ -13,9 +15,10 @@ $(document).ready(function () {
 
     var vietDungLocation = new google.maps.LatLng(21.005321, 105.847150);
     var manhDuyLocation = new google.maps.LatLng(21.006347, 105.846906);
+    var camKhangLocation = new google.maps.LatLng(21.004975, 105.847043);
 
     map = new google.maps.Map(document.getElementById('map-canvas'), {
-        zoom: 16,
+        zoom: 18,
         center: vietDungLocation,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -34,7 +37,14 @@ $(document).ready(function () {
         animation: google.maps.Animation.DROP
     });
 
-    $('#fillingPlaceTab').find('a').on('shown', function (e) {
+    new google.maps.Marker({
+        position: camKhangLocation,
+        map: map,
+        draggable: false,
+        animation: google.maps.Animation.DROP
+    });
+
+    fillingPlaceTab.find('a').on('shown', function (e) {
         var tabLocation = $(e.target).attr('href');
         var location;
 
@@ -44,6 +54,9 @@ $(document).ready(function () {
                 break;
             case '#collaborator-manh-duy':
                 location = manhDuyLocation;
+                break;
+            case '#collaborator-cam-khang':
+                location = camKhangLocation;
                 break;
             default:
                 break;

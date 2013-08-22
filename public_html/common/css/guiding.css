@@ -221,6 +221,7 @@ ul, li {
 
 #rule .block-body {
     padding: 20px;
+    overflow: hidden;
 }
 
 #rule .block-body h3 {

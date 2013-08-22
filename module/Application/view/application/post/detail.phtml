@@ -5,10 +5,25 @@ $this->headScript()->prependFile($this->basePath() . '/common/js/post.min.js');
 
 $post = $this->post;
 
-$this->headTitle()->prepend($post['title']);
-$this->headMeta()->setName('description', $this->translate('news_detail_prepend_meta_description') . $post['title']);
+// Excerpt
+$postContentParts = explode("<div style=\"page-break-after: always;\"><span style=\"display:none\">&nbsp;</span></div>", $post['content']);
+$postExcerpt = $postContentParts[0];
 
+// Post thumbnail
+$postImageUrls = array();
+$thumbnail = 'http://blx.vn/common/images/logo-square-75x75.jpg';
+preg_match_all('#<img.+src="(?<image_url>(.+)\.(jpg|png))"#imsU', $post['content'], $postImageUrls);
+if (isset($postImageUrls['image_url'][0]) && $postImageUrls['image_url'][0] != '#') {
+    $thumbnail = $postImageUrls[0];
+}
+
+$this->headTitle()->prepend(strip_tags(html_entity_decode($post['title'])));
+$this->headMeta()
+    ->setName('description', $postExcerpt)
+    ->setName('title', $post['title'])
+    ->setName('image_src', $thumbnail);
 ?>
+
 <div class="span3 sidebar">
 	<ul class="nav nav-list sidenav">
 		<li class="nav-header"><?php echo $this->translate('Chuyen muc')?></li>
@@ -20,7 +35,12 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 		
 		
 		
-		<li>
+		
+		
+		
+		
+		
+	<li>
     	    <?php endif; ?>
 		    <a
 			href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
@@ -30,15 +50,14 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 </div>
 
 <div class="span9 news-container">
-	<!-- Post Detail -->
-	<div class="row news-item">
-		<div class="span9">
+	<!-- Post Detail --><div class="row news-item">
+				<div class="span9">
 			<div class="block news-block block-square">
 				<div class="block-header">
 					<h2>
 						<a
-							href="<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
-							title="<?php echo $post['title'] ?>"><?php echo $post['title'] ?></a>
+									href="<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
+									title="<?php echo $post['title'] ?>"><?php echo $post['title'] ?></a>
 					</h2>
 				</div>
 				<div class="block-body">
@@ -56,7 +75,7 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 				</div>
 				<div class="block-footer">
 					<div id="fb-root"></div>
-<script>
+					<script>
   window.fbAsyncInit = function() {
     // init the FB JS SDK
     FB.init({
@@ -80,8 +99,8 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
    }(document, 'script', 'facebook-jssdk'));
 </script>
 					<div class="fb-like"
-						data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
-						data-width="600" data-show-faces="true" data-send="true"></div>
+								data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
+								data-width="600" data-show-faces="true" data-send="true"></div>
 				</div>
 			</div>
 		</div>
@@ -92,8 +111,12 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 		<div class="span9">
 			<div class="block block-square comment-block">
 				<!-- Facebook comment -->
-				<div class="fb-comments" data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>" data-width="670"></div>
+				<div class="fb-comments"
+							data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
+							data-width="670"></div>
 			</div>
 		</div>
 	</div>
-</div>
+
+		
+		</div>

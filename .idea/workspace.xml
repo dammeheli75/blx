@@ -28,17 +28,17 @@
     <file path="/kendo.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375396310878" ignored="false" />
     <file path="/fixture.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1376029281896" ignored="false" />
     <file path="/result.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1376834421937" ignored="false" />
-    <file path="/home.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377025364076" ignored="false" />
+    <file path="/home.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377183033953" ignored="false" />
     <file path="/fixture-and-results.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375517817079" ignored="false" />
     <file path="/common.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377102306586" ignored="false" />
     <file path="/404.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375799049393" ignored="false" />
     <file path="/document.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375970966045" ignored="false" />
     <file path="/filling.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426359288" ignored="false" />
-    <file path="/guiding.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426362203" ignored="false" />
+    <file path="/guiding.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377165472803" ignored="false" />
     <file path="/help.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426366578" ignored="false" />
     <file path="/home.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377102200528" ignored="false" />
     <file path="/notice.css" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375515693864" ignored="false" />
-    <file path="/guiding.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426386245" ignored="false" />
+    <file path="/guiding.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1377160266846" ignored="false" />
     <file path="/document.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375978255260" ignored="false" />
     <file path="/notice.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426406808" ignored="false" />
     <file path="/uploader.js" changelist="316f4f3c-1558-453f-9d2a-4fd5eea13d27" time="1375426410567" ignored="false" />
@@ -103,46 +103,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="guiding.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.css">
+      <file leaf-file-name="home.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public_html/common/js/home.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="222" column="18" selection-start="11070" selection-end="11070" vertical-scroll-proportion="-9.230769">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/common/js/post.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/common/css/post.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="92" column="55" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-12.153846">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="home.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public_html/common/css/home.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="344" column="1" selection-start="20229" selection-end="20229" vertical-scroll-proportion="-22.423077">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public_html/common/css/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="354" column="20" selection-start="9401" selection-end="9401" vertical-scroll-proportion="0.42199108">
+            <state line="20" column="16" selection-start="585" selection-end="585" vertical-scroll-proportion="0.35622317">
               <folding />
             </state>
           </provider>
@@ -166,9 +130,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public_html/common/admin/js/permission.js" />
         <option value="$PROJECT_DIR$/public_html/common/admin/css/permission.css" />
-        <option value="$PROJECT_DIR$/public_html/common/js/home.js" />
         <option value="$PROJECT_DIR$/public_html/common/admin/css/category.css" />
         <option value="$PROJECT_DIR$/public_html/common/admin/css/home.css" />
         <option value="$PROJECT_DIR$/public_html/common/admin/css/login.css" />
@@ -177,11 +139,13 @@
         <option value="$PROJECT_DIR$/public_html/common/css/document.css" />
         <option value="$PROJECT_DIR$/public_html/common/css/fixture-and-results.css" />
         <option value="$PROJECT_DIR$/public_html/common/css/help.css" />
-        <option value="$PROJECT_DIR$/public_html/common/css/guiding.css" />
         <option value="$PROJECT_DIR$/public_html/common/js/post.js" />
         <option value="$PROJECT_DIR$/public_html/common/css/post.css" />
         <option value="$PROJECT_DIR$/public_html/common/css/home.css" />
         <option value="$PROJECT_DIR$/public_html/common/css/common.css" />
+        <option value="$PROJECT_DIR$/public_html/common/js/guiding.js" />
+        <option value="$PROJECT_DIR$/public_html/common/css/guiding.css" />
+        <option value="$PROJECT_DIR$/public_html/common/js/home.js" />
       </list>
     </option>
   </component>
@@ -372,6 +336,32 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="blx" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public_html" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="guiding.css" />
+              <option name="myItemType" value="com.intellij.plugins.watcher.projectView.NestingTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -607,31 +597,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/public_html/common/admin/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/common/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="79" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/common/admin/css/category.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/common/admin/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="1" selection-start="28" selection-end="28" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/common/admin/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="45" selection-start="140" selection-end="140" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/admin/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="27" selection-start="134" selection-end="134" vertical-scroll-proportion="0.02170767">
@@ -674,23 +639,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="222" column="18" selection-start="11070" selection-end="11070" vertical-scroll-proportion="-9.230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/js/post.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="3" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
-          <folding />
+        <state line="1" column="0" selection-start="32" selection-end="32" vertical-scroll-proportion="0.0">
+          <folding>
+            <marker date="1377096720000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/css/post.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="55" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-12.153846">
+        <state line="92" column="1" selection-start="1862" selection-end="1862" vertical-scroll-proportion="-12.153846">
           <folding />
         </state>
       </provider>
@@ -704,7 +664,61 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public_html/common/css/common.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="354" column="20" selection-start="9401" selection-end="9401" vertical-scroll-proportion="0.42199108">
+        <state line="354" column="20" selection-start="9401" selection-end="9401" vertical-scroll-proportion="-10.923077">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/guiding.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="66" selection-start="627" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="220" column="18" selection-start="11031" selection-end="11031" vertical-scroll-proportion="-27.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/css/guiding.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#1151#2498#2" expanded="true" />
+            <element signature="e#2540#3403#2" expanded="true" />
+            <element signature="e#3502#4437#2" expanded="true" />
+            <element signature="e#4475#5122#2" expanded="true" />
+            <element signature="e#5203#5926#2" expanded="true" />
+            <element signature="e#5963#6450#2" expanded="true" />
+            <element signature="e#6531#7826#2" expanded="true" />
+            <element signature="e#7863#8910#2" expanded="true" />
+            <element signature="e#10427#17262#2" expanded="true" />
+            <element signature="e#17371#25250#2" expanded="true" />
+            <element signature="e#25403#25758#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/document.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/fixture.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public_html/common/js/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="16" selection-start="585" selection-end="585" vertical-scroll-proportion="0.35622317">
           <folding />
         </state>
       </provider>

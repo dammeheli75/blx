@@ -7,6 +7,7 @@
         <item url="file://$PROJECT_DIR$/public_html/common/js/post.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/js/result.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/admin/js/permission.min.js" />
+        <item url="file://$PROJECT_DIR$/public_html/common/js/guiding.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
         <item url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
       </sourceFilesUrls>
@@ -17,6 +18,7 @@
       <root url="file://$PROJECT_DIR$/public_html/common/js/post.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/js/result.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/admin/js/permission.min.js" />
+      <root url="file://$PROJECT_DIR$/public_html/common/js/guiding.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/js/fixture.min.js" />
       <root url="file://$PROJECT_DIR$/public_html/common/js/document.min.js" />
     </CLASSES>

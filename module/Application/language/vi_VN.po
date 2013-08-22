@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-21 21:12+0700\n"
-"PO-Revision-Date: 2013-08-21 21:18+0700\n"
+"POT-Creation-Date: 2013-08-22 21:51+0700\n"
+"PO-Revision-Date: 2013-08-22 21:52+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: BLX.VN <admin@blx.vn>\n"
 "Language: Tiếng Việt\n"
@@ -114,9 +114,9 @@ msgstr "Sửa"
 #: module/Administrator/src/Administrator/Controller/UserController.php:408
 #: module/Administrator/src/Administrator/Controller/UserController.php:463
 #: module/Administrator/src/Administrator/Controller/UserController.php:499
-#: module/Administrator/src/Administrator/Controller/VenueController.php:263
-#: module/Administrator/src/Administrator/Controller/VenueController.php:300
-#: module/Administrator/src/Administrator/Controller/VenueController.php:331
+#: module/Administrator/src/Administrator/Controller/VenueController.php:277
+#: module/Administrator/src/Administrator/Controller/VenueController.php:319
+#: module/Administrator/src/Administrator/Controller/VenueController.php:355
 msgid "Truy cap bi han che"
 msgstr "Truy cập bị hạn chế"
 
@@ -152,7 +152,7 @@ msgstr "Tác giả"
 #: module/Administrator/src/Administrator/Controller/PostController.php:122
 #: module/Administrator/view/administrator/post/add.phtml:18
 #: module/Administrator/view/administrator/post/edit.phtml:28
-#: module/Application/view/application/post/detail.phtml:14
+#: module/Application/view/application/post/detail.phtml:29
 #: module/Application/view/application/post/index.phtml:18
 #: module/Application/view/layout/administrator.phtml:63
 msgid "Chuyen muc"
@@ -372,15 +372,15 @@ msgstr "Kinh độ"
 msgid "Vi do"
 msgstr "Vĩ độ"
 
-#: module/Administrator/src/Administrator/Controller/VenueController.php:168
+#: module/Administrator/src/Administrator/Controller/VenueController.php:176
 msgid "Co chac chan muon xoa dia diem nay?"
 msgstr "Có chắc chắn muốn xoá địa điểm này?"
 
-#: module/Administrator/src/Administrator/Controller/VenueController.php:182
+#: module/Administrator/src/Administrator/Controller/VenueController.php:190
 msgid "Hien thi {0}-{1}/{2} dia diem"
 msgstr "Hiển thị {0}-{1}/{2} địa điểm"
 
-#: module/Administrator/src/Administrator/Controller/VenueController.php:191
+#: module/Administrator/src/Administrator/Controller/VenueController.php:199
 msgid "Them dia diem"
 msgstr "Thêm địa điểm"
 
@@ -416,7 +416,7 @@ msgstr "Hướng dẫn thi bằng lái xe hạng A1"
 
 #: module/Application/src/Application/Controller/IndexController.php:32
 #: module/Application/view/layout/administrator.phtml:47
-#: module/Application/view/layout/layout.phtml:88
+#: module/Application/view/layout/layout.phtml:89
 msgid "Trang chu"
 msgstr "Trang chủ"
 
@@ -424,7 +424,7 @@ msgstr "Trang chủ"
 #: module/Application/src/Application/Controller/PostController.php:200
 #: module/Application/view/application/post/index.phtml:11
 #: module/Application/view/layout/administrator.phtml:58
-#: module/Application/view/layout/layout.phtml:49
+#: module/Application/view/layout/layout.phtml:50
 msgid "Tin tuc"
 msgstr "Tin tức"
 
@@ -3830,12 +3830,12 @@ msgid "Thi xong."
 msgstr "Thi xong."
 
 #: module/Application/view/application/guiding/index.phtml:76
-msgid "So 1 Quoc Tu Giam"
-msgstr "Số 1 Quốc Tử Giám"
+msgid "27 Le Van Thiem"
+msgstr "27 Lê Văn Thiêm"
 
 #: module/Application/view/application/guiding/index.phtml:77
-msgid "Cach van mieu Quoc Tu Giam 500m"
-msgstr "Cách Văn Miếu Quốc Tử Giám 500m"
+msgid "Gan lang sinh vien Hacinco"
+msgstr "Gần làng sinh viên Hacinco"
 
 #: module/Application/view/application/guiding/index.phtml:79
 msgid "101 To Vinh Dien"
@@ -3872,23 +3872,24 @@ msgstr ""
 "u n&ecirc;n làm là ra v&ecirc;̀ và báo k&ecirc;́t quả với mình, tuy&ecirc;̣t "
 "đ&ocirc;́i kh&ocirc;ng xin xỏ hay m&acirc;́t ti&ecirc;̀n cho ai cả vì sự "
 "th&acirc;̣t là các bạn v&acirc;̃n phải thi lại l&acirc;̀n sau th&ocirc;i.</"
-"p><p>&nbsp;</p><p>Quy ch&ecirc;́ thi c&acirc;́p gi&acirc;́y phép lái xe hạng A1:"
-"</p><p>M&ocirc;̃i l&acirc;̀n gọi t&ecirc;n sẽ có 20 bạn được vào thi l&acirc;̀n "
-"lượt lý thuy&ecirc;́t trước sau đó đ&ecirc;́n thực hành.</p><p>+ Ph&acirc;̀n "
-"thi lý thuy&ecirc;́t (làm trong 15 phút): M&ocirc;̃i bạn sẽ được sắp x&ecirc;́p "
-"ng&ocirc;̀i vào m&ocirc;̣t máy tính ri&ecirc;ng, các bạn làm bài tr&ecirc;n "
-"ph&acirc;̀n m&ecirc;̀m của trường thi. Máy tính sẽ lựa chon ng&acirc;̃u "
-"nhi&ecirc;n 20 c&acirc;u hỏi trong b&ocirc;̣ đ&ecirc;̀ đ&ecirc;̉ tạo n&ecirc;n "
-"đ&ecirc;̀ thi cho các bạn, các bạn chỉ vi&ecirc;̣c tick vào đáp án mà mình "
-"chọn theo hướng d&acirc;̃n của máy tính. Thi xong k&ecirc;́t quả sẽ hi&ecirc;̣n "
-"ra ngay màn hình của các bạn sau đó các bạn tới nh&acirc;̣n k&ecirc;́t quả của "
-"giám khảo.</p><p>+ Ph&acirc;̀n thi thực hành: G&ocirc;̀m có 4 bài</p><p>&nbsp;"
-"&nbsp;&nbsp;&nbsp;&nbsp; 1- Đi vòng s&ocirc;́ 8</p><p>&nbsp;&nbsp;&nbsp;&nbsp;"
-"&nbsp; 2- Đi tr&ecirc;n đường hẹp</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3- "
-"Tránh chướng ngại v&acirc;̣t</p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4- Đi "
-"tr&ecirc;n đường g&ocirc;̀ gh&ecirc;̀</p><p>&nbsp;&nbsp;&nbsp; Ph&acirc;̀n này "
-"kh&ocirc;ng khó chỉ c&acirc;̀n các bạn đi đúng trình tự với s&ocirc;́ 3 và "
-"t&ocirc;́c đ&ocirc;̣ đi đ&ecirc;̀u khoảng 15km/h là được.</p><p>&nbsp;&nbsp;"
+"p><p><img alt=\"Hướng dẫn thi thực hành\" src=\"http://blx.vn/common/images/"
+"practice-300x564.png\" style=\"float:right; height:564px; margin-left:5px; "
+"margin-right:5px; width:300px\" /></p><p>Quy ch&ecirc;́ thi c&acirc;́p "
+"gi&acirc;́y phép lái xe hạng A1:</p><p>M&ocirc;̃i l&acirc;̀n gọi t&ecirc;n sẽ "
+"có 20 bạn được vào thi l&acirc;̀n lượt lý thuy&ecirc;́t trước sau đó đ&ecirc;́n "
+"thực hành.</p><p>+ Ph&acirc;̀n thi lý thuy&ecirc;́t (làm trong 15 phút): "
+"M&ocirc;̃i bạn sẽ được sắp x&ecirc;́p ng&ocirc;̀i vào m&ocirc;̣t máy tính "
+"ri&ecirc;ng, các bạn làm bài tr&ecirc;n ph&acirc;̀n m&ecirc;̀m của trường thi. "
+"Máy tính sẽ lựa chon ng&acirc;̃u nhi&ecirc;n 20 c&acirc;u hỏi trong b&ocirc;̣ "
+"đ&ecirc;̀ đ&ecirc;̉ tạo n&ecirc;n đ&ecirc;̀ thi cho các bạn, các bạn chỉ "
+"vi&ecirc;̣c tick vào đáp án mà mình chọn theo hướng d&acirc;̃n của máy tính. "
+"Thi xong k&ecirc;́t quả sẽ hi&ecirc;̣n ra ngay màn hình của các bạn sau đó các "
+"bạn tới nh&acirc;̣n k&ecirc;́t quả của giám khảo.</p><p>+ Ph&acirc;̀n thi thực "
+"hành: G&ocirc;̀m có 4 bài</p><ol>\t<li>Đi vòng s&ocirc;́ 8</li>\t<li>Đi "
+"tr&ecirc;n đường hẹp</li>\t<li>Tránh chướng ngại v&acirc;̣t</li>\t<li>Đi "
+"tr&ecirc;n đường g&ocirc;̀ gh&ecirc;̀</li></ol><p>&nbsp;&nbsp;&nbsp; Ph&acirc;̀"
+"n này kh&ocirc;ng khó chỉ c&acirc;̀n các bạn đi đúng trình tự với s&ocirc;́ 3 "
+"và t&ocirc;́c đ&ocirc;̣ đi đ&ecirc;̀u khoảng 15km/h là được.</p><p>&nbsp;&nbsp;"
 "&nbsp; Các bạn xem clip hướng d&acirc;̃n thi thực hành lái xe b&ecirc;n dưới."
 "</p>"
 
@@ -4050,12 +4051,12 @@ msgid "Quy trinh thi cap bang lai xe hang A1"
 msgstr "Quy trình thi cấp bằng lái xe hạng A1"
 
 #: module/Application/view/application/index/index.phtml:139
-#: module/Application/view/layout/layout.phtml:99
+#: module/Application/view/layout/layout.phtml:101
 msgid "Nop ho so"
 msgstr "Nộp hồ sơ"
 
 #: module/Application/view/application/index/index.phtml:145
-#: module/Application/view/layout/layout.phtml:101
+#: module/Application/view/layout/layout.phtml:103
 msgid "Xem lich thi"
 msgstr "Xem lịch thi"
 
@@ -4080,8 +4081,8 @@ msgid "Ho so bao gom"
 msgstr "Hồ sơ bao gồm"
 
 #: module/Application/view/application/index/index.phtml:182
-msgid "6 anh chan dung 3x4"
-msgstr "6 ảnh chân dung 3x4"
+msgid "3 anh chan dung 3x4"
+msgstr "3 ảnh chân dung 3x4"
 
 #: module/Application/view/application/index/index.phtml:185
 msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
@@ -4131,25 +4132,33 @@ msgstr "0978.910.546"
 msgid "KhuongManhDuy_Address"
 msgstr "Phòng 105 KTX B5 ĐH Bách Khoa HN"
 
-#: module/Application/view/application/index/index.phtml:233
+#: module/Application/view/application/index/index.phtml:214
+msgid "Luong Cam Khang"
+msgstr "Lương Cẩm Khang"
+
+#: module/Application/view/application/index/index.phtml:215
+msgid "LuongCamKhang_PhoneNumbers"
+msgstr "0986.960.346"
+
+#: module/Application/view/application/index/index.phtml:216
+msgid "LuongCamKhang_Address"
+msgstr "Phòng 101 KTX B10 ĐH Bách Khoa HN"
+
+#: module/Application/view/application/index/index.phtml:239
 msgid "BLX.VN tren mang xa hoi"
 msgstr "BLX.VN trên mạng xã hội"
 
-#: module/Application/view/application/post/detail.phtml:9
-msgid "news_detail_prepend_meta_description"
-msgstr "Tin chi tiết: "
-
-#: module/Application/view/application/post/detail.phtml:43
+#: module/Application/view/application/post/detail.phtml:67
 #: module/Application/view/application/post/index.phtml:76
 msgid "dang boi"
 msgstr "đăng bởi"
 
-#: module/Application/view/application/post/detail.phtml:44
+#: module/Application/view/application/post/detail.phtml:68
 #: module/Application/view/application/post/index.phtml:77
 msgid "vao luc"
 msgstr "vào lúc"
 
-#: module/Application/view/application/post/detail.phtml:44
+#: module/Application/view/application/post/detail.phtml:68
 #: module/Application/view/application/post/index.phtml:77
 msgid "ngay"
 msgstr "ngày"
@@ -4274,7 +4283,7 @@ msgid "BLX Admin control panel"
 msgstr "BLX Admin Control Panel"
 
 #: module/Application/view/layout/administrator.phtml:43
-#: module/Application/view/layout/layout.phtml:86
+#: module/Application/view/layout/layout.phtml:87
 msgid "BLX.VN"
 msgstr "BLX.VN"
 
@@ -4308,91 +4317,91 @@ msgid "Tim nhanh bang ten hoac so dien thoai"
 msgstr "Tìm nhanh bằng tên hoặc số điện thoại"
 
 #: module/Application/view/layout/layout.phtml:4
-#: module/Application/view/layout/layout.phtml:42
 #: module/Application/view/layout/layout.phtml:43
+#: module/Application/view/layout/layout.phtml:44
 msgid "BLX.VN - Thi bang lai xe may hang A1/A2 tai Ha Noi"
 msgstr "BLX.VN - Thi bằng lái xe máy hạng A1/A2 tại Hà Nội"
 
-#: module/Application/view/layout/layout.phtml:45
+#: module/Application/view/layout/layout.phtml:46
 msgid "Lich thi"
 msgstr "Lịch thi"
 
-#: module/Application/view/layout/layout.phtml:46
-#: module/Application/view/layout/layout.phtml:105
+#: module/Application/view/layout/layout.phtml:47
+#: module/Application/view/layout/layout.phtml:107
 msgid "Ket qua thi"
 msgstr "Kết quả thi"
 
-#: module/Application/view/layout/layout.phtml:47
+#: module/Application/view/layout/layout.phtml:48
 msgid "Tai lieu on thi"
 msgstr "Tài liệu ôn thi"
 
-#: module/Application/view/layout/layout.phtml:48
-#: module/Application/view/layout/layout.phtml:103
+#: module/Application/view/layout/layout.phtml:49
+#: module/Application/view/layout/layout.phtml:105
 msgid "Huong dan thi"
 msgstr "Hướng dẫn thi"
 
-#: module/Application/view/layout/layout.phtml:90
+#: module/Application/view/layout/layout.phtml:92
 msgid "Dieu khoan"
 msgstr "Điều khoản"
 
-#: module/Application/view/layout/layout.phtml:96
-#: module/Application/view/layout/layout.phtml:165
+#: module/Application/view/layout/layout.phtml:98
+#: module/Application/view/layout/layout.phtml:168
 msgid "Thi bang lai xe"
 msgstr "Thi bằng lái xe"
 
-#: module/Application/view/layout/layout.phtml:111
+#: module/Application/view/layout/layout.phtml:113
 msgid "Cong tac vien"
 msgstr "Cộng tác viên"
 
-#: module/Application/view/layout/layout.phtml:113
+#: module/Application/view/layout/layout.phtml:115
 msgid "Dang ky"
 msgstr "Đăng ký"
 
-#: module/Application/view/layout/layout.phtml:115
+#: module/Application/view/layout/layout.phtml:117
 msgid "Dieu le"
 msgstr "Điều lệ"
 
-#: module/Application/view/layout/layout.phtml:121
+#: module/Application/view/layout/layout.phtml:123
 msgid "Tro giup"
 msgstr "Trợ giúp"
 
-#: module/Application/view/layout/layout.phtml:123
+#: module/Application/view/layout/layout.phtml:126
 msgid "Cau hoi thuong gap"
 msgstr "Câu hỏi thường gặp"
 
-#: module/Application/view/layout/layout.phtml:130
+#: module/Application/view/layout/layout.phtml:133
 msgid "Thu vi"
 msgstr "Thú vị"
 
-#: module/Application/view/layout/layout.phtml:138
+#: module/Application/view/layout/layout.phtml:141
 msgid "noi_dung_thu_vi"
 msgstr "Mỗi tháng BLX.VN tiếp nhận và xử lý <strong>hơn 690 hồ sơ</strong>."
 
-#: module/Application/view/layout/layout.phtml:152
+#: module/Application/view/layout/layout.phtml:155
 msgid "copyright"
 msgstr "Toàn bộ nội dung thuộc về BLX.VN."
 
-#: module/Application/view/layout/layout.phtml:157
+#: module/Application/view/layout/layout.phtml:160
 msgid "Thiet ke va xay dung boi Luu Hoang Nam"
 msgstr "Thiết kế và xây dựng bởi Lưu Hoàng Nam"
 
-#: module/Application/view/layout/layout.phtml:164
+#: module/Application/view/layout/layout.phtml:167
 msgid "Bang lai xe"
 msgstr "Bằng lái xe"
 
-#: module/Application/view/layout/layout.phtml:166
+#: module/Application/view/layout/layout.phtml:169
 msgid "Bang lai xe o Ha Noi"
 msgstr "Bằng lái xe ở Hà Nội"
 
-#: module/Application/view/layout/layout.phtml:168
+#: module/Application/view/layout/layout.phtml:171
 msgid "Bang lai xe A1"
 msgstr "Bằng lái xe A1"
 
-#: module/Application/view/layout/layout.phtml:169
+#: module/Application/view/layout/layout.phtml:172
 msgid "Thi bang lai xe may"
 msgstr "Thi bằng lái xe máy"
 
-#: module/Application/view/layout/layout.phtml:171
+#: module/Application/view/layout/layout.phtml:174
 msgid "Thi bang lai xe moto"
 msgstr "Thi bằng lái xe moto"
 
@@ -4409,6 +4418,15 @@ msgstr "Trước"
 #: module/Application/view/partial/paginator.phtml:26
 msgid "Sau"
 msgstr "Sau"
+
+#~ msgid "news_detail_prepend_meta_description"
+#~ msgstr "Tin chi tiết: "
+
+#~ msgid "Cach van mieu Quoc Tu Giam 500m"
+#~ msgstr "Cách Văn Miếu Quốc Tử Giám 500m"
+
+#~ msgid "So 1 Quoc Tu Giam"
+#~ msgstr "Số 1 Quốc Tử Giám"
 
 #~ msgid "Phong thi va lop thi"
 #~ msgstr "Phòng thi và lớp thi"
