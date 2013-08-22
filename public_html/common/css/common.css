@@ -352,6 +352,7 @@ a:hover {
     float: left;
     padding: 0 8px;
     border-left: 1px solid #333333;
+    list-style: none;
 }
 
 #back-link {

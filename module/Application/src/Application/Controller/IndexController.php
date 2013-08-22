@@ -35,11 +35,27 @@ class IndexController extends AbstractActionController
         
         return $viewModel;
     }
-    
+
     public function restrictionAccessAction()
     {
-    	$viewModel = new ViewModel;
-    	 
-    	return $viewModel;
+        $viewModel = new ViewModel();
+        
+        return $viewModel;
+    }
+
+    public function fbchannelAction()
+    {
+        $viewModel = new ViewModel();
+        $viewModel->setTerminal(true);
+        
+        $cache_expire = 60 * 60 * 24 * 365;
+        
+        $this->getResponse()
+            ->getHeaders()
+            ->addHeaderLine('Expires', gmdate('D, d M Y H:i:s', time() + $cache_expire) . ' GMT')
+            ->addHeaderLine('Cache-Control', 'max-age=' . $cache_expire)
+            ->addHeaderLine('Pragma', 'public');
+        
+        return $viewModel;
     }
 }

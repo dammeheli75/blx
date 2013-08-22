@@ -43,6 +43,16 @@ return array(
                     )
                 )
             ),
+            'fbchannel' => array(
+                'type' => 'Zend\Mvc\Router\Http\Literal',
+                'options' => array(
+                    'route' => '/fbchannel.html',
+                    'defaults' => array(
+                        'controller' => 'Application\Controller\Index',
+                        'action' => 'fbchannel'
+                    )
+                )
+            ),
             // The following is a route to simplify getting started creating
             // new controllers and actions without needing to create a new
             // module. Simply drop new controllers in, and you can access them

@@ -96,6 +96,13 @@
     text-decoration: underline;
 }
 
+.news-block .block-footer {
+    border: 0;
+    border-top: 1px solid #d6d6d6;
+    padding: 16px 20px 0 20px;
+    height: 80px;
+}
+
 .authorName {
     color: #005580;
 }

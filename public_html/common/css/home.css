@@ -21,6 +21,10 @@ ul, li {
     margin: 0;
 }
 
+#register-step li {
+    list-style: none;
+}
+
 #register-step .block-header h2 {
     font-size: 17px;
     margin: 0;

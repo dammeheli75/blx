@@ -16,10 +16,15 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 		    <?php if ($post['category_id'] == $category['category_id']) : ?>
     	    <li class="active">
     	    <?php else : ?>
-    	    <li>
+    	    
+		
+		
+		
+		<li>
     	    <?php endif; ?>
-		    <a href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
-		    </li>
+		    <a
+			href="<?php echo $this->url('news/category', array('category_slug' => $category['slug']))?>"><?php echo $category['title']?></a>
+		</li>
 		<?php endforeach; ?>
 	</ul>
 </div>
@@ -49,6 +54,35 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 						</div>
 					</div>
 				</div>
+				<div class="block-footer">
+					<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : '1408214906061696',                   // App ID from the app dashboard
+      channelUrl : '//blx.vn/fbchannel.html',            // Channel file for x-domain comms
+      status     : true,                                 // Check Facebook Login status
+      xfbml      : true                                  // Look for social plugins on the page
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+  };
+
+  // Load the SDK asynchronously
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     js.async = true;
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+					<div class="fb-like"
+						data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>"
+						data-width="600" data-show-faces="true" data-send="true"></div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -58,7 +92,7 @@ $this->headMeta()->setName('description', $this->translate('news_detail_prepend_
 		<div class="span9">
 			<div class="block block-square comment-block">
 				<!-- Facebook comment -->
-				<h1>Facebook Comment</h1>
+				<div class="fb-comments" data-href="http://blx.vn<?php echo $this->url('news/detail', array('category_slug' => $post['category']['slug'], 'post_slug' => $post['slug'], 'post_id' => $post['post_id']))?>" data-width="670"></div>
 			</div>
 		</div>
 	</div>
