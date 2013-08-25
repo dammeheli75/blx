@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-22 21:51+0700\n"
-"PO-Revision-Date: 2013-08-22 21:52+0700\n"
+"POT-Creation-Date: 2013-08-26 02:01+0700\n"
+"PO-Revision-Date: 2013-08-26 02:01+0700\n"
 "Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
 "Language-Team: BLX.VN <admin@blx.vn>\n"
 "Language: Tiếng Việt\n"
@@ -209,6 +209,7 @@ msgstr "Năm sinh"
 
 #: module/Administrator/src/Administrator/Controller/ProfileController.php:103
 #: module/Administrator/src/Administrator/Controller/UserController.php:177
+#: module/Application/view/application/index/index.phtml:213
 msgid "Dia chi"
 msgstr "Địa chỉ"
 
@@ -3931,7 +3932,7 @@ msgstr ""
 msgid "index_meta_description"
 msgstr "Tổ chức thi bằng lái xe máy hạng A1/A2 tại Hà Nội. Uy tín, nhanh."
 
-#: module/Application/view/application/index/index.phtml:15
+#: module/Application/view/application/index/index.phtml:14
 msgid "blx_introdution"
 msgstr ""
 "<strong>BLX.VN</strong> chuyên về đào tạo và tổ chức thi lấy <em>giấy phép "
@@ -3941,36 +3942,36 @@ msgstr ""
 "tấm bằng lái xe trong <em>thời gian ngắn</em> cùng <em>thủ tục gọn nhẹ dễ "
 "dàng nhất</em>."
 
-#: module/Application/view/application/index/index.phtml:21
+#: module/Application/view/application/index/index.phtml:20
 msgid "Moi nguoi noi gi ve BLX.VN"
 msgstr "Mọi người nói gì về BLX.VN"
 
+#: module/Application/view/application/index/index.phtml:43
 #: module/Application/view/application/index/index.phtml:44
-#: module/Application/view/application/index/index.phtml:45
 msgid "Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi"
 msgstr "Trần Đức Duy sinh viên K55 Đại học Bách Khoa Hà Nội"
 
-#: module/Application/view/application/index/index.phtml:48
+#: module/Application/view/application/index/index.phtml:47
 msgid "tran_duc_duy_talk_about_blx"
 msgstr ""
 "Dịch vụ rất tốt, nhận bằng <em>nhanh mà rẻ quá</em>, cảm ơn bạn Dũng bên BLX."
 "VN nhá, có bạn bè j nhất định mình sẽ giới thiệu cho bạn."
 
-#: module/Application/view/application/index/index.phtml:53
+#: module/Application/view/application/index/index.phtml:52
 msgid "Tran Duc Duy"
 msgstr "Trần Đức Duy"
 
-#: module/Application/view/application/index/index.phtml:54
-#: module/Application/view/application/index/index.phtml:71
+#: module/Application/view/application/index/index.phtml:53
+#: module/Application/view/application/index/index.phtml:70
 msgid "sinh vien K55 Dai hoc Bach Khoa Ha Noi"
 msgstr "sinh viên K55 Đại học Bách Khoa Hà Nội"
 
+#: module/Application/view/application/index/index.phtml:60
 #: module/Application/view/application/index/index.phtml:61
-#: module/Application/view/application/index/index.phtml:62
 msgid "Nguyen Manh Cuong sinh vien K55 Dai hoc Bach Khoa Ha Noi"
 msgstr "Nguyễn Mạnh Cường sinh viên K55 Đại học Bách Khoa Hà Nội"
 
-#: module/Application/view/application/index/index.phtml:65
+#: module/Application/view/application/index/index.phtml:64
 msgid "nguyen_manh_cuong_talk_about_blx"
 msgstr ""
 "Hôm vừa rồi mình và 5 thằng bạn cùng phòng ký túc có đăng ký thi bằng lái xe "
@@ -3979,16 +3980,16 @@ msgstr ""
 "thi liền một lúc, kể ra có ae đi thi cùng cũng vui, cả 6 thằng cùng được "
 "nhận bằng sau đấy, thực sự bọn mình phải cảm ơn BLX.VN nhiều :D"
 
-#: module/Application/view/application/index/index.phtml:70
+#: module/Application/view/application/index/index.phtml:69
 msgid "Nguyen Manh Cuong"
 msgstr "Nguyễn Mạnh Cường"
 
+#: module/Application/view/application/index/index.phtml:77
 #: module/Application/view/application/index/index.phtml:78
-#: module/Application/view/application/index/index.phtml:79
 msgid "An Duy Khuong sinh vien K55 Dai hoc Bach Khoa Ha Noi"
 msgstr "An Duy Khương sinh viên K56 Đại học Bách Khoa Hà Nội"
 
-#: module/Application/view/application/index/index.phtml:82
+#: module/Application/view/application/index/index.phtml:81
 msgid "an_duy_khuong_talk_about_blx"
 msgstr ""
 "Lần này là lần thứ 2 mình làm bằng  (trước thi bị mất :))) thấy chỗ này cẩn "
@@ -3996,20 +3997,20 @@ msgstr ""
 "lắm dậy lý thuyết nhiệt tình dễ hiểu, mình đảm bảo các bạn chú ý nghe cậu ấy "
 "hướng dẫn thì qua là cái chắc :)"
 
-#: module/Application/view/application/index/index.phtml:87
+#: module/Application/view/application/index/index.phtml:86
 msgid "An Duy Khuong"
 msgstr "An Duy Khương"
 
-#: module/Application/view/application/index/index.phtml:88
+#: module/Application/view/application/index/index.phtml:87
 msgid "sinh vien K56 Dai hoc Bach Khoa Ha Noi"
 msgstr "sinh viên K56 Đại học Bách Khoa Hà Nội"
 
+#: module/Application/view/application/index/index.phtml:94
 #: module/Application/view/application/index/index.phtml:95
-#: module/Application/view/application/index/index.phtml:96
 msgid "Duong Hoai Thu sinh vien Dai hoc khoa hoc Thai Nguyen"
 msgstr "Dương Hoài Thu sinh viên Đại học khoa học Thái Nguyên"
 
-#: module/Application/view/application/index/index.phtml:99
+#: module/Application/view/application/index/index.phtml:98
 msgid "duong_hoai_thu_talk_about_blx"
 msgstr ""
 "Lần hè vừa rồi xuống Hà Nội chơi mình có xem được thông tin trên BLX.VN, do "
@@ -4018,85 +4019,85 @@ msgstr ""
 "được mà còn lấy được ngay tấm bằng lái xe, quả thật các bạn làm quá nhanh. "
 "Cảm ơn các bạn nhiều nhiều…"
 
-#: module/Application/view/application/index/index.phtml:104
+#: module/Application/view/application/index/index.phtml:103
 msgid "Duong Hoai Thu"
 msgstr "Dương Hoài Thu"
 
-#: module/Application/view/application/index/index.phtml:105
+#: module/Application/view/application/index/index.phtml:104
 msgid "sinh vien Dai hoc khoa hoc Thai Nguyen"
 msgstr "sinh viên Đại học khoa học Thái Nguyên"
 
+#: module/Application/view/application/index/index.phtml:111
 #: module/Application/view/application/index/index.phtml:112
-#: module/Application/view/application/index/index.phtml:113
 msgid "Nguyen Van Tu sinh vien Cao dang ky thuat Cong nghiep"
 msgstr "Nguyễn Văn Tú sinh viên Cao đẳng kỹ thuật Công nghiệp"
 
-#: module/Application/view/application/index/index.phtml:116
+#: module/Application/view/application/index/index.phtml:115
 msgid "nguyen_van_tu_talk_about_blx"
 msgstr ""
 "Có bằng lái xe đi ra đường thì ngon rồi, ra đường có bằng gặp a \"Thông\" "
 "cũng yên tâm hơn, mấy hôm nữa thằng e lên học cũng phải cho nó thi bằng luôn "
 "ở đây mới được :)))"
 
-#: module/Application/view/application/index/index.phtml:121
+#: module/Application/view/application/index/index.phtml:120
 msgid "Nguyen Van Tu"
 msgstr "Nguyễn Văn Tú"
 
-#: module/Application/view/application/index/index.phtml:122
+#: module/Application/view/application/index/index.phtml:121
 msgid "sinh vien Cao dang ky thuat Cong nghiep"
 msgstr "sinh viên Cao đẳng kỹ thuật Công nghiệp"
 
-#: module/Application/view/application/index/index.phtml:134
+#: module/Application/view/application/index/index.phtml:133
 msgid "Quy trinh thi cap bang lai xe hang A1"
 msgstr "Quy trình thi cấp bằng lái xe hạng A1"
 
-#: module/Application/view/application/index/index.phtml:139
+#: module/Application/view/application/index/index.phtml:138
 #: module/Application/view/layout/layout.phtml:101
 msgid "Nop ho so"
 msgstr "Nộp hồ sơ"
 
-#: module/Application/view/application/index/index.phtml:145
+#: module/Application/view/application/index/index.phtml:144
 #: module/Application/view/layout/layout.phtml:103
 msgid "Xem lich thi"
 msgstr "Xem lịch thi"
 
-#: module/Application/view/application/index/index.phtml:151
+#: module/Application/view/application/index/index.phtml:150
 msgid "Di thi"
 msgstr "Đi thi"
 
-#: module/Application/view/application/index/index.phtml:157
+#: module/Application/view/application/index/index.phtml:156
 msgid "Xem ket qua"
 msgstr "Xem kết quả"
 
-#: module/Application/view/application/index/index.phtml:163
+#: module/Application/view/application/index/index.phtml:162
 msgid "Nhan bang"
 msgstr "Nhận bằng"
 
-#: module/Application/view/application/index/index.phtml:174
+#: module/Application/view/application/index/index.phtml:173
 msgid "Nop ho so truc tiep"
 msgstr "Nộp hồ sơ trực tiếp"
 
-#: module/Application/view/application/index/index.phtml:179
+#: module/Application/view/application/index/index.phtml:178
 msgid "Ho so bao gom"
 msgstr "Hồ sơ bao gồm"
 
-#: module/Application/view/application/index/index.phtml:182
+#: module/Application/view/application/index/index.phtml:181
 msgid "3 anh chan dung 3x4"
 msgstr "3 ảnh chân dung 3x4"
 
-#: module/Application/view/application/index/index.phtml:185
+#: module/Application/view/application/index/index.phtml:184
 msgid "1 ban photocopy chung minh thu 2 mat khong can cong chung"
 msgstr "1 bản photocopy chứng minh thư 2 mặt không cần công chứng"
 
-#: module/Application/view/application/index/index.phtml:191
+#: module/Application/view/application/index/index.phtml:190
 msgid "Chu y le phi thi gom 2 khoan"
 msgstr "Chú ý lệ phí thi gồm 2 khoản"
 
-#: module/Application/view/application/index/index.phtml:193
+#: module/Application/view/application/index/index.phtml:192
 msgid "Le phi dao tao 150.000<sup>d</sup>"
 msgstr "Lệ phí đào tạo 180.000<sup>đ</sup>."
 
-#: module/Application/view/application/index/index.phtml:194
+#: module/Application/view/application/index/index.phtml:193
 msgid ""
 "Le phi thi 225.000<sup>d</sup> (40.000<sup>d</sup> thi ly thuyet, "
 "50.000<sup>d</sup> thi thuc hanh, 135.00<sup>d</sup> in va cap bang)"
@@ -4104,47 +4105,76 @@ msgstr ""
 "Lệ phí thi 225.000 <sup>d</sup> (40.000<sup>đ</sup> thi lý thuyết, "
 "50.000<sup>đ</sup> thi thực hành, 135.000<sup>đ</sup> in và cấp bằng)."
 
-#: module/Application/view/application/index/index.phtml:200
+#: module/Application/view/application/index/index.phtml:199
+msgid "Hotline nop ho so: Mr.Dung 0163 213 4476"
+msgstr "Hotline nộp hồ sơ: Mr.Dũng 0163 213 4476"
+
+#: module/Application/view/application/index/index.phtml:207
 msgid "Dia diem nop ho so"
 msgstr "Địa điểm nộp hồ sơ"
 
-#: module/Application/view/application/index/index.phtml:204
+#: module/Application/view/application/index/index.phtml:208
+msgid "Tim dia diem gan nhat <sup><i>(thu nghiem)</i></sup>"
+msgstr "Tìm địa điểm gần nhất <sup><i>(thử nghiệm)</i></sup>"
+
+#: module/Application/view/application/index/index.phtml:212
+#: module/Application/view/layout/layout.phtml:113
+msgid "Cong tac vien"
+msgstr "Cộng tác viên"
+
+#: module/Application/view/application/index/index.phtml:214
+msgid "Quan"
+msgstr "Quận"
+
+#: module/Application/view/application/index/index.phtml:218
+#: module/Application/view/application/index/index.phtml:219
 msgid "Do Viet Dung"
 msgstr "Đỗ Việt Dũng"
 
-#: module/Application/view/application/index/index.phtml:205
-msgid "DoVietDung_PhoneNumbers"
-msgstr "0163.213.4476"
+#: module/Application/view/application/index/index.phtml:218
+#, fuzzy
+msgid "Cong tac vien Do Viet Dung"
+msgstr "Cộng tác viên"
 
-#: module/Application/view/application/index/index.phtml:206
-msgid "DoVietDung_Address"
+#: module/Application/view/application/index/index.phtml:220
+msgid "Phong 507 KTX B10 DH Bach Khoa HN"
 msgstr "Phòng 507 KTX B10 ĐH Bách Khoa HN"
 
-#: module/Application/view/application/index/index.phtml:209
+#: module/Application/view/application/index/index.phtml:221
+#: module/Application/view/application/index/index.phtml:226
+#: module/Application/view/application/index/index.phtml:231
+msgid "Hai Ba Trung"
+msgstr "Hai Bà Trưng"
+
+#: module/Application/view/application/index/index.phtml:223
+#: module/Application/view/application/index/index.phtml:224
 msgid "Khuong Manh Duy"
 msgstr "Khương Mạnh Duy"
 
-#: module/Application/view/application/index/index.phtml:210
-msgid "KhuongManhDuy_PhoneNumbers"
-msgstr "0978.910.546"
+#: module/Application/view/application/index/index.phtml:223
+#, fuzzy
+msgid "Cong tac vien Khuong Manh Duy"
+msgstr "Khương Mạnh Duy"
 
-#: module/Application/view/application/index/index.phtml:211
-msgid "KhuongManhDuy_Address"
+#: module/Application/view/application/index/index.phtml:225
+msgid "Phong 105 KTX B5 DH Bach Khoa HN"
 msgstr "Phòng 105 KTX B5 ĐH Bách Khoa HN"
 
-#: module/Application/view/application/index/index.phtml:214
+#: module/Application/view/application/index/index.phtml:228
+#: module/Application/view/application/index/index.phtml:229
 msgid "Luong Cam Khang"
 msgstr "Lương Cẩm Khang"
 
-#: module/Application/view/application/index/index.phtml:215
-msgid "LuongCamKhang_PhoneNumbers"
-msgstr "0986.960.346"
+#: module/Application/view/application/index/index.phtml:228
+#, fuzzy
+msgid "Cong tac vien Luong Cam Khang"
+msgstr "Lương Cẩm Khang"
 
-#: module/Application/view/application/index/index.phtml:216
-msgid "LuongCamKhang_Address"
+#: module/Application/view/application/index/index.phtml:230
+msgid "Phong 101 KTX B10 DH Bach Khoa HN"
 msgstr "Phòng 101 KTX B10 ĐH Bách Khoa HN"
 
-#: module/Application/view/application/index/index.phtml:239
+#: module/Application/view/application/index/index.phtml:245
 msgid "BLX.VN tren mang xa hoi"
 msgstr "BLX.VN trên mạng xã hội"
 
@@ -4349,10 +4379,6 @@ msgstr "Điều khoản"
 msgid "Thi bang lai xe"
 msgstr "Thi bằng lái xe"
 
-#: module/Application/view/layout/layout.phtml:113
-msgid "Cong tac vien"
-msgstr "Cộng tác viên"
-
 #: module/Application/view/layout/layout.phtml:115
 msgid "Dang ky"
 msgstr "Đăng ký"
@@ -4418,6 +4444,24 @@ msgstr "Trước"
 #: module/Application/view/partial/paginator.phtml:26
 msgid "Sau"
 msgstr "Sau"
+
+#~ msgid "DoVietDung_PhoneNumbers"
+#~ msgstr "0163.213.4476"
+
+#~ msgid "DoVietDung_Address"
+#~ msgstr "Phòng 507 KTX B10 ĐH Bách Khoa HN"
+
+#~ msgid "KhuongManhDuy_PhoneNumbers"
+#~ msgstr "0978.910.546"
+
+#~ msgid "KhuongManhDuy_Address"
+#~ msgstr "Phòng 105 KTX B5 ĐH Bách Khoa HN"
+
+#~ msgid "LuongCamKhang_PhoneNumbers"
+#~ msgstr "0986.960.346"
+
+#~ msgid "LuongCamKhang_Address"
+#~ msgstr "Phòng 101 KTX B10 ĐH Bách Khoa HN"
 
 #~ msgid "news_detail_prepend_meta_description"
 #~ msgstr "Tin chi tiết: "

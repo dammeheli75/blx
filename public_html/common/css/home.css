@@ -2,6 +2,27 @@ ul, li {
     list-style: none;
 }
 
+.table {
+    margin: 0;
+}
+
+table thead th {
+    text-align: center !important;
+}
+
+.table-bordered {
+    border-radius: 0 !important;
+    border: none;
+}
+
+.table-bordered thead:first-child tr:first-child>th:first-child, .table-bordered tbody:first-child tr:first-child>td:first-child, .table-bordered tbody:first-child tr:first-child>th:first-child {
+    border-top-left-radius: 0 !important;
+}
+
+.table-bordered tr td:first-child, .table-bordered tr th:first-child {
+    border-left: none;
+}
+
 #overview {
     border: 1px solid #6d84b4;
     border-radius: 6px;
@@ -139,39 +160,66 @@ ul, li {
     list-style: decimal;
 }
 
+.hotline {
+    border-top: 1px solid #6d84b4;
+}
+
+.hotline h3 {
+    font-size: 18px;
+    font-weight: normal;
+    color: #3b5998;
+    margin: 0;
+    padding: 0 20px;
+    text-align: center;
+}
+
 .filling-places {
     overflow: hidden;
 }
 
-.filling-places > div {
+.filling-places .places {
     float: left;
+    width: 938px;
 }
 
-.filling-places h3 {
-    font-size: 16px;
-    font-weight: normal;
+.filling-places .places h3 {
+    font-size: 18px;
     color: #3b5998;
-    margin: 0;
-    width: 300px;
+    font-weight: normal;
+    padding: 0 20px;
     text-align: center;
-    border: 1px solid #6d84b4;
-    border-bottom: none;
-    border-left: none;
-}
-
-.filling-places .nav-tabs {
     margin: 0;
-    height: 400px;
-    width: 300px;
-    overflow: hidden;
-    overflow-y: auto;
+    border-bottom: 1px solid #6d84b4;
+    border-top: 1px solid #6d84b4;
     float: left;
-    border: 1px solid #6d84b4;
-    border-left: none;
-    border-bottom: none;
+    width: 625px;
 }
 
-.filling-places .nav-tabs::-webkit-scrollbar {
+#findNearestLocation {
+    font-size: 16px;
+    color: #FFF;
+    padding: 0 20px;
+    text-align: center;
+    margin: 0;
+    border: 1px solid #6d84b4;
+    border-right: none;
+    float: left;
+    line-height: 40px;
+    background: #6d84b4;
+    cursor: pointer;
+}
+
+#findNearestLocation:hover {
+    background: #44557a;
+}
+
+.nearestLocation td, .nearestLocation:hover td {
+    color: #FFF;
+    background: #6d84b4 !important;
+    border-color: #6d84b4 !important;
+}
+
+.table::-webkit-scrollbar {
     width: 8px; /* 1px wider than Lion. */
     /* This is more usable for users trying to click it. */
     background-color: rgba(0, 0, 0, 0);
@@ -180,64 +228,30 @@ ul, li {
 }
 
 /* hover effect for both scrollbar area, and scrollbar 'thumb' */
-.filling-places .nav-tabs::-webkit-scrollbar:hover {
+.table::-webkit-scrollbar:hover {
     background-color: rgba(0, 0, 0, 0.09);
 }
 
 /* The scrollbar 'thumb' ...that marque oval shape in a scrollbar */
-.filling-places .nav-tabs::-webkit-scrollbar-thumb {
+.table::-webkit-scrollbar-thumb {
     /* This is the EXACT color of Mac OS scrollbars.
        Yes, I pulled out digital color meter */
     background: rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 100px;
 }
 
-.filling-places .nav-tabs::-webkit-scrollbar-thumb:active {
+.table::-webkit-scrollbar-thumb:active {
     background: rgba(0, 0, 0, 0.5); /* Some darker color when you click it */
     -webkit-border-radius: 100px;
 }
 
-.filling-places .nav-tabs li {
-    float: none;
-    width: 300px;
-}
-
-.filling-places .nav-tabs li:first-child a {
-    border-top: none;
-}
-
-.filling-places .nav-tabs li.active a {
-    background: #6d84b4;
-    color: #ffffff;
-}
-
-.filling-places .nav-tabs a {
-    border: 1px solid #3b5998;
-    border-bottom: none !important;
-    border-radius: 0;
-    border-left: none !important;
-    font-size: 20px;
-    line-height: 26px;
-    margin-right: 0;
-    border-right: none !important;
-}
-
-.filling-places .nav-tabs a:hover {
-    border: 1px solid #3b5998;
-    border-left: none;
-    border-bottom: none;
-    background: none;
-    border-right: 0;
-}
-
-.filling-places .nav-tabs span {
-    display: block;
-    font-size: 13px;
+.table tbody tr:hover {
+    cursor: pointer;
 }
 
 .map-container {
     float: right;
-    width: 637px;
+    width: 938px;
     height: 441px;
     border-top: 1px solid #6d84b4;
 }
@@ -245,7 +259,7 @@ ul, li {
 #map-canvas {
     margin: 0;
     padding: 0;
-    width: 637px;
+    width: 938px;
     height: 441px;
 }
 

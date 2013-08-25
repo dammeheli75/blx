@@ -1,11 +1,10 @@
 <?php
 $this->headMeta()->appendName('description', $this->translate('index_meta_description'));
 
-$this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.min.css');
+$this->headLink()->appendStylesheet($this->basePath() . '/common/css/home.css');
 
 $this->headScript()
-    ->appendFile($this->basePath() . '/common/js/home.min.js')
-    ->prependFile('https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false')
+    ->appendFile($this->basePath() . '/common/js/home.js')
     ->prependFile($this->basePath() . '/nivo-slider/js/jquery.nivo.slider.pack.js');
 ?>
 
@@ -39,7 +38,7 @@ $this->headScript()
 				<div class="carousel-inner">
 					<div class="active item">
 						<img class="avatar"
-							src="<?php echo $this->basePath()?>/common/images/avatar-tran-duc-duy-80x80.jpg"
+							src="<?php echo $this->basePath()?>common/images/avatar-tran-duc-duy-80x80.jpg"
 							width="80" height="80"
 							alt="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>"
 							title="<?php echo $this->translate('Tran Duc Duy sinh vien K55 Dai hoc Bach Khoa Ha Noi')?>">
@@ -195,37 +194,44 @@ $this->headScript()
 					</ol>
 				</div>
 			</div>
+			<div class="hotline">
+			     <h3>
+			     <?php echo $this->translate('Hotline nop ho so: Mr.Dung 0163 213 4476')?>
+			     </h3>
+			</div>
 			<div class="filling-places">
-				<div>
-					<h3><?php echo $this->translate('Dia diem nop ho so')?></h3>
-
-					<ul class="nav nav-tabs" id="fillingPlaceTab">
-						<li class="active"><a href="#collaborator-viet-dung">
-                                <?php echo $this->translate('Do Viet Dung')?>
-                                <span class="phone"><?php echo $this->translate('DoVietDung_PhoneNumbers')?></span>
-								<span class="address"><?php echo $this->translate('DoVietDung_Address')?></span>
-						</a></li>
-						<li><a href="#collaborator-manh-duy">
-                                <?php echo $this->translate('Khuong Manh Duy')?>
-                                <span class="phone"><?php echo $this->translate('KhuongManhDuy_PhoneNumbers')?></span>
-								<span class="address"><?php echo $this->translate('KhuongManhDuy_Address')?></span>
-						</a></li>
-						<li><a href="#collaborator-cam-khang">
-                                <?php echo $this->translate('Luong Cam Khang')?>
-                                <span class="phone"><?php echo $this->translate('LuongCamKhang_PhoneNumbers')?></span>
-								<span class="address"><?php echo $this->translate('LuongCamKhang_Address')?></span>
-						</a></li>
-					</ul>
-
-					<div class="tab-content hide">
-						<div class="tab-pane active" id="collaborator-viet-dung"></div>
-						<div class="tab-pane" id="collaborator-manh-duy"></div>
-						<div class="tab-pane" id="collaborator-cam-khang"></div>
-					</div>
-				</div>
-
-				<div class="map-container">
+			    <div class="map-container">
 					<div id="map-canvas"></div>
+				</div>
+				<div class="places">
+				    <h3><?php echo $this->translate('Dia diem nop ho so')?></h3>
+				    <div id="findNearestLocation"><?php echo $this->translate('Tim dia diem gan nhat <sup><i>(thu nghiem)</i></sup>')?></div>
+				    <table class="table table-hover table-bordered">
+				        <thead>
+				            <tr>
+				                <th><?php echo $this->translate('Cong tac vien')?></th>
+				                <th><?php echo $this->translate('Dia chi')?></th>
+				                <th><?php echo $this->translate('Quan')?></th>
+				            </tr>
+				        </thead>
+				        <tbody>
+				            <tr data-longitude="21.005321" data-latitude="105.847150" data-title="<?php echo $this->translate('Do Viet Dung')?>" data-info="<?php echo $this->translate('Cong tac vien Do Viet Dung')?>">
+				                <td><?php echo $this->translate('Do Viet Dung')?></td>
+				                <td><?php echo $this->translate('Phong 507 KTX B10 DH Bach Khoa HN')?></td>
+				                <td><?php echo $this->translate('Hai Ba Trung')?></td>
+				            </tr>
+				            <tr data-longitude="21.006347" data-latitude="105.846906" data-title="<?php echo $this->translate('Khuong Manh Duy')?>" data-info="<?php echo $this->translate('Cong tac vien Khuong Manh Duy')?>">
+				                <td><?php echo $this->translate('Khuong Manh Duy')?></td>
+				                <td><?php echo $this->translate('Phong 105 KTX B5 DH Bach Khoa HN')?></td>
+				                <td><?php echo $this->translate('Hai Ba Trung')?></td>
+				            </tr>
+				            <tr data-longitude="21.004975" data-latitude="105.847043" data-title="<?php echo $this->translate('Luong Cam Khang')?>" data-info="<?php echo $this->translate('Cong tac vien Luong Cam Khang')?>">
+				                <td><?php echo $this->translate('Luong Cam Khang')?></td>
+				                <td><?php echo $this->translate('Phong 101 KTX B10 DH Bach Khoa HN')?></td>
+				                <td><?php echo $this->translate('Hai Ba Trung')?></td>
+				            </tr>
+				        </tbody>
+				    </table>
 				</div>
 			</div>
 		</div>
