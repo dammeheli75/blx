@@ -1,4 +1,4 @@
 eclipse.preferences.version=1
-include_path=5;com.zend.php.phpunit.CONTAINER\u00055;org.eclipse.dltk.USER_LIBRARY/UserZF2.2.2\u00050;/blx
+include_path=0;/blx\u00055;org.zend.php.framework.v2.CONTAINER
 phpVersion=php5.3
 use_asp_tags_as_php=false

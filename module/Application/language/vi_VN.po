@@ -1,9 +1,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: BLX.VN\n"
-"POT-Creation-Date: 2013-08-26 02:01+0700\n"
-"PO-Revision-Date: 2013-08-26 02:01+0700\n"
-"Last-Translator: dammeheli@gmail.com <dammeheli@gmail.com>\n"
+"POT-Creation-Date: 2013-09-18 20:11+0700\n"
+"PO-Revision-Date: 2013-09-18 20:12+0700\n"
+"Last-Translator: Lưu Hoàng Nam <hoangnam0705@icloud.com>\n"
 "Language-Team: BLX.VN <admin@blx.vn>\n"
 "Language: Tiếng Việt\n"
 "MIME-Version: 1.0\n"
@@ -11,7 +11,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 1.5.7\n"
 "X-Poedit-KeywordsList: _;translate\n"
-"X-Poedit-Basepath: /Applications/XAMPP/xamppfiles/htdocs/blx\n"
+"X-Poedit-Basepath: /Users/luuhoangnam/Dropbox/Projects/BLX.VN/blx/\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-SearchPath-0: module\n"
 
@@ -4040,6 +4040,8 @@ msgstr ""
 "ở đây mới được :)))"
 
 #: module/Application/view/application/index/index.phtml:120
+#: module/Application/view/application/index/index.phtml:248
+#: module/Application/view/application/index/index.phtml:249
 msgid "Nguyen Van Tu"
 msgstr "Nguyễn Văn Tú"
 
@@ -4132,9 +4134,8 @@ msgid "Do Viet Dung"
 msgstr "Đỗ Việt Dũng"
 
 #: module/Application/view/application/index/index.phtml:218
-#, fuzzy
 msgid "Cong tac vien Do Viet Dung"
-msgstr "Cộng tác viên"
+msgstr "Cộng tác viên Đỗ Việt Dũng"
 
 #: module/Application/view/application/index/index.phtml:220
 msgid "Phong 507 KTX B10 DH Bach Khoa HN"
@@ -4143,6 +4144,7 @@ msgstr "Phòng 507 KTX B10 ĐH Bách Khoa HN"
 #: module/Application/view/application/index/index.phtml:221
 #: module/Application/view/application/index/index.phtml:226
 #: module/Application/view/application/index/index.phtml:231
+#: module/Application/view/application/index/index.phtml:241
 msgid "Hai Ba Trung"
 msgstr "Hai Bà Trưng"
 
@@ -4152,9 +4154,8 @@ msgid "Khuong Manh Duy"
 msgstr "Khương Mạnh Duy"
 
 #: module/Application/view/application/index/index.phtml:223
-#, fuzzy
 msgid "Cong tac vien Khuong Manh Duy"
-msgstr "Khương Mạnh Duy"
+msgstr "Cộng tác viên Khương Mạnh Duy"
 
 #: module/Application/view/application/index/index.phtml:225
 msgid "Phong 105 KTX B5 DH Bach Khoa HN"
@@ -4166,15 +4167,73 @@ msgid "Luong Cam Khang"
 msgstr "Lương Cẩm Khang"
 
 #: module/Application/view/application/index/index.phtml:228
-#, fuzzy
 msgid "Cong tac vien Luong Cam Khang"
-msgstr "Lương Cẩm Khang"
+msgstr "Cộng tác viên Lương Cẩm Khang"
 
 #: module/Application/view/application/index/index.phtml:230
 msgid "Phong 101 KTX B10 DH Bach Khoa HN"
 msgstr "Phòng 101 KTX B10 ĐH Bách Khoa HN"
 
+#: module/Application/view/application/index/index.phtml:233
+#: module/Application/view/application/index/index.phtml:234
+msgid "Phan Thi Yen"
+msgstr "Phan Thị Yến"
+
+#: module/Application/view/application/index/index.phtml:233
+msgid "Cong tac vien Phan Thi Yen"
+msgstr "Cộng tác viên Phan Thị Yến"
+
+#: module/Application/view/application/index/index.phtml:235
+msgid "178 Tay Son (Doi dien truong DH Cong Doan)"
+msgstr "178 Tây Sơn (Đối diện trường ĐH Công Đoàn)"
+
+#: module/Application/view/application/index/index.phtml:236
+msgid "Dong Da"
+msgstr "Đống Đa"
+
+#: module/Application/view/application/index/index.phtml:238
+#: module/Application/view/application/index/index.phtml:239
+msgid "Le Cong Hoan"
+msgstr "Lê Công Hoàn"
+
+#: module/Application/view/application/index/index.phtml:238
+msgid "Cong tac vien Le Cong Hoan"
+msgstr "Cộng tác viên Lê Công Hoàn"
+
+#: module/Application/view/application/index/index.phtml:240
+msgid "121 Le Thanh Nghi (Doi dien truong Xay Dung)"
+msgstr "121 Lê Thanh Nghị (Đối diện trường Xây Dựng)"
+
+#: module/Application/view/application/index/index.phtml:243
+#: module/Application/view/application/index/index.phtml:244
+msgid "Pham Phuong Thao"
+msgstr "Phạm Phương Thảo"
+
+#: module/Application/view/application/index/index.phtml:243
+msgid "Cong tac vien Pham Phuong Thao"
+msgstr "Cộng tác viên Phạm Phương Thảo"
+
 #: module/Application/view/application/index/index.phtml:245
+msgid "118 Pham Van Dong (Doi dien DH Ngoai Ngu)"
+msgstr "118 Phạm Văn Đồng (Đối diện ĐH Ngoại Ngữ)"
+
+#: module/Application/view/application/index/index.phtml:246
+msgid "Cau Giay"
+msgstr "Cầu Giấy"
+
+#: module/Application/view/application/index/index.phtml:248
+msgid "Cong tac vien Nguyen Van Tu"
+msgstr "Cộng tác viên Nguyễn Văn Tú"
+
+#: module/Application/view/application/index/index.phtml:250
+msgid "Canh truong cao dang kinh te cong nghiep HN"
+msgstr "Cạnh trường cao đẳng kinh tế công nghiệp HN"
+
+#: module/Application/view/application/index/index.phtml:251
+msgid "Thanh Xuan"
+msgstr "Thanh Xuân"
+
+#: module/Application/view/application/index/index.phtml:265
 msgid "BLX.VN tren mang xa hoi"
 msgstr "BLX.VN trên mạng xã hội"
 
@@ -4692,9 +4751,6 @@ msgstr "Sau"
 
 #~ msgid "La trach nhiem cua canh sat giao thong."
 #~ msgstr "Là trách nhiệm của cảnh sát giao thông."
-
-#~ msgid "Thong bao"
-#~ msgstr "Thông báo"
 
 #~ msgid "Le phi dao tao"
 #~ msgstr "Lệ phí đào tạo"

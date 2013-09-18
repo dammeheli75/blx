@@ -60,7 +60,7 @@ return array(
             'fixture' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/lich-thi',
+                    'route' => '/lich-thi-bang-lai-xe-a1-tai-ha-noi.html',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Fixture',
@@ -84,7 +84,7 @@ return array(
             'result' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/ket-qua-thi',
+                    'route' => '/ket-qua-thi-bang-lai-xe-may-hang-a1-tai-ha-noi.html',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Result',
@@ -108,7 +108,7 @@ return array(
             'document' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/tai-lieu-on-thi',
+                    'route' => '/tai-lieu-on-thi-bang-lai-xe-may-hang-a1-tai-ha-noi.html',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Document',
@@ -132,7 +132,7 @@ return array(
             'guiding' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/huong-dan-di-thi-bang-lai-xe',
+                    'route' => '/huong-dan-di-thi-bang-lai-xe-bang-lai-xe-may-hang-a1-tai-ha-noi.html',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Guiding',
