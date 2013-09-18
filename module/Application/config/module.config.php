@@ -132,7 +132,7 @@ return array(
             'guiding' => array(
                 'type' => 'Literal',
                 'options' => array(
-                    'route' => '/huong-dan-di-thi-bang-lai-xe-bang-lai-xe-may-hang-a1-tai-ha-noi.html',
+                    'route' => '/huong-dan-di-thi-bang-lai-xe-may-hang-a1-tai-ha-noi.html',
                     'defaults' => array(
                         '__NAMESPACE__' => 'Application\Controller',
                         'controller' => 'Guiding',
